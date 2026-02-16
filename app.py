@@ -132,6 +132,10 @@ st.caption("Word-level and character-level analysis • Frequency coverage • H
 st.sidebar.title("About this tool")
 
 st.sidebar.markdown("""
+Source code available on [Github](https://github.com/bubblegumisnice/chinese-text-lexical-analyser).
+""")
+
+st.sidebar.markdown("""
 This tool analyses Simplified Chinese text at two levels:
 
 - **Word tokens** (segmented using jieba)
