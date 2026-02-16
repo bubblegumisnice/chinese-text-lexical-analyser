@@ -1,0 +1,10 @@
+streamlit
+jieba
+numpy
+pandas
+plotly
+pdfplumber
+ebooklib
+beautifulsoup4
+matplotlib
+wordfreq

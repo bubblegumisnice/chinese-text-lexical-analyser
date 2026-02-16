@@ -1,0 +1,10969 @@
+//HSK 3.0 (2026)/HSK1
+爱,ai4
+吧,ba5
+八,ba1
+爸爸,ba4 ba5
+百,bai3
+白天,bai2 tian1
+半,ban4
+包子,bao1 zi5
+杯子,bei1 zi5
+本,ben3
+边,bian1
+病,bing4
+不,bu4
+不客气,bu2 ke4 qi4
+不要,bu4 yao4
+菜,cai4
+茶,cha2
+唱,chang4
+超市,chao1 shi4
+车,che1
+吃,chi1
+穿,chuan1
+出租车,chu1 zu1 che1
+大,da4
+打电话,da3 dian4 hua4
+大家,da4 jia1
+到,dao4
+大学,da4 xue2
+大学生,da4 xue2 sheng5
+的,de5
+第,di4
+店,dian4
+点,dian3
+电话,dian4 hua4
+电脑,dian4 nao3
+电视,dian4 shi4
+电影,dian4 ying3
+电影院,dian4 ying3 yuan4
+弟弟,di4 di5
+东西,dong1 xi5
+都,dou1
+读,du2
+对,dui4
+对不起,dui4 bu5 qi3
+多,duo1
+多少,duo1 shao5
+读书,du2 shu1
+二,er4
+儿子,er2 zi5
+饭,fan4
+饭店,fan4 dian4
+房间,fang2 jian1
+非常,fei1 chang2
+飞机,fei1 ji1
+分,fen1
+分钟,fen1 zhong1
+高兴,gao1 xing4
+个,ge4
+歌,ge1
+哥哥,ge1 ge5
+给,gei3
+公司,gong1 si1
+工作,gong1 zuo4
+狗,gou3
+贵,gui4
+国,guo2
+还,hai2
+孩子,hai2 zi5
+汉语
+汉字
+号,hao4
+好,hao3
+好吃,hao3 chi1
+好看,hao3 kan4
+好听,hao3 ting1
+好玩儿,hao3 wan2 er5
+和,he2
+喝,he1
+很,hen3
+后,hou4
+回,hui2
+会,hui4
+火车,huo3 che1
+几,ji3
+家,jia1
+见,jian4
+件,jian4
+叫,jiao4
+饺子,jiao3 zi5
+家人,jia1 ren2
+鸡蛋,ji1 dan4
+姐姐,jie3 jie5
+今年,jin1 nian2
+今天,jin1 tian1
+九,jiu3
+觉得,jue2 de5
+开,kai1
+开车,kai1 che1
+看,kan4
+看病,kan4 bing4
+看见,kan4 jian4
+课,ke4
+可以,ke3 yi3
+口,kou3
+块,kuai4
+来,lai2
+老师,lao3 shi1
+了,le5
+冷,leng3
+里,li3
+两,liang3
+零,ling2
+六,liu4
+吗,ma5
+卖,mai4
+买,mai3
+妈妈,ma1 ma5
+忙,mang2
+猫,mao1
+没关系,mei2 guan1 xi5
+妹妹,mei4 mei5
+没事
+没
+没有,mei2 you3
+们,men5
+面包,mian4 bao1
+面条儿,mian4 tiao2 er5
+米饭,mi3 fan4
+明年,ming2 nian2
+明天,ming2 tian1
+名字,ming2 zi5
+那,na4
+哪,na3
+那边,na4 bian5
+那个,nei4 ge4
+哪个
+那里
+哪里
+男
+男朋友
+那儿
+哪儿
+那些
+哪些
+呢
+能,neng2
+你,ni3
+你好,ni3 hao3
+年,nian2
+你们,ni3 men5
+您,nin2
+牛奶,niu2 nai3
+女,nu:3
+女儿,nu:3 er2
+女朋友,nu:3 peng2 you5
+女士,nu:3 shi4
+朋友,peng2 you5
+便宜,pian2 yi5
+漂亮,piao4 liang5
+苹果,ping2 guo3
+七,qi1
+前,qian2
+钱,qian2
+千,qian1
+起床,qi3 chuang2
+请,qing3
+请问,qing3 wen4
+去,qu4
+去年,qu4 nian2
+热,re4
+人,ren2
+认识,ren4 shi5
+日,ri4
+三,san1
+上,shang4
+上班,shang4 ban1
+商店,shang1 dian4
+上课,shang4 ke4
+上午,shang4 wu3
+上学,shang4 xue2
+少,shao3
+谁,shei2
+生病,sheng1 bing4
+什么,shen2 me5
+十,shi2
+事,shi4
+是,shi4
+时候,shi2 hou5
+时间,shi2 jian1
+手机,shou3 ji1
+书,shu1
+书店,shu1 dian4
+睡,shui4
+水,shui3
+水果,shui3 guo3
+睡觉,shui4 jiao4
+说,shuo1
+说话
+四,si4
+岁,sui4
+他,ta1
+它,ta1
+她,ta1
+太,tai4
+他们,ta1 men5
+它们,ta1 men5
+她们,ta1 men5
+天,tian1
+天气,tian1 qi4
+听,ting1
+听见,ting1 jian4
+同学,tong2 xue2
+外,wai4
+外边,wai4 bian5
+玩,wan2
+晚,wan3
+晚饭,wan3 fan4
+晚上,wan3 shang5
+喂,wei4
+问,wen4
+问题,wen4 ti2
+我,wo3
+我们,wo3 men5
+五,wu3
+午饭,wu3 fan4
+下,xia4
+下雨,xia4 yu3
+下班
+下课
+想,xiang3
+先生,xian1 sheng5
+现在,xian4 zai4
+小,xiao3
+小朋友,xiao3 peng2 you3
+小时,xiao3 shi2
+小学,xiao3 xue2
+小学生,xiao3 xue2 sheng1
+下午,xia4 wu3
+写,xie3
+些,xie1
+谢谢,xie4 xie5
+喜欢,xi3 huan5
+新,xin1
+星期,xing1 qi1
+星期日,xing1 qi1 ri4
+星期天,xing1 qi1 tian1
+休息,xiu1 xi5
+学,xue2
+雪,xue3
+学生,xue2 sheng5
+学习,xue2 xi2
+学校,xue2 xiao4
+要,yao4
+也,ye3
+一,yi1
+一半,yi1 ban4
+一点儿,yi1 dianr3
+衣服,yi1 fu5
+医生,yi1 sheng1
+一下,yi1 xia4
+一些,yi1 xie1
+医院,yi1 yuan4
+椅子,yi3 zi5
+有,you3
+有的,you3 de5
+有些,you3 xie1
+有点儿
+有一点儿,you3 yi1 dianr3
+雨,yu3
+元,yuan2
+月,yue4
+再,zai4
+在,zai4
+再见,zai4 jian4
+早,zao3
+早饭,zao3 fan4
+早上,zao3 shang5
+怎么,zen3 me5
+怎么样,zen3 me5 yang4
+找,zhao3
+这,zhe4
+这边,zhe4 bian1
+这个,zhe4 ge4
+这里,zhe4 li3
+真,zhen1
+正在,zheng4 zai4
+这儿,zher4
+这些,zhe4 xie5
+只,zhi1
+知道,zhi1 dao4
+中国
+中文
+中午,zhong1 wu3
+中学,zhong1 xue2
+中学生
+住,zhu4
+桌子,zhuo1 zi5
+字,zi4
+坐,zuo4
+做,zuo4
+做饭,zuo4 fan4
+昨天,zuo2 tian1
+//HSK 3.0 (2026)/HSK2
+啊,a5
+爱好,ai4 hao4
+白色,bai2 se4
+班,ban1
+帮,bang1
+帮忙,bang1 mang2
+包,bao1
+本子,ben3 zi5
+比,bi3
+笔,bi3
+别,bie2
+不好意思,bu4 hao3 yi4 si5
+不错
+长,chang2
+车站,che1 zhan4
+出,chu1
+床,chuang2
+出国
+出来,chu1 lai5
+出门,chu1 men2
+出去,chu1 qu4
+词,ci2
+次,ci4
+从,cong2
+从小,cong2 xiao3
+错,cuo4
+打,da3
+打车
+打开,da3 kai1
+但,dan4
+但是,dan4 shi4
+得,de5
+地,de5
+等,deng3
+地铁,di4 tie3
+动,dong4
+懂,dong3
+饭馆,fan4 guan3
+飞,fei1
+高,gao1
+告诉,gao4 su5
+高中,gao1 zhong1
+跟,gen1
+个子,ge4 zi5
+公交车
+过,guo4
+过,guo5
+过来,guo4 lai2
+过年,guo4 nian2
+过去,guo4 qu5
+还是,hai2 shi4
+黑色,hei1 se4
+红茶,hong2 cha2
+红色,hong2 se4
+后面,hou4 mian5
+画,hua4
+花,hua1
+坏,huai4
+回来,hui2 lai5
+回去,hui2 qu5
+间,jian1
+教,jiao1
+教室,jiao4 shi4
+机场,ji1 chang3
+记得,ji4 de5
+介绍,jie4 shao4
+进,jin4
+近,jin4
+经常,jing1 chang2
+进来,jin4 lai2
+进去,jin4 qu4
+机票,ji1 piao4
+就,jiu4
+酒店,jiu3 dian4
+咖啡,ka1 fei1
+开始,kai1 shi3
+开学,kai1 xue2
+考,kao3
+考试,kao3 shi4
+可能,ke3 neng2
+快,kuai4
+快乐,kuai4 le4
+快要,kuai4 yao4
+裤子,ku4 zi5
+篮球,lan2 qiu2
+累,lei4
+离,li2
+里面,li3 mian4
+楼,lou2
+路,lu4
+绿茶,lu:4 cha2
+绿色,lu:4 se4
+路上,lu4 shang5
+旅游
+慢,man4
+每,mei3
+没意思,mei2 yi4 si5
+门,men2
+门口,men2 kou3
+门票
+面,mian4
+名,ming2
+拿,na2
+奶茶,nai3 cha2
+奶奶,nai3 nai5
+那么,na4 me5
+男孩儿,nan2 hair2
+那样,na4 yang4
+鸟,niao3
+女孩儿,nu:3 hair2
+旁边,pang2 bian1
+跑,pao3
+跑步,pao3 bu4
+票,piao4
+前面,qian2 mian5
+起来,qi3 lai5
+晴,qing2
+球,qiu2
+妻子,qi1 zi5
+让,rang4
+肉,rou4
+商场,shang1 chang3
+上来,shang4 lai2
+上面,shang4 mian5
+上去,shang4 qu4
+上网,shang4 wang3
+生日,sheng1 ri4
+身体,shen1 ti3
+时,shi2
+事情,shi4 qing5
+手,shou3
+手表,shou3 biao3
+书包,shu1 bao1
+舒服,shu1 fu5
+送,song4
+虽然,sui1 ran2
+所以,suo3 yi3
+疼,teng2
+题,ti2
+踢,ti1
+条,tiao2
+跳舞,tiao4 wu3
+头,tou2
+外国,wai4 guo2
+外面,wai4 mian5
+完,wan2
+万,wan4
+忘,wang4
+往,wang3
+网上,wang3 shang4
+位,wei4
+为什么,wei4 shen2 me5
+洗,xi3
+下来,xia5 lai5
+下面,xia4 mian5
+笑,xiao4
+小孩儿
+小时候
+下去,xia4 qu5
+姓,xing4
+姓名,xing4 ming2
+洗手间,xi3 shou3 jian1
+希望,xi1 wang4
+眼睛,yan3 jing1
+颜色,yan2 se4
+药,yao4
+药店,yao4 dian4
+爷爷,ye2 ye5
+一会儿,yi1 huir4
+已经,yi3 jing1
+阴,yin1
+因为,yin1 wei4
+一起,yi1 qi3
+意思,yi4 si5
+游,you2
+右,you4
+有意思
+右边,you4 bian1
+有时,you3 shi2
+有时候,you3 shi2 hou5
+游泳,you2 yong3
+鱼,yu2
+远,yuan3
+运动,yun4 dong4
+站,zhan4
+丈夫,zhang4 fu5
+着,zhe5
+这么,zhe4 me5
+正,zheng4
+这样,zhe4 yang4
+周,zhou1
+准备,zhun3 bei4
+自己,zi4 ji3
+走,zou3
+走路
+最,zui4
+左,zuo3
+左边,zuo3 bian1
+足球,zu2 qiu2
+//HSK 3.0 (2026)/HSK3
+矮,ai3
+爱人,ai4 ren5
+安静,an1 jing4
+安全,an1 quan2
+阿姨,a1 yi2
+把,ba3
+办,ban4
+搬,ban1
+办法,ban4 fa3
+办公室,ban4 gong1 shi4
+帮助,bang1 zhu4
+班级,ban1 ji2
+搬家,ban1 jia1
+半天,ban4 tian1
+饱,bao3
+报纸,bao4 zhi3
+被,bei4
+北,bei3
+北方,bei3 fang1
+变,bian4
+遍,bian4
+变成,bian4 cheng2
+变化,bian4 hua4
+表演,biao3 yan3
+别的,bie2 de5
+别人,bie2 ren2
+笔记,bi3 ji4
+比较,bi3 jiao4
+笔记本,bi3 ji4 ben3
+冰,bing1
+冰激凌
+病人,bing4 ren2
+宾馆,bin1 guan3
+冰箱,bing1 xiang1
+比如,bi3 ru2
+比赛,bi3 sai4
+必须,bi4 xu1
+不同,bu4 tong2
+不但
+不见
+不久
+不行,bu4 xing2
+不用,bu4 yong4
+才,cai2
+菜单,cai4 dan1
+参加,can1 jia1
+草,cao3
+草地,cao3 di4
+层,ceng2
+查,cha2
+差,cha4
+差不多,cha4 bu5 duo1
+尝,chang2
+常,chang2
+常见,chang2 jian4
+常用,chang2 yong4
+常常
+成绩,cheng2 ji1
+城市,cheng2 shi4
+衬衫,chen4 shan1
+迟到,chi2 dao4
+船,chuan2
+出发,chu1 fa1
+除了,chu2 le5
+春天,chun1 tian1
+出生,chu1 sheng1
+出院,chu1 yuan4
+初中,chu1 zhong1
+词典,ci2 dian3
+聪明,cong1 ming2
+大概,da4 gai4
+带,dai4
+蛋糕,dan4 gao1
+当然,dang1 ran2
+担心,dan1 xin1
+到处,dao4 chu4
+大人,da4 ren5
+打扫,da3 sao3
+打算,da3 suan4
+大小,da4 xiao3
+大熊猫,da4 xiong2 mao1
+大衣,da4 yi1
+得,de2
+得到,de2 dao4
+得分,de2 fen1
+的话,de5 hua4
+得,dei3
+灯,deng1
+地,di4
+电,dian4
+电梯,dian4 ti1
+电子书
+地点,di4 dian3
+地方,di4 fang5
+地图,di4 tu2
+丢,diu1
+东,dong1
+东北,dong1 bei3
+懂得,dong3 de5
+东方,dong1 fang1
+东南,dong1 nan2
+冬天,dong1 tian1
+动物,dong4 wu4
+动物园,dong4 wu4 yuan2
+段,duan4
+短,duan3
+短裤,duan3 ku4
+锻炼,duan4 lian4
+对话,dui4 hua4
+饿,e4
+耳朵,er3 duo5
+耳机,er3 ji1
+而且,er2 qie3
+发,fa1
+放,fang4
+方便,fang1 bian4
+方便面
+方法,fang1 fa3
+放假,fang4 jia4
+方向,fang1 xiang4
+放心,fang4 xin1
+放学,fang4 xue2
+房子,fang2 zi5
+发烧,fa1 shao1
+发生,fa1 sheng1
+发现,fa1 xian4
+发展,fa1 zhan3
+风,feng1
+封,feng1
+分开,fen1 kai1
+附近,fu4 jin4
+夫妻,fu1 qi1
+服务,fu2 wu4
+复习,fu4 xi2
+该,gai1
+干,gan4
+感兴趣
+感到,gan3 dao4
+刚,gang1
+刚才,gang1 cai2
+刚刚,gang1 gang5
+干净,gan1 jing4
+感冒,gan3 mao4
+高铁
+更,geng4
+根据,gen1 ju4
+公斤,gong1 jin1
+公园,gong1 yuan2
+工作日
+刮,gua1
+关,guan1
+关机
+关系,guan1 xi4
+关心,guan1 xin1
+关于,guan1 yu2
+关注,guan1 zhu4
+国家,guo2 jia1
+过节
+故事,gu4 shi4
+海,hai3
+害怕,hai4 pa4
+好多,hao3 duo1
+好久,hao3 jiu3
+号码,hao4 ma3
+好像,hao3 xiang4
+河,he2
+黑板,hei1 ban3
+合适,he2 shi4
+红绿灯,hong2 lu:4 deng1
+后来,hou4 lai2
+后年,hou4 nian2
+后天,hou4 tian1
+画家,hua4 jia1
+还,huan2
+换,huan4
+黄色,huang2 se4
+环境,huan2 jing4
+欢迎,huan1 ying2
+花园,hua1 yuan2
+回答,hui2 da2
+会议,hui4 yi4
+或,huo4
+或者,huo4 zhe3
+护照,hu4 zhao4
+极,ji2
+急,ji2
+记,ji4
+季,ji4
+鸡,ji1
+加,jia1
+检查,jian3 cha2
+坚持,jian1 chi2
+简单,jian3 dan1
+讲,jiang3
+健康,jian4 kang1
+见面,jian4 mian4
+检票
+角,jiao3
+脚,jiao3
+假期,jia4 qi1
+节,jie2
+借,jie4
+接,jie1
+街,jie1
+结婚,jie2 hun1
+解决,jie3 jue2
+姐妹,jie3 mei4
+节目,jie2 mu4
+节日,jie2 ri4
+结束,jie2 shu4
+几乎,ji1 hu1
+机会,ji1 hui4
+季节,ji4 jie2
+斤,jin1
+经过,jing1 guo4
+经理,jing1 li3
+旧,jiu4
+久,jiu3
+酒,jiu3
+句,ju4
+决定,jue2 ding4
+句子,ju4 zi5
+卡,ka3
+开花
+开会,kai1 hui4
+开机
+开心,kai1 xin1
+看来,kan4 lai5
+刻,ke4
+可,ke3
+渴,ke3
+可爱,ke3 ai4
+课本,ke4 ben3
+客人,ke4 ren5
+可是,ke3 shi4
+课文,ke4 wen2
+空调,kong1 tiao2
+哭,ku1
+筷子,kuai4 zi5
+矿泉水,kuang4 quan2 shui3
+来自,lai2 zi4
+蓝,lan2
+老,lao3
+老人,lao3 ren2
+练,lian4
+脸,lian3
+辆,liang4
+凉快,liang2 kuai5
+练习,lian4 xi2
+聊,liao2
+了解,liao3 jie3
+聊天儿,liao2 tian1 er5
+离开,li2 kai1
+邻居,lin2 ju1
+历史,li4 shi3
+留学,liu2 xue2
+留学生,liu2 xue2 sheng1
+礼物,li3 wu4
+楼梯,lou2 ti1
+路边,lu4 bian1
+路口,lu4 kou3
+马,ma3
+马路,ma3 lu4
+满意,man3 yi4
+毛,mao2
+马上,ma3 shang4
+米,mi3
+面前,mian4 qian2
+明白,ming2 bai5
+名单,ming2 dan1
+名人,ming2 ren2
+南,nan2
+难,nan2
+南方,nan2 fang1
+难过,nan2 guo4
+难看,nan2 kan4
+男人,nan2 ren2
+男生,nan2 sheng1
+难题,nan2 ti2
+难听
+年级,nian2 ji2
+年轻,nian2 qing1
+牛,niu2
+努力,nu3 li4
+女人,nu:3 ren2
+女生,nu:3 sheng1
+爬,pa2
+怕,pa4
+拍照,pai1 zhao4
+胖,pang4
+盘子,pan2 zi5
+啤酒,pi2 jiu3
+平时,ping2 shi2
+瓶子,ping2 zi5
+骑,qi2
+起,qi3
+铅笔,qian1 bi3
+前年,qian2 nian2
+前天,qian2 tian1
+汽车,qi4 che1
+起飞,qi3 fei1
+奇怪,qi2 guai4
+清楚,qing1 chu5
+请假,qing3 jia4
+请客,qing3 ke4
+其实,qi2 shi2
+其他,qi2 ta1
+球场,qiu2 chang3
+秋天,qiu1 tian1
+裙子,qun2 zi5
+然后,ran2 hou4
+认得,ren4 de5
+认为,ren4 wei2
+认真,ren4 zhen1
+热情,re4 qing2
+容易,rong2 yi4
+如果,ru2 guo3
+伞,san3
+扫,sao3
+沙发,sha1 fa1
+山,shan1
+上衣,shang4 yi1
+勺子,shao2 zi5
+身边,shen1 bian1
+声,sheng1
+身高,shen1 gao1
+生活,sheng1 huo2
+生气,sheng1 qi4
+声音,sheng1 yin1
+市,shi4
+试,shi4
+室,shi4
+世界,shi4 jie4
+受,shou4
+瘦,shou4
+收,shou1
+受到,shou4 dao4
+收到,shou1 dao4
+树,shu4
+刷,shua1
+双,shuang1
+水平,shui3 ping2
+叔叔,shu1 shu5
+数学,shu4 xue2
+四季,si4 ji4
+司机,si1 ji1
+太阳,tai4 yang2
+糖,tang2
+特别,te4 bie2
+甜,tian2
+跳,tiao4
+提高,ti2 gao1
+挺,ting3
+听说,ting1 shuo1
+体育,ti3 yu4
+体育馆,ti3 yu4 guan3
+同事,tong2 shi4
+同意,tong2 yi4
+头发,tou2 fa5
+腿,tui3
+突然,tu1 ran2
+图书馆,tu2 shu1 guan3
+外地,wai4 di4
+外卖
+外语,wai4 yu3
+碗,wan3
+完成,wan2 cheng2
+晚点
+忘记,wang4 ji4
+网球,wang3 qiu2
+网站,wang3 zhan4
+晚会,wan3 hui4
+为,wei4
+为了,wei4 le5
+卫生间
+文化,wen2 hua4
+屋子,wu1 zi5
+西,xi1
+喜爱,xi3 ai4
+先,xian1
+向,xiang4
+像,xiang4
+相机
+香蕉,xiang1 jiao1
+相信,xiang1 xin4
+箱子,xiang1 zi3
+小区
+小心,xiao3 xin1
+校园,xiao4 yuan2
+校长,xiao4 zhang3
+夏天,xia4 tian1
+西北,xi1 bei3
+鞋,xie2
+西方,xi1 fang1
+西瓜,xi1 gua1
+习惯,xi2 guan4
+信,xin4
+西南,xi1 nan2
+行,xing2
+行李,xing2 li5
+兴趣,xing4 qu5
+心里,xin1 li3
+新年,xin1 nian2
+新闻,xin1 wen2
+新鲜,xin1 xian1
+信用卡,xin4 yong4 ka3
+休假,xiu1 jia4
+洗衣机,xi3 yi1 ji1
+洗澡,xi3 zao3
+选,xuan3
+选择,xuan3 ze2
+学期,xue2 qi1
+需要,xu1 yao4
+牙,ya2
+羊,yang2
+养,yang3
+要求,yao1 qiu2
+牙刷,ya2 shua1
+页,ye4
+一般,yi4 ban1
+一边,yi1 bian1
+一定,yi1 ding4
+一共,yi2 gong4
+以后,yi3 hou4
+一块儿,yi1 kuai4 er5
+应该,ying1 gai1
+影响,ying3 xiang3
+银行,yin2 hang2
+银行卡,yin2 hang2 ka3
+饮料,yin3 liao4
+音乐,yin1 yue4
+以前,yi3 qian2
+以上,yi3 shang4
+以外,yi3 wai4
+以为,yi3 wei2
+以下,yi3 xia4
+一样,yi2 yang4
+一直,yi1 zhi2
+用,yong4
+又,you4
+有关,you3 guan1
+邮件,you2 jian4
+游客,you2 ke4
+有名,you3 ming2
+游戏,you2 xi4
+邮箱,you2 xiang1
+有用,you3 yong4
+园,yuan2
+员,yuan2
+愿意,yuan4 yi4
+遇到,yu4 dao4
+越,yue4
+月亮,yue4 liang4
+遇见,yu4 jian4
+羽毛球,yu3 mao2 qiu2
+运动会,yun4 dong4 hui4
+运动员,yun4 dong4 yuan2
+语言,yu3 yan2
+雨衣,yu3 yi1
+脏,zang1
+咱们,zan2 men5
+怎么办,zen3 me5 ban4
+怎样,zen3 yang4
+长,zhang3
+张,zhang1
+照,zhao4
+照顾,zhao4 gu5
+着急,zhao2 ji2
+照片,zhao4 pian4
+照相,zhao4 xiang4
+只,zhi3
+纸,zhi3
+只能,zhi3 neng2
+直到
+只是,zhi3 shi4
+只要,zhi3 yao4
+只有,zhi3 you3
+种,zhong3
+中,zhong1
+中间,zhong1 jian1
+重要,zhong4 yao4
+终于,zhong1 yu2
+周末,zhou1 mo4
+主要,zhu3 yao4
+注意,zhu4 yi4
+住院,zhu4 yuan4
+子,zi5
+字典,zi4 dian3
+自行车,zi4 xing2 che1
+总,zong3
+总是,zong3 shi4
+嘴,zui3
+最好,zui4 hao3
+最后,zui4 hou4
+最近,zui4 jin4
+做客,zuo4 ke4
+作业,zuo4 ye4
+//HSK 3.0 (2026)/HSK4
+啊,a1
+爱情,ai4 qing2
+爱心
+按,an4
+安检
+安排,an1 pai2
+按时,an4 shi2
+按照,an4 zhao4
+白酒,bai2 jiu3
+棒,bang4
+办公,ban4 gong1
+办理,ban4 li3
+办事,ban4 shi4
+抱,bao4
+保护,bao3 hu4
+报考,bao4 kao3
+报名,bao4 ming2
+抱歉,bao4 qian4
+保证,bao3 zheng4
+倍,bei4
+背,bei1
+背包,bei1 bao1
+北部,bei3 bu4
+笨,ben4
+本科,ben3 ke1
+本来,ben3 lai2
+便于,bian4 yu2
+表,biao3
+表格,biao3 ge2
+表示,biao3 shi4
+表现,biao3 xian4
+表扬,biao3 yang2
+标准,biao1 zhun3
+并,bing4
+饼干,bing3 gan1
+并且,bing4 qie3
+笔试,bi3 shi4
+毕业,bi4 ye4
+毕业生,bi4 ye4 sheng1
+鼻子,bi2 zi5
+播放,bo1 fang4
+博士,bo2 shi4
+步,bu4
+部,bu4
+不必,bu4 bi4
+不便,bu4 bian4
+不得不,bu4 de2 bu4
+不断,bu4 duan4
+部分,bu4 fen5
+不够,bu4 gou4
+不管,bu4 guan3
+不光,bu4 guang1
+不过,bu4 guo4
+不仅,bu4 jin3
+不论,bu4 lun4
+不满,bu4 man3
+部门,bu4 men2
+不如,bu4 ru2
+擦,ca1
+猜,cai1
+材料,cai2 liao4
+参观,can1 guan1
+参赛
+餐厅,can1 ting1
+操场,cao1 chang3
+厕所,ce4 suo3
+查看,cha2 kan4
+厂,chang3
+场,chang3
+产生,chan3 sheng1
+超过,chao1 guo4
+茶叶,cha2 ye4
+差点儿
+差一点儿
+查找,cha2 zhao3
+城,cheng2
+乘,cheng2
+成功,cheng2 gong1
+乘客,cheng2 ke4
+诚实,cheng2 shi2
+成为,cheng2 wei2
+乘坐,cheng2 zuo4
+车速
+车位
+迟,chi2
+吃惊,chi1 jing1
+重,chong2
+重新,chong2 xin1
+窗,chuang1
+窗户,chuang1 hu5
+出差,chu1 chai1
+厨房,chu2 fang2
+吹,chui1
+出口,chu1 kou3
+厨师,chu2 shi1
+出现,chu1 xian4
+出行
+出租,chu1 zu1
+此,ci3
+此次,ci3 ci4
+此外,ci3 wai4
+词语,ci2 yu3
+从此,cong2 ci3
+从来,cong2 lai2
+从中,cong2 zhong1
+粗,cu1
+存,cun2
+村,cun1
+错过,cuo4 guo4
+错误,cuo4 wu4
+粗心,cu1 xin1
+答,da2
+打招呼,da3 zhao1 hu5
+答案
+大巴
+打败
+大大,da4 da4
+达到,da2 dao4
+打工,da3 gong1
+戴,dai4
+待,dai1
+大夫,dai4 fu5
+袋子,dai4 zi5
+大量,da4 liang4
+当,dang1
+当时,dang1 shi2
+单位,dan1 wei4
+倒,dao4
+道,dao4
+刀,dao1
+到底,dao4 di3
+到来,dao4 lai2
+道路,dao4 lu4
+道歉,dao4 qian4
+导游,dao3 you2
+打扰,da3 rao3
+大赛
+大厅,da4 ting1
+打印,da3 yin4
+答应,da1 ying5
+打印机,da3 yin4 ji1
+大约,da4 yue1
+打折
+打针,da3 zhen1
+大自然,da4 zi4 ran2
+等到,deng3 dao4
+登机
+得意,de2 yi4
+底,di3
+低,di1
+电动车
+点名,dian3 ming2
+电视剧,dian4 shi4 ju4
+点头,dian3 tou2
+掉,diao4
+调查,diao4 cha2
+低价,di1 jia4
+订,ding4
+定,ding4
+地球,di4 qiu2
+低温,di1 wen1
+底下,di3 xia5
+低于,di1 yu2
+地址,di4 zhi3
+东部,dong1 bu4
+动车
+动作,dong4 zuo4
+短信,duan3 xin4
+堵车,du3 che1
+队,dui4
+对方,dui4 fang1
+对面,dui4 mian4
+对于,dui4 yu2
+队员,dui4 yuan2
+队长,dui4 zhang3
+度假,du4 jia4
+顿,dun4
+多么,duo1 me5
+多数,duo1 shu4
+多样,duo1 yang4
+读者,du2 zhe3
+肚子,du4 zi5
+而,er2
+儿童,er2 tong2
+法,fa3
+发出,fa1 chu1
+法律,fa3 lu:4
+烦,fan2
+反对,fan3 dui4
+房东,fang2 dong1
+方面,fang1 mian4
+放弃,fang4 qi4
+方式,fang1 shi4
+放松,fang4 song1
+房租,fang2 zu1
+烦恼,fan2 nao3
+翻译,fan1 yi4
+发送,fa1 song4
+费,fei4
+费用,fei4 yong4
+份,fen4
+丰富,feng1 fu4
+风景,feng1 jing3
+分数,fen1 shu4
+分为
+否则,fou3 ze2
+幅,fu2
+付,fu4
+符合,fu2 he2
+父母,fu4 mu3
+父女
+父亲,fu4 qin1
+复印,fu4 yin4
+复杂,fu4 za2
+负责,fu4 ze2
+负责人,fu4 ze2 ren2
+父子
+改,gai3
+改变,gai3 bian4
+赶,gan3
+敢,gan3
+感,gan3
+干,gan1
+干杯,gan1 bei1
+感动,gan3 dong4
+钢琴,gang1 qin2
+干活儿,gan4 huo2 r5
+赶紧,gan3 jin3
+感觉,gan3 jue2
+赶快,gan3 kuai4
+感情,gan3 qing2
+感人
+赶上,gan3 shang4
+感受,gan3 shou4
+感谢,gan3 xie4
+高价,gao1 jia4
+高考,gao1 kao3
+高速,gao1 su4
+高温,gao1 wen1
+高于
+各,ge4
+胳膊,ge1 bo5
+各地,ge4 di4
+各个,ge4 ge5
+更加,geng4 jia1
+歌声
+歌手,ge1 shou3
+各位,ge4 wei4
+各种,ge4 zhong3
+共,gong4
+工厂,gong1 chang3
+功夫,gong1 fu5
+公共,gong1 gong4
+功课,gong1 ke4
+公里,gong1 li3
+公路,gong1 lu4
+工人,gong1 ren2
+共同,gong4 tong2
+工资,gong1 zi1
+够,gou4
+购买,gou4 mai3
+购物,gou4 wu4
+挂,gua4
+管,guan3
+逛,guang4
+光,guang1
+广播,guang3 bo1
+广告,guang3 gao4
+关键,guan1 jian4
+观看,guan1 kan4
+管理,guan3 li3
+观众,guan1 zhong4
+规定,gui1 ding4
+估计,gu1 ji4
+顾客,gu4 ke4
+鼓励,gu3 li4
+姑娘,gu1 niang5
+过程,guo4 cheng2
+国籍,guo2 ji2
+国际,guo2 ji4
+果汁,guo3 zhi1
+故意,gu4 yi4
+害羞,hai4 xiu1
+海洋,hai3 yang2
+汗,han4
+喊,han3
+航班,hang2 ban1
+寒假,han2 jia4
+寒冷,han2 leng3
+好处,hao3 chu5
+好好,hao3 hao3
+好笑,hao3 xiao4
+合格,he2 ge2
+盒子,he2 zi5
+红包,hong2 bao1
+厚,hou4
+后悔,hou4 hui3
+坏处,huai4 chu5
+怀疑,huai2 yi2
+话剧,hua4 ju4
+环保
+换乘
+回复,hui2 fu4
+回信,hui2 xin4
+回忆,hui2 yi4
+会员,hui4 yuan2
+互联网,hu4 lian2 wang3
+活,huo2
+货,huo4
+火,huo3
+获得,huo4 de2
+活动,huo2 dong4
+获奖
+活泼,huo2 po5
+获取,huo4 qu3
+忽然,hu1 ran2
+护士,hu4 shi5
+互相,hu4 xiang1
+既,ji4
+寄,ji4
+假,jia3
+加班,jia1 ban1
+价格,jia4 ge2
+家具,jia1 ju4
+加快,jia1 kuai4
+减,jian3
+降,jiang4
+奖,jiang3
+江,jiang1
+将,jiang1
+降低,jiang4 di1
+降价,jiang4 jia4
+奖金,jiang3 jin1
+将来,jiang1 lai2
+降落,jiang4 luo4
+降温
+奖学金,jiang3 xue2 jin1
+将要,jiang1 yao4
+减轻,jian3 qing1
+减少,jian3 shao3
+健身,jian4 shen1
+健身房
+建议,jian4 yi4
+交,jiao1
+骄傲,jiao1 ao4
+交警
+教练,jiao4 lian4
+交流,jiao1 liu2
+郊区,jiao1 qu1
+教师,jiao4 shi1
+教授,jiao4 shou4
+交通,jiao1 tong1
+教学,jiao4 xue2
+教育,jiao4 yu4
+叫作
+价钱,jia4 qian5
+加强,jia1 qiang2
+假日,jia4 ri4
+加入,jia1 ru4
+加上,jia1 shang4
+家庭,jia1 ting2
+家乡,jia1 xiang1
+加油,jia1 you2
+加油站,jia1 you2 zhan4
+家长,jia1 zhang3
+基本,ji1 ben3
+基本上,ji1 ben3 shang5
+基础,ji1 chu3
+激动,ji1 dong4
+街道,jie1 dao4
+结果,jie2 guo3
+节假日
+解释,jie3 shi4
+接受,jie1 shou4
+节约,jie2 yue1
+结账
+接着,jie1 zhe5
+计划,ji4 hua4
+积极,ji1 ji2
+积累,ji1 lei3
+仅,jin3
+精彩,jing1 cai3
+警察,jing3 cha2
+景点,jing3 dian3
+经济,jing1 ji4
+京剧,jing1 ju4
+经历,jing1 li4
+景区
+竟然,jing4 ran2
+景色,jing3 se4
+尽管,jin3 guan3
+经验,jing1 yan4
+竞争,jing4 zheng1
+镜子,jing4 zi5
+今后,jin1 hou4
+仅仅,jin3 jin3
+进入,jin4 ru4
+进行,jin4 xing2
+紧张,jin3 zhang1
+禁止,jin4 zhi3
+既然,ji4 ran2
+及时,ji2 shi2
+即使,ji2 shi3
+技术,ji4 shu4
+究竟,jiu1 jing4
+就是,jiu4 shi4
+继续,ji4 xu4
+记者,ji4 zhe3
+聚,ju4
+举,ju3
+举办,ju3 ban4
+聚餐
+聚会,ju4 hui4
+拒绝,ju4 jue2
+距离,ju4 li2
+举例,ju3 li4
+举行,ju3 xing2
+剧院,ju4 yuan4
+开玩笑,kai1 wan2 xiao4
+看法,kan4 fa3
+烤,kao3
+考虑,kao3 lu:4
+考生
+咳,ke2
+克,ke4
+棵,ke1
+课程,ke4 cheng2
+科技,ke1 ji4
+肯定,ken3 ding4
+客气,ke4 qi4
+咳嗽,ke2 sou5
+课堂,ke4 tang2
+客厅,ke4 ting1
+可惜,ke3 xi1
+科学,ke1 xue2
+空,kong4
+空,kong1
+恐怕,kong3 pa4
+空气,kong1 qi4
+口语,kou3 yu3
+苦,ku3
+快餐,kuai4 can1
+快递,kuai4 di4
+快速,kuai4 su4
+困,kun4
+困难,kun4 nan5
+辣,la4
+拉,la1
+来不及,lai2 bu5 ji2
+来得及,lai2 de5 ji2
+垃圾,la1 ji1
+懒,lan3
+浪费,lang4 fei4
+浪漫,lang4 man4
+老虎,lao3 hu3
+老家,lao3 jia1
+老年,lao3 nian2
+老是,lao3 shi5
+冷静,leng3 jing4
+俩,lia3
+连,lian2
+凉,liang2
+量,liang2
+亮,liang4
+联系,lian2 xi4
+列,lie4
+理发
+厉害,li4 hai5
+理解,li3 jie3
+礼貌,li3 mao4
+另,ling4
+零下
+零花钱
+零钱,ling2 qian2
+零食,ling2 shi2
+另外,ling4 wai4
+力气,li4 qi5
+例如,li4 ru2
+留,liu2
+流,liu2
+流利,liu2 li4
+留下,liu2 xia4
+流行,liu2 xing2
+理想,li3 xiang3
+例子,li4 zi5
+乱,luan4
+旅馆
+路过,lu4 guo4
+旅客
+落,luo4
+律师
+旅行
+麻烦,ma2 fan5
+满,man3
+馒头,man2 tou5
+毛巾,mao2 jin1
+毛衣,mao2 yi1
+帽子,mao4 zi5
+美,mei3
+美好,mei3 hao3
+美景
+美丽,mei3 li4
+美食
+梦,meng4
+梦想,meng4 xiang3
+面对,mian4 dui4
+免费,mian3 fei4
+面试,mian4 shi4
+秒,miao3
+密码,mi4 ma3
+民族,min2 zu2
+末,mo4
+目标,mu4 biao1
+目的,mu4 di4
+目的地,mu4 di4 di4
+母女
+目前,mu4 qian2
+母亲,mu3 qin1
+母子
+耐心,nai4 xin1
+南部,nan2 bu4
+难道,nan2 dao4
+男士
+难受,nan2 shou4
+难忘,nan2 wang4
+男性,nan2 xing4
+内,nei4
+内容,nei4 rong2
+内心,nei4 xin1
+能否
+能够,neng2 gou4
+能力,neng2 li4
+嗯
+年底,nian2 di3
+年龄,nian2 ling2
+弄,nong4
+农村,nong2 cun1
+暖和,nuan3 huo2
+女性
+偶尔,ou3 er3
+排,pai2
+牌,pai2
+拍,pai1
+排队,pai2 dui4
+排球,pai2 qiu2
+牌子,pai2 zi5
+判断,pan4 duan4
+陪,pei2
+片,pian4
+篇,pian1
+皮肤,pi2 fu1
+平常,ping2 chang2
+乒乓球,ping1 pang1 qiu2
+批评,pi1 ping2
+脾气,pi2 qi4
+皮鞋,pi2 xie2
+破,po4
+普遍,pu3 bian4
+葡萄,pu2 tao5
+葡萄酒,pu2 tao5 jiu3
+普通,pu3 tong1
+普通话,pu3 tong1 hua4
+气,qi4
+期,qi1
+前方,qian2 fang1
+强,qiang2
+前后,qian2 hou4
+千克,qian1 ke4
+千万,qian1 wan4
+签证,qian1 zheng4
+桥,qiao2
+巧,qiao3
+敲,qiao1
+巧克力,qiao3 ke4 li4
+其次,qi2 ci4
+起到
+气候,qi4 hou4
+期末
+琴,qin2
+轻,qing1
+情况,qing2 kuang4
+青年,qing1 nian2
+轻松,qing1 song1
+庆祝,qing4 zhu4
+亲戚,qin1 qi5
+汽水,qi4 shui3
+球队,qiu2 dui4
+球迷,qiu2 mi2
+气温,qi4 wen1
+其中,qi2 zhong1
+期中
+取,qu3
+区,qu1
+全,quan2
+全部,quan2 bu4
+全都,quan2 dou1
+全球,quan2 qiu2
+全身,quan2 shen1
+区别,qu1 bie2
+取得,qu3 de2
+却,que4
+缺,que1
+缺点,que1 dian3
+缺少,que1 shao3
+确实,que4 shi2
+取消,qu3 xiao1
+然而,ran2 er2
+热闹,re4 nao5
+仍,reng2
+扔,reng1
+仍然,reng2 ran2
+任何,ren4 he2
+人生,ren2 sheng1
+人数,ren2 shu4
+任务,ren4 wu5
+人员,ren2 yuan2
+日常,ri4 chang2
+日记,ri4 ji4
+日期,ri4 qi1
+日子,ri4 zi5
+入,ru4
+入口,ru4 kou3
+入学,ru4 xue2
+入住
+散步,san4 bu4
+扫码
+森林,sen1 lin2
+商量,shang1 liang4
+上门,shang4 men2
+商品,shang1 pin3
+伤心,shang1 xin1
+稍,shao1
+少见
+少量,shao3 liang4
+少年,shao4 nian2
+少数,shao3 shu4
+稍微,shao1 wei1
+社会,she4 hui4
+身,shen1
+深,shen1
+身份证,shen1 fen4 zheng4
+剩,sheng4
+省,sheng3
+生,sheng1
+生命,sheng1 ming4
+生意,sheng1 yi5
+申请,shen1 qing3
+甚至,shen4 zhi4
+摄氏度
+使,shi3
+失败,shi1 bai4
+市场,shi4 chang3
+十分,shi2 fen1
+是否,shi4 fou3
+师傅,shi1 fu5
+使馆,shi3 guan3
+适合,shi4 he2
+实际,shi2 ji4
+世纪,shi4 ji4
+时间表,shi2 jian4 biao3
+实际上,shi2 ji4 shang4
+食品,shi2 pin3
+视频,shi4 pin2
+市区,shi4 qu1
+失去,shi1 qu4
+师生
+食堂,shi2 tang2
+试题
+失望,shi1 wang4
+食物,shi2 wu4
+适应,shi4 ying4
+使用,shi3 yong4
+实在,shi2 zai4
+十字路口,shi2 zi4 lu4 kou3
+首,shou3
+受不了
+首都,shou3 du1
+收费,shou1 fei4
+售票员,shou4 piao4 yuan2
+收入,shou1 ru4
+受伤,shou4 shang1
+收拾,shou1 shi5
+收听,shou1 ting1
+首先,shou3 xian1
+数,shu4
+输,shu1
+熟,shu2
+帅,shuai4
+暑假,shu3 jia4
+数量,shu4 liang4
+树林,shu4 lin2
+顺便,shun4 bian4
+顺利,shun4 li4
+顺序,shun4 xu4
+说法,shuo1 fa5
+说明,shuo1 ming2
+说明书,shuo1 ming2 shu1
+硕士,shuo4 shi4
+熟悉,shu2 xi1
+数字,shu4 zi4
+死,si3
+算,suan4
+酸,suan1
+酸奶,suan1 nai3
+速度,su4 du4
+随便,sui2 bian4
+随着,sui2 zhe5
+塑料,su4 liao4
+孙女,sun1 nu:3
+孙子,sun1 zi5
+所有,suo3 you3
+台,tai2
+抬,tai2
+态度,tai4 du5
+抬头,tai2 tou2
+弹,tan2
+谈,tan2
+趟,tang4
+躺,tang3
+汤,tang1
+讨论,tao3 lun4
+讨厌,tao3 yan4
+特点,te4 dian3
+提,ti2
+填写,tian2 xie3
+条件,tiao2 jian4
+提出,ti2 chu1
+提到,ti2 dao4
+提供,ti2 gong1
+体检,ti3 jian3
+停,ting2
+停车,ting2 che1
+停车场,ting2 che1 chang3
+听力,ting1 li4
+停止,ting2 zhi3
+听众,ting1 zhong4
+提前,ti2 qian2
+体温,ti3 wen1
+提醒,ti2 xing3
+体重,ti3 zhong4
+痛,tong4
+桶,tong3
+通,tong1
+通过,tong1 guo4
+童年,tong2 nian2
+同时,tong2 shi2
+同样,tong2 yang4
+通知,tong1 zhi1
+头痛,tou2 tong4
+图,tu2
+土,tu3
+推,tui1
+推迟,tui1 chi2
+推出,tui1 chu1
+脱,tuo1
+图片,tu2 pian4
+外出,wai4 chu1
+外套,wai4 tao4
+晚安,wan3 an1
+晚餐,wan3 can1
+网购
+往往,wang3 wang3
+网页,wang3 ye4
+网友
+网址,wang3 zhi3
+完全,wan2 quan2
+袜子,wa4 zi5
+为,wei2
+味,wei4
+味道,wei4 dao5
+卫生,wei4 sheng1
+危险,wei1 xian3
+闻,wen2
+温度,wen1 du4
+文件,wen2 jian4
+文章,wen2 zhang1
+文字,wen2 zi4
+无,wu2
+午餐,wu3 can1
+无法,wu2 fa3
+误会,wu4 hui4
+无聊,wu2 liao2
+无论,wu2 lun4
+污染,wu1 ran3
+细,xi4
+吸,xi1
+下降,xia4 jiang4
+咸,xian2
+鲜,xian1
+项,xiang4
+响,xiang3
+香,xiang1
+相比,xiang1 bi3
+想法,xiang3 fa3
+相反,xiang1 fan3
+相互,xiang1 hu4
+相同,xiang1 tong2
+详细,xiang2 xi4
+鲜花,xian1 hua1
+现金,xian4 jin1
+羡慕,xian4 mu4
+线上,xian4 shang4
+线下
+现有,xian4 you3
+小吃,xiao3 chi1
+效果,xiao4 guo3
+笑话,xiao4 hua4
+小伙子,xiao3 huo3 zi5
+小说,xiao3 shuo1
+消息,xiao1 xi5
+小组,xiao3 zu3
+西部,xi1 bu4
+血,xie3
+西红柿,xi1 hong2 shi4
+心,xin1
+性,xing4
+醒,xing3
+性别,xing4 bie2
+兴奋,xing1 fen4
+幸福,xing4 fu2
+性格,xing4 ge2
+星星,xing1 xing5
+信号,xin4 hao4
+辛苦,xin1 ku3
+心情,xin1 qing2
+信息,xin4 xi1
+信心,xin4 xin1
+熊,xiong2
+兄弟,xiong1 di4
+修,xiu1
+修理,xiu1 li3
+细心,xi4 xin1
+吸引,xi1 yin3
+许多,xu3 duo1
+学费,xue2 fei4
+学院,xue2 yuan4
+压,ya1
+牙膏,ya2 gao1
+压力,ya1 li4
+盐,yan2
+演,yan3
+烟,yan1
+演唱,yan3 chang4
+演出,yan3 chu1
+养成,yang3 cheng2
+严格,yan2 ge2
+阳光,yang2 guang1
+样子,yang4 zi5
+眼镜,yan3 jing4
+研究,yan2 jiu1
+研究生,yan2 jiu1 sheng1
+眼前,yan3 qian2
+演员,yan3 yuan2
+严重,yan2 zhong4
+邀请,yao1 qing3
+要是,yao4 shi4
+钥匙,yao4 shi5
+亚洲
+夜,ye4
+夜晚,ye4 wan3
+也许,ye3 xu3
+叶子,ye4 zi5
+已,yi3
+意见,yi4 jian4
+因此,yin1 ci3
+以内,yi3 nei4
+赢,ying2
+赢得,ying2 de2
+应聘,ying4 pin4
+引起,yin3 qi3
+印象,yin4 xiang4
+一切,yi1 qie4
+一生,yi1 sheng1
+艺术,yi4 shu4
+勇敢,yong3 gan3
+用来
+用于,yong4 yu2
+永远,yong3 yuan3
+由,you2
+油,you2
+优点,you1 dian3
+友好,you3 hao3
+幽默,you1 mo4
+尤其,you2 qi2
+友情,you3 qing2
+有趣,you3 qu4
+游玩
+有效,you3 xiao4
+优秀,you1 xiu4
+友谊,you3 yi4
+由于,you2 yu2
+有着,you3 zhe5
+与,yu3
+原来,yuan2 lai2
+远离,yuan3 li2
+原谅,yuan2 liang4
+原因,yuan2 yin1
+院长,yuan4 zhang3
+院子,yuan4 zi5
+约,yue1
+月饼,yue4 bing3
+阅读,yue4 du2
+月份,yue4 fen4
+约会,yue1 hui4
+语法,yu3 fa3
+愉快,yu2 kuai4
+云,yun2
+允许,yun3 xu3
+于是,yu2 shi4
+预习,yu4 xi2
+再次,zai4 ci4
+再说,zai4 shuo1
+暂时,zan4 shi2
+暂停,zan4 ting2
+早餐,zao3 can1
+早晨,zao3 chen2
+杂志,za2 zhi4
+增加,zeng1 jia1
+增长,zeng1 zhang3
+责任,ze2 ren4
+着,zhao2
+着火,zhao2 huo3
+招聘,zhao1 pin4
+者,zhe3
+证,zheng4
+整,zheng3
+正常,zheng4 chang2
+整个,zheng3 ge4
+正好,zheng4 hao3
+证件,zheng4 jian4
+整理,zheng3 li3
+证明,zheng4 ming2
+正确,zheng4 que4
+正式,zheng4 shi4
+真正,zhen1 zheng4
+值,zhi2
+指,zhi3
+之,zhi1
+支持,zhi1 chi2
+指出,zhi3 chu1
+值得,zhi2 de5
+支付,zhi1 fu4
+只好,zhi3 hao3
+之后,zhi1 hou4
+之间,zhi1 jian1
+直接,zhi2 jie1
+纸巾
+质量,zhi4 liang4
+之前,zhi1 qian2
+至少,zhi4 shao3
+知识,zhi1 shi5
+植物,zhi2 wu4
+职业,zhi2 ye4
+之中,zhi1 zhong1
+种,zhong4
+重,zhong4
+中餐
+重点,zhong4 dian3
+中年,zhong1 nian2
+重视,zhong4 shi4
+周围,zhou1 wei2
+祝,zhu4
+赚,zhuan4
+转,zhuan3
+转发
+装,zhuang1
+转机,zhuan3 ji1
+专门,zhuan1 men2
+专业,zhuan1 ye4
+祝贺,zhu4 he4
+著名,zhu4 ming2
+准,zhun3
+准确,zhun3 que4
+准时,zhun3 shi2
+主意,zhu3 yi5
+自,zi4
+资料,zi1 liao4
+自然,zi4 ran2
+自习
+仔细,zi3 xi4
+自信,zi4 xin4
+自学,zi4 xue2
+总结,zong3 jie2
+组,zu3
+租,zu1
+最终,zui4 zhong1
+尊重,zun1 zhong4
+座,zuo4
+做法,zuo4 fa3
+作家,zuo4 jia1
+做梦,zuo4 meng4
+作品,zuo4 pin3
+作为,zuo4 wei2
+座位,zuo4 wei4
+作文,zuo4 wen2
+作用,zuo4 yong4
+左右,zuo3 you4
+作者,zuo2 zhe3
+//HSK 3.0 (2026)/HSK5
+唉,ai4
+哎,ai1
+爱护,ai4 hu4
+哎呀,ai1 ya1
+暗,an4
+安,an1
+安全带,an1 quan2 dai4
+安慰,an1 wei4
+安装,an1 zhuang1
+熬夜,ao2 ye4
+白,bai2
+傍晚,bang4 wan3
+半夜,ban4 ye4
+薄
+宝,bao3
+保,bao3
+保安,bao3 an1
+宝贝,bao3 bei4
+保持,bao3 chi2
+保存,bao3 cun2
+报到,bao4 dao4
+报道,bao4 dao4
+报告,bao4 gao4
+宝贵,bao3 gui4
+包裹,bao1 guo3
+包含,bao1 han2
+报警,bao4 jing3
+包括,bao1 kuo4
+保留,bao3 liu2
+保险,bao3 xian3
+暴雨,bao4 yu3
+抱怨,bao4 yuan4
+保质期
+包装,bao1 zhuang1
+把握,ba3 wo4
+背,bei4
+背后,bei4 hou4
+背景,bei4 jing3
+被子,bei4 zi5
+本地,ben3 di4
+本领,ben3 ling3
+本人,ben3 ren2
+本质,ben3 zhi4
+必,bi4
+便,bian4
+变动,bian4 dong4
+便利,bian4 li4
+便利店
+表达,biao3 da2
+表面,biao3 mian4
+表明,biao3 ming2
+表情,biao3 qing2
+标题,biao1 ti2
+标志,biao1 zhi4
+彼此,bi3 ci3
+比分,bi3 fen1
+毕竟,bi4 jing4
+比例,bi3 li4
+避免,bi4 mian3
+闭幕式,bi4 mu4 shi4
+饼,bing3
+病房,bing4 fang2
+病情,bing4 qing2
+必然,bi4 ran2
+必需,bi4 xu1
+必要,bi4 yao4
+比喻,bi3 yu4
+拨打
+玻璃,bo1 li5
+博物馆,bo2 wu4 guan3
+补充,bu3 chong1
+不得了,bu4 de2 liao3
+不符,bu4 fu2
+不利,bu4 li4
+不良,bu4 liang2
+不然,bu4 ran2
+不幸,bu4 xing4
+步行,bu4 xing2
+不要紧,bu4 yao4 jin3
+不足,bu4 zu2
+采访,cai3 fang3
+裁判,cai2 pan4
+采取,cai3 qu3
+彩色,cai3 se4
+采用,cai3 yong4
+藏,cang2
+参考,can1 kao3
+餐饮,can1 yin3
+参与,can1 yu4
+操作,cao1 zuo4
+册,ce4
+测,ce4
+曾,ceng2
+曾经,ceng2 jing1
+测试,ce4 shi4
+插,cha1
+差别,cha1 bie2
+拆,chai1
+差距,cha1 ju4
+产,chan3
+长处,chang2 chu4
+长度,chang2 du4
+长久,chang2 jiu3
+长期,chang2 qi1
+常识,chang2 shi2
+尝试,chang2 shi4
+场所,chang3 suo3
+长途,chang2 tu2
+长远,chang2 yuan3
+产量,chan3 liang4
+产品,chan3 pin3
+产业,chan3 ye4
+朝,chao2
+吵,chao3
+炒,chao3
+超,chao1
+超出,chao1 chu1
+超级,chao1 ji2
+超速
+叉子,cha1 zi5
+彻底,che4 di3
+车祸,che1 huo4
+车库,che1 ku4
+车辆,che1 liang4
+沉,chen2
+称,cheng1
+成本,cheng2 ben3
+承担,cheng2 dan1
+程度,cheng2 du4
+成分,cheng2 fen4
+成果,cheng2 guo3
+成就,cheng2 jiu4
+成立,cheng2 li4
+成年,cheng2 nian2
+城区,cheng2 qu1
+成人,cheng2 ren2
+承认,cheng2 ren4
+承受,cheng2 shou4
+成熟,cheng2 shu2
+称为,cheng1 wei2
+乘务员,cheng2 wu4 yuan2
+程序,cheng2 xu4
+成员,cheng2 yuan2
+称赞,cheng1 zan4
+成长,cheng2 zhang3
+橙子
+沉默,chen2 mo4
+车厢,che1 xiang1
+车主
+池,chi2
+翅膀,chi4 bang3
+持续,chi2 xu4
+尺子,chi3 zi5
+冲,chong1
+充电
+充分,chong1 fen4
+重复,chong2 fu4
+充满,chong1 man3
+宠物,chong3 wu4
+充值
+虫子,chong2 zi5
+充足,chong1 zu2
+臭,chou4
+丑,chou3
+抽,chou1
+处,chu4
+处,chu3
+初,chu1
+传,chuan2
+传播,chuan2 bo1
+传递,chuan2 di4
+床单,chuang2 dan1
+窗台,chuang1 tai2
+创新,chuang4 xin1
+创业,chuang4 ye4
+创造,chuang4 zao4
+创作,chuang4 zuo4
+传说,chuan2 shuo1
+传统,chuan2 tong3
+出版,chu1 ban3
+初级,chu1 ji2
+处理,chu3 li3
+初期,chu1 qi1
+出色,chu1 se4
+出售,chu1 shou4
+除夕,chu2 xi1
+出席,chu1 xi2
+处于,chu3 yu2
+出自
+此后,ci3 hou4
+词汇,ci2 hui4
+刺激,ci4 ji1
+此前,ci3 qian2
+此时,ci3 shi2
+辞职,ci2 zhi2
+从不,cong2 bu4
+从而,cong2 er2
+从前,cong2 qian2
+从事,cong2 shi4
+催,cui1
+促进,cu4 jin4
+存放,cun2 fang4
+存款,cun2 kuan3
+存在,cun2 zai4
+措施,cuo4 shi1
+促使,cu4 shi3
+促销,cu4 xiao1
+打扮,da3 ban4
+打包,da3 bao1
+达成,da2 cheng2
+大胆,da4 dan3
+打断
+大多,da4 duo1
+大会,da4 hui4
+代,dai4
+代表,dai4 biao3
+带动,dai4 dong4
+代替,dai4 ti4
+待遇,dai4 yu4
+大力,da4 li4
+大妈,da4 ma1
+大米,da4 mi3
+淡,dan4
+单,dan1
+大脑,da4 nao3
+单独,dan1 du2
+当,dang4
+挡,dang3
+当成,dang4 cheng2
+当地,dang1 di4
+当年,dang1 nian2
+当前,dang1 qian2
+当中,dang1 zhong1
+当作,dang4 zuo4
+担任,dan1 ren4
+胆小,dan3 xiao3
+单一,dan1 yi1
+单元,dan1 yuan2
+倒,dao3
+到达,dao4 da2
+道理,dao4 li3
+到期,dao4 qi1
+导演,dao3 yan3
+导致,dao3 zhi4
+大批,da4 pi1
+打破,da3 po4
+大厦,da4 sha4
+大事,da4 shi4
+打听,da3 ting5
+大象,da4 xiang4
+大型,da4 xing2
+大爷,da4 ye5
+大于,da4 yu2
+大众,da4 zhong4
+登,deng1
+等待,deng3 dai4
+灯光,deng1 guang1
+等候,deng3 hou4
+登记,deng1 ji4
+登录,deng1 lu4
+等于,deng3 yu2
+递,di4
+电池,dian4 chi2
+电动
+电器,dian4 qi4
+电商
+电视台,dian4 shi4 tai2
+点心,dian3 xin1
+点赞
+电子版
+调,diao4
+调研
+地理,di4 li3
+地面,di4 mian4
+定期,ding4 qi1
+地区,di4 qu1
+的确,di2 que4
+敌人,di2 ren2
+低头,di1 tou2
+丢失,diu1 shi1
+地位,di4 wei4
+地下,di4 xia4
+地震,di4 zhen4
+冻,dong4
+洞,dong4
+动画,dong4 hua4
+动人,dong4 ren2
+动手,dong4 shou3
+豆腐,dou4 fu5
+豆浆,dou4 jiang1
+度,du4
+堵,du3
+断,duan4
+短处,duan3 chu4
+短期,duan3 qi1
+堆,dui1
+对比,dui4 bi3
+对待,dui4 dai4
+对手,dui4 shou3
+队伍,dui4 wu3
+对象,dui4 xiang4
+独立,du2 li4
+吨,dun1
+朵,duo3
+躲,duo3
+独特,du2 te4
+读音,du2 yin1
+独自,du2 zi4
+儿女,er2 nu:3
+二手
+二维码
+罚,fa2
+发表,fa1 biao3
+发布,fa1 bu4
+发达,fa1 da2
+发挥,fa1 hui1
+罚款,fa2 kuan3
+发明,fa1 ming2
+反,fan3
+翻,fan1
+反而,fan3 er2
+反复,fan3 fu4
+防,fang2
+方,fang1
+方案,fang1 an4
+仿佛,fang3 fu2
+访问,fang3 wen4
+房屋,fang2 wu1
+防止,fang2 zhi3
+返回,fan3 hui2
+番茄,fan1 qie2
+繁荣,fan2 rong2
+范围,fan4 wei2
+反应,fan3 ying4
+反映,fan3 ying4
+反正,fan3 zheng4
+发起,fa1 qi3
+发言,fa1 yan2
+发音,fa1 yin1
+法院,fa3 yuan4
+飞行,fei1 xing2
+飞行员,fei1 xing2 yuan2
+非洲,fei1 zhou1
+分别,fen1 bie2
+分布,fen1 bu4
+奋斗,fen4 dou4
+纷纷,fen1 fen1
+丰富多彩,feng1 fu4 duo1 cai3
+风格,feng1 ge2
+疯狂,feng1 kuang2
+风俗,feng1 su2
+风险,feng1 xian3
+分类,fen1 lei4
+分离,fen1 li2
+分配,fen1 pei4
+分手,fen1 shou3
+分析,fen1 xi1
+分享,fen1 xiang3
+否定,fou3 ding4
+否认,fou3 ren4
+扶,fu2
+福,fu2
+副,fu4
+富,fu4
+付出,fu4 chu1
+负担,fu4 dan1
+夫妇,fu1 fu4
+妇女,fu4 nu:3
+富有,fu4 you3
+复制,fu4 zhi4
+服装,fu2 zhuang1
+盖,gai4
+改革,gai3 ge2
+改进,gai3 jin4
+概括,gai4 kuo4
+概念,gai4 nian4
+改善,gai3 shan4
+改天
+改正,gai3 zheng4
+刚好,gang1 hao3
+敢于,gan3 yu2
+搞,gao3
+告别,gao4 bie2
+高大,gao1 da4
+高档,gao1 dang4
+高度,gao1 du4
+高级,gao1 ji2
+高科技,gao1 ke1 ji4
+高效
+隔,ge2
+个别,ge4 bie2
+歌词,ge1 ci2
+各行各业,ge4 hang2 ge4 ye4
+根,gen1
+根本,gen1 ben3
+更换,geng1 huan4
+更新,geng1 xin1
+歌曲,ge1 qu3
+个人,ge4 ren2
+格外,ge2 wai4
+个性,ge4 xing4
+各自,ge4 zi5
+公布,gong1 bu4
+工程,gong1 cheng2
+工程师,gong1 cheng2 shi1
+工具,gong1 ju4
+功能,gong1 neng2
+公平,gong1 ping2
+公务员,gong1 wu4 yuan2
+恭喜,gong1 xi3
+贡献,gong4 xian4
+共享,gong4 xiang3
+工业,gong1 ye4
+工艺,gong1 yi4
+公寓,gong1 yu4
+构成,gou4 cheng2
+沟通,gou1 tong1
+古,gu3
+鼓,gu3
+挂号,gua4 hao4
+怪,guai4
+关闭,guan1 bi4
+观察,guan1 cha2
+观点,guan1 dian3
+广,guang3
+广场,guang3 chang3
+广大,guang3 da4
+广泛,guang3 fan4
+光临,guang1 lin2
+光明,guang1 ming2
+光线,guang1 xian4
+冠军,guan4 jun1
+观念,guan1 nian4
+古代,gu3 dai4
+固定,gu4 ding4
+规律,gui1 lu:4
+规模,gui1 mo2
+贵姓,gui4 xing4
+规则,gui1 ze2
+柜子,gui4 zi5
+古老,gu3 lao3
+滚,gun3
+锅,guo1
+过度,guo4 du4
+过分,guo4 fen4
+国画
+过敏,guo4 min3
+过期,guo4 qi1
+国庆,guo2 qing4
+果然,guo3 ran2
+果实,guo3 shi2
+过于,guo4 yu2
+故乡,gu4 xiang4
+鼓掌,gu3 zhang3
+哈,ha1
+海关,hai3 guan1
+海外,hai3 wai4
+海鲜,hai3 xian1
+含,han2
+行,hang2
+行业,hang2 ye4
+含量,han2 liang4
+汗水
+含有,han2 you3
+好,hao4
+好评
+好奇,hao4 qi2
+好运,hao3 yun4
+好转,hao3 zhuan3
+合,he2
+合法,he2 fa3
+盒饭
+黑,hei1
+合理,he2 li3
+河流,he2 liu2
+合同,he2 tong5
+合影,he2 ying3
+合作,he2 zuo4
+红,hong2
+厚度,hou4 du4
+后果,hou4 guo3
+猴子,hou2 zi5
+湖,hu2
+滑,hua2
+划,hua2
+化,hua4
+话费
+花费,hua1 fei4
+画面,hua4 mian4
+黄瓜,huang2 gua1
+黄金,huang2 jin1
+环节,huan2 jie2
+缓解,huan3 jie3
+缓慢,huan3 man4
+话题,hua4 ti2
+化学,hua4 xue2
+蝴蝶,hu2 die2
+互动,hu4 dong4
+灰,hui1
+挥,hui1
+恢复,hui1 fu4
+汇率,hui4 lu:4
+灰色,hui1 se4
+回收,hui2 shou1
+婚礼,hun1 li3
+伙,huo3
+伙伴,huo3 ban4
+火锅,huo3 guo1
+或是,huo4 shi4
+货物,huo4 wu4
+或许,huo4 xu3
+忽视,hu1 shi4
+胡同,hu2 tong4
+户外,hu4 wai4
+呼吸,hu1 xi1
+及,ji2
+级,ji2
+集,ji2
+系,ji4
+挤,ji3
+架,jia4
+甲,jia3
+嘉宾
+家电
+加工,jia1 gong1
+建,jian4
+键,jian4
+捡,jian3
+剪,jian3
+剪刀,jian3 dao1
+减肥,jian3 fei2
+讲话,jiang3 hua4
+将近,jiang1 jin4
+讲究,jiang3 jiu4
+奖励,jiang3 li4
+讲述,jiang3 shu4
+降水,jiang4 shui3
+讲座,jiang3 zuo4
+渐渐,jian4 jian4
+艰苦,jian1 ku4
+建立,jian4 li4
+简历,jian3 li4
+键盘,jian4 pan2
+坚强,jian1 qiang2
+建设,jian4 she4
+建造,jian4 zao4
+简直,jian3 zhi2
+建筑,jian4 zhu4
+较,jiao4
+浇,jiao1
+脚步,jiao3 bu4
+教材,jiao4 cai2
+角度,jiao3 du4
+交换,jiao1 huan4
+交往,jiao1 wang3
+交易,jiao1 yi4
+加热,jia1 re4
+假如,jia3 ru2
+加深,jia1 shen1
+驾驶,jia4 shi3
+加速,jia1 su4
+家务,jia1 wu4
+驾照,jia4 zhao4
+价值,jia4 zhi2
+疾病,ji2 bing4
+季度,ji4 du4
+结,jie2
+届,jie4
+接触,jie1 chu4
+接待,jie1 dai4
+阶段,jie1 duan4
+结构,jie2 gou4
+结合,jie2 he2
+接近,jie1 jin4
+结论,jie2 lun4
+节省,jie2 sheng3
+接收,jie1 shou1
+及格,ji2 ge2
+机构,ji1 gou4
+集合,ji2 he2
+即将,ji2 jiang1
+激烈,ji1 lie4
+记录,ji4 lu4
+纪录,ji4 lu4
+纪录片,ji4 lu4 pian4
+急忙,ji2 mang2
+紧,jin3
+进步,jin4 bu4
+近代,jin4 dai4
+技能,ji4 neng2
+静,jing4
+经典,jing1 dian3
+精力,jing1 li4
+精神,jing1 shen2
+惊喜,jing1 xi3
+经营,jing1 ying2
+纪念,ji4 nian4
+纪念日,ji4 nian4 ri4
+紧急,jin3 ji2
+进口,jin4 kou3
+尽快,jin3 kuai4
+尽力,jin4 li4
+尽量,jin4 liang4
+紧密,jin3 mi4
+近年来,jin4 nian2 lai2
+近期,jin4 qi1
+近日,jin4 ri4
+今日,jin1 ri4
+谨慎,jin3 shen4
+进一步,jin4 yi1 bu4
+极其,ji2 qi2
+机器,ji1 qi4
+机器人,ji1 qi4 ren2
+肌肉,ji1 rou4
+计算,ji4 suan4
+计算机,ji4 suan4 ji1
+集体,ji2 ti3
+救,jiu4
+酒吧,jiu3 ba1
+救护车,jiu4 hu4 che1
+就业,jiu4 ye4
+久远,jiu3 yuan3
+急需,ji2 xu1
+记忆,ji4 yi4
+记载,ji4 zai3
+急诊
+集中,ji2 zhong1
+据,ju4
+据,ju4
+距,ju4
+捐,juan1
+具备,ju4 bei4
+剧场,ju4 chang3
+巨大,ju4 da4
+绝对,jue2 dui4
+决赛,jue2 sai4
+角色,jue2 se4
+决心,jue2 xin1
+居民,ju1 min2
+居然,ju1 ran2
+据说,ju4 shuo1
+具体,ju4 ti3
+具有,ju4 you3
+居住,ju1 zhu4
+橘子,ju2 zi5
+开发,kai1 fa1
+开放,kai1 fang4
+开幕,kai1 mu4
+开幕式,kai1 mu4 shi4
+开水,kai1 shui3
+开通,kai1 tong5
+开业,kai1 ye4
+开展,kai1 zhan3
+看,kan1
+看望,kan4 wang4
+看作,kan4 zuo4
+靠,kao4
+靠近,kao4 jin4
+颗,ke1
+克服,ke4 fu2
+客服
+客观,ke4 guan1
+客户,ke4 hu4
+可见,ke3 jian4
+可靠,ke3 kao4
+可怕,ke3 pa4
+科研,ke1 yan2
+空间,kong1 jian1
+控制,kong4 zhi4
+空中,kong1 zhong1
+口袋,kou3 dai4
+口味,kou3 wei4
+库,ku4
+宽,kuan1
+宽度,kuan1 du4
+亏,kui1
+昆虫,kun1 chong2
+扩大,kuo4 da4
+来源,lai2 yuan2
+老百姓,lao3 bai3 xing4
+老板,lao3 ban3
+劳动,lao2 dong4
+老公,lao3 gong5
+姥姥,lao3 lao5
+老婆,lao3 po2
+姥爷
+乐观,le4 guan1
+泪,lei4
+类,lei4
+泪水,lei4 shui3
+类似,lei4 si4
+类型,lei4 xing2
+乐趣,le4 qu4
+梨,li2
+力,li4
+恋爱,lian4 ai4
+量,liang4
+良好,liang2 hao3
+粮食,liang2 shi5
+联合,lian2 he2
+连接,lian2 jie1
+连忙,lian2 mang2
+脸色,lian3 se4
+连续,lian2 xu4
+了不起,liao3 bu5 qi3
+列车,lie4 che1
+离婚,li2 hun1
+立即,li4 ji2
+立刻,li4 ke4
+力量,li4 liang5
+理论,li3 lun4
+厘米,li2 mi3
+铃,ling2
+令,ling4
+领,ling3
+领带,ling3 dai4
+领导,ling3 dao3
+灵活,ling2 huo2
+领取,ling3 qu3
+领先,ling3 xian1
+领域,ling3 yu4
+临时,lin2 shi2
+利润,li4 run4
+里头,li3 tou5
+流传,liu2 chuan2
+流感,liu2 gan3
+浏览,liu2 lan3
+留言,liu2 yan2
+利益,li4 yi4
+利用,li4 yong4
+理由,li3 you2
+离职
+龙,long2
+漏,lou4
+录,lu4
+陆地,lu4 di4
+论文,lun4 wen2
+逻辑,luo2 ji5
+录取,lu4 qu3
+路人,lu4 ren2
+路线,lu4 xian4
+旅行社
+陆续,lu4 xu4
+录音,lu4 yin1
+骂,ma4
+买卖,mai3 mai4
+忙碌,mang2 lu4
+满足,man3 zu2
+毛笔,mao2 bi3
+毛病,mao2 bing4
+矛盾,mao2 dun4
+没法儿
+玫瑰,mei2 gui1
+魅力,mei4 li4
+美术,mei3 shu4
+媒体,mei2 ti3
+美味,mei3 wei4
+门诊,men2 zhen3
+迷,mi2
+面积,mian4 ji5
+面临,mian4 lin2
+面向,mian4 xiang4
+描述,miao2 shu4
+迷路
+秘密,mi4 mi4
+命,ming4
+敏感,min3 gan3
+名称,ming2 cheng1
+名牌,ming2 pai2
+名片,ming2 pian4
+明确,ming2 que4
+明显,ming2 xian3
+明星,ming2 xing1
+命运,ming4 yun4
+密切,mi4 qie4
+秘书,mi4 shu1
+摸,mo1
+模糊,mo2 hu5
+陌生,mo4 sheng1
+模式,mo2 shi4
+某,mou3
+目光,mu4 guang1
+木头,mu4 tou5
+难得,nan2 de2
+难度,nan2 du4
+难以,nan2 yi3
+男子,nan2 zi3
+闹,nao4
+闹钟,nao4 zhong1
+哪怕,na3 pa4
+内部,nei4 bu4
+能干,neng2 gan4
+念,nian4
+年初,nian2 chu1
+年代,nian2 dai4
+年纪,nian2 ji4
+年夜饭,nian2 ye4 fan4
+牛仔裤,niu2 zai3 ku4
+浓,nong2
+农民,nong2 min2
+农业,nong2 ye4
+女子,nu:3 zi3
+哦,o2
+偶然,ou3 ran2
+欧洲,ou1 zhou1
+派,pai4
+派出所,pai4 chu1 suo3
+排列,pai2 lie4
+拍摄,pai1 she4
+跑道,pao3 dao4
+赔,pei2
+配,pei4
+陪伴,pei2 ban4
+配合,pei4 he2
+配送
+培训,pei2 xun4
+培养,pei2 yang3
+盆,pen2
+碰,peng4
+碰见,peng4 jian4
+匹,pi3
+批,pi1
+骗,pian4
+品,pin3
+拼,pin1
+平,ping2
+评,ping2
+凭,ping2
+平安,ping2 an1
+平衡,ping2 heng2
+评价,ping2 jia4
+凭借,ping2 jie4
+平静,ping2 jing4
+平均,ping2 jun1
+屏幕,ping2 mu4
+平台,ping2 tai2
+品牌,pin3 pai2
+聘请,pin4 qing3
+拼音,pin1 yin1
+品质,pin3 zhi4
+品种,pin3 zhong3
+批准,pi1 zhun3
+破坏,po4 huai4
+普及,pu3 ji2
+齐,qi2
+其,qi2
+欠,qian4
+浅,qian3
+签,qian1
+签订,qian1 ding4
+墙,qiang2
+抢,qiang3
+强大,qiang2 da4
+强调,qiang2 diao4
+强度,qiang2 du4
+抢救,qiang3 jiu4
+强烈,qiang2 lie4
+前进,qian2 jin4
+前来
+签名,qian1 ming2
+前途,qian2 tu2
+前往,qian2 wang3
+签字,qian1 zi4
+悄悄,qiao3 qiao3
+期待,qi1 dai4
+切,qie1
+奇迹,qi2 ji4
+期间,qi1 jian1
+亲,qin1
+亲爱,qin1 ai4
+勤奋,qin2 fen4
+青,qing1
+情感,qing2 gan3
+请教,qing3 jiao4
+情景,qing2 jing3
+请求,qing3 qiu2
+情绪,qing2 xu4
+轻易,qing1 yi4
+轻重
+亲朋好友
+亲切,qin1 qie4
+亲情
+亲人,qin1 ren2
+亲自,qin1 zi4
+穷,qiong2
+气球,qi4 qiu2
+企业,qi3 ye4
+汽油,qi4 you2
+其余,qi2 yu2
+权,quan2
+劝,quan4
+权利,quan2 li4
+全力,quan2 li4
+全面,quan2 mian4
+全体,quan2 ti3
+全新,quan2 xin1
+确保,que4 bao3
+确定,que4 ding4
+缺乏,que1 fa2
+确认,que4 ren4
+群,qun2
+群体,qun2 ti3
+去世,qu4 shi4
+趋势,qu1 shi4
+区域,qu1 yu4
+燃烧,ran2 shao1
+绕,rao4
+热爱,re4 ai4
+热量,re4 liang4
+热烈,re4 lie4
+认,ren4
+忍,ren3
+人才,ren2 cai2
+人工,ren2 gong1
+人际,ren2 ji4
+人口,ren2 kou3
+人类,ren2 lei4
+人力,ren2 li4
+人民,ren2 min2
+人民币,ren2 min2 bi4
+人群,ren2 qun2
+人体,ren2 ti3
+人物,ren2 wu4
+热心,re4 xin1
+日历,ri4 li4
+日用品,ri4 yong4 pin3
+如,ru2
+软,ruan3
+软件,ruan3 jian4
+如此,ru2 ci3
+如何,ru2 he2
+如今,ru2 jin1
+弱,ruo4
+如同,ru2 tong2
+如下,ru2 xia4
+洒,sa3
+赛场
+色彩,se4 cai3
+傻,sha3
+晒,shai4
+沙漠,sha1 mo4
+删,shan1
+扇,shan1
+擅长,shan4 chang2
+删除,shan1 chu2
+赏,shang3
+伤,shang1
+上传
+伤害,shang1 hai4
+商家
+商人,shang1 ren2
+上升,shang4 sheng1
+商务,shang1 wu4
+上下,shang4 xia4
+商业,shang1 ye4
+上涨,shang4 zhang3
+善良,shan4 liang2
+山区,shan1 qu1
+善于,shan4 yu2
+扇子,shan1 zi5
+烧,shao1
+烧烤,shao1 kao3
+沙子,sha1 zi5
+蛇,she2
+设备,she4 bei4
+舍不得,she3 bu5 de5
+舍得,she3 de5
+设计,she4 ji4
+设立,she4 li4
+伸,shen1
+身材,shen1 cai2
+深度,shen1 du4
+身份,shen1 fen4
+胜,sheng4
+升,sheng1
+生产,sheng1 chan3
+生存,sheng1 cun2
+生动,sheng1 dong4
+省份,sheng3 fen4
+省会,sheng3 hui4
+升级,sheng1 ji2
+胜利,sheng4 li4
+升温
+生物,sheng1 wu4
+生肖,sheng1 xiao4
+生长,sheng1 zhang3
+深厚,shen1 hou4
+神话,shen2 hua4
+深刻,shen1 ke4
+神秘,shen2 mi4
+深入,shen1 ru4
+深远,shen1 yuan3
+社区,she4 qu1
+设施,she4 shi1
+摄影,she4 ying3
+设置,she4 zhi4
+式,shi4
+诗,shi1
+湿,shi1
+时差,shi2 cha1
+时常,shi2 chang2
+时代,shi2 dai4
+适当,shi4 dang4
+似的
+使得,shi3 de5
+事故,shi4 gu4
+实践,shi2 jian4
+事件,shi4 jian4
+试卷,shi4 juan4
+时刻,shi2 ke4
+实力,shi2 li4
+失恋,shi1 lian4
+失眠,shi1 mian2
+市民,shi4 min2
+时期,shi2 qi1
+诗人,shi1 ren2
+实施,shi2 shi1
+事实,shi4 shi2
+石头,shi2 tou5
+视为,shi4 wei2
+事物,shi4 wu4
+失误,shi1 wu4
+实习,shi2 xi2
+实现,shi2 xian4
+事先,shi4 xian1
+实行,shi2 xing2
+实验,shi2 yan4
+试验,shi4 yan4
+实验室,shi2 yan4 shi4
+事业,shi4 ye4
+失业,shi1 ye4
+实用,shi2 yong4
+食用,shi2 yong4
+试用,shi4 yong4
+适用,shi4 yong4
+始终,shi3 zhong1
+守,shou3
+首次,shou3 ci4
+手段,shou3 duan4
+手工,shou3 gong1
+收获,shou1 huo4
+收集,shou1 ji2
+售价,shou4 jia4
+收看
+手术,shou3 shu4
+手套,shou3 tao4
+手续,shou3 xu4
+手指,shou3 zhi3
+束,shu4
+数,shu3
+摔,shuai1
+双方,shuang1 fang1
+鼠标,shu3 biao1
+蔬菜,shu1 cai4
+书法,shu1 fa3
+书房,shu1 fang2
+税,shui4
+水分,shui3 fen4
+睡眠,shui4 mian2
+书架,shu1 jia4
+数据,shu4 ju4
+熟练,shu2 lian4
+树木,shu4 mu4
+顺,shun4
+说不定,shuo1 bu5 ding4
+说服,shuo1 fu2
+熟人,shu2 ren2
+输入,shu1 ru4
+舒适,shu1 shi4
+属于,shu3 yu2
+四处,si4 chu4
+似乎,si4 hu5
+思考,si1 kao3
+私人,si1 ren2
+思维,si1 wei2
+思想,si1 xiang3
+四周,si4 zhou1
+搜,sou1
+搜索,sou1 suo3
+酸甜苦辣
+随,sui2
+碎,sui4
+随后,sui2 hou4
+随时,sui2 shi2
+随手,sui2 shou3
+随意,sui2 yi4
+损害,sun3 hai4
+损失,sun3 shi1
+所,suo3
+锁,suo3
+缩短,suo1 duan3
+缩小,suo1 xiao3
+宿舍,su4 she4
+台灯,tai2 deng1
+台阶,tai2 jie1
+太太,tai4 tai5
+谈话,tan2 hua4
+桃,tao2
+套,tao4
+他人,ta1 ren2
+特产,te4 chan3
+疼痛,teng2 tong4
+特色,te4 se4
+特殊,te4 shu1
+特有
+特征,te4 zheng1
+替,ti4
+填,tian2
+天空,tian1 kong1
+甜品,tian2 pin3
+天上,tian1 shang4
+调,tiao2
+挑,tiao1
+跳高,tiao4 gao1
+调皮,tiao2 pi2
+挑选,tiao1 xuan3
+跳远,tiao4 yuan3
+挑战,tiao3 zhan4
+调整,tiao2 zheng3
+提倡,ti2 chang4
+贴,tie1
+铁路,tie3 lu4
+体会,ti3 hui4
+提交,ti2 jiao1
+体力,ti3 li4
+题目,ti2 mu4
+停留,ting2 liu2
+提起
+提升,ti2 sheng1
+提问,ti2 wen4
+体现,ti3 xian4
+体验,ti3 yan4
+同,tong2
+通常,tong1 chang2
+统计,tong3 ji4
+痛苦,tong4 ku3
+同情,tong2 qing2
+通行,tong1 xing2
+同一,tong2 yi1
+统一,tong3 yi1
+头,tou5
+投,tou2
+投入,tou2 ru4
+团,tuan2
+团队,tuan2 dui4
+突出,tu1 chu1
+土地,tu3 di4
+土豆,tu3 dou4
+图画,tu2 hua4
+退,tui4
+退出,tui4 chu1
+推动,tui1 dong4
+推广,tui1 guang3
+退还,tui4 huan2
+推荐,tui1 jian4
+推进,tui1 jin4
+退休,tui4 xiu1
+拖鞋,tuo1 xie2
+图书,tu2 shu1
+兔子,tu4 zi5
+外部,wai4 bu4
+外公,wai4 gong1
+外观,wai4 guan1
+外婆,wai4 po2
+外形,wai4 xing2
+弯,wan1
+往返,wang3 fan3
+网络,wang3 luo4
+玩具,wan2 ju4
+完美,wan2 mei3
+完善,wan2 shan4
+万一,wan4 yi1
+完整,wan2 zheng3
+围,wei2
+胃,wei4
+尾巴,wei3 ba5
+维持,wei2 chi2
+伟大,wei3 da4
+违法,wei2 fa3
+违反,wei2 fan3
+危害,wei1 hai4
+围巾,wei2 jin1
+未来,wei4 lai2
+围绕,wei2 rao3
+微笑,wei1 xiao4
+威胁,wei1 xie2
+维修,wei2 xiu1
+唯一,wei2 yi1
+位于,wei4 yu2
+位置,wei4 zhi5
+稳定,wen3 ding4
+问卷
+温暖,wen1 nuan3
+文学,wen2 xue2
+握,wo4
+卧室,wo4 shi4
+握手,wo4 shou3
+雾,wu4
+舞蹈,wu3 dao3
+无关,wu2 guan1
+物价,wu4 jia4
+物理,wu4 li3
+无奈,wu2 nai4
+物品,wu4 pin3
+无数,wu2 shu4
+武术,wu3 shu4
+舞台,wu3 tai2
+无限,wu2 xian4
+无效,wu2 xiao4
+五颜六色,wu3 yan2 liu4 se4
+物业
+物质,wu4 zhi4
+戏,xi4
+系,xi4
+闲,xian2
+县,xian4
+现场,xian4 chang3
+现代,xian4 dai4
+现代化,xian4 dai4 hua4
+显得,xian3 de5
+乡,xiang1
+相册
+相处,xiang1 chu3
+乡村,xiang1 cun1
+相当,xiang1 dang1
+相对,xiang1 dui4
+相关,xiang1 guan1
+项目,xiang4 mu4
+想念,xiang3 nian4
+橡皮,xiang4 pi2
+向上,xiang4 shang4
+响声,xiang3 sheng1
+享受,xiang3 shou4
+相似,xiang1 si4
+想象,xiang3 xiang4
+象征,xiang4 zheng1
+先后,xian1 hou4
+先进,xian1 jin4
+线路,xian4 lu4
+显然,xian3 ran5
+现实,xian4 shi2
+显示,xian3 shi4
+现象,xian4 xiang4
+限制,xian4 zhi4
+现状,xian4 zhuang4
+消费,xiao1 fei4
+消费者,xiao1 fei4 zhe3
+消化,xiao1 hua4
+消极,xiao1 ji2
+小姐,xiao3 jie5
+销量,xiao1 liang4
+效率,xiao4 lu:4
+消失,xiao1 shi1
+销售,xiao1 shou4
+小型,xiao3 xing2
+小于
+下载,xia4 zai4
+西餐,xi1 can1
+斜,xie2
+协议,xie2 yi4
+写作,xie3 zuo4
+吸管,xi1 guan3
+细节,xi4 jie2
+戏剧,xi4 ju4
+信封,xin4 feng1
+行程,xing2 cheng2
+形成,xing2 cheng2
+行动,xing2 dong4
+行人,xing2 ren2
+形容,xing2 rong2
+形式,xing2 shi4
+形势,xing2 shi4
+行驶,xing2 shi3
+行为,xing2 wei2
+形象,xing2 xiang4
+幸运,xing4 yun4
+性质,xing4 zhi4
+形状,xing2 zhuang4
+行走,xing2 zou3
+新郎,xin1 lang2
+心理,xin1 li3
+新娘,xin1 niang2
+信任,xin4 ren4
+新人,xin1 ren2
+欣赏,xin1 shang3
+心态,xin1 tai4
+新型,xin1 xing2
+信用,xin4 yong4
+吸收,xi1 shou1
+系统,xi4 tong3
+修改,xiu1 gai3
+修建,xiu1 jian4
+休闲,xiu1 xian2
+西装,xi1 zhuang1
+需,xu1
+宣布,xuan1 bu4
+宣传,xuan1 chuan2
+选手,xuan3 shou3
+学分,xue2 fen1
+雪糕
+学科,xue2 ke1
+学历,xue2 li4
+学年,xue2 nian2
+学术,xue2 shu4
+学者,xue2 zhe3
+训练,xun4 lian4
+迅速,xun4 su4
+询问,xun2 wen4
+寻找,xun2 zhao3
+需求,xu1 qiu2
+虚心,xu1 xin1
+呀,ya5
+牙齿,ya2 chi3
+押金
+沿,yan2
+眼,yan3
+延长,yan2 chang2
+研发,yan2 fa1
+样式,yang4 shi4
+阳台,yang2 tai2
+演讲,yan3 jiang3
+眼泪,yan3 lei4
+严肃,yan2 su4
+研制,yan2 zhi4
+摇,yao2
+咬,yao3
+腰,yao1
+要不,yao4 bu5
+要不然,yao4 bu5 ran2
+要不是,yao4 bu5 shi4
+药品,yao4 pin3
+药物,yao4 wu4
+压岁钱
+鸭子,ya1 zi5
+夜间,ye4 jian1
+夜市,ye4 shi4
+业务,ye4 wu4
+业余,ye4 yu2
+移,yi2
+亿,yi4
+乙,yi3
+以,yi3
+一次性
+一代,yi1 dai4
+一旦,yi1 dan4
+移动,yi2 dong4
+遗憾,yi2 han4
+以及,yi3 ji2
+依据,yi1 ju4
+依靠,yi1 kao4
+以来,yi3 lai2
+医疗,yi1 liao2
+一路
+一路顺风,yi1 lu4 shun4 feng1
+因而,yin1 er2
+迎,ying2
+硬,ying4
+应当,ying1 dang1
+应对,ying4 dui4
+硬件,ying4 jian4
+迎接,ying2 jie1
+影片,ying3 pian4
+影视,ying3 shi4
+营养,ying2 yang3
+营业,ying2 ye4
+应用,ying4 yong4
+引进,yin3 jin4
+音量
+饮食,yin3 shi2
+印刷,yin4 shua4
+因素,yin1 su4
+依然,yi1 ran2
+意识,yi4 shi2
+意外,yi4 wai4
+意味着,yi4 wei4 zhe5
+疑问,yi2 wen4
+义务,yi4 wu4
+医学,yi1 xue2
+意义,yi4 yi4
+一致,yi1 zhi4
+拥抱,yong1 bao4
+用法,yong4 fa3
+用户,yong4 hu4
+用力,yong4 li4
+用品,yong4 pin3
+勇气,yong3 qi4
+用途,yong4 tu2
+拥有,yong1 you3
+由此,you2 ci3
+有害,you3 hai4
+幼儿园,you4 er2 yuan2
+优惠,you1 hui4
+邮寄,you2 ji4
+悠久,you1 jiu3
+邮局,you2 ju2
+游览,you2 lan3
+有力,you3 li4
+有利,you3 li4
+优良,you1 liang2
+优美,you1 mei3
+邮票,you2 piao4
+优势,you1 shi4
+油条,you2 tiao2
+有限,you3 xian4
+有益,you3 yi4
+犹豫,you2 yu4
+优质,you1 zhi4
+有助于,you3 zhu4 yu2
+原,yuan2
+圆,yuan2
+愿,yuan4
+原有
+元旦,yuan2 dan4
+员工,yuan2 gong1
+愿望,yuan4 wang4
+原则,yuan2 ze2
+预报,yu4 bao4
+预测,yu4 ce4
+预订,yu4 ding4
+约定,yue1 ding4
+预防,yu4 fang2
+预计,yu4 ji4
+娱乐,yu2 le4
+玉米,yu4 mi3
+运,yun4
+运费,yun4 fei4
+运气,yun4 qi5
+运输,yun4 shu1
+运用,yun4 yong4
+语气,yu3 qi4
+雨水,yu3 shui3
+语文,yu3 wen2
+语音,yu3 yin1
+预约,yu4 yue1
+在场
+在乎,zai4 hu5
+在内,zai4 nei4
+在线,zai4 xian4
+在于,zai4 yu2
+赞成,zan4 cheng2
+造,zao4
+糟,zao1
+造成,zao4 cheng2
+糟糕,zao1 gao1
+早期,zao3 qi1
+早晚,zao3 wan3
+早已,zao3 yi3
+赠,zeng4
+增,zeng1
+增进,zeng1 jin4
+增强,zeng1 qiang2
+赠送,zeng4 song4
+炸,zha2
+窄,zhai3
+摘,zhai1
+占,zhan4
+展出,zhan3 chu1
+涨,zhang3
+账号
+账户
+涨价,zhang4 jia4
+掌声,zhang3 sheng1
+掌握,zhang3 wo4
+展开,zhan3 kai1
+展览,zhan3 lan3
+展示,zhan3 shi4
+站台,zhan4 tai2
+占线,zhan4 xian4
+展现,zhan3 xian4
+召开,zhao4 kai1
+着凉,zhao2 liang2
+折扣,zhe2 kou4
+阵,zhen4
+真诚,zhen1 cheng2
+诊断,zhen3 duan4
+针对,zhen1 dui4
+挣,zheng4
+争,zheng1
+政府,zheng4 fu3
+证据,zheng4 ju4
+整齐,zheng3 qi2
+争取,zheng1 qu3
+正如,zheng4 ru2
+证书,zheng4 shu1
+整体,zheng3 ti3
+珍贵,zhen1 gui4
+整整,zheng3 zheng3
+政治,zheng4 zhi4
+真实,zhen1 shi2
+珍惜,zhen1 xi1
+哲学,zhe2 xue2
+直,zhi2
+至,zhi4
+治,zhi4
+止,zhi3
+支,zhi1
+直播,zhi2 bo1
+职场
+指导,zhi3 dao3
+制订,zhi4 ding4
+制定,zhi4 ding4
+制度,zhi4 du4
+职工,zhi2 gong1
+智慧,zhi4 hui4
+至今,zhi4 jin1
+治疗,zhi4 liao2
+知名,zhi1 ming2
+智能,zhi4 neng2
+执行,zhi2 xing2
+志愿者,zhi4 yuan4 zhe3
+制造,zhi4 zao4
+制作,zhi4 zuo4
+重大,zhong4 da4
+众多,zhong4 duo1
+中华
+中华民族,zhong1 hua2 min2 zu2
+中级,zhong1 ji2
+中介,zhong1 jie4
+种类,zhong3 lei4
+重量,zhong4 liang4
+中期,zhong1 qi1
+中外,zhong1 wai4
+中心,zhong1 xin1
+中药
+中医
+种植,zhong4 zhi2
+种子,zhong3 zi5
+周年,zhou1 nian2
+煮,zhu3
+猪,zhu1
+抓,zhua1
+抓紧,zhua1 jin3
+转变,zhuan3 bian4
+撞,zhuang4
+转告,zhuan3 gao4
+状况,zhuang4 kuang4
+装饰,zhuang1 shi4
+状态,zhuang4 tai4
+装修
+专家,zhuan1 jia1
+专心,zhuan1 xin1
+逐步,zhu2 bu4
+注册,zhu4 ce4
+主持,zhu3 chi2
+主动,zhu3 dong4
+住房,zhu4 fang2
+主观,zhu3 guan1
+追,zhui1
+追求,zhui1 qiu2
+逐渐,zhu2 jian4
+主人,zhu3 ren2
+主任,zhu3 ren4
+主食,zhu3 shi2
+住宿,zhu4 su4
+主题,zhu3 ti2
+主席,zhu3 xi2
+住址
+注重,zhu4 zhong4
+竹子,zhu2 zi5
+紫,zi3
+自从,zi4 cong2
+自动,zi4 dong4
+资格,zi1 ge2
+资金,zi1 jin1
+自觉,zi4 jue2
+字母,zi4 mu3
+子女,zi3 nu:3
+自身,zi4 shen1
+姿势,zi1 shi4
+咨询,zi1 xun2
+自由,zi4 you2
+资源,zi1 yuan2
+总部,zong3 bu4
+总共,zong3 gong4
+综合,zong1 he2
+总数,zong3 shu4
+总体,zong3 ti3
+总统,zong3 tong3
+总之,zong3 zhi1
+族,zu2
+组成,zu3 cheng2
+足够,zu2 gou4
+组合,zu3 he2
+醉,zui4
+嘴巴,zui3 ba1
+最初,zui4 chu1
+最佳,zui4 jia1
+租金,zu1 jin1
+尊敬,zun1 jing4
+遵守,zun1 shou3
+作出
+阻止,zu3 zhi3
+组织,zu3 zhi1
+//HSK 3.0 (2026)/HSK6
+岸,an4
+昂贵,ang2 gui4
+案例,an4 li4
+按摩,an4 mo2
+暗示,an4 shi4
+败,bai4
+摆,bai3
+白白,bai2 bai2
+拜访,bai4 fang3
+摆放
+百分点,bai3 fen1 dian3
+百货,bai3 huo4
+白领,bai2 ling3
+拜年,bai4 nian2
+摆脱,bai3 tuo1
+版,ban3
+版本,ban3 ben3
+棒球,bang4 qiu2
+榜样,bang3 yang4
+伴随,ban4 sui2
+扮演,ban4 yan3
+爆,bao4
+爆发,bao4 fa1
+保管,bao3 guan3
+保健,bao3 jian4
+报刊,bao4 kan1
+暴力,bao4 li4
+暴露,bao4 lu4
+保暖
+报社,bao4 she4
+保修,bao3 xiu1
+爆炸,bao4 zha4
+保障,bao3 zhang4
+被动,bei4 dong4
+悲观,bei1 guan1
+北极,bei3 ji2
+悲剧,bei1 ju4
+北美洲,bei3 mei3 zhou1
+被迫,bei4 po4
+悲伤,bei1 shang1
+背心,bei4 xin1
+备用,bei4 yong4
+倍增
+本能,ben3 neng2
+奔跑,ben1 pao3
+本身,ben3 shen1
+本土,ben3 tu3
+闭,bi4
+避,bi4
+逼,bi1
+编,bian1
+遍地,bian4 di4
+编辑,bian1 ji2
+便捷,bian4 jie2
+编写,bian1 xie3
+变质,bian4 zhi4
+比方,bi3 fang5
+兵,bing1
+病毒,bing4 du2
+必修,bi4 xiu1
+比重,bi3 zhong4
+播,bo1
+博览会,bo2 lan3 hui4
+薄弱,bo2 ruo4
+播种,bo1 zhong3
+脖子,bo2 zi5
+布,bu4
+补,bu3
+捕,bu3
+不耐烦
+不安,bu4 an1
+不曾,bu4 ceng2
+补偿,bu3 chang2
+不成,bu4 cheng2
+不得,bu4 de2
+部队,bu4 dui4
+不顾,bu4 gu4
+不禁,bu4 jin1
+补课,bu3 ke4
+不料,bu4 liao4
+不适,bu4 shi4
+不时,bu4 shi2
+补贴,bu3 tie1
+部位,bu4 wei4
+补习,bu3 xi2
+不许,bu4 xu3
+不宜,bu4 yi2
+不已,bu4 yi3
+布置,bu4 zhi4
+不止,bu4 zhi3
+不至于,bu4 zhi4 yu2
+步骤,bu4 zhou4
+踩,cai3
+猜测,cai1 ce4
+财产,cai2 chan3
+财富,cai2 fu4
+采购,cai3 gou4
+彩虹,cai3 hong2
+才华,cai2 hua2
+采集,cai3 ji2
+采纳,cai3 na4
+才能,cai2 neng2
+彩票,cai3 piao4
+财务,cai2 wu4
+财物,cai2 wu4
+材质
+仓库,cang1 ku4
+残疾,can2 ji5
+参展
+草原,cao3 yuan2
+侧,ce4
+策划,ce4 hua4
+测量,ce4 liang4
+策略,ce4 lu:e4
+层次,ceng2 ci4
+层面,ceng2 mian4
+叉,cha4
+拆除,chai1 chu2
+产出
+产地,chan3 di4
+肠,chang2
+场次
+场地,chang3 di4
+长短,chang2 duan3
+场馆
+常规,chang2 gui1
+场合,chang3 he2
+厂家,chang3 jia1
+场景
+场面,chang3 mian4
+常年,chang2 nian2
+厂商,chang3 shang1
+长寿,chang2 shou4
+畅通,chang4 tong1
+常温,chang2 wen1
+畅销,chang4 xiao1
+抄,chao1
+朝代,chao2 dai4
+炒股
+吵架,chao3 jia4
+潮流,chao2 liu2
+潮湿,chao2 shi1
+嘲笑,chao2 xiao4
+超越,chao1 yue4
+查询,cha2 xun2
+差异,cha1 yi4
+插座,cha1 zuo4
+撤回,che4 hui2
+趁,chen4
+成,cheng2
+盛,cheng2
+撑,cheng1
+承办,cheng2 ban4
+惩罚,cheng2 fa2
+称号,cheng1 hao4
+称呼,cheng1 hu5
+成交,cheng2 jiao1
+承诺,cheng2 nuo4
+成千上万,cheng2 qian1 shang4 wan4
+呈现,cheng2 xian4
+成效,cheng2 xiao4
+诚信
+成语,cheng2 yu3
+城镇,cheng2 zhen4
+称作
+沉重,chen2 zhong4
+撤销,che4 xiao1
+尺,chi3
+尺寸,chi3 cun5
+持久,chi2 jiu3
+持有,chi2 you3
+冲,chong4
+崇拜,chong2 bai4
+冲动,chong1 dong4
+冲击,chong1 ji1
+重建,chong2 jian4
+充实,chong1 shi2
+冲突,chong1 tu1
+愁,chou2
+筹备,chou2 bei4
+抽奖
+抽象,chou1 xiang4
+除,chu2
+串,chuan4
+传承
+传达,chuan2 da2
+闯,chuang3
+创办,chuang4 ban4
+创建,chuang4 jian4
+窗口,chuang1 kou3
+创立,chuang4 li4
+穿过,chuan1 guo4
+创意,chuang4 yi4
+传染,chuan2 ran3
+传染病,chuan2 ran3 bing4
+传授,chuan2 shou4
+传输,chuan2 shu1
+传真,chuan2 zhen1
+船只,chuan2 zhi1
+初步,chu1 bu4
+出场
+处处,chu4 chu4
+储存,chu3 cun2
+初等,chu1 deng3
+处罚,chu3 fa2
+除非,chu2 fei1
+垂直,chui2 zhi2
+出境,chu1 jing4
+出力
+出名,chu1 ming2
+纯,chun2
+出入,chu1 ru4
+出示
+储蓄,chu3 xu4
+出游
+出于,chu1 yu2
+刺,ci4
+此刻,ci3 ke4
+瓷器,ci2 qi4
+次数,ci4 shu4
+匆匆,cong1 cong1
+匆忙,cong1 mang2
+从未
+从业
+醋,cu4
+脆,cui4
+脆弱,cui4 ruo4
+寸,cun4
+存储,cun2 chu3
+村庄,cun1 zhuang1
+挫折,cuo4 zhe2
+搭,da1
+打交道,da3 jiao1 dao4
+大臣,da4 chen2
+大吃一惊
+大地,da4 di4
+打动
+大都,da4 dou1
+大方,da4 fang1
+答复,da2 fu4
+大幅,da4 fu2
+大伙儿,da4 huo3 er5
+待,dai4
+呆,dai1
+代价,dai4 jia4
+贷款,dai4 kuan3
+代理,dai4 li3
+带领,dai4 ling3
+打击,da3 ji1
+打架,da3 jia4
+打卡
+打雷
+蛋白质,dan4 bai2 zhi2
+单纯,dan1 chun2
+单调,dan1 diao4
+档案,dang4 an4
+当场,dang1 chang3
+当初,dang1 chu1
+当代,dang1 dai4
+当今,dang1 jin1
+当面,dang1 mian4
+当天,dang4 tian1
+当下
+当选,dang1 xuan3
+诞生,dan4 sheng1
+耽误,dan1 wu5
+担忧,dan1 you1
+岛,dao3
+倒闭,dao3 bi4
+倒车
+道德,dao4 de2
+倒是
+导师,dao3 shi1
+搭配,da1 pei4
+大使,da4 shi3
+大师,da4 shi1
+大洋洲
+打造
+打仗,da3 zhang4
+大致,da4 zhi4
+得了,de2 le5
+等级,deng3 ji2
+灯笼,deng1 long2
+得以,de2 yi3
+得知,de2 zhi1
+滴,di1
+电饭锅
+点击,dian3 ji1
+电力,dian4 li4
+典礼,dian3 li3
+店铺,dian4 pu4
+点燃,dian3 ran2
+典型,dian3 xing2
+电源,dian4 yuan2
+吊,diao4
+调动,diao4 dong4
+钓鱼,diao4 yu2
+抵达,di3 da2
+地道,di4dao5
+跌,die1
+抵抗,di3 kang4
+顶,ding3
+订单,ding4 dan1
+订婚,ding4 hun1
+定价,ding4 jia4
+定时
+定位,ding4 wei4
+定义,ding4 yi4
+定制,ding4 zhi4
+低碳
+地形,di4 xing2
+地域,di4 yu4
+地质,di4 zhi4
+栋,dong4
+动机,dong4 ji1
+动力,dong4 li4
+动漫
+动态,dong4 tai4
+动听
+逗,dou4
+斗争,dou4 zheng1
+毒,du2
+渡,du4
+端,duan1
+短缺,duan3 que1
+对称,dui4 chen4
+对接
+对抗,dui4 kang4
+对立,dui4 li4
+对应,dui4 ying4
+蹲,dun1
+顿时,dun4 shi2
+夺,duo2
+躲避,duo3 bi4
+多才多艺
+多亏,duo1 kui1
+多媒体,duo1 mei2 ti3
+夺取,duo2 qu3
+多余,duo1 yu2
+多元,duo1 yuan2
+都市,du1 shi4
+恶劣,e4 lie4
+耳环,er3 huan2
+儿科,er2 ke1
+二氧化碳,er4 yang3 hua4 tan4
+恶心,e3 xin5
+发病,fa1 bing4
+发愁,fa1 chou2
+发电,fa1 dian4
+法定,fa3 ding4
+发动,fa1 dong4
+发放,fa1 fang4
+法官,fa3 guan1
+发光,fa1 guang1
+法规,fa3 gui1
+犯,fan4
+番,fan1
+妨碍,fang2 ai4
+放大,fang4 da4
+方方面面
+放飞
+房价
+访谈
+方位,fang1 wei4
+方言,fang1 yan2
+防治,fang2 zhi4
+反馈,fan3 kui4
+繁忙,fan2 mang2
+凡
+凡是,fan2 shi4
+反思,fan3 si1
+繁殖,fan2 zhi2
+发票,fa1 piao4
+发行,fa1 xing2
+发炎,fa1 yan2
+发育,fa1 yu4
+肥,fei2
+肺,fei4
+肥胖,fei2 pan2
+飞速
+肥沃,fei2 wo4
+肺炎,fei4 yan2
+粉,fen3
+封闭,feng1 bi4
+风光,feng1 guang1
+风力,feng1 li4
+分工,fen1 gong1
+丰收,feng1 shou1
+奉献,feng4 xian4
+风雨
+分级
+愤怒,fen4 nu4
+分期,fen1 qi1
+分散,fen1 san4
+氛围,fen1 wei2
+服,fu2
+浮,fu2
+服从,fu2 cong2
+辅导,fu3 dao3
+幅度,fu2 du4
+覆盖,fu4 gai4
+符号,fu2 hao4
+附件,fu4 jian4
+福利,fu2 li4
+负面
+夫人,fu1 ren5
+服用
+富裕,fu4 yu4
+赋予,fu4 yu3
+辅助,fu3 zhu4
+改编,gai3 bian1
+概率,gai4 lu:4
+改造,gai3 zao4
+肝,gan1
+干脆,gan1 cui4
+尴尬,gan1 ga4
+钢笔,gang1 bi3
+港口,gang3 kou3
+岗位,gang3 wei4
+干旱,gan1 han4
+感激,gan3 ji1
+赶忙,gan3 mang2
+感染,gan3 ran3
+干扰,gan1 rao3
+感想,gan3 xiang3
+干燥,gan1 zao4
+高层,gao1 ceng2
+高超,gao1 chao1
+高等,gao1 deng3
+高端
+高峰,gao1 feng1
+稿件,gao3 jian4
+高尚,gao1 shang4
+高手,gao1 shou3
+高新技术
+高原,gao1 yuan2
+稿子,gao3 zi5
+割,ge1
+隔壁,ge2 bi4
+歌唱,ge1 chang4
+革命,ge2 ming4
+跟前,gen1 qian2
+跟随,gen1 sui2
+跟踪,gen1 zong1
+个体,ge4 ti3
+公,gong1
+宫,gong1
+公安,gong1 an1
+工地,gong1 di4
+工夫,gong1 fu5
+公告,gong1 gao4
+巩固,gong3 gu4
+共计,gong4 ji4
+供给
+攻击,gong1 ji1
+公开,gong1 kai1
+公民,gong1 min2
+公认,gong1 ren4
+功效,gong1 xiao4
+工序,gong1 xu4
+公益,gong1 yi4
+供应,gong1 ying4
+公元,gong1 yuan2
+公正,gong1 zheng4
+公众,gong1 zhong4
+公主,gong1 zhu3
+沟,gou1
+构造,gou4 zao4
+顾,gu4
+拐,guai3
+拐弯,guai3 wan1
+罐,guan4
+官,guan1
+关爱
+管道,guan3 dao4
+官方,guan1 fang1
+广阔,guang3 kuo4
+观光,guan1 guang1
+关怀,guan1 huai2
+关联,guan1 lian2
+观赏,guan1 shang3
+官员,guan1 yuan2
+古典,gu3 dian3
+孤独,gu1 du2
+姑姑,gu1 gu5
+跪,gui4
+归,gui1
+轨道,gui3 dao4
+规范,gui1 fan4
+规划,gui1 hua4
+归还,gui1 huan2
+规矩,gui1 ju5
+贵重,gui4 zhong4
+古迹,gu3 ji1
+棍,gun4
+国宝
+国产,guo2 chan3
+过渡,guo4 du4
+国歌,guo2 ge1
+过后,guo4 hou4
+国旗,guo2 qi2
+国情,guo2 qing2
+过时,guo4 shi2
+国王,guo2 wang2
+股票,gu3 piao4
+古人,gu3 ren2
+股市,gu3 shi4
+固体,gu4 ti3
+骨头,gu2 tou5
+顾问,gu4 wen4
+鼓舞,gu3 wu3
+故障,gu4 zhang4
+害,hai4
+海内外
+海岸,hai3 an4
+海拔,hai3 ba2
+海面,hai3 mian4
+海域,hai3 yu4
+寒冬,han2 dong1
+航空,hang2 kong1
+罕见,han3 jian4
+含义,han2 yi4
+旱灾,han4 zai1
+毫不,hao2 bu2
+毫无,hao2 wu2
+好不
+好感,hao3 gan3
+好客,hao4 ke4
+毫米,hao2 mi3
+好容易,hao3 rong2 yi4
+毫升,hao2 sheng1
+好学
+号召,hao4 zhao4
+合并,he2 bing4
+合成,he2 cheng2
+嘿,hei1
+黑暗,hei1 an4
+恨,hen4
+狠,hen3
+横,heng2
+衡量,heng2 liang5
+痕迹,hen2 ji1
+和平,he2 ping2
+和谐,he2 xie2
+核心,he2 xin1
+宏大,hong2 da4
+洪水,hong2 shui3
+后代,hou4 dai4
+后期,hou4 qi1
+后人,hou4 ren2
+后退,hou4 tui4
+后者,hou3 zhe3
+壶,hu2
+户,hu4
+划,hua4
+滑冰,hua2 bing1
+花朵,hua1 duo3
+划分,hua4 fen1
+怀,huai2
+怀念,huai2 nian4
+怀孕,huai2 yun4
+环,huan2
+患,huan4
+黄,huang2
+皇帝,huang2 di4
+欢乐,huan1 le4
+幻想,huan4 xiang3
+还原,huan2 yuan2
+患者,huan4 zhe3
+花生,hua1 sheng1
+化石,hua4 shi2
+话筒,hua4 tong3
+滑行,hua2 xing2
+滑雪,hua2 xue3
+化妆,hua4 zhuang1
+汇,hui4
+回报,hui2 bao4
+汇报,hui4 bao4
+灰尘,hui1 chen2
+回顾,hui2 gu4
+绘画,hui4 hua4
+会见,hui4 jian4
+汇款,hui4 kuan3
+回头,hui2 tou2
+灰心,hui1 xin1
+忽略,hu1 lu:e4
+混,hun4
+混合,hun4 he2
+混乱,hun4 luan4
+婚姻,hun1 yin1
+货币,huo4 bi4
+火柴,huo3 chai2
+货车,huo4 che1
+活力,huo2 li4
+活跃,huo2 yue4
+火灾,huo3 zai1
+互助,hu4 zhu4
+胡子,hu2 zi5
+嫁,jia4
+夹,jia1
+加倍,jia1 bei4
+家常,jia1 chang2
+家家户户
+加剧,jia1 ju4
+家居
+剑,jian4
+箭,jian4
+尖,jian1
+肩膀,jian1 bang3
+检测,jian3 ce4
+监测,jian1 ce4
+鉴定,jian4 ding4
+坚定,jian1 ding4
+监督,jian1 du1
+酱,jiang4
+间隔,jian4 ge2
+讲解,jiang3 jie3
+将军,jiang1 jun1
+奖牌
+奖品,jiang3 pin3
+坚固,jian1 gu4
+酱油,jiang4 you2
+简化,jian3 hua4
+间接,jian4 jie1
+简介,jian3 jie4
+坚决,jian1 jue2
+艰难,jian1 nan2
+健全,jian4 quan2
+减弱,jian3 ruo4
+艰辛
+减压
+检验,jian3 yan4
+坚硬,jian1 ying4
+兼职,jian1 zhi2
+建筑物,jian4 zhu4 wu4
+胶带,jiao1 dai4
+焦点,jiao1 dian3
+交际,jiao1 ji4
+焦虑,jiao1 lu:4
+角落,jiao3 luo4
+胶水
+交谈,jiao1 tan2
+郊外,jiao1 wai4
+较为
+教训,jiao4 xun5
+脚印,jiao3 yin4
+假设,jia3 she4
+家属,jia1 shu3
+加以,jia1 yi3
+家园,jia1 yuan2
+加重,jia1 zhong4
+击败,ji1 bai4
+即便,ji2 bian4
+继承,ji2 cheng2
+基地,ji1 di4
+机动车,ji1 dong4 che1
+极端,ji2 duan1
+解,jie3
+结,jie1
+饥饿,ji1 e4
+杰出,jie2 chu1
+解答,jie3 da2
+解读
+解放,jie3 fang4
+借鉴,jie4 jian4
+接连,jie1 lian2
+节能,jie2 neng2
+结实,jie1 shi5
+解说,jie3 shuo1
+街头,jie1 tou2
+结尾,jie2 wei3
+截至,jie2 zhi4
+截止,jie2 zhi3
+戒指,jie4 zhi5
+借助,jie4 zhu4
+节奏,jie2 zou4
+激发,ji1 fa1
+基金,ji1 jin1
+急救,ji2 jiu4
+季军,ji4 jun1
+激励,ji1 li4
+纪律,ji4 lu:4
+寂寞,ji4 mo4
+尽,jin4
+进而,jin4 er2
+进度
+金额
+净,jing4
+井,jing3
+警告,jing3 gao4
+景观
+精美,jing1 mei3
+精确,jing1 que4
+惊人,jing1 ren2
+竞赛,jing4 sai4
+经商,jing1 shang1
+精通,jing1 tong1
+镜头,jing4 tou2
+景象,jing3 xiang4
+精心,jing1 xin1
+惊讶,jing1 ya4
+精致,jing1 zhi4
+颈椎,jing3 zhui1
+精准
+进化,jin4 hua4
+近来,jin4 lai2
+金牌,jin1 pai2
+金钱,jin1 qian2
+金融,jin1 rong2
+近视,jin4 shi4
+金属,jin1 shu3
+进展,jin4 zhan3
+金子
+技巧,ji4 qiao3
+急切,ji2 qie4
+激情,ji1 qing2
+集团,ji2 tuan2
+就读
+纠纷,jiu1 fen1
+酒精,jiu3 jing1
+舅舅,jiu4 jiu5
+救命
+酒水
+就算,jiu4 suan4
+救援,jiu4 yuan2
+救灾,jiu4 zai1
+纠正,jiu1 zheng4
+救助,jiu4 zhu4
+极为,ji2 wei2
+吉祥,ji2 xiang2
+机械,ji1 xie4
+技艺,ji4 yi4
+基因,ji1 yin1
+给予
+机遇,ji1 yu4
+机制,ji1 zhi4
+局,ju2
+卷,juan4
+卷,juan3s
+捐款
+捐赠,juan1 zeng4
+剧本,ju4 ben3
+举动,ju3 dong4
+决策,jue2 ce4
+绝望,jue2 wang4
+菊花,ju2 hua1
+聚集,ju4 ji2
+俱乐部,ju4 le4 bu4
+剧烈,ju4 lie4
+局面,ju2 mian4
+军队,jun1 dui4
+军人,jun1 ren2
+均匀,jun1 yun2
+局限,ju2 xian4
+开创,kai1 chuang4
+开关,kai1 guan1
+开启,kai1 qi3
+开设,kai1 she4
+开头,kai1 tou2
+砍,kan3
+看不起,kan4 bu5 qi3
+看待,kan4 dai4
+看得起
+康复,kang1 fu4
+看好
+看似
+看中
+看重
+考察,kao3 cha2
+考古,kao3 gu3
+考核,kao3 he2
+考验,kao3 yan4
+卡片,ka3 pian4
+科,ke1
+客车,ke4 che1
+科幻
+可口,ke3 kou3
+可怜,ke3 lian2
+科目,ke1 mu4
+肯,ken3
+科普,ke1 pu3
+课题,ke4 ti2
+渴望,ke3 wang4
+可行,ke3 xing2
+空地
+恐惧,kong3 ju4
+空闲
+扣,kou4
+口感
+口号,kou3 hao4
+口腔,kou3 qiang1
+口头,kou3 tou2
+酷,ku4
+夸,kua1
+会计,kuai4 ji4
+快捷,kuai4 jie2
+夸奖,kua1 jiang3
+款,kuan3
+款式
+夸张,kua1 zhang1
+亏损,kui1 sun3
+困扰,kun4 rao3
+扩展,kuo4 zhan3
+枯燥,ku1 zao4
+啦,la5
+落,la4
+赖,lai4
+来临,lai2 lin2
+来往,lai2 wang3
+辣椒,la4 jiao1
+拦,lan2
+栏,lan2
+烂,lan4
+狼,lang2
+朗读,lang3 du2
+兰花,lan2 hua1
+牢,lao2
+劳动力,lao2 dong4 li4
+老实
+老鼠,lao3 shu3
+老太太
+雷,lei2
+类别,lei4 bie2
+乐于
+立,li4
+粒,li4
+理,li3
+晾,liang4
+两岸,liang3 an4
+两极,liang3 ji2
+联合国,lian2 he2 guo2
+链接
+联网,lian2 wang3
+联想,lian2 xiang3
+料,liao4
+理财
+立场,li4 chang3
+力度,li4 du4
+历经
+理科
+淋,lin4
+凌晨,ling2 chen2
+历年,li4 nian2
+理念,li3 nian4
+流程
+流动,liu2 dong4
+浏览器,liu2 lan3 qi4
+流量,liu2 liang4
+流入,liu2 ru4
+流通,liu2 tong1
+例外,li4 wai4
+利息,li4 xi5
+理性,li3 xing4
+露,lou4
+楼道,lou2 dao4
+漏洞,lou4 dong4
+露,lu4
+率,lv4
+路程
+旅程
+绿化
+路况
+路面
+轮
+轮船
+轮流
+论坛
+轮椅
+轮子
+落地
+落后
+旅途
+录像
+履行
+录用
+录制
+嘛,ma5
+马虎,ma3 hu5
+埋,mai2
+迈,mai4
+麦克风,mai4 ke4 feng1
+漫长,man4 chang2
+盲人,mang2 ren2
+漫画,man4 hua4
+冒,mao4
+冒险,mao4 xian3
+贸易,mao4 yi4
+码头,ma3 tou2
+蚂蚁,ma3 yi3
+煤,mei2
+美观,mei3 guan1
+梅花,mei2 hua1
+眉毛,mei2 mao5
+密,mi4
+棉,mian2
+免,mian3
+面部
+面粉,mian4 fen3
+勉强,mian3 qiang3
+免税,mian3 shui4
+免疫,mian3 yi4
+面子,mian4 zi5
+妙,miao4
+描绘,miao2 hui4
+描写,miao2 xie3
+弥补,mi2 bu3
+密度,mi4 du4
+灭,mie4
+蜜蜂,mi4 feng1
+密集,mi4 ji2
+名额,ming2 e2
+民歌,min2 ge1
+明亮,ming2 liang4
+命令,ming4 ling4
+明明,ming2 ming2
+命名,ming4 ming2
+名气,ming2 qi4
+名胜,ming2 sheng4
+民间,min2 jian1
+民俗
+民宿
+民众,min2 zhong4
+民主,min2 zhu3
+迷人,mi2 ren2
+模仿,mo2 fang3
+默默
+模拟,mo2 ni3
+模特儿,mo2 te4 er5
+摩托车,mo2 tuo1 che1
+模型,mo2 xing2
+母,mu3
+木材,mu4 cai2
+目录,mu4 lu4
+模样,mu2 yang4
+母语,mu3 yu3
+奶粉,nai3 fen3
+难点
+南极洲
+南美洲
+难免,nan2 mian3
+脑袋,nao3 dai4
+脑子,nao3 zi5
+内涵,nei4 han2
+内科,nei4 ke1
+内外
+内衣,nei4 yi1
+能量,neng2 liang4
+能源,neng2 yuan2
+泥,ni2
+年度,nian2 du4
+念书,nian4 shu1
+年终,nian2 zhong1
+扭,niu3
+农产品,nong2 chan3 pin3
+浓厚,nong2 hou4
+农田,nong2 tian2
+暖,nuan3
+暖气,nuan3 qi4
+偶像,ou3 xiang4
+排除,pai2 chu2
+排放,pai2 fang4
+排练,pai2 lian4
+排名,pai2 ming2
+盘,pan2
+庞大,pang2 da4
+盼望,pan4 wang4
+泡,pao4
+抛,pao1
+配备,pei4 bei4
+赔偿,pei2 chang2
+佩服,pei4 fu2
+配套,pei4 tao4
+陪同,pei2 tong2
+培育,pei2 yu4
+喷,pen1
+捧,peng3
+碰撞,peng4 zhuang4
+皮,pi2
+披,pi1
+片刻,pian4 ke4
+片面,pian4 mian4
+骗子,pian4 zi5
+飘,piao1
+漂,piao1
+疲劳,pi2 lao2
+品尝,pin3 chang2
+频道,pin2 dao4
+频繁,pin2 fan2
+平等,ping2 deng3
+平凡,ping2 fan2
+平方,ping2 fang1
+平方米,ping2 fang1 mi3
+评估,ping2 gu1
+评论,ping2 lun4
+评选,ping2 xuan3
+贫困,pin2 kun4
+频率,pin2 lu:4
+坡,po1
+泼,po1
+破产,po4 chan3
+迫切,po4 qie4
+扑,pu1
+铺,pu1
+扑灭,pu1 mie4
+朴素
+恰当,qia4 dang4
+恰好,qia4 hao3
+牵,qian1
+枪,qiang1
+墙壁,qiang2 bi4
+强化,qiang2 hua4
+强迫,qiang3 po4
+强壮
+千家万户,qian1 jia1 wan4 hu4
+前景,qian2 jing3
+潜力,qian2 li4
+前期,qian2 qi1
+前提,qian2 ti2
+谦虚,qian1 xu1
+前者,qian2 zhe3
+瞧,qiao2
+桥梁,qiao2 liang2
+巧妙,qiao3 miao4
+恰恰,qia4 qia4
+起初,qi3 chu1
+起点,qi3 dian3
+启动,qi3 dong4
+切实,qie4 shi2
+启发,qi3 fa1
+气氛,qi4 fen1
+其间,qi2 jian1
+清,qing1
+清晨,qing1 chen2
+青春,qing1 chun1
+青春期,qing1 chun1 qi1
+清淡
+情节,qing2 jie2
+清洁,qing1 jie2
+晴朗,qing2 lang3
+清理,qing1 li3
+清扫,qing1 sao3
+倾听,qing1 ting1
+清洗,qing1 xi3
+清晰,qing1 xi1
+倾向,qing1 xiang4
+情形,qing2 xing5
+清醒,qing1 xing3
+勤劳,qin2 lao2
+亲密,qin1 mi4
+亲属,qin1 shu3
+欺骗,qi1 pian4
+齐全
+启示,qi3 shi4
+启事,qi3 shi4
+气体,qi4 ti3
+求,qiu2
+求婚,qiu2 hun1
+求救
+求职,qiu2 zhi2
+求助,qiu2 zhu4
+期望,qi1 wang4
+气味,qi4 wei4
+期限,qi1 xian4
+起源,qi3 yuan2
+气质,qi4 zhi2
+棋子
+曲,qu3
+娶,qu3
+券,quan4
+圈,quan1
+全程,quan2 cheng2
+权力,quan2 li4
+取代,qu3 dai4
+渠道,qu2 dao4
+确立,que4 li4
+缺陷,que1 xian4
+区分,qu1 fen1
+群众,qun2 zhong4
+趣味,qu4 wei4
+染,ran3
+燃料,ran2 liao4
+热点
+热度
+热门,re4 men2
+认错,ren4 cuo4
+认定,ren4 ding4
+仍旧,reng2 jiu4
+人工智能,ren2 gong1 zhi4 neng2
+人家,ren2 jia1
+人均,ren2 jun1
+认可,ren4 ke3
+人山人海,ren2 shan1 ren2 hai3
+人士,ren2 shi4
+人事,ren2 shi4
+忍受,ren3 shou4
+认同,ren4 tong2
+人为,ren2 wei2
+人行道,ren2 xing2 dao4
+认知,ren4 zhi1
+热水器
+热线,re4 xian4
+热议
+日后,ri4 hou4
+日前,ri4 qian2
+日夜,ri4 ye4
+日益,ri4 yi4
+融合,rong2 he2
+融化,rong2 hua4
+容量,rong2 liang4
+融入
+荣誉,rong2 yu4
+柔软,rou2 ruan3
+入境,ru4 jing4
+入门,ru4 men2
+弱点,ruo4 dian3
+入选
+撒,sa3
+塞,sai1
+赛事
+散,san4
+散,san3
+散发,san4 fa1
+丧失,sang4 shi1
+嗓子,sang3 zi5
+散文,san3 wen2
+扫描,sao3 miao2
+杀,sha1
+刹车,sha1 che1
+筛选,shai1 xuan3
+扇,shan4
+闪,shan3
+闪电,shan3 dian4
+山顶,shan1 ding3
+山峰,shan1 feng1
+商标,shang1 biao1
+上当,shang4 dang4
+上级,shang4 ji2
+上进,shang4 jin4
+伤口,shang1 kou3
+上市,shang4 shi4
+上述,shang4 shu4
+上台,shang4 tai2
+伤亡,shang1 wang2
+上旬,shang4 xun2
+伤员,shang1 yuan2
+山坡,shan1 po1
+少儿
+鲨鱼,sha1 yu2
+社,she4
+射,she4
+涉及,she4 ji2
+射击,she4 ji1
+神,shen2
+生成,sheng1 cheng2
+声调,sheng1 diao4
+生命力,sheng1 ming4 li4
+生态,sheng1 tai4
+升学,sheng1 xue2
+剩余,sheng4 yu2
+神经,shen2 jing1
+审美,shen3 mei3
+神奇,shen2 qi2
+身心
+深夜,shen1 ye4
+舌头,she2 tou2
+摄像,she4 xiang4
+设想,she4 xiang3
+摄像头,she4 xiang4 tou2
+识,shi2
+拾,shi2
+识别,shi2 bie2
+士兵,shi4 bing1
+诗词
+适度,shi4 du4
+湿度,shi1 du4
+示范,shi4 fan4
+释放,shi4 fang4
+师父
+诗歌,shi1 ge1
+时光,shi2 guang1
+事后
+实话,shi2 hua4
+实惠,shi2 hui4
+时机,shi2 ji1
+使劲,shi3 jin4
+视觉,shi4 jue2
+势力,shi4 li5
+视力,shi4 li4
+时尚,shi2 shang4
+实时,shi2 shi2
+时速,shi2 su4
+试图,shi4 tu2
+事务,shi4 wu4
+事项,shi4 xiang4
+适宜,shi4 yi2
+石油,shi2 you2
+食欲,shi2 yu4
+实质,shi2 zhi4
+狮子,shi1 zi5
+十足,shi2 zu2
+手臂,shou3 bei5
+收藏,shou1 cang2
+手法,shou3 fa3
+收购,shou1 gou4
+寿命,shou4 ming4
+收取
+手势,shou3 shi4
+首要,shou3 yao4
+收益,shou1 yi4
+受灾,shou4 zai1
+竖,shu4
+属,shu3
+衰老,shuai1 lao3
+率领,shuai4 ling3
+率先,shuai4 xian1
+输出,shu1 chu1
+书画,shu1 hua4
+水稻,shui3 dao4
+水库,shui3 ku4
+水流
+水面,shui3 mian4
+水泥,shui3 ni2
+书籍,shu1 ji2
+树立,shu4 li4
+书面,shu1 mian4
+数目,shu4 mu4
+瞬间,shun4 jian1
+薯片
+输送,shu1 song4
+书写,shu1 xie3
+数字化
+思路
+思念,si1 nian4
+死亡,si3 wang2
+松,song1
+艘,sou1
+搜集,sou1 ji2
+算了,suan4 le5
+算是,suan4 shi4
+虽,sui1
+岁数,sui4 shu5
+岁月,sui4 yue4
+损坏,sun3 huai4
+损伤,sun3 shang1
+塑造,su4 zao4
+素质,su4 zhi4
+塔,ta3
+台风,tai2 feng1
+太空,tai4 kong1
+台球,tai2 qiu2
+太阳能,tai4 yang2 neng2
+烫,tang4
+糖果,tang2 guo3
+汤圆
+谈论,tan2 lun4
+谈判,tan2 pan4
+探索,tan4 suo3
+探讨,tan4 tao3
+弹性,tan2 xing4
+逃,tao2
+掏,tao1
+套餐
+逃跑,tao2 pao3
+淘气,tao2 qi4
+淘汰,tao2 tai4
+踏实,ta4 shi2
+特,te4
+特长
+特地,te4 di4
+特定,te4 ding4
+特性,te4 xing4
+特意,te4 yi4
+田,tian2
+添,tian1
+天才,tian1 cai2
+添加,tian1 jia1
+田径,tian2 jing4
+天然,tian1 ran2
+天然气,tian1 ran2 qi4
+天文,tian1 wen2
+天下,tian1 xia4
+天真,tian1 zhen1
+调节,tiao2 jie2
+跳水,tiao4 shui3
+题材,ti2 cai2
+体操,ti3 cao1
+贴近,tie1 jin4
+体积,ti3 ji1
+听话,ting1 hua4
+听觉,ting1 jue2
+听取,ting1 qu3
+提取,ti2 qu3
+提示,ti2 shi4
+体系,ti3 xi4
+铜,tong2
+同伴,tong2 ban4
+通道,tong1 dao4
+通风,tong1 feng1
+同行,tong2 hang2
+童话,tong2 hua4
+通话,tong1 hua4
+痛快,tong4 kuai5
+同类,tong2 lei4
+铜牌,tong2 pai2
+通信,tong1 xin4
+通讯,tong1 xun4
+通用,tong1 yong4
+透,tou4
+偷,tou1
+透过,tou4 guo4
+透露,tou4 lu4
+透明,tou4 ming2
+头脑,tou2 nao3
+投票,tou2 piao4
+投诉,tou2 su4
+偷偷,tou1 tou1
+投资,tou2 zi1
+吐,tu4
+吐,tu3
+图案,tu2 an4
+团结,tuan2 jie2
+团体,tuan2 ti3
+团圆,tuan2 yuan2
+图表,tu2 biao3
+徒弟,tu2 di4
+突发,tu1 fa1
+推测,tui1 ce4
+退税
+推销,tui1 xiao1
+推行,tui1 xing2
+途径,tu2 jing4
+吞,tun1
+拖,tuo1
+拖延,tuo1 yan2
+托运,tuo1 yun4
+突破,tu1 po4
+土壤,tu3 rang3
+图像,tu2 xiang4
+挖,wa1
+哇,wa1
+歪,wai1
+外表,wai4 biao3
+外交,wai4 jiao1
+外界,wai4 jie4
+外科,wai4 ke1
+外来,wai4 lai2
+外甥,wai4 sheng1
+望,wang4
+网,wang3
+往后,wang3 hou4
+往来,wang3 lai2
+往年,wang3 nian2
+王子,wang2 zi3
+顽强,wan2 qiang2
+弯曲,wan1 qu3
+万物
+娃娃,wa2 wa5
+未,wei4
+未必,wei4 bi4
+未成年人,wei4 cheng2 nian2 ren2
+为此,wei4 ci3
+违规
+为何,wei4 he2
+维护,wei2 hu4
+危机,wei1 ji1
+味觉,wei4 jue2
+胃口
+为难,wei2 nan2
+围棋,wei2 qi2
+为期,wei2 qi1
+委屈,wei3 qu1
+维生素,wei2 sheng1 su4
+委托,wei3 tuo1
+微小,wei1 xiao3
+为止,wei2 zhi3
+文档,wen2 dang4
+温和,wen1 he2
+文具,wen2 ju4
+文科
+文明,wen2 ming2
+闻名,wen2 ming2
+温柔,wen1 rou2
+文物,wen2 wu4
+文献,wen2 xian4
+文艺,wen2 yi4
+误,wu4
+乌龟
+误解,wu4 jie3
+武器,wu3 qi4
+污水,wu1 shui3
+无所谓,wu2 suo3 wei4
+物体,wu4 ti3
+无疑,wu2 yi2
+吓,xia4
+下功夫
+下单
+夏令营,xia4 ling4 ying2
+嫌,xian2
+限,xian4
+线,xian4
+显,xian3
+险,xian3
+现存,xian4 cun2
+限度,xian4 du4
+相差,xiang1 cha4
+香肠,xiang1 chang2
+相传,xiang1 chuan2
+相等,xiang1 deng3
+项链,xiang4 lian4
+相连,xiang1 lian2
+象棋,xiang4 qi2
+相声,xiang4 sheng1
+香水,xiang1 shui3
+向往,xiang4 wang3
+相应,xiang1 ying4
+现货
+鲜明,xian1 ming2
+先前,xian1 qian2
+陷入,xian4 ru4
+线索,xian4 suo3
+鲜艳,xian1 yan4
+限于,xian4 yu2
+显著
+消除,xiao1 chu2
+消毒,xiao1 du2
+消防,xiao1 fang2
+消耗,xiao1 hao4
+小麦,xiao3 mai4
+消灭,xiao1 mie4
+小气,xiao3 qi4
+笑容,xiao4 rong2
+小偷儿
+效应,xiao4 ying4
+下线
+下旬,xia4 xun2
+细胞,xi4 bao1
+歇,xie1
+携带,xie2 dai4
+协会,xie2 hui4
+协调,xie2 tiao2
+协助,xie2 zhu4
+媳妇,xi2 fu4
+喜剧,xi3 ju4
+细菌,xi4 jun1
+系列,xi4 lie4
+心爱,xin1 ai4
+心底
+型号,xing2 hao4
+性价比
+性能,xing4 neng2
+兴起,xing1 qi3
+形态,xing2 tai4
+新款
+信赖,xin4 lai4
+心灵,xin1 ling2
+新媒体
+心目,xin1 mu4
+新能源
+信念,xin4 nian4
+薪水,xin1 shui3
+心疼,xin1 teng2
+新兴,xin1 xing1
+新颖,xin1 ying3
+心愿,xin1 yuan4
+心脏,xin1 zang4
+胸,xiong1
+戏曲,xi4 qu3
+吸取,xi1 qu3
+喜事,xi3 shi4
+洗漱
+习俗,xi2 su2
+修订,xiu1 ding4
+修复,xiu1 fu4
+袖子,xiu4 zi5
+细致,xi4 zhi4
+选拔,xuan3 ba2
+选修,xuan3 xiu1
+旋转,xuan2 zhuan3
+血管,xue4 guan3
+学会,xue2 hui4
+学位,xue2 wei4
+学问,xue2 wen4
+血型,xue4 xing2
+血压,xue4 ya1
+血液,xue4 ye4
+学员,xue2 yuan2
+许可,xu3 ke3
+循环,xun2 huan2
+寻求,xun2 qiu2
+叙述,xu4 shu4
+亚军,ya4 jun1
+严,yan2
+淹,yan1
+样,yang4
+仰,yang3
+痒,yang3
+养老,yang3 lao3
+养老院,yang3 lao3 yuan4
+氧气,yang3 qi4
+眼光,yan3 guang1
+沿海,yan2 hai3
+严寒,yan2 han2
+宴会,yan4 hui4
+严禁,yan2 jin4
+眼看,yan3 kan4
+严厉,yan2 li4
+淹没,yan1 mo4
+延期,yan2 qi2
+炎热,yan2 re4
+延伸,yan2 shen1
+研讨,yan2 tao3
+延续,yan2 xu4
+言语,yan2 yu3
+炎症,yan2 zheng4
+验证,yan4 zheng4
+演奏,yan3 zou4
+要点,yao4 dian3
+要么,yao4 me5
+要素,yao4 su4
+遥远,yao2 yuan3
+压缩,ya1 suo1
+业,ye4
+野,ye3
+也好
+野生,ye3 sheng1
+液体,ye4 ti3
+野外,ye3 wai4
+姨,yi2
+一辈子,yi1 bei4 zi5
+以便,yi3 bian4
+遗产,yi2 chan3
+异常,yi4 chang2
+益处,yi4 chu5
+遗传,yi2 chuan2
+一带,yi1 dai4
+一道,yi1 dao4
+一帆风顺,yi1 fan2 feng1 shun4
+一贯,yi1 guan4
+疑惑,yi2 huo4
+依旧,yi1 jiu4
+一口气,yi1 kou3 qi4
+依赖,yi1 lai4
+一流,yi1 liu2
+一律,yi1 lu:4
+议论,yi4 lun4
+以免,yi3 mian3
+移民,yi2 min2
+一模一样
+银,yin2
+印,yin4
+引,yin3
+因,yin1
+隐藏,yin3 cang2
+引导,yin3 dao3
+引发,yin3 fa1
+婴儿,ying1 er2
+英雄,ying1 xiong2
+影子,ying3 zi5
+音节,yin1 jie2
+银牌,yin2 pai2
+引入,yin3 ru4
+隐私,yin3 si1
+饮用水,yin3 yong4 shui3
+仪器,yi2 qi4
+艺人,yi4 ren2
+一身,yi1 shen1
+仪式,yi2 shi4
+一时,yi1 shi2
+衣食住行
+一同,yi1 tong2
+以往,yi3 wang3
+一向,yi2 xiang4
+一系列,yi1 xi4 lie4
+医药,yi1 yao4
+一一,yi1 yi1
+易于
+一再,yi1 zai4
+一阵,yi1 zhen4
+遗址,yi2 zhi3
+抑制,yi4 zhi4
+用餐
+用处,yong4 chu5
+用功,yong4 gong1
+拥挤,yong1 ji3
+用人,yong4 ren2
+涌现,yong3 xian4
+用心,yong4 xin1
+勇于
+优化
+有机,you3 ji1
+有劲
+由来,you2 lai2
+游人,you2 ren2
+犹如,you2 ru2
+优先,you1 xian1
+有序,you3 xu4
+优异,you1 yi4
+于,yu2
+余额
+原本,yuan2 ben3
+原材料,yuan2 cai2 liao4
+远程,yuan3 cheng2
+远方,yuan3 fang1
+原理,yuan2 li3
+原料,yuan2 liao4
+园林,yuan2 lin2
+圆满,yuan2 man3
+原始,yuan2 shi3
+元素,yuan2 su4
+原先,yuan2 xian1
+元宵,yuan2 xiao1
+源于
+预定,yu4 ding4
+月光,yue4 guang1
+乐器,yue4 qi4
+月球,yue4 qiu2
+乐曲,yue4 qu3
+约束,yue1 shu4
+预料,yu4 liao4
+晕,yun1
+晕车
+运送,yun4 song4
+运行,yun4 xing2
+运营,yun4 ying2
+预期,yu4 qi1
+与其,yu3 qi2
+羽绒服
+浴室,yu4 shi4
+欲望,yu4 wang4
+杂,za2
+灾,zai1
+灾害,zai1 hai4
+灾难,zai1 nan4
+灾区,zai1 qu1
+再三,zai4 san1
+再生
+在意,zai4 yi4
+赞赏,zan4 shang3
+赞同,zan4 tong2
+遭到,zao1 dao4
+噪声,zao4 sheng1
+遭受,zao1 shou4
+造型,zao4 xing2
+遭遇,zao1 yu4
+则,ze2
+炸,zha4
+扎,zha1
+粘,zhan1
+占比
+战斗,zhan4 dou4
+章,zhang1
+障碍,zhang4 ai4
+长辈
+账单,zhang4 dan1
+占据,zhan4 ju4
+战胜,zhan4 sheng4
+粘贴
+崭新,zhan3 xin1
+占有,zhan4 you3
+战争,zhan4 zheng1
+招,zhao1
+招待,zhao1 dai4
+照明,zhao4 ming2
+招生,zhao1 sheng1
+招手,zhao1 shou3
+招收,zhao1 shou1
+折,zhe2
+镇,zhen4
+针,zhen1
+睁,zheng1
+政策,zheng4 ce4
+争吵,zheng1 chao3
+争夺,zheng1 duo2
+正规,zheng4 gui1
+争论,zheng1 lun4
+正面,zheng4 mian4
+征求,zheng1 qiu2
+证实,zheng4 shi2
+正义,zheng4 yi4
+争议,zheng1 yi4
+症状,zheng4 zhuang4
+枕头,zhen3 tou5
+真相,zhen1 xiang4
+阵雨
+珍珠,zhen1 zhu1
+制,zhi4
+枝,zhi1
+值班,zhi2 ban1
+支撑,zhi1 cheng1
+支出,zhi1 chu1
+只得,zhi3 de2
+指定,zhi3 ding4
+脂肪,zhi1 fang2
+只顾,zhi3 gu4
+至关重要
+指挥,zhi3 hui1
+智力,zhi4 li4
+治理,zhi4 li3
+制品,zhi4 pin3
+指示,zhi3 shi4
+之所以
+职位,zhi2 wei4
+职务,zhi2 wu4
+秩序,zhi4 xu4
+质疑,zhi4 yi2
+至于,zhi4 yu2
+职员,zhi2 yuan2
+职责,zhi2 ze2
+指责,zhi3 ze2
+侄子,zhi2 zi5
+中,zhong4
+肿,zhong3
+中等,zhong1 deng3
+种地,zhong4 di4
+终点,zhong1 dian3
+中毒,zhong4 du2
+中断,zhong1 duan4
+中奖
+众人,zhong4 ren2
+终身,zhong1 shen1
+中暑,zhong4 shu3
+众所周知,zhong4 suo3 zhou1 zhi1
+钟头,zhong1 tou2
+重心,zhong4 xin1
+中旬,zhong1 xun2
+中央,zhong1 yang1
+州,zhou1
+粥,zhou1
+周边,zhou1 bian1
+周到,zhou1 dao4
+周期,zhou1 qi1
+株,zhu1
+转,zhuan4
+砖,zhuan1
+转动,zhuan3 dong4
+装备,zhuang1 bei4
+庄稼,zhuang1 jia5
+转换,zhuan3 huan4
+转交,zhuan3 jiao1
+专科,zhuan1 ke1
+专利,zhuan1 li4
+转让,zhuan3 rang4
+转身,zhuan3 shen1
+专题,zhuan1 ti2
+转移,zhuan3 yi2
+专用,zhuan1 yong4
+专注
+主办,zhu3 ban4
+珠宝,zhu1 bao3
+主播
+主导,zhu3 dao3
+诸多
+祝福,zhu4 fu2
+主管,zhu3 guan3
+追究,zhui1 jiu1
+主角,zhu3 jue2
+助理,zhu4 li3
+主流,zhu3 liu2
+捉,zhuo1
+助手,zhu4 shou3
+主演
+祝愿,zhu4 yuan4
+住宅,zhu4 zhai2
+主张,zhu3 zhang1
+著作
+资本,zi1 ben3
+资产,zi1 chan3
+自豪,zi4 hao2
+自来水,zi4 lai2 shui3
+自律,zi4 lu:4
+字幕,zi4 mu4
+自杀,zi4 sha1
+自我,zi4 wo3
+自言自语,zi4 yan2 zi4 yu3
+自愿,zi4 yuan4
+自助
+总裁,zong3 cai2
+总计,zong3 ji4
+总理,zong3 li3
+棕色,zong1 se4
+总算,zong3 suan4
+粽子,zong4 zi5
+走廊,zou3 lang2
+足,zu2
+阻碍,zu3 ai4
+钻,zuan1
+阻挡,zu3 dang3
+祖国,zu3 guo2
+罪,zui4
+祖先,zu3 xian1
+足以,zu2 yi3
+//HSK 3.0 (2026)/HSK7-9
+挨,ai2
+癌,ai2
+挨,ai1
+爱不释手,ai4 bu4 shi4 shou3
+爱戴,ai4 dai4
+挨家挨户,ai1 jia1 ai1 hu4
+暧昧,ai4 mei4
+爱慕,ai4 mu4
+哀求,ai1 qiu2
+碍事,ai4 shi4
+爱惜,ai4 xi2
+癌症,ai2 zheng4
+艾滋病,ai4 zi1 bing4
+暗地里,an4 de5 li3
+安定,an1 ding4
+安抚,an1 fu3
+案件,an4 jian4
+按理,an4 li3
+安眠药,an1 mian2 yao4
+安宁,an1 ning2
+按钮,an4 niu3
+按说,an4 shuo1
+安稳,an1 wen3
+安详,an1 xiang2
+安心,an1 xin1
+安逸,an1 yi4
+安置,an1 zhi4
+暗中,an4 zhong1
+熬,ao2
+傲,ao4
+凹,ao1
+傲慢,ao4 man4
+奥秘,ao4 mi4
+拔,ba2
+坝,ba4
+扒,ba1
+疤,ba1
+把柄,ba3 bing3
+巴不得,ba1 bu4 de2
+八成,ba1 cheng2
+霸道,ba4 dao4
+罢工,ba4 gong1
+八卦,ba1 gua4
+把关,ba3 guan1
+掰,bai1
+百般,bai3 ban1
+摆动,bai3 dong4
+百分比,bai3 fen1 bi3
+百合,bai3 he2
+败坏,bai4 huai4
+拜会,bai4 hui4
+拜见,bai4 jian4
+百科全书,bai3 ke1 quan2 shu1
+摆平
+摆设,bai3 she4
+柏树,bai3 shu4
+拜托,bai4 tuo1
+巴结,ba1 jie2
+罢了,ba4 le5
+芭蕾,ba1 lei3
+罢免,ba4 mian3
+扮,ban4
+伴,ban4
+拌,ban4
+绊,ban4
+扳,ban1
+半边天,ban4 bian1 tian1
+颁布,ban1 bu4
+半岛,ban4 dao3
+半导体,ban4 dao3 ti3
+斑点,ban1 dian3
+颁发,ban1 fa1
+磅,bang4
+绑,bang3
+绑架,bang3 jia4
+帮手,bang1 shou5
+颁奖
+绊脚石,ban4 jiao3 shi2
+半径,ban4 jing4
+板块,ban3 kuai4
+伴侣,ban4 lu:3
+斑马线
+搬迁,ban1 qian1
+版权,ban3 quan2
+办事处,ban4 shi4 chu4
+半数,ban4 shu4
+半途而废,ban4 tu2 er2 fei4
+半信半疑,ban4 xin4 ban4 yi2
+办学,ban4 xue2
+伴奏,ban4 zou4
+报,bao4
+豹,bao4
+煲,bao1
+剥,bo1
+报案
+包庇
+褒贬
+报酬
+报仇
+报答
+报废
+暴风骤雨
+报复
+抱负
+包袱
+曝光
+饱和
+饱经沧桑
+宝库
+堡垒
+暴利
+包罗万象
+爆满
+饱满
+保密
+保姆
+包容
+宝石
+保守
+保卫
+包围
+保鲜
+报销
+保养
+保佑
+包扎
+宝藏
+暴躁
+保重
+爆竹
+把手
+罢休
+霸占
+巴掌
+靶子
+备
+碑
+悲哀
+卑鄙
+悲惨
+备份
+背负
+被告
+悲欢离合
+贝壳
+备课
+背面
+背叛
+背诵
+悲痛
+备忘录
+卑微
+背影
+备战
+奔
+奔波
+奔驰
+笨蛋
+本分
+奔赴
+蹦
+绷
+绷带
+迸发
+崩溃
+本钱
+本色
+本事
+本性
+本意
+本着
+笨重
+笨拙
+辩
+扁
+辨别
+遍布
+鞭策
+编程
+贬低
+便饭
+变革
+变更
+变故
+编号
+辩护
+变换
+变幻莫测
+边疆
+辩解
+边界
+边境
+编剧
+辩论
+编排
+鞭炮
+变迁
+辨认
+变通
+便携式
+变形
+变异
+边缘
+边远
+编造
+辩证
+贬值
+编制
+编织
+辫子
+标
+表白
+标榜
+标本
+标点
+标记
+表决
+标签
+飙升
+标示
+表述
+表率
+表态
+标语
+表彰
+标识
+标致
+比比皆是
+弊病
+必不可少
+必定
+弊端
+憋
+别具匠心
+别看
+别扭
+别墅
+别说
+别致
+壁画
+必将
+逼近
+壁垒
+碧绿
+笔墨
+避难
+彬彬有礼
+缤纷
+丙
+冰雹
+秉承
+秉持
+并发症
+并非
+并购
+冰棍儿
+并肩
+病历
+并列
+冰山一角
+冰天雪地
+并行
+病症
+濒临
+濒危
+逼迫
+避让
+毕生
+比试
+鄙视
+避暑
+鼻涕
+逼真
+拨,bo1
+伯伯,bo2 bo5
+博大精深
+波动,bo1 dong4
+搏斗,bo2 dou4
+剥夺,bo1 duo2
+伯父,bo2 fu4
+驳回,bo2 hui2
+波及,bo1 ji2
+拨款,bo1 kuan3
+波澜,bo1 lan2
+波浪,bo1 lang4
+伯母,bo2 mu3
+波涛,bo1 tao1
+博学,bo2 xue2
+剥削,bo1 xue1
+博弈
+波折,bo1 zhe2
+不经意,bu4 jing1 yi4
+不算
+不予,bu4 yu2
+不准,bu4 zhun3
+不耻下问
+不辞而别
+不当
+不得而知
+不得已
+不定
+不动产
+不乏
+步伐
+不法
+不妨
+不服
+不敢当
+捕获
+不及
+补给
+部件
+不见得
+不假思索
+不解
+不景气
+补救
+布局
+不堪
+不可或缺
+不可思议
+不愧
+不力
+不了了之
+不免
+不妙
+不平
+不容
+步入
+哺乳
+不慎
+捕食
+部首
+部署
+不惜
+不下
+不像话
+不相上下
+不肖
+不屑
+不懈
+不言而喻
+不厌其烦
+不亚于
+不翼而飞
+不亦乐乎
+不以为然
+不由得
+不由自主
+哺育
+不约而同
+不折不扣
+不正之风
+不知不觉
+不知所措
+补助
+捕捉,bu3 zhuo1
+裁,cai2
+采,cai3
+裁定,cai2 ding4
+裁缝,cai2 feng2
+才干,cai2 gan4
+财经,cai2 jing1
+裁决,cai2 jue2
+采矿,cai3 kuang4
+财力,cai2 li4
+猜想,cai1 xiang3
+菜肴
+裁员,cai2 yuan2
+采摘,cai3 zhai1
+财政,cai2 zheng4
+残,can2
+惨,can3
+惨白
+舱,cang1
+苍白,cang1 bai2
+仓促,cang1 cu4
+藏匿,cang2 ni4
+藏品
+沧桑
+藏身,cang2 shen1
+苍蝇,cang1 ying5
+参见,can1 jian4
+残酷,can2 ku4
+惭愧,can2 kui4
+灿烂,can4 lan4
+残留
+参谋,can1 mou2
+残缺
+残忍,can2 ren3
+惨痛
+参照,can1 zhao4
+惨重
+草案,cao3 an4
+草丛,cao3 cong2
+操控
+操劳,cao1 lao2
+操练,cao1 lian4
+草坪,cao3 ping2
+草率,cao3 shuai4
+操心,cao1 xin1
+草药,cao3 yao4
+嘈杂
+操纵,cao1 zong4
+测定,ce4 ding4
+侧面,ce4 mian4
+蹭,ceng4
+层出不穷,ceng2 chu1 bu4 qiong2
+测算,ce4 suan4
+测验,ce4 yan4
+侧重,ce4 zhong4
+岔,cha4
+查处,cha2 chu3
+差错,cha1 cuo4
+差额,cha1 e4
+查获,cha2 huo4
+拆迁
+柴油,chai2 you2
+察觉,cha2 jue2
+察看,cha2 kan4
+查明,cha2 ming2
+馋,chan2
+缠,chan2
+铲,chan3
+掺,chan1
+搀,chan1
+刹那,cha4 na4
+颤抖,chan4 dou3
+倡导,chang4 dao3
+偿还,chang2 huan2
+敞开,chang3 kai1
+猖狂,chang1 kuang2
+常理
+唱片,chang4 pian4
+长期以来,chang2 qi1 yi3 lai2
+常人
+昌盛,chang1 sheng4
+常态
+畅谈,chang4 tan2
+长效
+倡议,chang4 yi4
+长征,chang2 zheng1
+长足
+产权,chan3 quan2
+缠绕,chan2 rao3
+阐释,chan3 shi4
+阐述,chan3 shu4
+产物,chan3 wu4
+产业链
+产值,chan3 zhi2
+潮,chao2
+超标
+嘲弄,chao2 nong4
+钞票,chao1 piao4
+超前
+潮水
+抄袭,chao1 xi2
+巢穴,chao2 xue4
+炒作
+插曲,cha1 qu3
+插手,cha1 shou3
+插图,cha1 tu2
+诧异,cha4 yi4
+插嘴,cha1 zui3
+撤,che4
+扯,che3
+车间,che1 jian1
+撤离,che4 li2
+沉淀,chen2 dian4
+沉甸甸,chen2 dian4 dian4
+呈,cheng2
+秤,cheng4
+承包,cheng2 bao1
+成才
+成家,cheng2 jia1
+成家立业
+承接
+诚恳,cheng2 ken3
+成品,cheng2 pin3
+城墙,cheng2 qiang2
+逞强
+澄清,cheng2 qing1
+成全
+成群结队,cheng2 qun2 jie2 dui4
+成天,cheng2 tian1
+成心,cheng2 xin1
+成型
+诚意,cheng2 yi4
+承载
+诚挚,cheng2 zhi4
+趁机,chen4 ji1
+沉浸,chen2 jin4
+陈旧,chen2 jiu4
+陈列,chen2 lie4
+沉闷,chen2 men4
+沉迷
+陈述,chen2 shu4
+沉睡
+沉思,chen2 si1
+衬托,chen4 tuo1
+沉稳
+称心如意
+趁早
+沉着,chen2 zhuo2
+撤退,che4 tui4
+彻夜
+持,chi2
+迟迟,chi2 chi2
+痴呆,chi1 dai1
+赤道,chi4 dao4
+尺度,chi3 du4
+迟钝,chi2 dun4
+吃喝玩乐
+迟缓,chi2 huan3
+吃苦,chi1 ku3
+吃亏,chi1 kui1
+吃力,chi1 li4
+痴迷
+驰名
+持平
+耻辱,chi3 ru4
+池塘,chi2 tang2
+耻笑
+痴心
+迟疑,chi2 yi2
+迟早,chi2 zao3
+持之以恒
+赤字,chi4 zi4
+宠,chong3
+充,chong1
+宠爱,chong3 ai4
+充斥
+重重,chong2 chong2
+冲刺
+充当,chong1 dang1
+重叠,chong2 die2
+重返,chong2 fan3
+崇高,chong2 gao1
+重合
+崇敬,chong2 jing4
+憧憬,chong1 jing3
+冲浪,chong1 lang4
+充沛,chong1 pei4
+崇尚,chong2 shang4
+重申,chong2 shen1
+冲洗,chong1 xi3
+重现,chong2 xian4
+充裕,chong1 yu4
+冲撞
+重组,chong2 zu3
+仇,chou2
+稠,chou2
+筹,chou2
+瞅,chou3
+筹办
+抽查
+筹措,chou2 cuo4
+丑恶,chou3 e4
+仇恨,chou2 hen4
+筹划,chou2 hua4
+筹集,chou2 ji2
+丑陋
+筹码,chou2 ma3
+愁眉苦脸,chou2 mei2 ku3 lian3
+稠密,chou2 mi4
+抽签
+仇人,chou2 ren2
+抽屉,chou1 ti5
+丑闻,chou3 wen2
+抽样,chou1 yang4
+锄,chu2
+踹,chuai4
+揣,chuai1
+揣测,chuai3 ce4
+揣摩
+喘,chuan3
+船舶,chuan2 bo2
+传单,chuan2 dan1
+创,chuang4
+窗帘,chuang1 lian2
+创伤,chuang1 shang1
+创始人
+床位,chuang2 wei4
+川流不息,chuan1 liu2 bu4 xi1
+传媒
+串门
+传奇,chuan2 qi2
+传人
+穿梭
+传闻,chuan2 wen2
+喘息,chuan3 xi1
+传言,chuan2 yan2
+穿越
+穿着,chuan1 zhuo2
+储备,chu3 bei4
+出厂
+出丑
+橱窗,chu2 chuang1
+触动
+出动,chu1 dong4
+出发点,chu1 fa1 dian3
+触犯,chu4 fan4
+处方,chu3 fang1
+出访,chu1 fang3
+处分,chu3 fen1
+垂,chui2
+捶,chui2
+锤,chui2
+吹牛,chui1 niu2
+吹捧,chui1 peng3
+垂头丧气
+炊烟
+处境,chu3 jing4
+出局,chu1 ju2
+出具
+触觉
+出口成章
+矗立,chu4 li4
+储量
+出路,chu1 lu4
+出卖,chu1 mai4
+出面,chu1 mian4
+触摸,chu4 mo1
+触目惊心
+蠢,chun3
+纯粹,chun2 cui4
+醇厚
+纯洁,chun2 jie2
+纯朴
+淳朴
+戳,chuo1
+绰号,chuo4 hao4
+除去,chu2 qu4
+出任,chu1 ren4
+出人意料,chu1 ren2 yi4 liao4
+出神,chu1 shen2
+出身,chu1 shen1
+处事
+出手
+出台
+出头
+出土,chu1 tu3
+除外,chu2 wai4
+出息,chu1 xi1
+出征,chu1 zheng1
+处置,chu3 zhi4
+出众,chu1 zhong4
+初衷
+出资
+出走,chu1 zou3
+辞,ci2
+赐,ci4
+辞呈
+磁带,ci2 dai4
+辞典,ci2 dian3
+刺耳
+刺骨,ci4 gu3
+伺候,ci4 hou4
+赐教
+次品,ci4 pin3
+此起彼伏
+次日
+慈善
+磁铁,ci2 tie3
+辞退
+慈祥,ci2 xiang2
+雌性,ci2 xing4
+刺绣,ci4 xiu4
+次序,ci4 xu4
+刺眼
+次要,ci4 yao4
+此致
+丛,cong2
+葱,cong1
+丛林,cong2 lin2
+从容,cong1 rong2
+从容不迫,cong2 rong2 bu4 po4
+从头,cong2 tou2
+凑,cou4
+凑合,cou4 he2
+凑巧,cou4 qiao3
+窜,cuan4
+粗暴,cu1 bao4
+粗糙,cu1 cao1
+促成,cu4 cheng2
+璀璨,cui3 can4
+摧残,cui1 can2
+催促,cui1 cu4
+摧毁,cui1 hui3
+翠绿,cui4 lu:4
+催眠,cui1 mian2
+粗鲁,cu1 lu3
+粗略
+存活
+存货,cun2 huo4
+存心,cun2 xin1
+存折,cun2 zhe2
+搓,cuo1
+挫败,cuo4 bai4
+错别字,cuo4 bie2 zi4
+错觉
+磋商,cuo1 shang1
+措手不及
+错位
+错综复杂
+粗心大意,cu1 xin1 da4 yi4
+簇拥
+打喷嚏,da3 pen1 ti4
+打下手
+答辩
+达标
+大不了
+打岔
+搭乘
+大大咧咧
+搭档
+打倒
+打赌
+打盹儿
+打发
+大纲,da4 gang1
+大公无私,da4 gong1 wu2 si1
+逮,dai3
+逮捕,dai4 bu3
+带队
+怠工,dai4 gong1
+代号,dai4 hao4
+代理人,dai4 li3 ren2
+带路
+怠慢,dai4 man4
+带头,dai4 tou2
+歹徒,dai3 tu2
+代言
+搭建
+打搅
+大街小巷,da4 jie1 xiao3 xiang4
+大惊小怪,da4 jing1 xiao3 guai4
+大局,da4 ju2
+打捞
+打量,da3 liang5
+打猎,da3 lie4
+大陆,da4 lu4
+大名鼎鼎
+打磨
+担,dan4
+担,dan1
+担保,dan1 bao3
+单边,dan1 bian1
+单薄
+诞辰,dan4 chen2
+担当
+单方面,dan1 fang1 mian4
+担负,dan1 fu4
+党,dang3
+档次,dang4 ci4
+耽搁,dan1 ge5
+当即
+当机立断
+当日
+当事人,dang1 shi4 ren2
+当晚
+当务之急,dang1 wu4 zhi1 ji2
+当心,dang1 xin1
+荡漾
+当真
+当之无愧
+当众,dang1 zhong4
+淡化
+淡季,dan4 ji4
+单价
+胆量,dan3 liang4
+胆怯,dan3 qie4
+单身,dan1 shen1
+淡水,dan4 shui3
+胆小鬼
+但愿,dan4 yuan4
+担子,dan4 zi5
+盗,dao4
+盗版,dao4 ban3
+道别
+稻草,dao4 cao3
+导弹,dao3 dan4
+导航,dao3 hang2
+导火索
+倒计时,dao3 ji4 shi2
+道具
+捣乱,dao3 luan4
+倒霉,dao3 mei2
+悼念,dao4 nian4
+盗窃,dao4 qie4
+倒数,dao4 shu4
+倒塌,dao3 ta1
+到头来
+倒退,dao4 tui4
+到位
+导向
+岛屿,dao3 yu3
+大片
+大气,da4 qi4
+大数据
+大肆,da4 si4
+大体,da4 ti3
+大同小异,da4 tong2 xiao3 yi4
+大为
+打消,da3 xiao1
+大雁,da4 yan4
+大意,da4yi5
+大意,da4yi4
+大有可为,da4 you3 ke3 wei2
+大宗
+得不偿失,de2 bu4 chang2 shi1
+德才兼备
+得当,de2 dang1
+得力,de2 li4
+瞪,deng4
+蹬,deng4
+登场
+登顶
+登陆,deng1 lu4
+灯泡,deng1 pao4
+凳子,deng4 zi3
+得失
+得手
+得体
+得天独厚
+得心应手
+得益
+得意扬扬
+得罪,de2 zui4
+抵,di3
+堤,di1
+垫,dian4
+颠簸,dian1 bo3
+颠倒,dian1 dao3
+颠倒黑白
+垫底
+奠定,dian4 ding4
+典范,dian3 fan4
+淀粉,dian4 fen3
+巅峰
+颠覆,dian1 fu4
+点火,dian3 huo3
+惦记,dian4 ji4
+点评
+电台,dian4 tai2
+殿堂
+电网
+电线,dian4 xian4
+电信,dian4 xin4
+电讯,dian4 xun4
+点缀,dian3 zhui4
+垫子,dian4 zi3
+点子,dian3 zi5
+叼,diao1
+雕,diao1
+调度,diao4 du4
+掉队
+雕刻,diao1 ke4
+刁难
+雕塑,diao1 su4
+掉头,diao4 tou2
+雕像,diao1 xiang4
+吊销
+凋谢,diao1 xie4
+堤坝,di1 ba4
+地板,di4 ban3
+地步,di4 bu4
+底层,di3 ceng2
+抵触
+地带,di4 dai4
+抵挡,di3 dang3
+地道,di4dao4
+低调,di1 diao4
+地段,di4 duan4
+叠,die2
+碟,die2
+爹,die1
+跌幅
+迭起
+提防
+嘀咕
+低谷
+低估,di1 gu1
+帝国,di4 guo2
+递交,di4 jiao1
+低落
+低迷
+钉,ding1
+丁,ding1
+盯,ding1
+顶多,ding3 duo1
+订购,ding4 gou4
+顶级
+顶尖,ding3 jian1
+定金
+定居,ding4 ju1
+订立,ding4 li4
+定律,ding4 lu:4
+定论
+定向,ding4 xiang4
+定心丸
+订阅,ding4 yue4
+叮嘱,ding1 zhu3
+钉子,ding1 zi5
+定做,ding4 zuo4
+敌视,di2 shi4
+地势,di4 shi4
+地毯,di4 tan3
+丢脸,diu1 lian3
+丢弃,diu1 qi4
+丢人,diu1 ren2
+丢三落四
+低下,di1 xia4
+底线,di4 xian4
+抵消,di3 xiao1
+地下水,di4 xia4 shui3
+抵押,di3 ya2
+第一手
+地狱,di4 yu4
+抵御
+底蕴
+递增,di4 zeng1
+抵制,di3 zhi4
+笛子,di2 zi5
+弟子,di4 zi3
+底子
+东奔西走,dong1 ben1 xi1 zou3
+动不动,dong4 bu2 dong4
+动荡,dong4 dang4
+东道主,dong1 dao4 zhu3
+动感
+动工,dong4 gong1
+冻结,dong4 jie2
+动静,dong4 jing4
+栋梁,dong4 liang2
+动脉,dong4 mai4
+动身,dong4 shen1
+董事,dong3 shi4
+懂事,dong3 shi4
+董事会,dong3 shi4 hui4
+董事长,dong3 shi4 zhang3
+动弹
+动向,dong4 xiang4
+洞穴,dong4 xue4
+动摇,dong4 yao2
+动用,dong4 yong4
+动员,dong4 yuan2
+东张西望
+斗,dou4
+抖,dou3
+陡,dou3
+兜,dou1
+逗留,dou4 liu2
+陡峭
+兜售,dou1 shou4
+斗志,dou4 zhi4
+豆子,dou4 zi5
+独,du2
+赌,du3
+断定,duan4 ding4
+断断续续,duan4 duan4 xu4 xu4
+断绝,duan4 jue2
+断裂
+段落,duan4 luo4
+断然,duan4 ran2
+短暂,duan3 zan4
+断章取义
+端正,duan1 zheng4
+赌博,du3 bo2
+督促,du1 cu4
+都会,du1 hui4
+兑,dui4
+对岸,dui4 an4
+对白
+对策,dui4 ce4
+对得起,dui4 de5 qi3
+对付,dui4 fu5
+兑换,dui4 huan4
+堆积,dui1 ji1
+对联,dui4 lian2
+对流,dui4 liu2
+对牛弹琴
+堆砌
+兑现,dui4 xian4
+队形,dui4 xing2
+对弈
+对照,dui4 zhao4
+对症下药
+对峙,dui4 zhi4
+独家,du2 jia1
+杜绝,du4 jue2
+炖,dun4
+敦促,dun1 cu4
+敦厚
+多年来,duo1 nian2 lai2
+多半
+多边
+夺冠
+夺魁
+堕落,duo4 luo4
+哆嗦,duo1 suo5
+多心,duo1 xin1
+毒品,du2 pin3
+堵塞,du3 se4
+独身
+读物,du2 wu4
+独一无二
+鹅,e2
+恶,e4
+额度
+噩耗
+恶化,e4 hua4
+恩爱,en1 ai4
+恩情,en1 qing2
+恩人,en1 ren2
+恩怨,en1 yuan4
+耳光
+耳目一新
+耳熟能详
+而已,er2 yi3
+额外,e2 wai4
+恶性,e4 xing4
+恶意,e4 yi4
+鳄鱼,e4 yu2
+厄运
+讹诈,e2 zha4
+遏制,e4 zhi4
+恶作剧,e4 zuo4 ju4
+发财,fa1 cai2
+发呆,fa1 dai1
+发抖,fa1 dou3
+发火,fa1 huo3
+发酵,fa1 jiao4
+发觉,fa1 jue2
+发掘,fa1 jue2
+发愣
+乏力
+阀门
+帆,fan1
+反驳,fan3 bo2
+反差
+反常,fan3 chang2
+犯愁,fan4 chou2
+范畴,fan4 chou2
+帆船,fan1 chuan2
+反倒,fan3 dao4
+繁多,fan2 duo1
+翻番
+仿,fang3
+反感,fan3 gan3
+防盗
+房地产,fang2 di4 chan3
+防范
+放过
+防护,fang2 hu4
+防火墙
+放宽,fang4 kuan1
+放射,fang4 she4
+防守,fang2 shou3
+放水
+放肆,fang4 si4
+犯规,fan4 gui1
+防卫,fang2 wei4
+方向盘
+防汛,fang2 xun4
+防疫,fang2 yi4
+放映,fang4 ying4
+防御,fang2 yu4
+方圆,fang1 yuan2
+仿真,fang3 zhen1
+方针,fang1 zhen1
+放置,fang4 zhi4
+仿制
+纺织,fang3 zhi1
+放纵,fang4 zong4
+繁华,fan2 hua2
+返还
+反击,fan3 ji1
+反抗,fan3 kang4
+翻来覆去
+泛滥,fan4 lan4
+贩卖,fan4 mai4
+烦闷,fan2 men1
+反面,fan3 mian4
+反射,fan3 she4
+翻身,fan1 shen1
+反弹
+翻天覆地
+繁体字,fan2 ti3 zi4
+发怒,fa1 nu4
+饭碗,fan4 wan3
+反问,fan3 wen4
+反响,fan3 xiang3
+翻新,fan1 xin1
+反省,fan3 xing3
+繁衍,fan2 yan3
+繁杂,fan2 za2
+烦躁,fan2 zao4
+反之,fan3 zhi1
+繁重,fan2 zhong4
+犯罪,fan4 zui4
+发热,fa1 re4
+法人,fa3 ren2
+发射,fa1 she4
+发誓,fa1 shi4
+法庭,fa3 ting2
+发泄,fa1 xie4
+发型,fa4 xing2
+发芽,fa1 ya2
+发扬,fa1 yang2
+发扬光大,fa1 yang2 guang1 da4
+发言人,fa1 yan2 ren2
+发源
+发源地
+法则,fa3 ze2
+法制,fa3 zhi4
+法治,fa3 zhi4
+发作,fa1 zuo4
+废,fei4
+非,fei1
+诽谤,fei3 bang4
+废除,fei4 chu2
+飞船,fei1 chuan2
+非但
+非得
+飞碟,fei1 die2
+非法,fei1 fa3
+非凡,fei1 fan2
+沸沸扬扬
+废话,fei4 hua4
+费劲
+费力,fei4 li4
+肥料,fei2 liao4
+废品,fei4 pin3
+废弃,fei4 qi4
+废寝忘食
+飞禽走兽
+沸腾,fei4 teng2
+绯闻
+废物,fei4 wu4
+飞翔,fei1 xiang2
+废墟,fei4 xu1
+飞跃,fei1 yue4
+肥皂,fei2 zao4
+坟,fen2
+粪,fen4
+粪便,fen4 bian4
+分辨,fen1 bian4
+分成
+分寸,fen1 cun4
+分担,fen1 dan1
+份额
+分发,fen1 fa1
+芬芳,fen1 fang1
+吩咐,fen1 fu4
+逢,feng2
+缝,feng2
+缝,feng4
+疯,feng1
+风暴,feng1 bao4
+风波,feng1 bo1
+风采
+风餐露宿
+风吹雨打
+讽刺,feng4 ci4
+封顶
+风度,feng1 du4
+分割,fen1 ge1
+风范
+缝合
+风和日丽
+丰厚
+凤凰,feng4 huang2
+峰会,feng1 hui4
+峰回路转
+封建,feng1 jian4
+风景线
+风浪,feng1 lang4
+锋利,feng1 li4
+风流,feng1 liu2
+丰满,feng1 man3
+风貌
+凤毛麟角
+蜂蜜,feng1 mi4
+封面,feng1 mian4
+风气,feng1 qi4
+风情
+风趣,feng1 qu4
+风沙,feng1 sha1
+风尚,feng1 shang4
+丰盛
+风水,feng1 shui3
+丰硕
+封锁,feng1 suo3
+风土人情,feng1 tu3 ren2 qing2
+风味,feng1 wei4
+风云
+风雨无阻
+风筝,feng1 zheng1
+疯子,feng1 zi5
+分红,fen1 hong2
+分化,fen1 hua4
+分解,fen1 jie3
+奋力,fen4 li4
+分量,fen4 liang4
+分裂,fen1 lie4
+分泌,fen1 mi4
+分明,fen1 ming2
+粉末,fen3 mo4
+坟墓,fen2 mu4
+分歧,fen1 qi2
+焚烧,fen2 shao1
+粉丝,fen3 si1
+粉碎,fen3 sui4
+分外,fen4 wai4
+奋勇,fen4 yong3
+分支,fen1 zhi1
+佛,fo2
+否决,fou3 jue2
+负,fu4
+附,fu4
+赴,fu4
+腹,fu4
+敷,fu1
+腐败,fu3 bai4
+副本,fu4 ben3
+复查,fu4 cha2
+扶持,fu2 chi2
+附带,fu4 dai4
+浮动,fu2 dong4
+复发,fu4 fa1
+富含
+富豪,fu4 hao2
+复合,fu4 he2
+附和,fu4 he4
+孵化,fu1 hua4
+俘获
+复活,fu4 huo2
+附加,fu4 jia1
+腐烂,fu3 lan4
+浮力,fu2 li4
+俘虏,fu2 lu3
+抚摸,fu3 mo1
+福气,fu2 qi4
+服气,fu2 qi4
+肤浅
+富强,fu4 qiang2
+辐射,fu2 she4
+服饰,fu2 shi4
+腐蚀,fu3 shi2
+俯视,fu3 shi4
+俯首
+附属,fu4 shu3
+复苏,fu4 su1
+富翁
+服务器,fu2 wu4 qi4
+浮现
+腹泻,fu4 xie4
+复兴,fu4 xing1
+腐朽,fu3 xiu3
+抚恤
+敷衍,fu1 yan3
+抚养,fu3 yang3
+复原,fu4 yuan2
+浮躁
+负重
+斧子,fu3 zi5
+富足,fu4 zu2
+副作用,fu4 zuo4 yong4
+钙,gai4
+概,gai4
+改版
+改动
+改观
+概况,gai4 kuang4
+改良,gai3 liang2
+概论,gai4 lun2
+改日
+改邪归正,gai3 xie2 gui1 zheng4
+改装,gai3 zhuang1
+杆,gan3
+干部,gan4 bu4
+感触
+感恩,gan3 en1
+赶赴
+港,gang3
+缸,gang1
+干戈
+杠杆,gang1 gan3
+纲领,gang1 ling3
+钢铁,gang1 tie3
+港湾,gang3 wan1
+纲要,gang1 yao4
+干劲,gan4 jin4
+感慨,gan3 kai3
+干枯,gan1 ku1
+干涉,gan1 she4
+干事,gan4 shi5
+感叹,gan3 tan4
+感悟
+甘心,gan1 xin1
+感性,gan3 xing4
+干预,gan1 yu4
+告,gao4
+高额
+高昂,gao1 ang2
+高傲
+高潮,gao1 chao2
+告辞,gao4 ci2
+高调
+搞鬼,gao3 gui3
+高贵,gao1 gui4
+高见
+告诫,gao4 jie4
+高空,gao1 kong1
+高龄,gao1 ling2
+高明,gao1 ming2
+告示,gao4 shi4
+搞笑
+高血压,gao1 xue4 ya1
+高雅,gao1 ya3
+高压,gao1 ya1
+高涨,gao1 zhang3
+告知
+告状,gao4 zhuang4
+搁,ge1
+个案
+戈壁
+疙瘩,ge1 da5
+格格不入,ge2 ge2 bu4 ru4
+隔阂,ge2 he2
+格局,ge2 ju2
+歌剧,ge1 ju4
+隔离,ge2 li2
+阁楼,ge2 lou2
+耕,geng1
+耕地,geng1 di4
+更改,geng1 gai3
+哽咽
+更衣室,geng1 yi1 shi4
+耕耘,geng1 yun2
+更正,geng1 zheng4
+耿直
+根基
+跟进,gen1 jin4
+根深蒂固,gen1 shen1 di4 gu4
+根源,gen1 yuan2
+根治
+搁浅
+格式,ge2 shi4
+各抒己见
+歌颂,ge1 song4
+个头儿
+歌舞,ge1 wu3
+革新,ge2 xin1
+歌谣,ge1 yao2
+搁置,ge1 zhi4
+格子
+鸽子,ge1 zi3
+拱,gong3
+弓,gong1
+功,gong1
+攻,gong1
+供,gong1
+公办
+供不应求,gong1 bu2 ying4 qiu2
+功臣
+公道,gong1 dao5
+功底
+宫殿,gong1 dian4
+攻读,gong1 du2
+公费,gong1 fei4
+供奉,gong4 feng4
+公关,gong1 guan1
+攻关,gong1 guan1
+共和国,gong4 he2 guo2
+工会,gong1 hui4
+工匠,gong1 jiang4
+恭敬,gong1 jing4
+攻克,gong1 ke4
+工科
+公款,gong1 kuan3
+功劳,gong1 lao2
+公立
+功力
+功利
+功率,gong1 lu:4
+共鸣,gong4 ming2
+公墓,gong1 mu4
+供暖
+公仆,gong1 pu1
+公顷,gong1 qing3
+供求,gong1 qiu2
+公然,gong1 ran2
+共识,gong4 shi2
+公示
+公式,gong1 shi4
+公事
+攻势,gong1 shi4
+宫廷
+共同体
+恭维,gong1 wei2
+公务,gong1 wu4
+共性,gong4 xing4
+供需,gong1 xu1
+供养
+供应链,gong1 ying4 lian4
+公用,gong1 yong4
+公约,gong1 yue1
+公证,gong1 zheng4
+工整
+公职
+勾,gou1
+钩,gou1
+构建
+勾结,gou1 jie2
+勾勒
+够呛
+构思,gou4 si1
+构想,gou4 xiang3
+故,gu4
+雇,gu4
+股,gu3
+瓜分,gua1 fen1
+寡妇,gua3 fu4
+挂钩,gua4 gou1
+乖,guai1
+怪不得,guai4 bu5 de5
+乖巧
+怪物,guai4 wu5
+怪异,guai4 yi4
+拐杖,guai3 zhang4
+刮目相看
+惯,guan4
+灌,guan4
+官兵,guan1 bing1
+棺材,guan1 cai2
+观测,guan1 ce4
+贯彻,guan4 che4
+贯穿
+灌溉,guan4 gai4
+观感
+光彩,guang1 cai3
+光顾
+光滑,guang1 hua5
+光环,guang1 huan2
+光辉,guang1 hui1
+光缆,guang1 lan3
+光芒,guang1 mang2
+光明磊落
+光盘,guang1 pan2
+光荣,guang1 rong2
+广义,guang3 yi4
+光泽,guang1 ze2
+挂念,gua4 nian4
+管家
+管教,guan3 jiao4
+关节,guan1 jie2
+惯例,guan4 li4
+官吏,guan1 li4
+官僚,guan1 liao2
+观摩
+关切,guan1 qie4
+灌输,guan4 shu1
+关税,guan1 shui4
+官司,guan1 si5
+贯通,guan4 tong1
+罐头,guan4 tou5
+关头,guan1 tou2
+观望
+管辖,guan3 xia2
+惯性
+管用,guan3 yong4
+关照,guan1 zhao4
+挂失
+瓜子,gua1 zi3
+孤单,gu1 dan1
+鼓动,gu3 dong4
+古董,gu3 dong3
+股东,gu3 dong1
+孤儿,gu1 er2
+股份,gu3 fen4
+辜负,gu1 fu4
+骨干,gu3 gan4
+骨骼,gu3 ge2
+古怪,gu3 guai4
+固化
+鬼,gui3
+龟,gui1
+瑰宝
+贵宾,gui4 bin1
+规格,gui1 ge2
+归根到底,gui1 gen1 dao4 di3
+桂花,gui4 hua1
+轨迹,gui3 ji4
+诡计,gui3 ji4
+归结,gui1 jie2
+归来
+归纳,gui1 na4
+闺女,gui1 nu:3
+归属,gui1 shu3
+归宿
+柜台,gui4 tai2
+归于
+规章,gui1 zhang1
+贵族,gui4 zu2
+顾及,gu4 ji2
+古籍
+骨架,gu3 jia4
+古今中外
+孤立,gu1 li4
+孤零零
+孤陋寡闻
+顾虑,gu4 lu:4
+股民
+顾名思义
+滚动,gun3 dong4
+裹,guo3
+过意不去
+过半
+过不去,guo4 bu5 qu4
+过错
+过道,guo4 dao4
+果断,guo3 duan4
+国防,guo2 fang2
+过关,guo4 guan1
+国徽,guo2 hui1
+过奖,guo4 jiang3
+过境,guo4 jing4
+过量,guo4 liang4
+过滤,guo4 lu:4
+国民,guo2 min2
+过剩,guo4 sheng4
+过失,guo4 shi1
+过头
+国土,guo2 tu3
+过往
+过问,guo4 wen4
+国务院,guo2 wu4 yuan4
+国学
+过瘾
+过硬
+国有,guo2 you3
+果真,guo3 zhen1
+古朴
+骨气
+姑且,gu1 qie3
+顾全大局,gu4 quan2 da4 ju2
+固然,gu4 ran2
+估算,gu1 suan4
+谷物,gu3 wu4
+雇佣,gu4 yong1
+固有,gu4 you3
+雇员,gu4 yuan2
+骨折,gu3 zhe2
+固执,gu4 zhi2
+雇主,gu4 zhu3
+海报,hai3 bao4
+海滨,hai3 bin1
+害虫,hai4 chong2
+海盗,hai3 dao4
+海军,hai3 jun1
+海量
+海绵,hai3 mian2
+骇人听闻
+海滩,hai3 tan1
+海豚,hai3 tun2
+海湾,hai3 wan1
+海峡,hai3 xia2
+海啸,hai3 xiao4
+海运,hai3 yun4
+海藻,hai3 zao3
+函,han2
+酣畅
+寒带,han2 dai4
+汉服
+涵盖
+航海,hang2 hai3
+行家,hang2 jia1
+行列,hang2 lie4
+行情,hang2 qing2
+夯实
+航天,hang2 tian1
+航天员,hang2 tian1 yuan2
+航行,hang2 xing2
+航运,hang2 yun4
+憨厚
+含糊,han2 hu2
+汗马功劳
+酣睡
+捍卫,han4 wei4
+含蓄
+寒暄
+耗,hao4
+好比,hao3 bi3
+号称,hao4 cheng1
+好歹
+耗费,hao4 fei4
+浩瀚
+豪华,hao2 hua2
+浩劫
+豪迈,hao2 mai4
+好胜
+耗时
+好受
+好说,hao3 shuo1
+好似,hao3 si4
+好心,hao3 xin1
+好意
+好在,hao3 zai4
+何,he2
+核,he2
+呵,he1
+和蔼,he2 ai3
+何必,he2 bi4
+喝彩
+核查,he2 cha2
+合唱,he2 chang4
+何等,he2 deng3
+贺电
+核电站,he2 dian4 zhan4
+核对,he2 dui4
+和好,he2 hao3
+合乎,he2 hu1
+呵护,he1 hu4
+荷花,he2 hua1
+合伙,he2 huo3
+黑客,hei1 ke4
+黑马,hei1 ma3
+黑名单,hei1 ming2 dan1
+合计,he2 ji4
+和解,he2 jie3
+何苦,he2 ku3
+何况,he2 kuang4
+鹤立鸡群
+禾苗,he2 miao2
+和睦,he2 mu4
+恨不得,hen4 bu5 de5
+核能,he2 neng2
+哼,heng1
+横向
+恒星,heng2 xing1
+河畔,he2 pan4
+和平共处,he2 ping2 gong4 chu3
+和气,he2 qi5
+赫然
+和尚,he2 shang5
+核实
+核桃,he2 tao5
+核武器,he2 wu3 qi4
+贺信
+合约,he2 yue1
+何止
+合资,he2 zi1
+哄,hong3
+轰,hong1
+烘,hong1
+烘焙
+轰动,hong1 dong4
+烘干
+宏观,hong2 guan1
+红火
+红利,hong2 li4
+洪亮,hong2 liang4
+红扑扑
+红润
+红薯,hong2 shu3
+哄堂大笑
+烘托
+宏伟,hong2 wei3
+弘扬
+轰炸,hong1 zha4
+吼,hou3
+后备
+后备箱
+厚道
+后盾,hou4 dun4
+后顾之忧,hou4 gu4 zhi1 you1
+喉咙,hou2 long2
+后勤,hou4 qin2
+后世
+后台,hou4 tai2
+后续
+候选人,hou4 xuan3 ren2
+后裔,hou4 yi4
+后遗症
+糊,hu2
+护,hu4
+呼,hu1
+花瓣,hua1 ban4
+划不来
+画册,hua4 ce4
+划得来
+化肥,hua4 fei2
+花卉
+怀抱,huai2 bao4
+怀旧,huai2 jiu4
+槐树,huai2 shu4
+滑稽,hua2 ji5
+化解
+花蕾,hua1 lei3
+华丽,hua2 li4
+画龙点睛
+缓,huan3
+环比
+焕发,huan4 fa1
+晃,huang4
+晃,huang3
+荒,huang1
+慌,huang1
+荒诞,huang1 dan4
+晃荡
+皇宫
+皇后,huang2 hou4
+谎话,huang3 hua4
+黄昏,huang2 hun1
+荒凉,huang1 liang2
+慌乱,huang1 luan4
+慌忙,huang1 mang2
+荒谬,huang1 miu4
+恍然大悟
+皇上
+皇室,huang2 shi4
+荒唐,huang1 tang2
+谎言,huang3 yan2
+慌张,huang1 zhang1
+缓和,huan3 he2
+欢呼,huan1 hu1
+欢聚
+幻觉,huan4 jue2
+欢快
+唤起,huan4 qi3
+环球,huan2 qiu2
+换取,huan4 qu3
+焕然一新
+环绕,huan2 rao4
+欢声笑语
+唤醒,huan4 xing3
+幻影,huan4 ying3
+华侨,hua2 qiao2
+哗然
+华人,hua2 ren2
+化身
+画蛇添足,hua4 she2 tian1 zu2
+划时代,hua2 shi2 dai4
+划算
+滑梯
+花纹,hua1 wen2
+化险为夷
+化验,hua4 yan4
+花样,hua1 yang4
+华裔,hua2 yi4
+话语
+互补,hu4 bu3
+呼唤,hu1 huan4
+毁,hui3
+回避,hui2 bi4
+会场,hui4 chang3
+回归,hui2 gui1
+回合
+汇合,hui4 he2
+悔恨,hui3 hen4
+毁坏,hui3 huai4
+辉煌,hui1 huang2
+挥霍,hui1 huo4
+汇集,hui4 ji2
+汇聚
+回馈,hui2 kui4
+贿赂,hui4 lu4
+回落
+会面,hui4 mian4
+毁灭,hui3 mie4
+回升,hui2 sheng1
+绘声绘色
+回首,hui2 shou3
+会谈,hui4 tan2
+回味
+会晤,hui4 wu4
+挥舞,hui1 wu3
+回想,hui2 xiang3
+会意
+回忆录,hui2 yi4 lu4
+回应,hui2 ying4
+会诊
+绘制,hui4 zhi4
+呼救
+忽冷忽热
+狐狸,hu2 li5
+护理
+胡乱,hu2 luan4
+昏,hun1
+荤,hun1
+胡闹
+昏迷,hun1 mi2
+婚纱,hun1 sha1
+浑身,hun2 shen1
+混淆,hun4 xiao2
+混浊,hun4 zhuo2
+豁,huo1
+火爆
+豁出去
+豁达
+或多或少,huo4 duo1 huo4 shao3
+活该,huo2 gai1
+祸害,huo4 hai4
+火候
+火花,huo3 hua1
+火箭,huo3 jian4
+火炬,huo3 ju4
+火辣辣
+活期
+火热
+火山,huo3 shan1
+伙食,huo3 shi2
+火速
+火腿,huo3 tui3
+获悉,huo4 xi1
+火焰,huo3 yan2
+货运,huo4 yun4
+湖泊,hu2 po1
+呼声,hu1 sheng1
+胡说,hu2 shuo1
+胡思乱想,hu2 si1 luan4 xiang3
+糊涂,hu2 tu5
+呼啸,hu1 xiao4
+呼应,hu1 ying1
+忽悠
+呼吁,hu1 yu4
+即,ji2
+计,ji4
+忌,ji4
+剂,ji4
+继,ji4
+祭,ji4
+暨,ji4
+积,ji1
+继而
+驾,jia4
+假定,jia3 ding4
+家伙,jia1 huo5
+家教
+佳节
+加紧,jia1 jin3
+家境
+假冒,jia3 mao4
+加盟,jia1 meng2
+贱,jian4
+溅,jian4
+拣,jian3
+兼,jian1
+煎,jian1
+煎熬
+鉴别,jian4 bie2
+剪彩,jian3 cai3
+检察,jian3 cha2
+监察,jian1 cha2
+简称,jian3 cheng1
+间谍,jian4 die2
+间断
+简短,jian3 duan3
+尖端,jian1 duan1
+见多识广
+减负
+肩负
+桨,jiang3
+姜,jiang1
+僵,jiang1
+奖杯
+僵化,jiang1 hua4
+将就,jiang1 jiu5
+僵局,jiang1 ju2
+讲理,jiang3 li3
+降临,jiang4 lin4
+江山
+奖赏,jiang3 shang3
+兼顾
+监管,jian1 guan3
+坚果,jian1 guo3
+奖项
+僵硬,jiang1 ying4
+监护,jian1 hu4
+嘉年华
+剪辑
+见解,jian4 jie3
+简洁,jian3 jie2
+艰巨,jian1 ju4
+监控,jian1 kong4
+简练
+见利忘义
+简陋,jian3 lou4
+健美,jian4 mei3
+减免,jian3 mian3
+歼灭,jian1 mie4
+坚韧,jian1 ren4
+兼任,jian1 ren4
+见仁见智
+兼容,jian1 rong2
+尖锐,jian1 rui4
+鉴赏,jian4 shang3
+见识,jian4 shi5
+坚实,jian1 shi2
+监视,jian1 shi4
+坚守
+建树
+践踏,jian4 ta4
+检讨,jian3 tao3
+简体字,jian3 ti3 zi4
+减退
+见外
+见闻,jian4 wen2
+间隙,jian4 xi4
+艰险,jian1 xian3
+见效,jian4 xiao4
+间歇,jian4 xie1
+坚信,jian1 xin4
+简要,jian3 yao4
+简易,jian3 yi4
+见义勇为
+鉴于,jian4 yu2
+监狱,jian1 yu4
+奸诈
+见证,jian4 zheng4
+健壮,jian4 zhuang4
+嚼,jiao2
+绞,jiao3
+搅,jiao3
+缴,jiao3
+焦,jiao1
+叫板
+搅拌,jiao3 ban4
+交叉,jiao1 cha1
+轿车,jiao4 che1
+交代,jiao1 dai4
+交锋,jiao1 feng1
+交付,jiao1 fu4
+娇惯,jiao1 guan4
+叫好,jiao4 hao3
+交互,jiao1 hu4
+狡猾,jiao3 hua2
+交集,jiao1 ji2
+焦急,jiao1 ji2
+交界,jiao1 jie4
+交接,jiao1 jie1
+较劲
+教科书,jiao4 ke1 shu1
+较量,jiao4 liang4
+缴纳,jiao3 na4
+交纳
+胶囊
+娇气,jiao1 qi4
+交情
+交涉,jiao1 she4
+礁石
+脚踏实地
+交替,jiao1 ti4
+教条,jiao4 tiao2
+交头接耳
+交响乐,jiao1 xiang3 yue4
+侥幸,jiao3 xing4
+教养,jiao4 yang3
+郊游,jiao1 you2
+焦躁
+矫正,jiao3 zheng4
+交织,jiao1 zhi1
+家禽,jia1 qin2
+架势,jia4 shi5
+假使,jia3 shi3
+家世
+价位
+佳肴
+家用,jia1 yong4
+驾驭,jia4 yu4
+家喻户晓,jia1 yu4 hu4 xiao3
+夹杂,jia1 za2
+家政,jia1 zheng4
+加之
+价值观,jia4 zhi2 guan1
+嫁妆
+假装,jia3 zhuang1
+架子,jia4 zi5
+夹子,jia1 zi5
+家族,jia1 zu2
+基本功
+级别,ji2 bie2
+机舱
+计策,ji4 ce4
+基层,ji1 ceng2
+急促,ji2 cu4
+激荡
+祭奠
+积淀
+机动,ji1 dong4
+极度,ji2 du4
+嫉妒,ji2 du4
+忌妒,ji4 du5
+劫,jie2
+截,jie2
+戒,jie4
+界,jie4
+皆,jie1
+揭,jie1
+接二连三
+洁白,jie2 bai2
+接班,jie1 ban1
+接班人,jie1 ban1 ren2
+戒备,jie4 bei4
+阶层,jie1 ceng2
+劫持,jie2 chi2
+解除,jie3 chu2
+皆大欢喜
+界定
+揭发,jie1 fa1
+街坊,jie1 fang1
+解雇,jie3 gu4
+接轨,jie1 gui3
+阶级,jie1 ji2
+接济
+节俭,jie2 jian3
+接见,jie1 jian4
+洁净,jie2 jing4
+捷径,jie2 jing4
+结晶,jie2 jing1
+竭尽全力,jie2 jin4 quan2 li4
+解救,jie3 jiu4
+结局,jie2 ju2
+解渴,jie3 ke3
+借口,jie4 kou3
+竭力,jie2 li4
+接力
+揭露,jie1 lu4
+接纳,jie1 na4
+解剖,jie3 pou1
+节气,jie2 qi5
+截然不同
+介入,jie4 ru4
+解散,jie3 san4
+结识
+届时,jie4 shi2
+揭示,jie1 shi4
+接手
+结算,jie2 suan4
+解体,jie3 ti3
+接替,jie1 ti4
+阶梯,jie1 ti1
+借条
+解脱,jie3 tuo1
+解围
+解析,jie3 xi1
+界限,jie4 xian4
+界线,jie4 xian4
+揭晓,jie1 xiao3
+介意,jie4 yi4
+节衣缩食
+借用
+介于
+解约
+节制,jie2 zhi4
+继父,ji4 fu4
+肌肤
+急功近利
+籍贯,ji2 guan4
+机关,ji1 guan1
+激光,ji1 guang1
+记号,ji4 hao5
+激化
+集会,ji2 hui4
+忌讳
+激活
+基建
+计较,ji4 jiao4
+寂静,ji4 jing4
+基金会,ji1 jin1 hui4
+急剧,ji2 ju4
+即可
+忌口
+吉利,ji2 li4
+极力,ji2 li4
+剂量,ji4 liang2
+脊梁,ji3 liang5
+机灵,ji1 ling2
+机密,ji1 mi4
+继母,ji4 mu3
+劲,jin4
+尽,jin3
+筋,jin1
+禁不住
+进程,jin4 cheng2
+紧凑
+竟,jing4
+敬,jing4
+茎,jing1
+经,jing1
+精,jing1
+鲸,jing1
+敬爱,jing4 ai4
+敬而远之,jing4 er2 yuan3 zhi1
+警报
+精彩纷呈
+精打细算
+境地
+井底之蛙
+惊动
+经度
+精度
+经费,jing1 fei4
+净化,jing4 hua4
+精华,jing1 hua2
+惊慌,jing1 huang1
+惊慌失措
+竞技,jing4 ji4
+荆棘,jing1 ji2
+精简,jing1 jian3
+境界,jing4 jie4
+警戒,jing3 jie4
+兢兢业业,jing1 jing1 ye4 ye4
+经久不息
+敬礼,jing4 li3
+精练,jing1 lian4
+经贸,jing1 mao4
+精密,jing1 mi4
+精妙
+精明,jing1 ming2
+境内,jing4 nei4
+进攻,jin4 gong1
+敬佩
+精疲力竭,jing1 pi2 li4 jie2
+精品
+惊奇,jing1 qi2
+精巧,jing1 qiao3
+敬请
+警犬,jing3 quan3
+精神病,jing1 shen2 bing4
+警示
+经受,jing1 shou4
+精髓,jing1 sui3
+惊叹
+警惕,jing3 ti4
+惊天动地
+境外,jing4 wai4
+敬畏,jing4 wei4
+精细,jing1 xi4
+惊吓,jing1 xia4
+惊险
+竞相
+惊心动魄
+竞选,jing4 xuan3
+敬业
+敬意,jing4 yi4
+晶莹
+精英,jing1 ying1
+精益求精,jing1 yi4 qiu2 jing1
+境遇,jing4 yu4
+精湛
+径直
+静止,jing4 zhi3
+敬重,jing4 zhong4
+警钟,jing3 zhong1
+纪念碑,ji4 nian4 bei1
+晋级
+禁忌,jin4 ji4
+津津有味,jin1 jin1 you3 wei4
+进军,jin4 jun1
+浸泡,jin4 pao4
+紧迫,jin3 po4
+锦旗
+尽情
+进取,jin4 qu3
+禁区,jin4 qu1
+紧缺
+锦上添花
+晋升,jin4 sheng1
+紧缩,jin3 suo1
+尽头,jin4 tou2
+劲头,jin4 tou2
+进修,jin4 xiu1
+尽早,jin3 zao3
+窘迫,jiong3 po4
+急迫
+激起,ji1 qi3
+汲取
+即日
+即时,ji2 shi2
+集市,ji2 shi4
+纪实
+棘手,ji2 shou3
+祭祀,ji4 si4
+集思广益
+激素,ji1 su4
+吉他,ji2 ta1
+寄托,ji4 tuo1
+揪,jiu1
+就餐,jiu4 can1
+纠缠,jiu1 chan2
+就此,jiu4 ci3
+就地,jiu4 di4
+救济,jiu4 ji4
+就近,jiu4 jin4
+酒楼,jiu3 lou2
+就任,jiu4 ren4
+救死扶伤
+久违,jiu3 wei2
+就绪,jiu4 xu4
+久仰
+就医
+就诊
+就职,jiu4 zhi2
+救治
+就座
+极限,ji2 xian4
+迹象,ji1 xiang4
+吉祥物,ji2 xiang2 wu4
+绩效
+讥笑,ji1 xiao4
+急性
+记性,ji4 xing4
+畸形,ji1 xing2
+积蓄
+挤压
+纪要,ji4 yao4
+记忆犹新
+急于,ji2 yu2
+基于,ji1 yu2
+急于求成
+积攒
+急躁,ji2 zao4
+及早,ji2 zao3
+激增,ji1 zeng1
+机智,ji1 zhi4
+急中生智
+集装箱,ji2 zhuang1 xiang1
+基准,ji1 zhun3
+集资,ji2 zi1
+圈,juan1
+圈,juan4
+卷入,juan3 ru4
+居安思危
+捐献,juan1 xian4
+举报
+剧变,ju4 bian4
+局部,ju2 bu4
+举措
+绝,jue2
+倔,jue2
+巨额,ju4 e2
+绝技,jue2 ji4
+绝迹
+倔强,jue2 jiang4
+崛起,jue2 qi3
+诀窍,jue2 qiao4
+觉悟,jue2 wu4
+觉醒,jue2 xing3
+决议,jue2 yi4
+绝缘,jue2 yuan2
+抉择,jue2 ze2
+角逐
+居高不下
+鞠躬,ju1 gong1
+聚焦
+聚精会神,ju4 jing1 hui4 shen2
+咀嚼,ju3 jue2
+拘留,ju1 liu2
+剧目
+俊,jun4
+均,jun1
+竣工
+军官,jun1 guan1
+均衡,jun1 heng2
+军舰,jun1 jian4
+骏马,jun4 ma3
+俊俏
+军事,jun1 shi4
+君子,jun1 zi5
+举棋不定
+剧情
+巨人,ju4 ren2
+沮丧,ju3 sang4
+局势,ju2 shi4
+举世瞩目,ju3 shi4 zhu3 mu4
+拘束,ju1 shu4
+巨头,ju4 tou2
+据悉,ju4 xi1
+举一反三
+居于
+举止,ju3 zhi3
+举重,ju3 zhong4
+举足轻重
+卡车,ka3 che1
+开办,kai1 ban4
+开采,kai1 cai3
+开场
+开场白
+开除,kai1 chu2
+开动,kai1 dong4
+开发区,kai1 fa1 qu1
+开发商
+开工,kai1 gong1
+开垦,kai1 ken3
+开阔,kai1 kuo4
+开朗,kai1 lang3
+开明,kai1 ming2
+楷模
+开辟,kai1 pi4
+开天辟地,kai1 tian1 pi4 di4
+开庭,kai1 ting2
+开拓,kai1 tuo4
+开销,kai1 xiao1
+凯旋,kai3 xuan2
+开张,kai1 zhang1
+开支,kai1 zhi1
+堪称
+刊登,kan1 deng1
+砍伐,kan3 fa2
+扛,kang2
+抗衡,kang4 heng2
+抗拒,kang4 ju4
+慷慨,kang1 kai3
+抗生素,kang4 sheng1 su4
+看管
+抗议,kang4 yi4
+抗争,kang4 zheng1
+看护
+侃侃而谈
+坎坷
+看守,kan1 shou3
+看台
+勘探,kan1 tan4
+刊物,kan1 wu4
+考查,kao3 cha2
+考量,kao3 liang2
+靠拢
+卡通,ka3 tong1
+壳,ke2
+磕,ke1
+可悲,ke3 bei1
+刻不容缓
+可不是,ke3 bu5 shi4
+可乘之机
+可耻,ke3 chi3
+客房,ke4 fang2
+可观,ke3 guan1
+可贵,ke3 gui4
+刻画,ke4 hua4
+客机,ke4 ji1
+苛刻
+刻苦,ke4 ku3
+颗粒,ke1 li4
+客流
+克隆,ke4 long2
+啃,ken3
+坑,keng1
+恳切,ken3 qie4
+恳求,ken3 qiu2
+可谓,ke3 wei4
+可恶,ke3 wu4
+可想而知,ke3 xiang3 er2 zhi1
+可笑,ke3 xiao4
+刻意,ke4 yi4
+可疑,ke3 yi2
+客运,ke4 yun4
+克制,ke4 zhi4
+刻舟求剑
+孔,kong3
+空白,kong4 bai2
+恐怖,kong3 bu4
+空荡荡
+空洞,kong1 dong4
+控告,kong4 gao4
+恐吓,kong3 he4
+恐慌,kong3 huang1
+空间站,kong1 jian1 zhan4
+空军,kong1 jun1
+恐龙,kong3 long2
+空难,kong1 nan4
+空前,kong1 qian2
+空隙,kong4 xi4
+空想,kong1 xiang3
+空虚,kong1 xu1
+抠,kou1
+口岸,kou3 an4
+口碑
+口才,kou3 cai2
+口吃,kou3 chi1
+扣除,kou4 chu2
+口径
+口令
+扣留,kou4 liu2
+口气,kou3 qi4
+扣人心弦,kou4 ren2 xin1 xian2
+口哨儿
+口水,kou3 shui3
+口头禅
+口香糖,kou3 xiang1 tang2
+扣押,kou4 ya1
+口音,kou3 yin1
+口罩,kou3 zhao4
+口子
+挎,kua4
+跨,kua4
+垮,kua3
+夸大,kua1 da4
+跨度,kua4 du4
+跨国,kua4 guo2
+快活,kuai4 huo5
+夸夸其谈
+宽敞,kuan1 chang5
+款待,kuan3 dai4
+宽泛
+狂,kuang2
+矿,kuang4
+框,kuang4
+筐,kuang1
+矿藏,kuang4 cang2
+矿产,kuang4 chan3
+狂欢,kuang2 huan1
+框架,kuang4 jia4
+旷课,kuang4 ke4
+况且,kuang4 qie3
+狂热,kuang2 re4
+宽广,kuan1 guang3
+宽厚
+宽阔,kuan1 kuo4
+宽容,kuan1 rong2
+宽恕,kuan1 shu4
+宽松,kuan1 song1
+款项,kuan3 xiang4
+夸耀,kua1 yao4
+跨越,kua4 yue4
+库存,ku4 cun2
+亏本
+亏待,kui1 dai4
+枯竭
+苦尽甘来
+窟窿,ku1 long5
+捆,kun3
+苦难,ku3 nan4
+苦恼,ku3 nao3
+困惑,kun4 huo4
+困境,kun4 jing4
+扩,kuo4
+扩充,kuo4 chong1
+阔绰
+括号,kuo4 hao4
+扩建,kuo4 jian4
+扩散,kuo4 san4
+扩张,kuo4 zhang1
+哭泣,ku1 qi4
+苦涩
+酷似
+枯萎,ku1 wei3
+苦笑
+哭笑不得
+苦心
+蜡,la4
+喇叭,la3 ba5
+拉动
+来宾,lai2 bin1
+来电
+来访,lai2 fang3
+来回,lai2 hui2
+来历,lai2 li4
+来龙去脉
+来年,lai2 nian2
+来之不易
+啦啦队,la1 la1 dui4
+拉链,la1 lian4
+拉拢
+揽,lan3
+缆车,lan3 che1
+懒得,lan3 de2
+懒惰,lan3 duo4
+栏杆,lan2 gan1
+狼狈,lang2 bei4
+朗诵,lang3 song4
+狼吞虎咽
+栏目
+蓝图,lan2 tu2
+滥用,lan4 yong4
+涝,lao4
+捞,lao1
+老伴儿,lao3 banr4
+老大
+唠叨
+牢固,lao2 gu4
+老化,lao3 hua4
+牢记,lao2 ji4
+劳驾,lao2 jia4
+牢牢,lao2 lao2
+劳累,lao2 lei4
+老人家,lao3 ren2 jia1
+牢骚,lao2 sao1
+劳务
+老乡,lao3 xiang1
+老字号
+腊月,la4 yue4
+蜡烛,la4 zhu2
+乐此不疲
+勒,lei1
+雷达,lei2 da2
+累计,lei3 ji4
+累积,lei3 ji1
+雷同
+累赘
+愣,leng4
+冷淡,leng3 dan4
+冷冻,leng3 dong4
+棱角
+冷酷,leng3 ku4
+冷落,leng3 luo4
+冷门
+冷漠
+冷气,leng3 qi4
+冷却,leng3 que4
+冷战,leng3 zhan4
+乐意,le4 yi4
+乐园,le4 yuan2
+炼,lian4
+立案
+良,liang2
+亮点
+量化,liang4 hua4
+谅解,liang4 jie3
+两口子,liang3 kou3 zi5
+亮丽
+两栖,liang3 qi1
+两手,liang3 shou3
+凉爽,liang2 shuang3
+连贯
+亮相
+两下子
+良心,liang2 xin1
+良性
+两翼
+联欢,lian2 huan1
+廉价,lian2 jia4
+脸颊,lian3 jia2
+廉洁,lian2 jie2
+连连,lian2 lian2
+恋恋不舍
+联络,lian2 luo4
+联盟,lian2 meng2
+连绵,lian2 mian2
+连年,lian2 nian2
+连任,lian2 ren4
+联赛
+联手
+连锁,lian2 suo3
+连同,lian2 tong2
+怜惜
+连夜,lian2 ye4
+廉正
+帘子
+莲子,lian2 zi3
+潦草,liao3 cao3
+疗法,liao2 fa3
+了结
+辽阔,liao2 kuo4
+料理
+寥寥无几
+疗效,liao2 xiao4
+疗养,liao2 yang3
+利弊,li4 bi4
+力不从心,li4 bu4 cong2 xin1
+理睬,li3 cai3
+历程,li4 cheng2
+里程碑,li3 cheng2 bei1
+历代,li4 dai4
+裂,lie4
+裂缝,lie4 feng4
+裂痕,lie4 hen2
+列举,lie4 ju3
+猎人,lie4 ren2
+烈日
+劣势,lie4 shi4
+烈士,lie4 shi4
+猎物,lie4 wu4
+劣质
+咧嘴
+立法,li4 fa3
+立方,li4 fang1
+立方米,li4 fang1 mi3
+礼服,li3 fu2
+立功
+利害,li4 hai4
+理会,li3 hui4
+立交桥,li4 jiao1 qiao2
+历届,li4 jie4
+礼节,li3 jie2
+历来,li4 lai2
+莅临
+利率,li4 lu:4
+黎明,li2 ming2
+临,lin2
+拎,ling1
+临床
+灵,ling2
+领队,ling3 dui4
+灵感,ling2 gan3
+领会,ling3 hui4
+灵魂,ling2 hun2
+零件,ling2 jian4
+灵机一动
+领军
+领略
+灵敏,ling2 min3
+灵巧,ling2 qiao3
+领事,ling3 shi4
+领事馆,ling3 shi4 guan3
+零售,ling2 shou4
+零碎,ling2 sui4
+聆听,ling2 ting1
+灵通
+领土,ling3 tu3
+领悟,ling3 wu4
+零星,ling2 xing1
+领袖,ling3 xiu4
+领养
+临街
+临近,lin2 jin4
+吝啬,lin4 se4
+礼品,li3 pin3
+离谱儿
+离奇,li2 qi2
+力求,li4 qiu2
+礼尚往来
+历时,li4 shi2
+理事,li3 shi4
+利索
+理所当然,li3 suo3 dang1 ran2
+力所能及,li4 suo3 neng2 ji2
+礼堂,li3 tang2
+立体,li4 ti3
+遛,liu4
+溜,liu1
+流畅,liu2 chang4
+溜达,liu1 da5
+流浪,liu2 lang4
+留恋,liu2 lian4
+流露,liu2 lu4
+流氓,liu2 mang2
+留念,liu2 nian4
+流派,liu2 pai4
+留神,liu2 shen2
+流逝
+流失,liu2 shi1
+柳树,liu3 shu4
+流水,liu2 shui3
+流淌
+流向
+留心,liu2 xin1
+流血,liu2 xue4
+留意,liu2 yi4
+流域,liu2 yu4
+流转
+礼仪,li3 yi2
+鲤鱼,li3 yu2
+力争,li4 zheng1
+励志
+理智,li3 zhi4
+理直气壮,li3 zhi2 qi4 zhuang4
+立足
+聋,long2
+垄断,long3 duan4
+笼统,long3 tong3
+龙头,long2 tou2
+笼罩,long3 zhao4
+隆重,long2 zhong4
+笼子,long2 zi5
+搂,lou3
+露面,lou4 mian4
+鹿,lu4
+屡,lu:3
+缕,lu:3
+卵,luan3
+乱七八糟,luan4 qi1 ba1 zao1
+孪生
+屡次
+绿地
+路段
+略
+掠夺
+略微
+路径,lu4 jing4
+陆军,lu4 jun1
+屡屡
+鲁莽
+抡,lun1
+轮换
+轮廓,lun2 kuo4
+伦理,lun2 li3
+论述,lun4 shu4
+轮胎,lun2 tai1
+论证,lun4 zheng4
+裸,luo3
+萝卜,luo2 bo5
+落差
+落成,luo4 cheng2
+落户
+裸露
+落实,luo4 shi2
+螺丝,luo2 si1
+啰唆
+裸体,luo3 ti3
+络绎不绝
+露天,lu4 tian1
+路途
+卤味
+露营,lu4 ying2
+绿洲
+炉子,lu2 zi5
+路子,lu4 zi5
+麻,ma2
+码,ma3
+麻痹,ma2 bi4
+马后炮
+脉搏,mai4 bo2
+埋藏
+埋伏,mai2 fu2
+脉络
+埋没,mai2 mo4
+埋头苦干
+埋葬,mai2 zang4
+麻将,ma2 jiang4
+麻辣
+马力,ma3 li4
+麻木,ma2 mu4
+瞒,man2
+漫,man4
+忙活
+忙乱
+茫茫,mang2 mang2
+盲目,mang2 mu4
+茫然,mang2 ran2
+满怀,man3 huai2
+慢性,man4 xing4
+蔓延,man4 yan2
+漫游,man4 you2
+埋怨,man2 yuan4
+冒充
+冒犯,mao4 fan4
+冒昧
+茂密,mao4 mi4
+茂盛,mao4 sheng4
+矛头,mao2 tou2
+马桶,ma3 tong3
+麻醉,ma2 zui4
+枚,mei2
+美德,mei3 de2
+美化,mei3 hua4
+媒介,mei2 jie4
+没劲
+眉开眼笑
+美满,mei3 man3
+美妙,mei3 miao4
+煤气,mei2 qi4
+美容
+煤炭,mei2 tan4
+没完没了
+美学,mei3 xue2
+美誉,mei3 yu4
+没辙,mei2 zhe2
+美中不足,mei3 zhong1 bu4 zu2
+没准儿
+美滋滋,mei3 zi1 zi1
+闷,men4
+闷,men1
+蒙,meng2
+猛,meng3
+蒙,meng1
+萌发
+梦幻,meng4 huan4
+猛烈,meng3 lie4
+朦胧,meng2 long2
+梦寐以求
+猛然,meng3 ran2
+萌芽,meng2 ya2
+盟友,meng2 you3
+门槛
+门路
+闷热,men1 re4
+谜,mi2
+眯,mi1
+免不了
+免除,mian3 chu2
+免得,mian3 de5
+面红耳赤
+棉花,mian2 hua5
+缅怀,mian3 huai2
+面孔,mian4 kong3
+勉励,mian3 li4
+面貌,mian4 mao4
+面面俱到,mian4 mian4 ju4 dao4
+面目全非
+腼腆
+免职,mian3 zhi2
+苗,miao2
+庙,miao4
+庙会
+藐视
+苗条,miao2 tiao2
+苗头
+渺小,miao3 xiao3
+瞄准
+密布
+谜底
+灭绝,mie4 jue2
+蔑视,mie4 shi4
+灭亡,mie4 wang2
+秘方
+密封,mi4 feng1
+迷惑,mi2 huo5
+秘诀,mi4 jue2
+迷恋,mi2 lian4
+弥漫,mi2 man4
+民办
+鸣,ming2
+名次,ming2 ci4
+名副其实,ming2 fu4 qi2 shi2
+名贵
+铭记
+明朗,ming2 lang3
+名利,ming2 li4
+明媚,ming2 mei4
+名声,ming2 sheng1
+名言,ming2 yan2
+名义,ming2 yi4
+名誉,ming2 yu4
+明智,ming2 zhi4
+名著
+敏捷,min3 jie2
+民居
+敏锐,min3 rui4
+民生,min2 sheng1
+民事,min2 shi4
+民意,min2 yi4
+民营
+民用,min2 yong4
+迷失,mi2 shi1
+谜团
+迷信,mi2 xin4
+谜语,mi2 yu3
+蜜月,mi4 yue4
+膜,mo2
+磨,mo2
+墨,mo4
+抹,mo3
+摩擦,mo2 ca1
+莫大,mo4 da4
+魔法,mo2 fa3
+模范,mo2 fan4
+莫非,mo4 fei1
+蘑菇,mo2 gu5
+魔鬼,mo2 gui3
+磨合
+魔力
+茉莉,mo4 li4
+磨炼
+没落,mo4 luo4
+莫名其妙,mo4 ming2 qi2 miao4
+默默无闻
+磨难
+默契
+漠然
+末日
+抹杀,mo3 sha1
+没收,mo4 shou1
+魔术,mo2 shu4
+墨水,mo4 shui3
+磨损
+摸索,mo1 suo5
+谋害
+谋划
+谋求,mou2 qiu2
+谋取,mou2 qu3
+谋生,mou2 sheng1
+墓,mu4
+幕,mu4
+亩,mu3
+墓碑,mu4 bei1
+目不转睛
+牧场,mu4 chang3
+牡丹,mu3 dan1
+目瞪口呆,mu4 deng4 kou3 dai1
+墓地,mu4 di4
+目睹,mu4 du3
+幕后
+木匠,mu4 jiang4
+募捐,mu4 juan1
+牧民,mu4 min2
+木偶,mu4 ou3
+沐浴,mu4 yu4
+拇指,mu3 zhi3
+目中无人,mu4 zhong1 wu2 ren2
+呐喊
+耐,nai4
+乃,nai3
+奶酪,nai3 lao4
+耐人寻味
+耐用,nai4 yong4
+乃至,nai3 zhi4
+纳闷儿
+难处,nan2 chu5
+难得一见
+男方
+南瓜,nan2 gua1
+难怪,nan2 guai4
+难关,nan2 guan1
+难堪,nan2 kan1
+难能可贵
+难为情,nan2 wei2 qing2
+难以置信,nan2 yi3 zhi4 xin4
+南辕北辙,nan2 yuan2 bei3 zhe2
+挠,nao2
+脑海,nao3 hai3
+恼火,nao3 huo3
+闹事,nao4 shi4
+恼羞成怒,nao3 xiu1 cheng2 nu4
+纳入,na4 ru4
+拿手,na2 shou3
+纳税,na4 shui4
+纳税人,na4 shui4 ren2
+内存,nei4 cun2
+内地,nei4 di4
+内行,nei4 hang2
+内幕,nei4 mu4
+内向,nei4 xiang4
+内需
+内在,nei4 zai4
+内脏,nei4 zang4
+嫩,nen4
+能耗
+能耐
+能人
+逆,ni4
+拟,ni3
+黏,nian2
+撵,nian3
+年报,nian2 bao4
+娘,niang2
+酿造,niang4 zao4
+年画
+年均
+年轮,nian2 lun2
+年迈,nian2 mai4
+念念不忘
+念头,nian4 tou5
+年限,nian2 xian4
+年薪
+尿
+鸟巢
+拟定,ni3 ding4
+捏,nie1
+逆境,ni4 jing4
+匿名,ni4 ming2
+拧,ning2
+拧,ning3
+凝固,ning2 gu4
+凝结,ning2 jie2
+宁静,ning2 jing4
+凝聚,ning2 ju4
+宁可,ning4 ke3
+凝视,ning2 shi4
+宁愿,ning4 yuan4
+泥泞
+溺水
+泥潭
+泥土,ni2 tu3
+纽带,niu3 dai4
+纽扣,niu3 kou4
+扭曲,niu3 qu1
+扭头
+扭转,niu3 zhuan3
+逆行
+农场,nong2 chang3
+农历,nong2 li4
+农民工,nong2 min2 gong1
+浓缩,nong2 suo4
+弄虚作假,nong4 xu1 zuo4 jia3
+浓郁
+浓重
+暖烘烘
+虐待,nu:e4 dai4
+女方
+奴隶,nu2 li4
+挪,nuo2
+诺言
+女婿
+殴打,ou1 da3
+呕吐,ou3 tu4
+趴,pa1
+拍板
+派别,pai4 bie2
+排查
+排斥,pai2 chi4
+排行榜
+徘徊,pai2 huai2
+拍卖,pai1 mai4
+派遣,pai4 qian3
+牌照,pai2 zhao4
+判,pan4
+盼,pan4
+攀,pan1
+判处,pan4 chu3
+攀登,pan1 deng1
+判定,pan4 ding4
+胖乎乎
+旁人
+螃蟹,pang2 xie4
+判决,pan4 jue2
+叛逆,pan4 ni4
+攀升,pan1 sheng1
+盘算
+盘旋,pan2 xuan2
+刨,pao2
+炮,pao4
+跑龙套,pao3 long2 tao4
+泡沫,pao4 mo4
+抛弃,pao1 qi4
+佩戴,pei4 dai4
+配方,pei4 fang1
+配件,pei4 jian4
+配角
+配偶,pei4 ou3
+胚胎,pei1 tai1
+配音,pei4 yin1
+配置,pei4 zhi4
+盆地,pen2 di4
+棚,peng2
+碰钉子,peng4 ding1 zi5
+蓬勃
+捧场
+鹏程万里
+抨击,peng1 ji1
+澎湃
+碰巧,peng4 qiao3
+烹饪,peng1 ren4
+烹调,peng1 tiao2
+膨胀,peng2 zhang4
+喷泉,pen1 quan2
+脾,pi2
+劈,pi1
+偏,pian1
+偏爱,pian1 ai4
+偏差,pian1 cha1
+片段
+篇幅,pian1 fu5
+偏见,pian1 jian4
+偏离,pian1 li2
+偏旁
+偏僻,pian1 pi4
+偏偏,pian1 pian1
+偏向,pian1 xiang4
+偏远,pian1 yuan3
+片子
+漂泊,piao1 bo2
+票房,piao4 fang2
+飘浮,piao1 fu2
+漂浮,piao1 fu2
+漂流,piao1 liu2
+飘扬,piao1 yang2
+疲惫,pi2 bei4
+撇,pie3
+批发,pi1 fa1
+皮革,pi2 ge2
+屁股,pi4 gu5
+僻静
+疲倦,pi2 juan4
+披露,pi1 lu4
+媲美
+聘,pin4
+拼搏,pin1 bo2
+品德,pin3 de2
+贫乏,pin2 fa2
+屏蔽,ping2 bi4
+平淡,ping2 dan4
+评定,ping2 ding4
+平房,ping2 fang2
+平和
+平价
+瓶颈,ping2 jing3
+平面,ping2 mian4
+评判
+平日,ping2 ri4
+评审,ping2 shen3
+萍水相逢,ping2 shui3 xiang1 feng2
+平坦,ping2 tan3
+评委
+平稳,ping2 wen3
+平息,ping2 xi1
+平行,ping2 xing2
+平庸
+平原,ping2 yuan2
+屏障,ping2 zhang4
+凭证
+拼接
+拼命,pin1 ming4
+频频,pin2 pin2
+贫穷,pin2 qiong2
+聘任,pin4 ren4
+品位
+品味,pin3 wei4
+品行,pin3 xing2
+聘用,pin4 yong4
+批判,pi1 pan4
+匹配,pi3 pei4
+譬如,pi4 ru2
+颇,po1
+泼冷水
+破案
+迫不及待
+破除,po4 chu2
+迫害,po4 hai4
+破解
+破旧,po4 jiu4
+破例
+魄力
+破裂,po4 lie4
+破灭
+迫使,po4 shi3
+破碎,po4 sui4
+谱,pu3
+瀑布,pu4 bu4
+扑克,pu1 ke4
+铺路
+扑面而来
+菩萨,pu2 sa4
+朴实
+沏,qi1
+漆,qi1
+卡,qia3
+掐,qia1
+恰到好处,qia4 dao4 hao3 chu4
+迁,qian1
+前辈,qian2 bei4
+千变万化
+钱财,qian2 cai2
+牵扯,qian1 che3
+前程,qian2 cheng2
+虔诚,qian2 cheng2
+千方百计,qian1 fang1 bai3 ji4
+潜伏,qian2 fu2
+前赴后继,qian2 fu4 hou4 ji4
+呛,qiang4
+呛,qiang1
+腔,qiang1
+枪毙,qiang1 bi4
+强盗,qiang2 dao4
+抢夺,qiang3 duo2
+强加,qiang2 jia1
+抢劫,qiang1 jie2
+强劲,qiang2 jing4
+强势,qiang2 shi4
+牵挂
+强项
+强行,qiang2 xing2
+抢眼
+强硬,qiang2 ying4
+强占
+强制,qiang2 zhi4
+迁就,qian1 jiu4
+千军万马,qian1 jun1 wan4 ma3
+千钧一发
+潜能
+欠缺
+前任,qian2 ren4
+潜入,qian2 ru4
+牵涉,qian1 she4
+签署,qian1 shu3
+潜水,qian2 shui3
+前所未有,qian2 suo3 wei4 you3
+前台,qian2 tai2
+欠条
+潜艇,qian2 ting3
+牵头
+前无古人
+前夕,qian2 xi1
+迁徙,qian1 xi3
+前线,qian2 xian4
+浅显
+潜心
+谦逊,qian1 xun4
+前沿
+歉意,qian4 yi4
+迁移,qian1 yi2
+潜移默化
+签约
+潜在,qian2 zai4
+谴责,qian3 ze2
+牵制,qian1 zhi4
+千姿百态
+翘,qiao2
+撬,qiao4
+憔悴,qiao2 cui4
+巧合,qiao3 he2
+窍门
+敲诈,qiao1 zha4
+恰巧,qia4 qiao3
+恰如其分,qia4 ru2 qi2 fen4
+洽谈,qia4 tan2
+起步,qi3 bu4
+器材,qi4 cai2
+起草,qi3 cao3
+启程,qi3 cheng2
+起程
+祈祷,qi2 dao3
+启迪
+且,qie3
+锲而不舍
+切除
+切磋
+切割
+切换,qie1 huan4
+切记
+切忌
+窃取,qie4 qu3
+切身
+惬意,qie4 yi4
+气愤,qi4 fen4
+起伏,qi3 fu2
+欺负,qi1 fu5
+乞丐,qi3 gai4
+奇观,qi2 guan1
+气管,qi4 guan3
+器官,qi4 guan1
+漆黑,qi1 hei1
+起哄,qi3 hong4
+契机
+迄今,qi4 jin1
+起劲,qi3 jin4
+器具,qi4 ju4
+凄凉,qi1 liang2
+气流,qi4 liu2
+起码,qi3 ma3
+启蒙,qi3 meng1
+奇妙,qi2 miao4
+气馁
+侵犯,qin1 fan4
+轻而易举,qing1 er2 yi4 ju3
+情报,qing2 bao4
+情不自禁
+清澈,qing1 che4
+清除,qing1 chu2
+清脆
+清单,qing1 dan1
+倾倒,qing1 dao4
+庆典
+情调,qing2 diao4
+庆贺,qing4 he4
+情怀
+倾家荡产
+请柬,qing3 jian3
+情结,qing2 jie2
+情境
+清静
+青睐,qing1 lai4
+情理,qing2 li3
+清凉
+情侣
+轻蔑,qing1 mie4
+勤工俭学,qin2 gong1 jian3 xue2
+情人,qing2 ren2
+情商
+请示,qing3 shi4
+轻视,qing1 shi4
+倾诉
+请帖,qing3 tie3
+青铜器
+轻微,qing1 wei2
+倾销,qing1 xiao1
+倾斜,qing1 xie2
+清新,qing1 xin1
+庆幸
+轻型
+情谊,qing2 yi4
+情愿,qing2 yuan4
+侵害,qin1 hai4
+亲和力
+勤俭
+亲近,qin1 jin4
+勤快
+侵略,qin1 lu:e4
+钦佩,qin1 pei4
+琴棋书画,qin2 qi2 shu1 hua4
+侵权,qin1 quan2
+亲热,qin1 re4
+亲身,qin1 shen1
+亲生,qin1 sheng1
+寝室,qin3 shi4
+亲手,qin1 shou3
+亲眼,qin1 yan3
+侵占,qin1 zhan4
+气派
+期盼,qi1 pan4
+旗袍,qi2 pao2
+气泡,qi4 pao1
+起跑线,qi3 pao3 xian4
+气魄,qi4 po4
+蹊跷
+乞求,qi3 qiu2
+崎岖,qi1 qu1
+弃权,qi4 quan2
+气色,qi4 se4
+歧视,qi2 shi4
+气势,qi4 shi4
+起诉,qi3 su4
+乞讨,qi3 tao3
+奇特,qi2 te4
+企图,qi3 tu2
+囚犯,qiu2 fan4
+丘陵,qiu1 ling2
+求同存异
+求学
+求医
+求证,qiu2 zheng4
+气息,qi4 xi1
+气象,qi4 xiang4
+器械,qi4 xie4
+齐心协力
+气压,qi4 ya1
+启用,qi3 yong4
+岂有此理,qi3 you3 ci3 li3
+契约,qi4 yue1
+欺诈,qi1 zha4
+旗帜,qi2 zhi4
+器重
+七嘴八舌,qi1 zui3 ba1 she2
+取而代之,qu3 er2 dai4 zhi1
+拳,quan2
+全方位
+劝告,quan4 gao4
+权衡,quan2 heng2
+拳击,quan2 ji1
+全局,quan2 ju2
+全力以赴,quan2 li4 yi3 fu4
+全能
+全身心
+诠释,quan2 shi4
+劝说,quan4 shuo1
+圈套
+拳头,quan2 tou5
+权威,quan2 wei1
+权限,quan2 xian4
+全心全意,quan2 xin1 quan2 yi4
+权益,quan2 yi4
+圈子,quan1 zi5
+劝阻,quan4 zu3
+取材
+去除,qu4 chu2
+去处
+取缔,qu3 di4
+驱动,qu1 dong4
+瘸,que2
+缺口,que1 kou3
+确切,que4 qie4
+缺失
+缺席,que1 xi2
+确信,que4 xin4
+确凿,que4 zao2
+确诊,que4 zhen3
+屈服,qu1 fu2
+区间,qu1 jian1
+取经
+取决,qu3 jue2
+取暖,qu3 nuan3
+区区,qu1 qu1
+取胜,qu3 sheng4
+曲线,qu1 xian4
+去向,qu4 xiang4
+取笑,qu3 xiao4
+曲艺
+趋于
+曲折,qu1 zhe2
+驱逐,qu1 zhu2
+燃放,ran2 fang4
+嚷,rang3
+让步,rang4 bu4
+燃气
+燃油,ran2 you2
+饶,rao2
+扰乱,rao3 luan4
+饶恕,rao2 shu4
+绕行
+绕远儿
+惹,re3
+热潮,re4 chao2
+热带,re4 dai4
+热泪盈眶,re4 lei4 ying2 kuang4
+任,ren4
+仁慈,ren2 ci2
+人次
+人道,ren2 dao4
+人格,ren2 ge2
+人间,ren2 jian1
+任命,ren4 ming4
+忍耐,ren3 nai4
+人品
+人气
+任期,ren4 qi1
+人情,ren2 qing2
+人权,ren2 quan2
+人身,ren2 shen1
+人手,ren2 shou3
+人文,ren2 wen2
+忍心,ren3 xin1
+人性,ren2 xing4
+任性,ren4 xing4
+韧性,ren4 xing4
+人选,ren2 xuan3
+任意,ren4 yi4
+人缘儿
+人造,ren2 zao4
+认证,ren4 zheng4
+人质,ren2 zhi4
+任职,ren4 zhi2
+任重道远
+热腾腾
+热销
+热衷
+日程,ri4 cheng2
+日复一日
+日趋,ri4 qu1
+日新月异
+融,rong2
+冗长
+容光焕发
+荣获,rong2 huo4
+溶解,rong2 jie3
+容貌,rong2 mao4
+容纳,rong2 na4
+容器,rong2 qi4
+融洽,rong2 qia4
+容忍,rong2 ren3
+荣幸,rong2 xing4
+容许,rong2 xu3
+容颜
+荣耀,rong2 yao4
+融资
+揉,rou2
+柔和,rou2 he2
+软弱,ruan3 ruo4
+软实力
+入场
+入场券
+如痴如醉
+瑞雪,rui4 xue3
+润,run4
+若,ruo4
+若干,ruo4 gan1
+若是,ruo4 shi4
+弱势
+弱项
+如期
+入侵,ru4 qin1
+如实
+入手,ru4 shou3
+如意,ru2 yi4
+如一
+如愿以偿
+乳制品
+撒,sa1
+撒谎,sa1 huang3
+赛,sai4
+赛车,sai4 che1
+赛季
+赛跑,sai4 pao3
+散布,san4 bu4
+三番五次,san1 fan1 wu3 ci4
+桑拿,sang1 na2
+丧生,sang4 sheng1
+嗓音,sang3 yin1
+三角,san1 jiao3
+散落
+三维,san1 wei2
+扫除,sao3 chu2
+骚乱,sao1 luan4
+扫墓
+骚扰,sao1 rao3
+扫兴,sao3 xing4
+扫帚,sao4 zhou5
+嫂子,sao3 zi5
+僧人
+纱,sha1
+杀毒
+傻瓜,sha3 gua1
+杀害,sha1 hai4
+筛,shai1
+筛查
+沙龙,sha1 long2
+善,shan4
+山川
+煽动,shan1 dong4
+尚,shang4
+伤脑筋
+上半场
+上报,shang4 bao4
+伤残
+上层,shang4 ceng2
+上场
+商贩
+伤感
+上岗
+商贾
+伤痕,shang1 hen2
+上火
+商机
+上空,shang4 kong1
+尚且
+上任,shang4 ren4
+赏识,shang3 shi2
+伤势,shang1 shi4
+上司,shang4 si5
+上诉,shang4 su4
+商讨,shang1 tao3
+上调
+山谷,shan1 gu3
+尚未,shang4 wei4
+上限
+上行
+上演
+商议,shang1 yi4
+上瘾,shang4 yin3
+上映,shang4 ying4
+商用
+上游,shang4 you2
+山岭,shan1 ling3
+山脉,shan1 mai4
+膳食,shan4 shi2
+闪烁,shan3 shuo4
+赡养,shan4 yang3
+善意,shan4 yi4
+山寨
+擅自,shan4 zi4
+哨,shao4
+捎,shao1
+少不了
+稍后
+烧毁,shao1 hui3
+少女,shao4 nu:3
+稍稍
+杀手,sha1 shou3
+沙滩,sha1 tan1
+折,she2
+设,she4
+奢侈,she1 chi3
+设定,she4 ding4
+设法,she4 fa3
+社会主义,she4 hui4 zhu3 yi4
+社交,she4 jiao1
+涉猎
+肾,shen4
+渗,shen4
+审,shen3
+深奥,shen1 ao4
+申办
+申报,shen1 bao4
+身不由己
+审查,shen3 cha2
+深沉,shen1 chen2
+审定,shen3 ding4
+盛产,sheng4 chan3
+生产线,sheng1 chan3 xian4
+声称,sheng1 cheng1
+胜出
+牲畜,sheng1 chu4
+盛大,sheng4 da4
+胜负
+升华,sheng1 hua2
+盛会,sheng4 hui4
+生机,sheng1 ji1
+盛开,sheng4 kai1
+生理,sheng1 li3
+省略,sheng3 lu:e4
+声明,sheng1 ming2
+生命线,sheng1 ming4 xian4
+生怕,sheng1 pa4
+生平
+生前,sheng1 qian2
+盛气凌人
+盛情,sheng4 qing2
+胜任
+省事
+声势,sheng1 shi4
+生疏,sheng1 shu1
+生死
+声望
+盛夏
+圣贤
+生效,sheng1 xiao4
+盛行,sheng4 xing2
+生涯,sheng1 ya2
+盛宴,sheng4 yan4
+生硬
+生育,sheng1 yu4
+声誉,sheng1 yu2
+升值,sheng1 zhi2
+绳子,sheng2 zi5
+审核,shen3 he2
+深化,shen1 hua4
+审计,shen3 ji4
+身价
+审理,shen3 li3
+申领
+审判,shen3 pan4
+审批,shen3 pi1
+神气,shen2 qi4
+深切,shen1 qie4
+神情,shen2 qing2
+深情,shen1 qing2
+深情厚谊
+身躯
+深入人心
+神圣,shen2 sheng4
+审视
+绅士,shen1 shi4
+伸手,shen1 shou3
+深思,shen1 si1
+申诉,shen1 su4
+深邃
+伸缩,shen1 suo1
+神态,shen2 tai4
+渗透,shen4 tou4
+神仙,shen2 xian1
+呻吟,shen1 yin2
+身影
+深造,shen1 zao4
+伸张
+慎重,shen4 zhong4
+身子,shen1 zi5
+社团,she4 tuan2
+奢望,she1 wang4
+涉嫌,she4 xian2
+屎,shi3
+时隔
+时而
+势必,shi4 bi4
+势不可当
+视察,shi4 cha2
+市场经济,shi4 chang3 jing1 ji4
+失传
+世代,shi4 dai4
+实地
+湿地,shi1 di4
+试点
+时段
+师范,shi1 fan4
+是非,shi4 fei1
+施工,shi1 gong1
+世故
+嗜好,shi4 hao4
+时好时坏
+侍候,shi4 hou4
+使唤
+实话实说
+事迹,shi4 ji1
+施加,shi1 jia1
+世间
+视角,shi4 jiao3
+时节,shi2 jie2
+时空,shi2 kong1
+失控,shi1 kong4
+实况,shi2 kuang4
+失利,shi1 li4
+失礼
+适量
+失灵
+失落
+时髦,shi2 mao2
+使命,shi3 ming4
+失明,shi1 ming2
+士气
+世人,shi4 ren2
+湿润,shi1 run4
+时时,shi2 shi2
+时事,shi2 shi4
+适时
+逝世,shi4 shi4
+失事,shi1 shi4
+实事求是,shi2 shi4 qiu2 shi4
+食宿
+事态,shi4 tai4
+失态
+试探,shi4 tan4
+实体,shi2 ti3
+尸体,shi1 ti3
+势头,shi4 tou2
+示威,shi4 wei1
+实物,shi2 wu4
+史无前例
+事务所,shi4 wu4 suo3
+视线,shi4 xian4
+失效,shi1 xiao4
+试行,shi4 xing2
+施行,shi1 xing2
+施压,shi1 ya1
+视野,shi4 ye3
+事宜,shi4 yi2
+示意,shi4 yi4
+施展,shi1 zhan3
+师长,shi1 zhang3
+使者,shi3 zhe3
+市值
+时装,shi2 zhuang1
+柿子,shi4 zi5
+师资,shi1 zi1
+失踪,shi1 zong1
+手册,shou3 ce4
+受宠若惊
+首创,shou3 chuang4
+受挫
+手动
+首付
+首府,shou3 fu3
+收复,shou1 fu4
+收割,shou1 ge1
+受害,shou4 hai4
+受害人
+守候,shou3 hou4
+守护
+受贿,shou4 hui4
+手脚,shou3 jiao3
+受惊
+收据,shou1 ju4
+受苦,shou4 ku3
+受理
+收敛
+收留
+收买,shou1 mai3
+首脑,shou3 nao3
+手帕,shou3 pa4
+首批
+受骗
+手枪,shou3 qiang1
+授权,shou4 quan2
+首饰,shou3 shi4
+收视率,shou1 shi4 lu:4
+收缩,shou1 suo1
+手头
+手腕,shou3 wan4
+首席,shou3 xi2
+守信
+收养,shou1 yang3
+受益,shou4 yi4
+手艺,shou3 yi4
+受益匪浅
+收音机,shou1 yin1 ji1
+授予,shou4 yu3
+手掌,shou3 zhang3
+收支,shou1 zhi1
+守株待兔
+受罪
+赎,shu2
+梳,shu1
+耍,shua3
+率,shuai4
+甩,shuai3
+衰减,shuai1 jian3
+摔跤,shuai1 jiao1
+衰竭
+衰落,shuai1 luo4
+衰弱,shuai1 ruo4
+衰退,shuai1 tui4
+耍赖
+涮,shuan4
+拴,shuan1
+爽,shuang3
+霜,shuang1
+双胞胎,shuang1 bao1 tai1
+双边,shuang1 bian1
+双重,shuang1 chong2
+爽快,shuang3 kuai4
+双向,shuang1 xiang4
+双赢
+刷新
+舒畅,shu1 chang4
+疏导,shu1 dao3
+数额,shu4 e2
+束缚,shu4 fu4
+树干,shu4 gan4
+曙光,shu3 guang1
+疏忽,shu1 hu1
+水产,shui3 chan3
+睡袋
+水滴石穿
+水晶,shui3 jing1
+水利,shui3 li4
+水龙头
+水落石出,shui3 luo4 shi2 chu1
+水汽,shui3 qi4
+税收,shui4 shou1
+水土,shui3 tu3
+税务
+水域,shui3 yu4
+水源,shui3 yuan2
+水涨船高
+水准,shui3 zhun3
+书记,shu1 ji5
+数据库,shu4 ju4 ku4
+竖立
+梳理
+数码,shu4 ma3
+顺差,shun4 cha1
+顺畅,shun4 chang4
+顺从,shun4 cong2
+枢纽
+顺理成章
+顺路,shun4 lu4
+顺其自然
+顺势
+顺手,shun4 shou3
+顺心,shun4 xin1
+顺延
+顺应,shun4 ying4
+说不上
+硕果
+说谎,shuo1 huang3
+说情,shuo1 qing2
+抒情
+疏散,shu1 san4
+树梢
+束手无策
+疏通
+属相
+属性,shu3 xing4
+输血,shu1 xue4
+输液
+树荫
+数一数二
+疏远,shu1 yuan3
+舒展,shu1 zhan3
+梳子,shu1 zi5
+寺,si4
+丝,si1
+撕,si1
+似曾相识
+丝绸,si1 chou2
+司法,si1 fa3
+四方,si4 fang1
+丝毫,si1 hao2
+伺机,si4 ji1
+私家车
+司空见惯,si1 kong1 jian4 guan4
+私立
+饲料,si4 liao4
+司令,si1 ling4
+四面八方,si4 mian4 ba1 fang1
+寺庙,si4 miao4
+思前想后,si1 qian2 xiang3 hou4
+私事
+似是而非,si4 shi4 er2 fei1
+思索,si1 suo3
+四通八达
+肆无忌惮
+私下,si1 xia4
+死心,si3 xin1
+思绪,si1 xu4
+饲养,si4 yang3
+私营,si1 ying2
+私有,si1 you3
+四肢,si4 zhi1
+私自,si1 zi4
+耸,song3
+送别,song4 bie2
+松弛,song1 chi2
+耸立,song3 li4
+松树,song1 shu4
+松懈,song1 xie4
+送行,song4 xing2
+怂恿
+搜查,sou1 cha2
+搜救,sou1 jiu4
+搜寻,sou1 xun2
+俗,su2
+素,su4
+酥,su1
+蒜,suan4
+算计
+算盘,suan4 pan2
+算数,suan4 shu4
+算账
+素不相识
+素材
+俗称,su2 cheng1
+俗话,su2 hua4
+随处可见
+隧道,sui4 dao4
+随即,sui2 ji2
+随机,sui2 ji1
+随身
+随时随地
+虽说,sui1 shuo1
+随心所欲
+诉苦,su4 ku3
+损人利己,sun3 ren2 li4 ji3
+缩,suo1
+锁定
+缩减,suo1 jian3
+索赔,suo3 pei2
+索取,suo3 qu3
+所属,suo3 shu3
+缩水,suo1 shui3
+琐碎
+所谓,suo3 wei4
+索性,suo3 xing4
+缩影
+所在,suo3 zai4
+所作所为,suo3 zuo4 suo3 wei2
+诉求
+素食,su4 shi2
+诉说,su4 shuo1
+诉讼,su4 song4
+苏醒,su1 xing3
+素养
+俗语,su2 yu3
+诉诸
+踏,ta4
+塌,ta1
+胎,tai1
+泰斗,tai4 dou3
+胎儿,tai1 er2
+太极,tai4 ji2
+太平,tai4 ping2
+态势
+坛,tan2
+痰,tan2
+炭,tan4
+探,tan4
+贪,tan1
+摊,tan1
+瘫,tan1
+坦白,tan3 bai2
+探测,tan4 ce4
+坦诚,tan3 cheng2
+贪吃
+堂,tang2
+淌,tang3
+糖尿病,tang2 niao4 bing4
+倘若,tang3 ruo4
+瘫痪,tan1 huan4
+谈及
+探究
+坦克,tan3 ke4
+贪婪,tan1 lan2
+叹气,tan4 qi4
+探亲,tan4 qin1
+探求
+坦然,tan3 ran2
+坦率,tan3 shuai4
+探望,tan4 wang4
+贪污,tan1 wu1
+探险,tan4 xian3
+坦言
+毯子,tan3 zi5
+淘,tao2
+讨,tao3
+掏腰包
+逃避,tao2 bi4
+陶瓷,tao2 ci2
+讨好
+讨价还价,tao3 jia4 huan2 jia4
+逃生
+滔滔不绝,tao1 tao1 bu4 jue2
+逃亡,tao2 wang2
+陶冶
+陶醉
+特此,te4 ci3
+特例
+腾,teng2
+疼爱
+藤蔓,teng2 man2
+特权,te4 quan2
+特邀
+特制,te4 zhi4
+特质
+剃,ti4
+舔,tian3
+填补,tian2 bu3
+天长地久,tian1 chang2 di4 jiu3
+填充,tian2 chong1
+天敌
+天地,tian1 di4
+天鹅,tian1 e2
+天分
+天赋,tian1 fu4
+天花板,tian1 hua1 ban3
+添加剂
+田间,tian2 jian1
+天经地义
+天伦之乐
+甜美,tian2 mei3
+甜蜜,tian2 mi4
+天平
+天桥,tian1 qiao2
+天生,tian1 sheng1
+天使,tian1 shi3
+天堂,tian1 tang2
+天线,tian1 xian4
+天性,tian1 xing4
+田野,tian2 ye3
+田园
+挑,tiao3
+挑拨,tiao3 bo1
+跳槽,tiao4 cao2
+跳动,tiao4 dong4
+调和,tiao2 he2
+调剂,tiao2 ji4
+调解,tiao2 jie3
+调侃
+调控
+条款,tiao2 kuan3
+条例,tiao2 li4
+条理,tiao2 li3
+调料
+跳伞,tiao4 san3
+调试
+挑剔,tiao1 ti5
+眺望,tiao4 wang4
+挑衅,tiao3 xin4
+条约,tiao2 yue1
+跳跃,tiao4 yue4
+提拔,ti2 ba2
+替补
+体裁
+剔除
+铁,tie3
+贴切
+帖子
+提纲,ti2 gang1
+替换,ti4 huan4
+提及,ti2 ji2
+提炼,ti2 lian4
+体谅,ti3 liang4
+体面,ti3 mian4
+提名,ti2 ming2
+体能
+挺拔,ting3 ba2
+停泊,ting2 bo2
+听从,ting1 cong2
+停顿,ting2 dun4
+停放,ting2 fang4
+停业
+停滞,ting2 zhi4
+亭子,ting2 zi5
+体魄
+提速
+体态
+体贴,ti3 tie1
+提心吊胆,ti2 xin1 diao4 dan3
+提议,ti2 yi4
+体制,ti3 zhi4
+体质,ti3 zhi4
+梯子,ti1 zi5
+捅,tong3
+筒,tong3
+同胞,tong2 bao1
+通报,tong1 bao4
+同比
+同步,tong2 bu4
+通畅,tong1 chang4
+通车
+统筹,tong3 chou2
+同等,tong2 deng3
+同感
+通告,tong1 gao4
+通红,tong1 hong2
+同伙
+通货膨胀,tong1 huo4 peng2 zhang4
+通缉,tong1 ji1
+同盟,tong2 meng2
+同期,tong2 qi1
+同仁
+通顺,tong1 shun4
+通俗,tong1 su2
+统统,tong3 tong3
+通通,tong1 tong1
+通宵,tong1 xiao1
+痛心,tong4 xin1
+同志,tong2 zhi4
+统治,tong3 zhi4
+同舟共济
+投奔,tou2 ben1
+透彻,tou4 che4
+投放,tou2 fang4
+投稿,tou2 gao3
+头号
+投机,tou2 ji1
+偷窥
+偷懒,tou1 lan3
+透气
+投射,tou2 she4
+投身
+头条,tou2 tiao2
+头头是道,tou2 tou2 shi4 dao4
+头衔
+投降,tou2 xiang2
+投掷,tou2 zhi4
+透支,tou4 zhi1
+涂,tu2
+凸,tu1
+秃,tu1
+团伙
+团聚,tuan2 ju4
+团员,tuan2 yuan2
+徒步,tu2 bu4
+吐槽
+退步,tui4 bu4
+推崇,tui1 chong2
+推辞,tui1 ci2
+推断,tui1 duan4
+推翻,tui1 fan1
+颓废
+退化,tui4 hua4
+退回
+推理,tui1 li3
+推论,tui1 lun4
+推敲
+退却
+退让
+推算,tui1 suan4
+退缩,tui4 suo1
+推卸,tui1 xie4
+推选,tui1 xuan3
+退役,tui4 yi4
+推移
+突击,tu1 ji1
+徒劳,tu2 lao2
+臀,tun2
+吞吞吐吐
+驮,tuo2
+妥,tuo3
+托,tuo1
+妥当,tuo3 dang4
+托付,tuo1 fu4
+脱节,tuo1 jie2
+脱口而出,tuo1 kou3 er2 chu1
+拓宽
+拖累
+脱离,tuo1 li2
+脱落,tuo1 luo4
+唾弃,tuo4 qi4
+拖欠,tuo1 qian4
+妥善,tuo3 shan4
+脱身
+妥协,tuo3 xie2
+唾液,tuo4 ye4
+脱颖而出
+椭圆,tuo3 yuan2
+拓展,tuo4 zhan3
+突破口
+突如其来
+屠杀,tu2 sha1
+土生土长
+突兀
+凸显
+图形,tu2 xing2
+图纸,tu2 zhi3
+瓦,wa3
+外币,wai4 bi4
+外行,wai4 hang2
+外号,wai4 hao4
+外汇,wai4 hui4
+外籍,wai4 ji2
+外贸,wai4 mao4
+外貌,wai4 mao4
+歪曲,wai1 qu1
+外向,wai4 xiang4
+外星人,wai4 xing1 ren2
+外援
+外在
+外资,wai4 zi1
+瓦解,wa3 jie3
+挖掘,wa2 jue2
+挖苦
+丸,wan2
+挽,wan3
+完备,wan2 bei4
+完毕,wan2 bi4
+万分,wan4 fen1
+旺,wang4
+往常,wang3 chang2
+王朝,wang2 chao2
+网点,wang3 dian3
+王国,wang2 guo2
+旺季,wang4 ji4
+网民,wang3 min2
+王牌,wang2 pai2
+往日,wang3 ri4
+旺盛,wang4 sheng4
+往事,wang3 shi4
+顽固,wan2 gu4
+妄想,wang4 xiang3
+汪洋,wang1 yang2
+亡羊补牢
+望远镜,wang4 yuan3 jing4
+完好,wan2 hao3
+挽回
+挽救,wan3 jiu4
+万能,wan4 neng2
+晚年,wan3 nian2
+玩弄,wan2 nong4
+顽皮,wan2 pi2
+晚期,wan3 qi1
+玩耍
+万万,wan4 wan4
+万无一失,wan4 wu2 yi1 shi1
+惋惜,wan3 xi1
+晚霞,wan3 xia2
+玩意儿,wan2 yi4 er5
+丸子
+唯,wei2
+微,wei1
+违背,wei2 bei4
+微波炉,wei1 bo1 lu2
+微不足道,wei1 bu4 zu2 dao4
+唯独
+纬度,wei3 du4
+威风,wei1 feng1
+围观
+微观,wei1 guan1
+危及,wei1 ji2
+危急,wei1 ji2
+味精,wei4 jing1
+畏惧,wei4 ju4
+蔚蓝,wei4 lan2
+慰劳
+威力,wei1 li4
+未免,wei4 mian3
+微妙,wei1 miao4
+尾气
+围墙,wei2 qiang2
+维权
+为人
+微弱,wei1 ruo4
+威慑,wei1 she4
+尾声,wei3 sheng1
+微生物,wei1 sheng1 wu4
+卫视
+畏缩,wei4 suo1
+萎缩,wei3 suo1
+委婉,wei3 wan3
+威望,wei1 wang4
+微微
+慰问,wei4 wen4
+威信,wei1 xin4
+卫星,wei4 xing1
+微型,wei1 xing2
+喂养
+唯有
+委员,wei3 yuan2
+委员会,wei3 yuan2 hui4
+违约,wei2 yue1
+伪造,wei3 zao4
+违章,wei1 zhang1
+未知数,wei4 zhi1 shu4
+伪装,wei3 zhuang1
+位子,wei4 zi5
+文,wen2
+吻,wen3
+稳,wen3
+温差
+温带,wen1 dai4
+温度计,wen1 du4 ji4
+稳固
+吻合,wen3 he2
+问候,wen4 hou4
+稳健,wen3 jian4
+紊乱,wen3 luan4
+文盲,wen2 mang2
+文凭,wen2 ping2
+温泉
+文人,wen2 ren2
+问世,wen4 shi4
+温室,wen1 shi4
+稳妥,wen3 tuo3
+温习,wen1 xi2
+温馨
+文雅,wen2 ya3
+瘟疫,wen1 yi4
+蚊帐,wen2 zhang4
+稳重
+蚊子,wen2 zi5
+卧,wo4
+窝,wo1
+卧铺
+勿,wu4
+捂,wu3
+舞,wu3
+无比,wu2 bi3
+务必,wu4 bi4
+无边无际
+无不
+误差,wu4 cha1
+无偿,wu2 chang2
+无耻,wu2 chi3
+无从,wu2 cong2
+误导
+无敌
+无动于衷
+无非,wu2 fei1
+务工
+无故
+无辜,wu2 gu1
+五官
+无关紧要,wu2 guan1 jin3 yao4
+五花八门,wu3 hua1 ba1 men2
+无话可说,wu2 hua4 ke3 shuo1
+污秽,wu1 hui4
+五湖四海
+无家可归,wu2 jia1 ke3 gui1
+无价之宝,wu2 jia4 zhi1 bao3
+无精打采,wu2 jing1 da3 cai3
+无济于事
+无可厚非
+无可奈何,wu2 ke3 nai4 he2
+无赖
+无力,wu2 li4
+无理,wu2 li3
+物力,wu4 li4
+武力,wu3 li4
+物流,wu4 liu2
+无论如何,wu2 lun4 ru2 he2
+物美价廉
+污蔑,wu1 mie4
+无能,wu2 neng2
+无能为力,wu2 neng2 wei2 li4
+无情,wu2 qing2
+无穷,wu2 qiong2
+误区
+侮辱,wu3 ru4
+物色
+务实,wu4 shi2
+无私
+无所事事
+无所作为,wu2 suo3 zuo4 wei2
+无条件
+无微不至,wu2 wei1 bu2 zhi4
+武侠
+无线,wu2 xian4
+诬陷,wu1 xian4
+无形,wu2 xing2
+无须
+屋檐,wu1 yan2
+呜咽,wu1 ye4
+无意,wu2 yi4
+无忧无虑,wu2 you1 wu2 lu:4
+无缘
+乌云,wu1 yun2
+物证
+无知,wu2 zhi1
+物种,wu4 zhong3
+武装,wu3 zhuang1
+物资,wu4 zi1
+席,xi2
+稀,xi1
+溪,xi1
+虾,xia1
+瞎,xia1
+狭隘,xia2 ai4
+下半场
+下场,xia4 chang3
+瑕疵,xia2 ci1
+下达,xia4 da2
+下跌,xia4 die1
+峡谷,xia2 gu3
+吓唬
+下滑,xia4 hua2
+下级,xia4 ji2
+下令,xia4 ling4
+下落,xia4 luo4
+弦,xian2
+陷,xian4
+馅,xian4
+献,xian4
+掀,xian1
+显而易见
+现成,xian4 cheng2
+限定,xian4 ding4
+宪法,xian4 fa3
+先锋,xian1 feng1
+巷,xiang4
+享,xiang3
+镶,xiang1
+相伴
+向导,xiang4 dao3
+想方设法,xiang3 fang1 she4 fa3
+相辅相成
+祥和
+相继,xiang1 ji4
+橡胶,xiang4 jiao1
+详尽
+相近,xiang1 jin4
+向来,xiang4 lai2
+响亮,xiang3 liang4
+香料,xiang1 liao4
+相貌,xiang4 mao4
+镶嵌,xiang1 qian4
+乡亲,xiang1 qin1
+相识,xiang1 shi2
+相提并论
+相通,xiang1 tong1
+乡下,xiang1 xia4
+像样,xiang4 yang4
+响应,xiang3 ying4
+享用
+享有,xiang3 you3
+香油
+相遇,xiang1 yu4
+相约
+陷害,xian4 hai4
+显赫
+仙鹤
+闲话,xian2 hua4
+鲜活
+衔接,xian2 jie1
+陷阱,xian4 jing3
+先例,xian1 li4
+显露
+鲜美,xian1 mei3
+仙女,xian1 nu:3
+嫌弃
+掀起,xian1 qi3
+现任,xian4 ren4
+显示器,xian3 shi4 qi4
+先天,xian1 tian1
+线条,xian4 tiao2
+纤维,xian1 wei2
+显微镜,xian3 wei1 jing4
+鲜为人知
+显现,xian3 xian4
+现行,xian4 xing2
+显性
+鲜血,xian1 xue4
+显眼,xian3 yan3
+嫌疑,xian2 yi2
+闲置
+消,xiao1
+销,xiao1
+削,xiao1
+小菜一碟
+消沉
+小丑,xiao3 chou3
+效仿
+小费,xiao3 fei4
+销毁,xiao1 hui3
+孝敬,xiao4 jing4
+小看
+小康,xiao3 kang1
+效力,xiao4 li4
+消磨
+小品
+消遣,xiao1 qian3
+小人
+潇洒
+孝顺,xiao4 shun4
+萧条,xiao1 tiao2
+小提琴,xiao3 ti2 qin2
+肖像,xiao4 xiang4
+小心翼翼,xiao3 xin1 yi4 yi4
+效益,xiao4 yi4
+嚣张
+辖区,xia2 qu1
+吓人
+下手,xia4 shou3
+下属,xia4 shu3
+下台,xia4 tai2
+下调
+狭小
+下行
+狭义
+下意识
+下游,xia4 you2
+狭窄,xia2 zhai3
+下坠
+喜出望外
+洗涤,xi3 di2
+吸毒,xi1 du2
+邪,xie2
+泄,xie4
+泻,xie4
+卸,xie4
+挟持,xie2 chi2
+协定,xie2 ding4
+邪恶,xie2 e4
+谢绝,xie4 jue2
+泄漏
+泄露,xie4 lou4
+泄密
+泄气,xie4 qi4
+卸任,xie4 ren4
+协商,xie2 shang1
+携手
+协同
+卸载
+写照,xie3 zhao4
+协作,xie2 zuo4
+膝盖,xi1 gai4
+稀罕
+喜好
+熄火
+袭击,xi2 ji1
+喜酒
+洗礼,xi3 li3
+犀利
+奚落,xi1 luo4
+熄灭,xi1 mie4
+吸纳
+心安理得
+心病
+心肠,xin1 chang2
+新潮
+新陈代谢,xin1 chen2 dai4 xie4
+薪酬
+新春
+信贷,xin4 dai4
+心得,xin1 de2
+腥,xing1
+心甘情愿
+幸存
+刑法,xing2 fa3
+兴奋剂,xing1 fen4 ji4
+性感,xing4 gan3
+兴高采烈,xing4 gao1 cai3 lie4
+幸好,xing4 hao3
+星级
+兴建,xing1 jian4
+幸亏,xing4 kui1
+兴隆
+幸免,xing4 mian3
+性命,xing4 ming4
+醒目
+性情,xing4 qing5
+星球,xing1 qiu2
+兴盛,xing1 sheng4
+刑事,xing2 shi4
+行使,xing2 shi3
+姓氏,xing4 shi4
+兴旺,xing1 wang4
+醒悟,xing3 wu4
+星系,xing1 xi4
+行星,xing2 xing1
+猩猩,xing1 xing5
+形形色色,xing2 xing2 se4 se4
+形影不离,xing2 ying3 bu4 li2
+行政,xing2 zheng4
+兴致,xing4 zhi4
+星座,xing1 zuo4
+心慌
+细腻
+信件,xin4 jian4
+心急如焚
+心灵手巧
+芯片,xin1 pian4
+新奇,xin1 qi2
+辛勤,xin1 qin2
+心声
+新生,xin1 sheng1
+心事,xin1 shi4
+新式,xin1 shi4
+新手
+心思,xin1 si5
+心酸
+辛酸
+喜怒哀乐
+欣慰,xin1 wei4
+欣喜,xin1 xi3
+心想事成
+欣欣向荣,xin1 xin1 xiang4 rong2
+心胸
+心血,xin1 xue4
+信仰,xin4 yang3
+心眼儿
+心意,xin1 yi4
+信誉,xin4 yu4
+凶,xiong1
+凶残
+凶恶,xiong1 e4
+凶狠,xiong1 hen3
+雄厚,xiong2 hou4
+胸怀,xiong1 huai2
+凶猛,xiong1 meng3
+凶手,xiong1 shou3
+胸膛,xiong1 tang2
+雄伟,xiong2 wei3
+雄性,xiong2 xing4
+汹涌,xiong1 yong3
+胸有成竹
+稀奇
+喜庆
+昔日,xi1 ri4
+稀少,xi1 shao3
+牺牲,xi1 sheng1
+喜糖,xi3 tang2
+绣,xiu4
+锈,xiu4
+嗅,xiu4
+修补,xiu1 bu3
+修长
+羞耻,xiu1 chi3
+嗅觉,xiu4 jue2
+休克,xiu1 ke4
+羞愧,xiu1 kui4
+秀丽,xiu4 li4
+秀美
+休眠
+袖手旁观
+休想
+休养,xiu1 yang3
+修养,xiu1 yang3
+袖珍
+修正,xiu1 zheng4
+席位,xi2 wei4
+细微
+喜闻乐见
+嬉笑
+熙熙攘攘,xi1 xi1 rang3 rang3
+息息相关
+夕阳
+喜洋洋
+稀有,xi1 you3
+喜悦,xi3 yue4
+锡纸
+序,xu4
+续,xu4
+许,xu3
+须,xu1
+虚,xu1
+玄,xuan2
+悬,xuan2
+宣称,xuan1 cheng1
+宣读,xuan1 du2
+宣告,xuan1 gao4
+悬挂,xuan2 gua4
+喧哗,xuan1 hua2
+玄机
+选举,xuan3 ju3
+旋律,xuan2 lu:4
+选民,xuan3 min2
+喧闹,xuan1 nao4
+悬念,xuan2 nian4
+宣誓,xuan1 shi4
+悬殊,xuan2 shu1
+旋涡
+选项,xuan3 xiang4
+宣泄
+悬崖,xuan2 ya2
+宣言,xuan1 yan2
+宣扬,xuan1 yang2
+炫耀,xuan4 yao4
+选用,xuan3 yong4
+絮叨,xu4 dao5
+削减,xue1 jian3
+血脉
+削弱,xue1 ruo4
+雪山
+雪上加霜
+学识,xue2 shi2
+学士,xue2 shi4
+学说,xue2 shuo1
+穴位,xue2 wei4
+学业
+血缘
+学子
+靴子,xue1 zi5
+虚构,xu1 gou4
+续航
+虚幻
+虚假,xu1 jia3
+酗酒,xu4 jiu3
+序列,xu4 lie4
+畜牧,xu4 mu4
+序幕,xu4 mu4
+旬,xun2
+寻,xun2
+训,xun4
+驯,xun2
+熏,xun1
+寻常,xun2 chang2
+巡回
+虚拟,xu1 ni3
+巡逻,xun2 luo2
+迅猛,xun4 meng3
+寻觅,xun2 mi4
+逊色
+巡视,xun2 shi4
+熏陶,xun1 tao2
+循序渐进,xun2 xu4 jian4 jin4
+勋章,xun1 zhang1
+旭日
+虚荣
+虚弱,xu1 ruo4
+虚伪,xu1 wei4
+徐徐,xu2 xu2
+序言,xu4 yan2
+许愿
+须知,xu1 zhi1
+芽,ya2
+哑,ya3
+押,ya1
+压倒,ya1 dao3
+揠苗助长
+延,yan2
+咽,yan4
+验,yan4
+沿岸,yan2 an4
+演变,yan3 bian4
+言辞
+烟囱,yan1 cong1
+掩耳盗铃
+厌烦
+扬,yang2
+掩盖,yan3 gai4
+样本,yang4 ben3
+秧歌
+养活,yang3 huo5
+阳历,yang2 li4
+样品,yang4 pin3
+养生
+杨树,yang2 shu4
+仰望
+阳性
+洋溢,yang2 yi4
+养育,yang3 yu4
+养殖,yang3 zhi2
+眼红
+咽喉,yan1 hou2
+掩护,yan3 hu4
+演化,yan3 hua4
+烟花,yan1 hua1
+延缓,yan2 huan3
+烟火,yan1 huo3
+演技
+眼界,yan3 jie4
+严谨,yan2 jin3
+厌倦,yan4 juan4
+严峻,yan2 jun4
+艳丽
+演练,yan3 lian4
+言论,yan2 lun4
+严密,yan2 mi4
+眼色,yan3 se4
+眼神,yan3 shen2
+衍生,yan3 sheng1
+岩石,yan2 shi2
+掩饰,yan3 shi4
+演示,yan3 shi4
+验收,yan4 shou1
+演说,yan3 shuo1
+沿途,yan2 tu2
+阎王
+延误,yan2 wu4
+厌恶,yan4 wu4
+演习,yan3 xi2
+眼下,yan3 xia4
+沿线
+言行
+演绎,yan3 yi4
+沿用
+燕子,yan4 zi5
+窑,yao2
+邀,yao1
+摇摆,yao2 bai3
+药材,yao4 cai2
+药方,yao4 fang1
+妖怪,yao1 guai4
+要害
+要好,yao4 hao3
+摇晃,yao2 huang4
+要紧,yao4 jin3
+遥控,yao2 kong4
+摇篮,yao2 lan2
+要领,yao4 ling3
+要命,yao4 ming4
+要强
+谣言,yao2 yan2
+耀眼,yao4 yan3
+摇摇欲坠
+压迫,ya1 po4
+鸦雀无声
+丫头
+压抑,ya1 yi4
+压榨
+压制,ya1 zhi4
+压轴
+夜班,ye4 ban1
+野餐,ye3 can1
+业绩,ye4 ji1
+液晶,ye4 jing1
+野蛮,ye3 man2
+野兽,ye3 shou4
+夜校,ye4 xiao4
+夜宵,ye4 xiao1
+野心,ye3 xin1
+夜以继日
+椰子,ye1 zi5
+议,yi4
+亦,yi4
+译,yi4
+溢,yi4
+矣,yi3
+倚,yi3
+依,yi1
+仪表,yi2 biao3
+一并
+议程,yi4 cheng2
+一成不变
+一筹莫展
+依次,yi1 ci4
+疑点
+一动不动
+一度,yi1 du4
+依法,yi1 fa3
+依附
+一概,yi1 gai4
+一概而论,yi1 gai4 er2 lun4
+一干二净,yi1 gan1 er4 jing4
+义工
+一鼓作气
+一晃
+移交,yi2 jiao1
+一经
+一技之长,yi1 ji4 zhi1 chang2
+宜居
+一举,yi1 ju3
+一举两得,yi1 ju3 liang3 de5
+一举一动
+异口同声,yi4 kou3 tong2 sheng1
+易拉罐
+一揽子
+屹立
+毅力,yi4 li4
+一连,yi1 lian2
+一连串
+意料,yi4 liao4
+遗留,yi2 liu2
+遗漏,yi2 lou4
+疑虑,yi2 lu:4
+一毛不拔,yi1 mao2 bu4 ba2
+一面,yi1 mian4
+疫苗,yi4 miao2
+一目了然
+瘾,yin3
+阴暗,yin1 an4
+隐蔽,yin3 bi4
+因地制宜
+应,ying4
+鹰,ying1
+硬币,ying4 bi4
+应酬,ying4 chou5
+应付,ying4 fu5
+荧光,ying2 guang1
+迎合,ying2 he2
+应急,ying4 ji2
+赢家,ying2 jia1
+营救,ying2 jiu4
+英俊,ying1 jun4
+硬朗
+盈利,ying2 li4
+营利,ying2 li4
+迎面,ying2 mian4
+英明,ying1 ming2
+硬盘,ying4 pan2
+影像,ying3 xiang4
+营销
+应邀,ying4 yao1
+英勇,ying1 yong3
+应有尽有,ying1 you3 jin4 you3
+营造
+隐含
+隐患
+引荐
+引经据典
+阴历,yin1 li4
+引领
+隐瞒,yin3 man2
+阴谋,yin1 mou2
+银幕,yin2 mu4
+殷勤,yin1 qin2
+引擎,yin3 qing2
+隐情
+因人而异
+引人入胜
+引人注目,yin3 ren2 zhu4 mu4
+音响,yin1 xiang3
+隐形,yin3 xing2
+隐性
+阴性,yin1 xing4
+阴影,yin1 ying3
+引用,yin3 yong4
+引诱,yin3 you4
+隐约,yin3 yue1
+印章,yin4 zhang1
+印证,yin4 zheng4
+一旁,yi1 pang2
+遗弃
+一齐,yi1 qi2
+毅然,yi4 ran2
+怡然自得
+宜人
+一如既往
+衣裳,yi1 shang5
+一声不吭
+以身作则,yi3 shen1 zuo4 ze2
+遗失,yi2 shi1
+一事无成
+一手,yi1 shou3
+一丝不苟
+一塌糊涂
+遗体,yi2 ti3
+议题,yi4 ti2
+一体
+一头,yi1 tou2
+意图,yi4 tu2
+依托,yi1 tuo1
+亿万,yi4 wan4
+遗忘,yi2 wang4
+一味
+意味,yi4 wei4
+遗物,yi2 wu4
+医务,yi1 wu4
+一无所有,yi1 wu2 suo3 you3
+一无所知
+一线,yi1 xian4
+意向,yi4 xiang4
+意想不到,yi4 xiang3 bu4 dao4
+异想天开
+一心,yi1 xin1
+一行,yi1 xing2
+异性,yi4 xing4
+一心一意,yi1 xin1 yi1 yi4
+一言不发
+抑扬顿挫
+一言一行
+异议,yi4 yi4
+依依不舍
+一应俱全
+抑郁
+意愿,yi4 yuan4
+抑郁症
+一早
+依照,yi1 zhao4
+一针见血
+移植,yi2 zhi2
+意志,yi4 zhi4
+以致,yi3 zhi4
+以至于,yi3 zhi4 yu2
+遗嘱,yi2 zhu3
+涌,yong3
+永恒,yong3 heng2
+拥护,yong1 hu4
+永久,yong3 jiu3
+庸俗,yong1 su2
+勇往直前
+用意,yong4 yi4
+踊跃,yong3 yue4
+邮编,you2 bian1
+忧愁
+游船
+有待,you3 dai4
+有的放矢
+诱饵
+诱发
+油画,you2 hua4
+诱惑,you4 huo4
+忧虑,you1 lu:4
+油腻
+油漆,you2 qi1
+诱人
+友人,you3 ren2
+友善,you3 shan4
+优胜劣汰
+有声有色,you3 sheng1 you3 se4
+有条不紊
+有望
+尤为
+悠闲
+游行,you2 xing2
+有幸
+优雅,you1 ya3
+有意,you3 yi4
+忧郁,you1 yu4
+犹豫不决,you2 yu4 bu4 jue2
+优越,you1 yue4
+有朝一日,you3 zhao1 yi1 ri4
+邮政,you2 zheng4
+幼稚,you4 zhi4
+由衷
+余,yu2
+玉,yu4
+愈,yu4
+与否
+怨,yuan4
+冤,yuan1
+原创
+缘分,yuan2 fen4
+原告,yuan2 gao4
+缘故,yuan2 gu4
+怨恨,yuan4 hen4
+远见
+远近闻名
+元老,yuan2 lao3
+怨气
+园区
+源泉,yuan2 quan2
+院士,yuan4 shi4
+元首,yuan2 shou3
+源头
+冤枉,yuan1 wang5
+原型,yuan2 xing2
+怨言,yuan4 yan2
+渊源
+源源不断
+源远流长
+原汁原味
+援助,yuan2 zhu4
+原装
+预备,yu4 bei4
+渔船,yu2 chuan2
+愚蠢,yu2 chun3
+余地
+曰,yue1
+约定俗成
+乐队,yue4 dui4
+悦耳
+越发
+岳父,yue4 fu4
+越过,yue4 guo4
+阅览,yue4 lan3
+阅历,yue4 li4
+岳母,yue4 mu3
+乐谱,yue4 pu3
+预感
+预告,yu4 gao4
+愚公移山
+愈合,yu4 he2
+愈加,yu4 jia1
+预见,yu4 jian4
+预警,yu4 jing3
+舆论,yu2 lun4
+愚昧,yu2 mei4
+郁闷,yu4 men4
+渔民,yu2 min2
+熨,yun4
+遇难,yu4 nan4
+蕴藏,yun4 cang2
+运筹帷幄
+孕妇,yun4 fu4
+蕴含
+运河,yun4 he2
+淤泥,yu1 ni2
+酝酿,yun4 niang4
+陨石,yun3 shi2
+运算,yun4 suan4
+晕头转向
+韵味
+孕育,yun4 yu4
+运转,yun4 zhuan3
+运作,yun4 zuo4
+逾期
+与日俱增
+预赛,yu4 sai4
+预示,yu4 shi4
+与时俱进
+预售
+预算,yu4 suan4
+遇险
+预先,yu4 xian1
+预言,yu4 yan2
+寓言,yu4 yan2
+愈演愈烈
+寓意
+予以,yu3 yi3
+愉悦,yu2 yue4
+预兆,yu4 zhao4
+与众不同,yu3 zhong4 bu4 tong2
+宇宙,yu3 zhou4
+砸,za2
+宰,zai3
+栽,zai1
+再度,zai4 du4
+再接再厉
+栽培,zai1 pei2
+在所难免
+载体,zai4 ti3
+再现
+栽赃,zai1 zang1
+在职
+杂技,za2 ji4
+杂交,za2 jiao1
+杂乱无章
+暂,zan4
+攒,zan3
+赞不绝口
+葬,zang4
+葬礼,zang4 li3
+赞美,zan4 mei3
+暂且,zan4 qie3
+赞叹,zan4 tan4
+赞许,zan4 xu3
+赞扬,zan4 yang2
+赞助,zan4 zhu4
+凿,zao2
+灶,zao4
+枣,zao3
+造福
+造价,zao4 jia4
+造假
+造就
+早年
+糟粕
+早日,zao3 ri4
+糟蹋,zao1 ta4
+遭殃,zao1 yang1
+责备,ze2 bei4
+责怪,ze2 guai4
+贼,zei2
+增产,zeng1 chan3
+增收
+增速
+增添,zeng1 tian1
+增值,zeng1 zhi2
+闸,zha2
+榨,zha4
+渣,zha1
+炸弹,zha4 dan4
+扎根
+债,zhai4
+债券,zhai4 quan4
+债务,zhai4 wu4
+摘要,zhai1 yao4
+蘸,zhan4
+斩,zhan3
+盏,zhan3
+沾,zhan1
+占卜,zhan1 bu3
+战场,zhan4 chang3
+斩钉截铁,zhan3 ding1 jie2 tie3
+绽放
+涨,zhang4
+胀,zhang4
+章程,zhang1 cheng2
+张灯结彩,zhang1 deng1 jie2 cai3
+掌舵
+涨幅
+掌管,zhang3 guan3
+帐篷,zhang4 peng5
+张贴,zhang1 tie1
+沾光,zhan1 guang1
+长相,zhang3 xiang1
+张扬,zhang1 yang2
+站立
+占领,zhan4 ling3
+战略,zhan4 lu:e4
+战士,zhan4 shi4
+战术,zhan4 shu4
+展望,zhan3 wang4
+瞻仰,zhan1 yang3
+战役,zhan4 yi4
+占用
+战友,zhan4 you3
+辗转
+罩,zhao4
+照办
+招标,zhao1 biao1
+照常,zhao4 chang2
+召集,zhao4 ji2
+招揽
+照例,zhao4 li4
+照料,zhao4 liao4
+着迷,zhao2 mi2
+招募,zhao1 mu4
+招牌,zhao1 pai5
+朝气蓬勃,zhao1 qi4 peng2 bo2
+朝三暮四
+招商
+照射,zhao4 she4
+肇事
+招数
+兆头
+朝夕相处
+照样,zhao4 yang4
+照耀,zhao4 yao4
+沼泽,zhao3 ze2
+诈骗,zha4 pian4
+扎实,zha1 shi5
+眨眼,zha3 yan3
+炸药,zha4 yao4
+遮,zhe1
+遮挡
+折叠
+遮盖,zhe1 gai4
+折合,zhe2 he2
+哲理
+折磨,zhe2 mo5
+震,zhen4
+枕,zhen3
+珍藏,zhen1 cang2
+侦查,zhen1 cha2
+震荡,zhen4 dang4
+阵地,zhen4 di4
+镇定,zhen4 ding4
+振动,zhen4 dong4
+震动,zhen4 dong4
+振奋,zhen4 fen4
+针锋相对,zhen1 feng1 xiang1 dui4
+征,zheng1
+蒸,zheng1
+正版
+争辩,zheng1 bian4
+正当,zheng4 dang1
+政党,zheng4 dang3
+争端,zheng1 duan1
+整顿,zheng3 dun4
+蒸发,zheng1 fa1
+争分夺秒,zheng1 fen1 duo2 miao3
+征服,zheng1 fu2
+争光
+整合,zheng3 he2
+征集
+整洁,zheng3 jie2
+症结
+正经,zheng4 jing5
+拯救,zheng3 jiu4
+正能量
+正气,zheng4 qi4
+争气,zheng1 qi4
+政权,zheng4 quan2
+证券,zheng4 quan4
+证人,zheng4 ren5
+正视
+征收,zheng1 shou1
+整数,zheng3 shu4
+争相
+争先恐后,zheng1 xian1 kong3 hou4
+正月,zheng1 yue4
+挣扎,zheng1 zha2
+正直,zheng4 zhi2
+整治
+争执,zheng1 zhi2
+郑重,zheng4 zhong4
+正宗
+震撼,zhen4 han4
+镇静,zhen4 jing4
+震惊,zhen4 jing1
+针灸,zhen1 jiu3
+真空,zhen1 kong1
+真理,zhen1 li3
+真情,zhen1 qing2
+阵容,zhen4 rong2
+真是,zhen1 shi4
+珍视
+诊所,zhen3 suo3
+侦探,zhen1 tan4
+珍稀
+真心,zhen1 xin1
+振兴,zhen4 xing1
+阵营,zhen4 ying2
+真挚,zhen1 zhi4
+珍重
+斟酌
+振作,zhen4 zuo4
+折射,zhe2 she4
+折腾,zhe2 teng5
+致,zhi4
+置,zhi4
+织,zhi1
+治安,zhi4 an1
+纸币,zhi3 bi4
+指标,zhi3 biao1
+止步
+制裁,zhi4 cai2
+职称,zhi2 cheng1
+致辞,zhi4 ci2
+至此,zhi4 ci3
+直达,zhi2 da2
+质地,zhi2 di4
+指点,zhi3 dian3
+执法,zhi2 fa3
+制服,zhi4 fu4
+致富,zhi4 fu4
+直观,zhi2 guan1
+只管,zhi3 guan3
+滞后
+之际
+知己,zhi1 ji3
+指甲,zhi1 jia5
+支架
+指教
+直径,zhi2 jing4
+致敬,zhi4 jing4
+直觉,zhi2 jue2
+知觉,zhi1 jue2
+指控,zhi3 kong4
+指令,zhi3 ling4
+滞留,zhi4 liu2
+支流,zhi1 liu2
+致力于
+芝麻,zhi1 ma5
+致命,zhi4 ming4
+指南,zhi3 nan2
+稚嫩
+职能,zhi2 neng2
+支配,zhi1 pei4
+支票,zhi1 piao4
+质朴
+志气,zhi4 qi4
+值钱
+智商,zhi4 shang1
+纸上谈兵
+直升机,zhi2 sheng1 ji1
+直视
+致使,zhi4 shi3
+知识分子,zhi1 shi5 fen4 zi3
+指手画脚,zhi3 shou3 hua4 jiao3
+指数,zhi3 shu4
+肢体
+指望,zhi3 wang4
+质问,zhi4 wen4
+指纹,zhi3 wen2
+窒息,zhi4 xi1
+直线,zhi2 xian4
+志向
+指向
+直辖市,zhi2 xia2 shi4
+执意,zhi2 yi4
+指引,zhi3 yin3
+治愈,zhi4 yu4
+志愿,zhi4 yuan4
+支援,zhi1 yuan2
+制约,zhi4 yue1
+旨在
+执照,zhi2 zhao4
+直至,zhi2 zhi4
+制止,zhi4 zhi3
+支柱,zhi1 zhu4
+执着,zhi2 zhuo2
+知足
+知足常乐
+钟,zhong1
+仲裁,zhong4 cai2
+忠诚,zhong1 cheng2
+重创,zhong4 chuang4
+终端,zhong1 duan1
+忠告,zhong1 gao4
+终极
+终结,zhong1 jie2
+终究,zhong1 jiu1
+中立,zhong1 li4
+重量级
+肿瘤,zhong3 liu2
+重任
+终生
+忠实,zhong1 shi2
+中途,zhong1 tu2
+忠心
+衷心,zhong1 xin1
+重型,zhong4 xing2
+中性,zhong1 xing4
+中叶,zhong1 ye4
+重用,zhong4 yong4
+中庸,zhong1 yong1
+忠于,zhong1 yu2
+忠贞,zhong1 zhen1
+中止,zhong1 zhi3
+终止,zhong1 zhi3
+众志成城,zhong4 zhi4 cheng2 cheng2
+重中之重
+种族,zhong3 zu2
+皱,zhou4
+周密,zhou1 mi4
+骤然
+周岁
+皱纹,zhou4 wen2
+周旋
+昼夜,zhou4 ye4
+周折,zhou1 zhe2
+周转,zhou1 zhuan3
+注,zhu4
+驻,zhu4
+筑,zhu2
+拄,zhu3
+拽,zhuai4
+传,zhuan4
+转播,zhuan3 bo1
+专长,zhuan1 chang2
+专程,zhuan1 cheng2
+转达,zhuan3 da2
+幢
+壮,zhuang4
+桩,zhuang1
+装扮,zhuang1 ban4
+壮大,zhuang4 da4
+壮观,zhuang4 guan4
+撞击,zhuang4 ji1
+壮丽,zhuang4 li4
+壮烈,zhuang4 lie4
+专柜
+庄严,zhuang1 yan2
+状元
+庄园,zhuang1 yuan2
+装置,zhuang1 zhi4
+庄重,zhuang1 zhong4
+转化,zhuan3 hua4
+传记,zhuan4 ji4
+专辑,zhuan1 ji2
+专栏,zhuan1 lan2
+专卖,zhuan1 mai4
+专人,zhuan1 ren2
+专项
+撰写,zhuan4 xie3
+转型
+转眼,zhuan3 yan3
+转悠
+转载,zhuan3 zai4
+转折,zhuan3 zhe2
+转折点
+专职,zhuan1 zhi2
+专制,zhuan1 zhi4
+专著
+爪子,zhua3 zi5
+主编,zhu3 bian1
+贮藏,zhu3 cang2
+著称,zhu4 cheng1
+住处,zhu4 chu4
+主打
+注定,zhu4 ding4
+嘱咐,zhu3 fu4
+竹竿
+朱红
+住户,zhu4 hu4
+坠,zhui4
+追悼,zhui1 dao4
+追赶,zhui1 gan3
+坠落,zhui4 luo4
+追捧
+追溯,zhui1 su4
+追随,zhui1 sui2
+追尾
+追问,zhui1 wen4
+追逐,zhui1 zhu2
+追踪
+助力
+主力,zhu3 li4
+逐年,zhu2 nian2
+准许,zhun3 xu3
+准则,zhun3 ze2
+着力
+拙劣
+着落
+捉迷藏,zhuo1 mi2 cang2
+酌情,zhuo2 qing2
+灼热
+着实
+着手
+着想,zhuo2 xiang3
+着眼,zhuo2 yan3
+卓越,zhuo2 yue4
+着重,zhuo2 zhong4
+茁壮
+主权,zhu3 quan2
+主人公
+诸如此类,zhu1 ru2 ci3 lei4
+注射,zhu4 she4
+注视,zhu4 shi4
+注释,zhu4 shi4
+主体,zhu3 ti3
+主题曲
+嘱托,zhu3 tuo1
+助威
+诸位,zhu1 wei4
+注销
+蛀牙
+主页,zhu3 ye4
+逐一
+主义,zhu3 yi4
+主宰,zhu3 zai3
+铸造,zhu4 zao4
+驻扎,zhu4 zha1
+柱子,zhu4 zi5
+驻足
+籽,zi3
+兹,zi1
+自卑,zi4 bei1
+资本主义,zi1 ben3 zhu3 yi4
+自称,zi4 cheng1
+子弹,zi3 dan4
+子弟,zi3 di4
+自发,zi4 fa1
+自费,zi4 fei4
+自负,zi4 fu4
+字迹
+自立
+自理
+资历
+自力更生,zi4 li4 geng1 sheng1
+自满,zi4 man3
+自强不息
+自然而然,zi4 ran2 er2 ran2
+自然界,zi4 ran2 jie4
+自如
+滋润
+资深
+滋生
+自始至终,zi4 shi3 zhi4 zhong1
+自首
+自私,zi4 si1
+子孙,zi3 sun1
+姿态,zi1 tai4
+字体,zi4 ti3
+自卫,zi4 wei4
+滋味,zi1 wei4
+自相矛盾,zi4 xiang1 mao2 dun4
+自行,zi4 xing2
+资讯,zi1 xun4
+字眼,zi4 yan3
+自以为是
+自在
+自责
+资质
+自治区,zi4 zhi4 qu1
+自主,zi4 zhu3
+资助,zi1 zhu4
+自尊,zi4 zun1
+宗,zong1
+总额,zong3 e2
+总而言之,zong3 er2 yan2 zhi1
+纵观
+总和,zong3 he2
+纵横,zong4 heng2
+踪迹,zong1 ji1
+宗教,zong1 jiao4
+纵然,zong4 ran2
+纵容
+纵深
+综艺
+宗旨,zong1 zhi3
+揍,zou4
+走过场
+走弯路,zou3 wan1 lu4
+走漏
+走势
+走私
+走投无路
+走向,zou3 xiang4
+奏效,zou4 xiao4
+钻空子
+钻石,zuan4 shi2
+钻研,zuan1 yan2
+足不出户
+祖传
+祖父,zu3 fu4
+嘴唇,zui3 chun2
+罪犯,zui4 fan4
+罪魁祸首
+足迹,zu2 ji1
+祖籍
+组建,zu3 jian4
+阻拦,zu3 lan2
+阻力,zu3 li4
+租赁,zu1 lin4
+祖母,zu3 mu3
+阻挠,zu3 nao2
+尊贵
+遵循,zun1 xun2
+尊严,zun1 yan2
+遵照,zun1 zhao4
+作弊,zuo4 bi4
+作对,zuo4 dui4
+作废,zuo4 fei4
+作风,zuo4 feng1
+左顾右盼
+作客,zuo4 ke4
+作料,zuo2 liao5
+坐落
+琢磨
+座谈,zuo4 tan2
+作物,zuo4 wu4
+作息
+座右铭,zuo4 you4 ming2
+作战,zuo4 zhan4
+做证
+做主
+足智多谋,zu2 zhi4 duo1 mou2
+组装,zu3 zhuang1
+祖宗,zu3 zong1
