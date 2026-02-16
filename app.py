@@ -92,6 +92,33 @@ VOCAB_RESOLVE_CACHE = {}
 HSK_RESOLVE_CACHE = {}
 TOPN_RESOLVE_CACHE = {}
 
+WORD_LIST_UNIQUE = "Unique words (word, occurrences in text, WordFreq Zipf)"
+WORD_LIST_NOT_IN_VOCAB = "Words not in vocab (word, occurrences in text, WordFreq Zipf)"
+WORD_LIST_NOT_IN_HSK = "Words not in HSK (word, occurrences in text, WordFreq Zipf)"
+WORD_LIST_NOT_IN_TOP = "Words not in top 10k most common words (word, occurrences in text, WordFreq Zipf)"
+
+CHAR_LIST_UNIQUE = "Unique characters (character, occurrences in text, WordFreq Zipf)"
+CHAR_LIST_NOT_IN_VOCAB = "Characters not in vocab (character, occurrences in text, WordFreq Zipf)"
+CHAR_LIST_NOT_IN_HSK = "Characters not in HSK (character, occurrences in text, WordFreq Zipf)"
+CHAR_LIST_NOT_IN_TOP = "Characters not in top 10k most common words (character, occurrences in text, WordFreq Zipf)"
+
+
+def format_zipf_with_ratio(zipf_value, ratio, unit):
+    if zipf_value is None or isinstance(zipf_value, float) and math.isnan(zipf_value):
+        zipf_text = "—"
+    else:
+        zipf_text = f"{zipf_value:.2f}"
+    if not ratio or ratio <= 0 or math.isinf(ratio):
+        return zipf_text
+    ratio_value = max(int(round(ratio)), 1)
+    return f"{zipf_text} (1 in {ratio_value:,} {unit})"
+
+
+def wordfreq_ratio_from_zipf(zipf_value):
+    if zipf_value is None or (isinstance(zipf_value, float) and math.isnan(zipf_value)):
+        return None
+    return 10 ** (9 - zipf_value)
+
 
 # =========================================================
 
@@ -448,9 +475,19 @@ def analyse_text(
     unique_words = len(unique_word_set)
 
     word_counts = Counter(words)
-    most_common_all = word_counts.most_common()
     char_counts = Counter(hanzi_chars)
-    char_most_common_all = char_counts.most_common()
+
+    word_zipf_lookup = {word: get_zipf(word) for word in unique_word_set}
+    char_zipf_lookup = {ch: get_zipf(ch) for ch in unique_char_set}
+
+    def annotate_word_list(pairs):
+        return [(word, count, word_zipf_lookup.get(word, 0.0)) for word, count in pairs]
+
+    def annotate_char_list(pairs):
+        return [(ch, count, char_zipf_lookup.get(ch, 0.0)) for ch, count in pairs]
+
+    annotated_common_words = annotate_word_list(word_counts.most_common())
+    annotated_common_chars = annotate_char_list(char_counts.most_common())
 
     median_zipf_unique_words = median_zipf_unique(unique_word_set)
     median_zipf_word_tokens = median_zipf_weighted(word_counts, total_words)
@@ -490,10 +527,22 @@ def analyse_text(
 
     not_in_vocab_words = []
     if custom_vocab_set:
-        not_in_vocab_words = [(word, count) for word, count in most_common_all if not resolved_vocab_unique[word]]
+        not_in_vocab_words = [
+            (word, count, word_zipf_lookup.get(word, 0.0))
+            for word, count, _ in annotated_common_words
+            if not resolved_vocab_unique[word]
+        ]
 
-    not_in_hsk_words = [(word, count) for word, count in most_common_all if resolved_hsk_unique[word] > 7]
-    not_in_topn_words = [(word, count) for word, count in most_common_all if resolved_topn_unique[word] > 10000]
+    not_in_hsk_words = [
+        (word, count, word_zipf_lookup.get(word, 0.0))
+        for word, count, _ in annotated_common_words
+        if resolved_hsk_unique[word] > 7
+    ]
+    not_in_topn_words = [
+        (word, count, word_zipf_lookup.get(word, 0.0))
+        for word, count, _ in annotated_common_words
+        if resolved_topn_unique[word] > 10000
+    ]
 
     resolved_char_vocab = {}
     if custom_vocab_set:
@@ -506,15 +555,19 @@ def analyse_text(
     not_in_vocab_chars = []
     if custom_vocab_set:
         not_in_vocab_chars = [
-            (ch, count)
-            for ch, count in char_most_common_all
+            (ch, count, char_zipf_lookup.get(ch, 0.0))
+            for ch, count, _ in annotated_common_chars
             if not resolved_char_vocab.get(ch, False)
         ]
 
-    not_in_hsk_chars = [(ch, count) for ch, count in char_most_common_all if resolved_char_hsk[ch] > 7]
+    not_in_hsk_chars = [
+        (ch, count, char_zipf_lookup.get(ch, 0.0))
+        for ch, count, _ in annotated_common_chars
+        if resolved_char_hsk[ch] > 7
+    ]
     not_in_topn_chars = [
-        (ch, count)
-        for ch, count in char_most_common_all
+        (ch, count, char_zipf_lookup.get(ch, 0.0))
+        for ch, count, _ in annotated_common_chars
         if resolved_char_topn[ch] > 10000
     ]
 
@@ -632,11 +685,11 @@ def analyse_text(
 
     top_values_limit = None  # capture full frequency lists without truncation
 
-    word_result["Unique words (with frequencies)"] = tuple(most_common_all[:top_values_limit])
+    word_result[WORD_LIST_UNIQUE] = tuple(annotated_common_words[:top_values_limit])
     if custom_vocab_set:
-        word_result["Words not in vocab (with frequencies)"] = tuple(not_in_vocab_words[:top_values_limit])
-    word_result["Words not in HSK (with frequencies)"] = tuple(not_in_hsk_words[:top_values_limit])
-    word_result["Words not in top 10k most common words (with frequencies)"] = tuple(not_in_topn_words[:top_values_limit])
+        word_result[WORD_LIST_NOT_IN_VOCAB] = tuple(not_in_vocab_words[:top_values_limit])
+    word_result[WORD_LIST_NOT_IN_HSK] = tuple(not_in_hsk_words[:top_values_limit])
+    word_result[WORD_LIST_NOT_IN_TOP] = tuple(not_in_topn_words[:top_values_limit])
     word_result["Middle 1000-token extract"] = middle_1000_extract
 
     char_result = {
@@ -665,11 +718,11 @@ def analyse_text(
         label_t = "HSK 1 to 7–9 character coverage (%)" if lvl == 7 else f"HSK 1 to {lvl} character coverage (%)"
         char_result[label_t] = round(token_char_maxhsk[lvl], 1)
 
-    char_result["Unique characters (with frequencies)"] = tuple(char_most_common_all[:top_values_limit])
+    char_result[CHAR_LIST_UNIQUE] = tuple(annotated_common_chars[:top_values_limit])
     if custom_vocab_set:
-        char_result["Characters not in vocab (with frequencies)"] = tuple(not_in_vocab_chars[:top_values_limit])
-    char_result["Characters not in HSK (with frequencies)"] = tuple(not_in_hsk_chars[:top_values_limit])
-    char_result["Characters not in top 10k most common words (with frequencies)"] = tuple(not_in_topn_chars[:top_values_limit])
+        char_result[CHAR_LIST_NOT_IN_VOCAB] = tuple(not_in_vocab_chars[:top_values_limit])
+    char_result[CHAR_LIST_NOT_IN_HSK] = tuple(not_in_hsk_chars[:top_values_limit])
+    char_result[CHAR_LIST_NOT_IN_TOP] = tuple(not_in_topn_chars[:top_values_limit])
 
     return word_result, char_result
 
@@ -1191,9 +1244,20 @@ def show_export_and_clear(state, clear_vocab_cache):
             if not isinstance(entries, list):
                 return entries
             if entries and all(
-                isinstance(item, (tuple, list)) and len(item) == 2 for item in entries
+                isinstance(item, (tuple, list)) and len(item) in (2, 3)
+                for item in entries
             ):
-                return "; ".join(f"{item[0]}:{item[1]}" for item in entries)
+                formatted_items = []
+                for item in entries:
+                    parts = [str(item[0]), str(item[1])]
+                    if len(item) == 3:
+                        zipf_value = item[2]
+                        if isinstance(zipf_value, numbers.Real):
+                            parts.append(f"{zipf_value:.2f}")
+                        else:
+                            parts.append(str(zipf_value))
+                    formatted_items.append(":".join(parts))
+                return "; ".join(formatted_items)
             return "; ".join(str(item) for item in entries)
 
         def to_download_df(data_dict):
@@ -1207,13 +1271,13 @@ def show_export_and_clear(state, clear_vocab_cache):
                     [
                         col.startswith("Top "),
                         col.startswith("HSK "),
-                        "(with frequencies)" in col,
+                        "WordFreq Zipf" in col,
                         "extract" in col.lower(),
                     ]
                 ),
                 "Top N coverage": lambda col: col.startswith("Top "),
                 "HSK coverage": lambda col: col.startswith("HSK "),
-                "Frequency lists": lambda col: "(with frequencies)" in col,
+                "Frequency lists": lambda col: "WordFreq Zipf" in col,
                 "1000-token text extract": lambda col: "extract" in col.lower(),
             }
             matcher = group_matchers[group_name]
@@ -1394,7 +1458,7 @@ def filter_raw_metrics(df):
         if not isinstance(column_name, str):
             return True
         stripped = column_name.strip()
-        if stripped.endswith("(with frequencies)"):
+        if "WordFreq Zipf" in stripped:
             return False
         if "Middle 1000-token extract" in stripped:
             return False
@@ -1402,6 +1466,48 @@ def filter_raw_metrics(df):
 
     columns = [col for col in df.columns if should_include(col)]
     return df.loc[:, columns]
+
+
+def build_frequency_table(data, item_label, total_count, occurrence_unit):
+    zipf_column_label = "WordFreq Zipf (1 in __ words)"
+    columns = [
+        item_label,
+        "Occurrences in text",
+        f"Occurs every __ {occurrence_unit}",
+        zipf_column_label,
+    ]
+
+    if not data:
+        empty_df = pd.DataFrame(columns=columns)
+        empty_df.index.name = "#"
+        return empty_df
+
+    df = pd.DataFrame(data, columns=[item_label, "Occurrences in text", "WordFreq Zipf"])
+
+    if total_count > 0:
+        occurrence_ratio = (total_count / df["Occurrences in text"]).round(0).astype(int).clip(lower=1)
+        df[f"Occurs every __ {occurrence_unit}"] = occurrence_ratio.map(lambda x: f"1 in {x:,}")
+    else:
+        df[f"Occurs every __ {occurrence_unit}"] = "—"
+
+    df[zipf_column_label] = [
+        format_zipf_with_ratio(zipf, wordfreq_ratio_from_zipf(zipf), "words")
+        for zipf in df["WordFreq Zipf"]
+    ]
+
+    df = df.drop(columns=["WordFreq Zipf"])
+    df = df[
+        [
+            item_label,
+            "Occurrences in text",
+            f"Occurs every __ {occurrence_unit}",
+            zipf_column_label,
+        ]
+    ]
+
+    df.index = range(1, len(df) + 1)
+    df.index.name = "#"
+    return df
 
 
 FREQUENCY_TABLE_LIMIT = 100
@@ -2036,28 +2142,27 @@ if word_df is not None and char_df is not None and not word_df.empty:
                 st.metric("Unique words", f"{int(wrow['Unique words']):,}")
         
             total_tokens = int(wrow["Total tokens"])
+            st.caption(
+                "WordFreq Zipf scores come from the WordFreq corpus: 7 ≈ 1 in 100 words, 6 ≈ 1 in 1,000, 5 ≈ 1 in 10,000. "
+                "The ratio shown in parentheses gives an approximate real-world frequency."
+            )
             
-            word_sections = [("All Words", wrow.get("Unique words (with frequencies)", []))]
+            word_sections = [("All Words", wrow.get(WORD_LIST_UNIQUE, []))]
             if has_custom_vocab:
-                word_sections.append(("Not in Custom Vocab", wrow.get("Words not in vocab (with frequencies)", [])))
+                word_sections.append(("Not in Custom Vocab", wrow.get(WORD_LIST_NOT_IN_VOCAB, [])))
             word_sections.extend([
-                ("Not in HSK Wordlist", wrow.get("Words not in HSK (with frequencies)", [])),
-                ("Not in Top 10k Most Common Words", wrow.get("Words not in top 10k most common words (with frequencies)", [])),
+                ("Not in HSK Wordlist", wrow.get(WORD_LIST_NOT_IN_HSK, [])),
+                ("Not in Top 10k Most Common Words", wrow.get(WORD_LIST_NOT_IN_TOP, [])),
             ])
 
             for tab, (label, data) in zip(st.tabs([x[0] for x in word_sections]), word_sections):
                 with tab:
-                    if data:
-                        df_word = pd.DataFrame(data, columns=["Word", "Occurences"])
-
-                        df_word["Occurs every __ words"] = (
-                            total_tokens / df_word["Occurences"]
-                        ).round(0).astype(int).map(lambda x: f"1 in {x:,}")
-
-                        df_word.index = range(1, len(df_word) + 1)
-                        df_word.index.name = "#"
-                    else:
-                        df_word = pd.DataFrame(columns=["Word", "Occurences", "Occurs every __ words"])
+                    df_word = build_frequency_table(
+                        data,
+                        "Word",
+                        total_tokens,
+                        "words",
+                    )
 
                     if label == "Not in Custom Vocab":
                         st.markdown(f"Words not in custom vocab: **{len(df_word):,}**")
@@ -2085,29 +2190,27 @@ if word_df is not None and char_df is not None and not word_df.empty:
                 st.metric("Unique characters", f"{int(crow['Unique characters']):,}")
 
             total_chars = int(crow["Total characters"])
+            st.caption(
+                "WordFreq Zipf for characters treats each Hanzi as a single-character word in the WordFreq corpus. "
+                "The parentheses show how often that character appears on average across written text."
+            )
             
-            char_sections = [("All Characters", crow.get("Unique characters (with frequencies)", []))]
+            char_sections = [("All Characters", crow.get(CHAR_LIST_UNIQUE, []))]
             if has_custom_vocab:
-                char_sections.append(("Not in Custom Vocab", crow.get("Characters not in vocab (with frequencies)", [])))
+                char_sections.append(("Not in Custom Vocab", crow.get(CHAR_LIST_NOT_IN_VOCAB, [])))
             char_sections.extend([
-                ("Not in HSK Wordlist", crow.get("Characters not in HSK (with frequencies)", [])),
-                ("Not in Top 10k Most Common Words", crow.get("Characters not in top 10k most common words (with frequencies)", [])),
+                ("Not in HSK Wordlist", crow.get(CHAR_LIST_NOT_IN_HSK, [])),
+                ("Not in Top 10k Most Common Words", crow.get(CHAR_LIST_NOT_IN_TOP, [])),
             ])
 
             for tab, (label, data) in zip(st.tabs([x[0] for x in char_sections]), char_sections):
                 with tab:
-                    if data:
-                        df_char = pd.DataFrame(data, columns=["Character", "Occurences"])
-
-                        df_char["Occurs every __ chars"] = (
-                            total_chars / df_char["Occurences"]
-                        ).round(0).astype(int).map(lambda x: f"1 in {x:,}")
-
-                        df_char.index = range(1, len(df_char) + 1)
-                        df_char.index.name = "#"
-
-                    else:
-                        df_char = pd.DataFrame(columns=["Character", "Occurences", "Occurs every __ chars"])
+                    df_char = build_frequency_table(
+                        data,
+                        "Character",
+                        total_chars,
+                        "chars",
+                    )
 
                     if label == "Not in Custom Vocab":
                         st.markdown(f"Characters not in custom vocab: **{len(df_char):,}**")
