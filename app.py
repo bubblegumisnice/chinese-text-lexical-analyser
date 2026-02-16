@@ -124,8 +124,7 @@ def wordfreq_ratio_from_zipf(zipf_value):
 
 st.set_page_config(page_title="Chinese Text Lexical Analyser", layout="wide")
 st.title("Chinese Text Lexical Analyser")
-st.caption("Frequency coverage • HSK coverage • Lexical diversity • Sentence statistics")
-
+st.caption("Word-level and character-level analysis • Frequency coverage • HSK coverage • Lexical diversity • Sentence statistics")
 # =========================================================
 # SIDEBAR
 # =========================================================
@@ -1244,7 +1243,7 @@ def show_input_section(
     extract_text_from_pdf,
 ):
     st.divider()
-    st.header("File for analysis")
+    st.header("Text for analysis")
     input_method = st.radio(
         "Input method",
         ["Upload file", "Paste text"],
@@ -1269,7 +1268,7 @@ def show_input_section(
             effective_name = sanitize_dataframe_name(stripped_name or "Pasted text")
 
             if not pasted_text.strip():
-                st.warning("Please paste Chinese text before uploading.")
+                st.warning("Please paste Chinese text before clicking 'Upload text'.")
             elif len(pasted_text) > 15000:
                 st.error(
                     "This text exceeds the 15,000 character limit. Please save it as a .txt file and upload it instead."
@@ -1481,6 +1480,10 @@ def show_export_and_clear(state, clear_vocab_cache):
                 }
 
                 st.caption("Choose which sections to include in your CSV export.")
+                st.caption(
+                    "Sections can be large (especially frequency lists and 1000-token extracts). "
+                    "Uncheck them if you want a compact metrics-only export."
+                )
                 selected_options = {
                     option: st.checkbox(
                         option,
@@ -2187,14 +2190,14 @@ The example below demonstrates how segmentation works.
             pd.Series(demo_tokens)
             .value_counts()
             .rename_axis("Word")
-            .reset_index(name="Occurences")
+            .reset_index(name="Occurrences")
         )
 
         char_df = (
             pd.Series(demo_chars)
             .value_counts()
             .rename_axis("Character")
-            .reset_index(name="Occurences")
+            .reset_index(name="Occurrences")
         )
 
         table_col1, table_col2, table_col3 = st.columns(3)
@@ -2263,12 +2266,19 @@ if word_df is not None and char_df is not None and not word_df.empty:
 
         stats_tab, words_tab, chars_tab, sample_tab = st.tabs([
             "Statistics",
-            "All Words",
-            "All Characters",
+            "Word Inventory",
+            "Character Inventory",
             "Sample Text",
         ])
 
         with stats_tab:
+            st.caption(
+                "This section summarises volume, sentence structure, lexical diversity, frequency profile, and syllabus alignment."
+            )
+            st.caption(
+                "Reading difficulty often comes from the interaction of sentence length, lexical diversity, "
+                "and frequency profile rather than any single metric."
+            )
             render_stat_guide(word_metrics_series, char_metrics_series, has_custom_vocab)
 
         with words_tab:
@@ -2283,10 +2293,10 @@ if word_df is not None and char_df is not None and not word_df.empty:
             total_tokens = int(wrow["Total tokens"])
             st.caption(
                 "WordFreq Zipf scores come from the WordFreq corpus: 7 ≈ 1 in 100 words, 6 ≈ 1 in 1,000, 5 ≈ 1 in 10,000. "
-                "The ratio shown in parentheses gives an approximate real-world frequency."
+                "The parentheses show an approximate real-world occurrence rate across large written corpora."
             )
             
-            word_sections = [("All Words", wrow.get(WORD_LIST_UNIQUE, []))]
+            word_sections = [("Word Inventory", wrow.get(WORD_LIST_UNIQUE, []))]
             if has_custom_vocab:
                 word_sections.append(("Not in Custom Vocab", wrow.get(WORD_LIST_NOT_IN_VOCAB, [])))
             word_sections.extend([
@@ -2317,24 +2327,24 @@ if word_df is not None and char_df is not None and not word_df.empty:
         with chars_tab:
             crow = char_row
 
-            st.caption(
-                "Character frequencies may be higher than the frequency of the same single-character word. This is because characters are counted wherever they appear in the text, including inside multi-character words."
-                " For example, 的 may appear as a standalone word, but it also appears inside words like 真的 — so the total character count for 的 can exceed the word count for 的."
-            )
-
             col1, col2 = st.columns(2)
             with col1:
                 st.metric("Total characters", f"{int(crow['Total characters']):,}")
             with col2:
                 st.metric("Unique characters", f"{int(crow['Unique characters']):,}")
 
+            st.caption(
+                "Character occurrences may be higher than the occurrence rate of the same single-character word. This is because characters are counted wherever they appear in the text, including inside multi-character words."
+                " For example, 的 may appear as a standalone word, but it also appears inside words like 目的 — so the total character count for 的 can exceed the word count for 的."
+            )
+
             total_chars = int(crow["Total characters"])
             st.caption(
                 "WordFreq Zipf for characters treats each Hanzi as a single-character word in the WordFreq corpus. "
-                "The parentheses show how often that character appears on average across written text."
+                "The parentheses show an approximate real-world occurrence rate across large written corpora."
             )
             
-            char_sections = [("All Characters", crow.get(CHAR_LIST_UNIQUE, []))]
+            char_sections = [("Character Inventory", crow.get(CHAR_LIST_UNIQUE, []))]
             if has_custom_vocab:
                 char_sections.append(("Not in Custom Vocab", crow.get(CHAR_LIST_NOT_IN_VOCAB, [])))
             char_sections.extend([
@@ -2365,11 +2375,14 @@ if word_df is not None and char_df is not None and not word_df.empty:
         with sample_tab:
             wrow = word_row
 
-            st.caption("Extract of the original text from the midpoint containing 1,000 Hanzi word tokens.")
+            st.caption(
+                "Extract sampled from the midpoint of the text (1,000 word tokens if available). "
+                "This gives a representative snapshot of vocabulary usage."
+            )
 
             text_display_mode = st.radio(
                 "Display mode",
-                ["Display only Hanzi", "Display all text (including punctuation and non-hanzi words)"],
+                ["Display Hanzi only", "Display all text (including punctuation and non-hanzi words)"],
                 index=0,
                 horizontal=True,
             )
