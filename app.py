@@ -4,13 +4,24 @@ Chinese text lexical analyser app
 """
 
 import csv
+import gc
 import sys
 import math
 import numbers
 import re
-import streamlit as st
+import html
+import statistics
+from collections import Counter
+
+import jieba
+import numpy as np
 import pandas as pd
+import pdfplumber
+import streamlit as st
 import urllib.parse
+from bs4 import BeautifulSoup
+from ebooklib import ITEM_DOCUMENT, epub
+from wordfreq import zipf_frequency
 
 # Ignore harmless Jieba syntax warnings
 import warnings
@@ -23,32 +34,58 @@ warnings.filterwarnings(
 
 sys.modules.setdefault("app", sys.modules[__name__])
 
-from config import (
-    WORD_FREQ_PATH,
-    HSK_PATH,
-    WINDOW_SIZE,
-    STEP_SIZE,
-    MAX_WINDOWS,
-    DEFAULT_DEMO_TEXT,
-    MODE_EXPLANATIONS,
-    HANZI_RE,
-    HANZI_ONLY_RE,
-    SENTENCE_SPLIT_RE,
+
+# =========================================================
+# INLINED CONFIGURATION CONSTANTS
+# =========================================================
+WORD_FREQ_PATH = "wordfreq_top10000_zipf.csv"
+HSK_PATH = "HSK3_2026_Pleco_pinyin_for_ambiguous_readings.txt"
+
+WINDOW_SIZE = 1000
+STEP_SIZE = 250
+MAX_WINDOWS = 1000
+
+DEFAULT_DEMO_TEXT = (
+    "我很喜欢中国，尤其是它的美食、文化和历史。我不太喜欢政治、经济或者全球化。"
+    "我更喜欢看仙侠小说、穿越小说和娱乐圈网文！要不要一起去吃火锅？或者试试更特别的菜，"
+    "比如苗家酸汤鱼、傣族苦撒、生腌蟹或者羊杂碎？"
 )
 
-from tokenizers import get_tokenizer
-from analysis import analyse_text, extract_text_from_epub, extract_text_from_pdf
-from rendering import (
-    render_highlighted_text,
-    render_legend,
-    render_sentence_segmented_tokens_html,
-)
-from ui_handlers import (
-    init_session_state,
-    show_custom_vocab_section,
-    show_input_section,
-    show_export_and_clear,
-)
+TOPN_COLORS = [
+    "rgba(144,202,249,0.7)",
+    "rgba(120,184,242,0.7)",
+    "rgba(96,166,235,0.7)",
+    "rgba(72,148,228,0.7)",
+    "rgba(56,132,217,0.7)",
+    "rgba(48,122,204,0.7)",
+    "rgba(44,112,196,0.7)",
+    "rgba(40,106,192,0.7)",
+    "rgba(36,103,189,0.7)",
+    "rgba(32,100,186,0.7)",
+]
+
+HSK_COLORS = {
+    1: "rgba(53,200,92,0.45)",
+    2: "rgba(253,205,21,0.45)",
+    3: "rgba(255,142,40,0.45)",
+    4: "rgba(255,56,62,0.45)",
+    5: "rgba(204,49,225,0.45)",
+    6: "rgba(98,85,244,0.45)",
+    7: "rgba(23,138,253,0.45)",
+}
+
+MODE_EXPLANATIONS = {
+    "word_vocab": "Highlights words that appear in your uploaded custom vocab list.",
+    "word_hsk": "Highlights words by their HSK level from the official HSK 3.0 list.",
+    "word_topn": "Highlights words by frequency band (top 1k, 2k, ..., up to 10k) based on WordFreq common word ranks.",
+    "char_vocab": "Highlights characters that appear in any words in your uploaded custom vocab list. Characters not highlighted do not appear in any custom vocab words.",
+    "char_hsk": "Assigns each character the lowest HSK level of any HSK-listed word that contains that character. Characters not highlighted do not appear in any HSK words.",
+    "char_topn": "Assigns each character the lowest frequency band (top 1k, 2k, ..., up to 10k) of any WordFreq ranked word that contains that character. Characters not highlighted do not appear in any of the top 10k common words.",
+}
+
+HANZI_RE = re.compile(r"[\u4e00-\u9fff]")
+HANZI_ONLY_RE = re.compile(r"^[\u4e00-\u9fff]+$")
+SENTENCE_SPLIT_RE = re.compile(r"[。！？]+")
 
 # Global caches
 VOCAB_RESOLVE_CACHE = {}
@@ -225,6 +262,1073 @@ def load_core_lexical_data(word_freq_path, hsk_path):
 
 
 WORD_RANK, HSK_MAP, SEGMENTATION_WORDS = load_core_lexical_data(WORD_FREQ_PATH, HSK_PATH)
+
+
+@st.cache_data
+def build_char_level_maps(hsk_map, word_rank):
+    char_hsk_level = {}
+    for hsk_word, lvl in hsk_map.items():
+        for ch in hsk_word:
+            char_hsk_level[ch] = min(lvl, char_hsk_level.get(ch, 99))
+
+    char_topn_rank = {}
+    for top_word, rank in word_rank.items():
+        for ch in top_word:
+            char_topn_rank[ch] = min(rank, char_topn_rank.get(ch, 10**9))
+
+    return char_hsk_level, char_topn_rank
+
+
+CHAR_HSK_LEVEL, CHAR_TOPN_RANK = build_char_level_maps(HSK_MAP, WORD_RANK)
+
+
+# =========================================================
+# TOKENIZER HELPERS (INLINE)
+# =========================================================
+@st.cache_resource
+def get_base_tokenizer():
+    tokenizer = jieba.Tokenizer()
+    tokenizer.initialize()
+    for word in SEGMENTATION_WORDS:
+        tokenizer.add_word(word)
+    return tokenizer
+
+
+@st.cache_resource
+def get_custom_tokenizer(vocab_signature: tuple):
+    tokenizer = jieba.Tokenizer()
+    tokenizer.initialize()
+    for word in SEGMENTATION_WORDS:
+        tokenizer.add_word(word)
+    for word in vocab_signature:
+        tokenizer.add_word(word)
+    return tokenizer
+
+
+def get_tokenizer(custom_vocab_set=None):
+    if not custom_vocab_set:
+        return get_base_tokenizer()
+    vocab_signature = tuple(sorted(custom_vocab_set))
+    return get_custom_tokenizer(vocab_signature)
+
+
+# =========================================================
+# ANALYSIS HELPERS (INLINE)
+# =========================================================
+def extract_text_from_epub(uploaded_file):
+    book = epub.read_epub(uploaded_file)
+
+    text_chunks = []
+
+    for item in book.get_items():
+        if item.get_type() == ITEM_DOCUMENT:
+            soup = BeautifulSoup(item.get_content(), "html.parser")
+            text_chunks.append(soup.get_text())
+
+    return "\n".join(text_chunks)
+
+
+def extract_text_from_pdf(uploaded_file):
+    text_chunks = []
+
+    with pdfplumber.open(uploaded_file) as pdf:
+        for page in pdf.pages:
+            text = page.extract_text()
+            if text:
+                text_chunks.append(text)
+
+    return "\n".join(text_chunks)
+
+
+def analyse_text(
+    text: str,
+    tokenizer,
+    custom_vocab_set,
+    resolve_vocab,
+    resolve_hsk_level,
+    resolve_topn_rank,
+):
+
+    vocab_cache = {}
+    hsk_cache = {}
+    topn_cache = {}
+    zipf_cache = {}
+
+    def vocab_known(w):
+        if w in vocab_cache:
+            return vocab_cache[w]
+        known = resolve_vocab(w, custom_vocab_set)
+        vocab_cache[w] = known
+        return known
+
+    def get_hsk_level(w):
+        if w in hsk_cache:
+            return hsk_cache[w]
+        lvl = resolve_hsk_level(w)
+        hsk_cache[w] = lvl
+        return lvl
+
+    def get_topn_rank(w):
+        if w in topn_cache:
+            return topn_cache[w]
+        rank = resolve_topn_rank(w)
+        topn_cache[w] = rank
+        return rank
+
+    def get_zipf(term):
+        if term in zipf_cache:
+            return zipf_cache[term]
+        zipf_value = zipf_frequency(term, "zh")
+        zipf_cache[term] = zipf_value
+        return zipf_value
+
+    def median_zipf_unique(terms):
+        if not terms:
+            return 0.0
+        return round(statistics.median(get_zipf(term) for term in terms), 3)
+
+    def median_zipf_weighted(counts, total):
+        if total == 0:
+            return 0.0
+
+        zipf_counts = Counter()
+        for term, count in counts.items():
+            zipf_counts[get_zipf(term)] += count
+
+        sorted_items = sorted(zipf_counts.items())
+
+        def kth_value(k):
+            cumulative = 0
+            for zipf_value, count in sorted_items:
+                cumulative += count
+                if cumulative >= k:
+                    return zipf_value
+            return 0.0
+
+        left = kth_value((total + 1) // 2)
+        right = kth_value((total + 2) // 2)
+        return round((left + right) / 2, 3)
+
+    def cumulative_percent_from_rank_counts(rank_counts, total, cutoffs):
+        coverage = {}
+        sorted_ranks = sorted(rank_counts)
+        idx = 0
+        cumulative = 0
+        for cutoff in cutoffs:
+            while idx < len(sorted_ranks) and sorted_ranks[idx] <= cutoff:
+                cumulative += rank_counts[sorted_ranks[idx]]
+                idx += 1
+            coverage[cutoff] = (cumulative / total * 100) if total else 0
+        return coverage
+
+    hanzi_chars = HANZI_RE.findall(text)
+    total_chars = len(hanzi_chars)
+    unique_char_set = set(hanzi_chars)
+    unique_chars = len(unique_char_set)
+
+    sentence_spans = []
+    start = 0
+    for match in SENTENCE_SPLIT_RE.finditer(text):
+        end = match.end()
+        sentence_spans.append((start, end))
+        start = end
+    if start < len(text):
+        sentence_spans.append((start, len(text)))
+
+    words = []
+    word_positions = []
+    for token, start_idx, end_idx in tokenizer.tokenize(text, HMM=False):
+        if not HANZI_ONLY_RE.match(token):
+            continue
+        words.append(token)
+        word_positions.append((start_idx, end_idx))
+
+    total_words = len(words)
+    unique_word_set = set(words)
+    unique_words = len(unique_word_set)
+
+    word_counts = Counter(words)
+    most_common_all = word_counts.most_common()
+    char_counts = Counter(hanzi_chars)
+    char_most_common_all = char_counts.most_common()
+
+    median_zipf_unique_words = median_zipf_unique(unique_word_set)
+    median_zipf_word_tokens = median_zipf_weighted(word_counts, total_words)
+
+    median_zipf_unique_chars = median_zipf_unique(unique_char_set)
+    median_zipf_char_tokens = median_zipf_weighted(char_counts, total_chars)
+
+    resolved_hsk_unique = {w: get_hsk_level(w) for w in unique_word_set}
+    resolved_topn_unique = {w: get_topn_rank(w) for w in unique_word_set}
+
+    token_hsk_rank_counts = Counter()
+    token_topn_rank_counts = Counter()
+    for word, count in word_counts.items():
+        token_hsk_rank_counts[resolved_hsk_unique[word]] += count
+        token_topn_rank_counts[resolved_topn_unique[word]] += count
+
+    if total_words == 0:
+        middle_1000_extract = ""
+    else:
+        if total_words <= 1000:
+            middle_start_word = 0
+            middle_end_word = total_words
+        else:
+            mid = total_words // 2
+            half_window = 1000 // 2
+            middle_start_word = max(0, mid - half_window)
+            middle_end_word = middle_start_word + 1000
+
+        extract_start = word_positions[middle_start_word][0]
+        extract_end = word_positions[middle_end_word - 1][1]
+        middle_1000_extract = re.sub(r"\s+", "", text[extract_start:extract_end])
+
+    resolved_vocab_unique = {}
+    if custom_vocab_set:
+        for word in unique_word_set:
+            resolved_vocab_unique[word] = vocab_known(word)
+
+    not_in_vocab_words = []
+    if custom_vocab_set:
+        not_in_vocab_words = [(word, count) for word, count in most_common_all if not resolved_vocab_unique[word]]
+
+    not_in_hsk_words = [(word, count) for word, count in most_common_all if resolved_hsk_unique[word] > 7]
+    not_in_topn_words = [(word, count) for word, count in most_common_all if resolved_topn_unique[word] > 10000]
+
+    resolved_char_vocab = {}
+    if custom_vocab_set:
+        vocab_chars = {ch for item in custom_vocab_set for ch in item}
+        resolved_char_vocab = {ch: ch in vocab_chars for ch in unique_char_set}
+
+    resolved_char_hsk = {ch: CHAR_HSK_LEVEL.get(ch, 99) for ch in unique_char_set}
+    resolved_char_topn = {ch: CHAR_TOPN_RANK.get(ch, 10**9) for ch in unique_char_set}
+
+    not_in_vocab_chars = []
+    if custom_vocab_set:
+        not_in_vocab_chars = [
+            (ch, count)
+            for ch, count in char_most_common_all
+            if not resolved_char_vocab.get(ch, False)
+        ]
+
+    not_in_hsk_chars = [(ch, count) for ch, count in char_most_common_all if resolved_char_hsk[ch] > 7]
+    not_in_topn_chars = [
+        (ch, count)
+        for ch, count in char_most_common_all
+        if resolved_char_topn[ch] > 10000
+    ]
+
+    words_per_sentence = []
+    wi = 0
+    for s_start, s_end in sentence_spans:
+        count = 0
+        while wi < len(word_positions):
+            w_start, w_end = word_positions[wi]
+            if w_end <= s_start:
+                wi += 1
+                continue
+            if w_start >= s_end:
+                break
+            count += 1
+            wi += 1
+        if count > 0:
+            words_per_sentence.append(count)
+
+    avg_words_sentence = (sum(words_per_sentence) / len(words_per_sentence)) if words_per_sentence else 0
+
+    chars_per_sentence = []
+    if sentence_spans:
+        sentence_idx = 0
+        next_sentence_end = sentence_spans[sentence_idx][1]
+        sentence_char_count = 0
+        for char_idx, char in enumerate(text):
+            if HANZI_ONLY_RE.match(char):
+                sentence_char_count += 1
+            if char_idx + 1 == next_sentence_end:
+                if sentence_char_count > 0:
+                    chars_per_sentence.append(sentence_char_count)
+                sentence_idx += 1
+                if sentence_idx >= len(sentence_spans):
+                    break
+                next_sentence_end = sentence_spans[sentence_idx][1]
+                sentence_char_count = 0
+
+    avg_chars_sentence = (sum(chars_per_sentence) / len(chars_per_sentence)) if chars_per_sentence else 0
+
+    phrasing_variety = np.nan
+    if total_words >= WINDOW_SIZE:
+        starts_all = np.arange(0, total_words - WINDOW_SIZE + 1, STEP_SIZE, dtype=np.int64)
+        starts = starts_all
+        if len(starts_all) > MAX_WINDOWS:
+            idx = np.linspace(0, len(starts_all) - 1, MAX_WINDOWS)
+            idx = np.unique(np.rint(idx).astype(np.int64))
+            starts = starts_all[idx]
+        window_scores = [len(set(words[s:s + WINDOW_SIZE])) for s in starts]
+        phrasing_variety = int(round(statistics.median(window_scores)))
+
+    char_variety = np.nan
+    if total_chars >= WINDOW_SIZE:
+        starts_all = np.arange(0, total_chars - WINDOW_SIZE + 1, STEP_SIZE, dtype=np.int64)
+        starts = starts_all
+        if len(starts_all) > MAX_WINDOWS:
+            idx = np.linspace(0, len(starts_all) - 1, MAX_WINDOWS)
+            idx = np.unique(np.rint(idx).astype(np.int64))
+            starts = starts_all[idx]
+        window_scores = [len(set(hanzi_chars[s:s + WINDOW_SIZE])) for s in starts]
+        char_variety = int(round(statistics.median(window_scores)))
+
+    top_cutoffs = [1000 * i for i in range(1, 11)]
+    hsk_cutoffs = list(range(1, 8))
+
+    unique_topn_rank_counts = Counter(resolved_topn_unique.values())
+    unique_topN = cumulative_percent_from_rank_counts(unique_topn_rank_counts, unique_words, top_cutoffs)
+    token_topN = cumulative_percent_from_rank_counts(token_topn_rank_counts, total_words, top_cutoffs)
+
+    unique_char_topn_rank_counts = Counter(resolved_char_topn.values())
+    token_char_topn_rank_counts = Counter()
+    for ch, count in char_counts.items():
+        token_char_topn_rank_counts[resolved_char_topn[ch]] += count
+
+    unique_char_topN = cumulative_percent_from_rank_counts(unique_char_topn_rank_counts, unique_chars, top_cutoffs)
+    token_char_topN = cumulative_percent_from_rank_counts(token_char_topn_rank_counts, total_chars, top_cutoffs)
+
+    unique_hsk_rank_counts = Counter(resolved_hsk_unique.values())
+    unique_maxhsk = cumulative_percent_from_rank_counts(unique_hsk_rank_counts, unique_words, hsk_cutoffs)
+    token_maxhsk = cumulative_percent_from_rank_counts(token_hsk_rank_counts, total_words, hsk_cutoffs)
+
+    unique_char_hsk_rank_counts = Counter(resolved_char_hsk.values())
+    token_char_hsk_rank_counts = Counter()
+    for ch, count in char_counts.items():
+        token_char_hsk_rank_counts[resolved_char_hsk[ch]] += count
+
+    unique_char_maxhsk = cumulative_percent_from_rank_counts(unique_char_hsk_rank_counts, unique_chars, hsk_cutoffs)
+    token_char_maxhsk = cumulative_percent_from_rank_counts(token_char_hsk_rank_counts, total_chars, hsk_cutoffs)
+
+    word_result = {
+        "Total tokens": total_words,
+        "Unique words": unique_words,
+        "Unique words (% of tokens)": round((unique_words / total_words * 100), 1) if total_words else 0.0,
+        "Median zipf (unique words)": median_zipf_unique_words,
+        "Median zipf (all tokens)": median_zipf_word_tokens,
+        "Average tokens per sentence": round(avg_words_sentence, 1),
+        "Median unique words per 1000-token window": phrasing_variety,
+    }
+
+    if custom_vocab_set:
+        word_result["Custom vocab unique word coverage (%)"] = round((sum(resolved_vocab_unique.values()) / unique_words * 100) if unique_words else 0, 1)
+        word_result["Custom vocab token coverage (%)"] = round((sum(resolved_vocab_unique[word] * count for word, count in word_counts.items()) / total_words * 100) if total_words else 0, 1)
+
+    for cutoff in top_cutoffs:
+        word_result[f"Top {cutoff//1000}k unique word coverage (%)"] = round(unique_topN[cutoff], 1)
+    for cutoff in top_cutoffs:
+        word_result[f"Top {cutoff//1000}k token coverage (%)"] = round(token_topN[cutoff], 1)
+
+    for lvl in range(1, 8):
+        label_u = "HSK 1 to 7–9 unique word coverage (%)" if lvl == 7 else f"HSK 1 to {lvl} unique word coverage (%)"
+        word_result[label_u] = round(unique_maxhsk[lvl], 1)
+    for lvl in range(1, 8):
+        label_t = "HSK 1 to 7–9 token coverage (%)" if lvl == 7 else f"HSK 1 to {lvl} token coverage (%)"
+        word_result[label_t] = round(token_maxhsk[lvl], 1)
+
+    top_values_limit = None  # capture full frequency lists without truncation
+
+    word_result["Unique words (with frequencies)"] = tuple(most_common_all[:top_values_limit])
+    if custom_vocab_set:
+        word_result["Words not in vocab (with frequencies)"] = tuple(not_in_vocab_words[:top_values_limit])
+    word_result["Words not in HSK (with frequencies)"] = tuple(not_in_hsk_words[:top_values_limit])
+    word_result["Words not in top 10k most common words (with frequencies)"] = tuple(not_in_topn_words[:top_values_limit])
+    word_result["Middle 1000-token extract"] = middle_1000_extract
+
+    char_result = {
+        "Total characters": total_chars,
+        "Unique characters": unique_chars,
+        "Unique characters (% of characters)": round((unique_chars / total_chars * 100), 1) if total_chars else 0.0,
+        "Median zipf (unique characters)": median_zipf_unique_chars,
+        "Median zipf (all characters)": median_zipf_char_tokens,
+        "Average characters per sentence": round(avg_chars_sentence, 1),
+        "Median unique characters per 1000-character window": char_variety,
+    }
+
+    if custom_vocab_set:
+        char_result["Custom vocab unique character coverage (%)"] = round((sum(resolved_char_vocab.values()) / unique_chars * 100) if unique_chars else 0, 1)
+        char_result["Custom vocab character coverage (%)"] = round((sum(resolved_char_vocab[ch] * count for ch, count in char_counts.items()) / total_chars * 100) if total_chars else 0, 1)
+
+    for cutoff in top_cutoffs:
+        char_result[f"Top {cutoff//1000}k unique character coverage (%)"] = round(unique_char_topN[cutoff], 1)
+    for cutoff in top_cutoffs:
+        char_result[f"Top {cutoff//1000}k character coverage (%)"] = round(token_char_topN[cutoff], 1)
+
+    for lvl in range(1, 8):
+        label_u = "HSK 1 to 7–9 unique character coverage (%)" if lvl == 7 else f"HSK 1 to {lvl} unique character coverage (%)"
+        char_result[label_u] = round(unique_char_maxhsk[lvl], 1)
+    for lvl in range(1, 8):
+        label_t = "HSK 1 to 7–9 character coverage (%)" if lvl == 7 else f"HSK 1 to {lvl} character coverage (%)"
+        char_result[label_t] = round(token_char_maxhsk[lvl], 1)
+
+    char_result["Unique characters (with frequencies)"] = tuple(char_most_common_all[:top_values_limit])
+    if custom_vocab_set:
+        char_result["Characters not in vocab (with frequencies)"] = tuple(not_in_vocab_chars[:top_values_limit])
+    char_result["Characters not in HSK (with frequencies)"] = tuple(not_in_hsk_chars[:top_values_limit])
+    char_result["Characters not in top 10k most common words (with frequencies)"] = tuple(not_in_topn_chars[:top_values_limit])
+
+    return word_result, char_result
+
+
+# =========================================================
+# RENDERING HELPERS (INLINE)
+# =========================================================
+def render_highlighted_text(
+    words,
+    highlight_mode=None,
+    custom_vocab_set=None,
+    separator=" ",
+    *,
+    resolve_vocab_fn=None,
+    resolve_hsk_level_fn=None,
+    resolve_topn_rank_fn=None,
+    char_hsk_level=None,
+    char_topn_rank=None,
+):
+    rendered = []
+    vocab_chars = {ch for item in custom_vocab_set for ch in item} if custom_vocab_set else set()
+
+    for word in words:
+        safe_word = html.escape(word)
+        style = ""
+        is_hanzi_word = bool(HANZI_ONLY_RE.match(word))
+
+        if (
+            highlight_mode == "word_vocab"
+            and custom_vocab_set
+            and resolve_vocab_fn
+            and is_hanzi_word
+            and resolve_vocab_fn(word, custom_vocab_set)
+        ):
+            style = "background-color:rgba(122,132,251,0.35);"
+        elif highlight_mode == "word_topn" and resolve_topn_rank_fn and is_hanzi_word:
+            rank = resolve_topn_rank_fn(word)
+            if rank <= 10000:
+                band = min((rank - 1) // 1000, 9)
+                style = f"background-color:{TOPN_COLORS[band]};"
+        elif highlight_mode == "word_hsk" and resolve_hsk_level_fn and is_hanzi_word:
+            level = resolve_hsk_level_fn(word)
+            if level <= 7:
+                style = f"background-color:{HSK_COLORS[min(level, 7)]};"
+        elif highlight_mode and highlight_mode.startswith("char_"):
+            char_spans = []
+            for ch in word:
+                ch_style = ""
+                if highlight_mode == "char_vocab" and custom_vocab_set and ch in vocab_chars:
+                    ch_style = "background-color:rgba(122,132,251,0.35);"
+                elif highlight_mode == "char_topn" and char_topn_rank is not None:
+                    rank = char_topn_rank.get(ch, 10**9)
+                    if rank <= 10000:
+                        band = min((rank - 1) // 1000, 9)
+                        ch_style = f"background-color:{TOPN_COLORS[band]};"
+                elif highlight_mode == "char_hsk" and char_hsk_level is not None:
+                    level = char_hsk_level.get(ch, 99)
+                    if level <= 7:
+                        ch_style = f"background-color:{HSK_COLORS[min(level, 7)]};"
+
+                safe_ch = html.escape(ch)
+                if ch_style:
+                    char_spans.append(f"<span style='{ch_style} padding:2px; border-radius:3px;'>{safe_ch}</span>")
+                else:
+                    char_spans.append(safe_ch)
+            rendered.append("".join(char_spans))
+            continue
+
+        if style:
+            rendered.append(f"<span style='{style} padding:2px; border-radius:3px;'>{safe_word}</span>")
+        else:
+            rendered.append(safe_word)
+
+    return separator.join(rendered)
+
+
+def render_legend(highlight_mode):
+    if highlight_mode in {"word_topn", "char_topn"}:
+        labels = [f"{i}k" for i in range(1, 11)]
+        colors = TOPN_COLORS
+    elif highlight_mode in {"word_hsk", "char_hsk"}:
+        labels = [f"HSK {i}" for i in range(1, 7)] + ["HSK 7–9"]
+        colors = [HSK_COLORS[i] for i in range(1, 8)]
+    elif highlight_mode in {"word_vocab", "char_vocab"}:
+        labels = ["Custom vocab"]
+        colors = ["rgba(122, 132, 251,0.35)"]
+    else:
+        return
+
+    cols = st.columns(len(labels))
+
+    for col, label, color in zip(cols, labels, colors):
+        with col:
+            st.markdown(
+                f"""
+                <div style="
+                    background:{color};
+                    height:20px;
+                    border-radius:4px;
+                    margin-bottom:4px;
+                "></div>
+                <div style="text-align:center; font-size:12px;">
+                    {label}
+                </div>
+                """,
+                unsafe_allow_html=True,
+            )
+
+
+def render_sentence_segmented_tokens(tokens, word_positions, sentence_spans):
+    sentence_lines = []
+
+    for idx, (s_start, s_end) in enumerate(sentence_spans, start=1):
+        sentence_tokens = []
+        for token, (w_start, w_end) in zip(tokens, word_positions):
+            if w_end <= s_start or w_start >= s_end:
+                continue
+            sentence_tokens.append(token)
+
+        if not sentence_tokens:
+            continue
+
+        sentence_lines.append(f"Sentence {idx}:  {' ｜ '.join(sentence_tokens)}")
+
+    return sentence_lines
+
+
+def render_sentence_segmented_tokens_html(
+    tokens,
+    word_positions,
+    sentence_spans,
+    highlight_mode=None,
+    custom_vocab_set=None,
+    **highlight_kwargs,
+):
+    sentence_lines = []
+    cursor = 0
+
+    for idx, (s_start, s_end) in enumerate(sentence_spans, start=1):
+        sentence_tokens = []
+
+        while cursor < len(word_positions) and word_positions[cursor][1] <= s_start:
+            cursor += 1
+
+        lookahead = cursor
+        while lookahead < len(word_positions):
+            w_start, w_end = word_positions[lookahead]
+            if w_end <= s_start or w_start >= s_end:
+                if w_start >= s_end:
+                    break
+                lookahead += 1
+                continue
+            sentence_tokens.append(tokens[lookahead])
+            lookahead += 1
+
+        cursor = lookahead
+
+        if not sentence_tokens:
+            continue
+
+        highlighted = render_highlighted_text(
+            sentence_tokens,
+            highlight_mode=highlight_mode,
+            custom_vocab_set=custom_vocab_set,
+            separator=" ｜ ",
+            **highlight_kwargs,
+        )
+        sentence_lines.append(f"Sentence {idx}:  {highlighted}")
+
+    return "<br>".join(sentence_lines)
+
+
+def style_numeric_gradient(df):
+    numeric_cols = df.select_dtypes(include="number").columns.tolist()
+    float_cols = df.select_dtypes(include="float").columns.tolist()
+
+    styler = df.style.format(na_rep="")
+    if float_cols:
+        styler = styler.format({col: "{:.1f}" for col in float_cols})
+
+    if not numeric_cols:
+        return styler
+
+    gradient_cols = [col for col in numeric_cols if df[col].notna().any()]
+    if gradient_cols:
+        styler = styler.background_gradient(
+            cmap="coolwarm",
+            axis=0,
+            low=0.2,
+            high=0.2,
+            subset=gradient_cols,
+        )
+
+    return styler.map(
+        lambda val: "background-color: transparent;" if pd.isna(val) else "",
+        subset=numeric_cols,
+    )
+
+
+def format_summary_value(value):
+    if pd.isna(value):
+        return ""
+    return f"{value:.0f}" if float(value).is_integer() else f"{value:.1f}"
+
+
+def build_summary_statistics_table(df):
+    numeric_cols = df.select_dtypes(include="number").columns
+    valid_df = df[~df.index.str.startswith("(Custom vocab)")]
+    if len(valid_df) < 2 or len(numeric_cols) == 0:
+        return None
+
+    summary_rows = []
+    for metric in numeric_cols:
+        series = valid_df[metric]
+        if series.empty:
+            continue
+
+        min_value = series.min()
+        median_value = series.median()
+        max_value = series.max()
+
+        summary_rows.append(
+            {
+                "Metric": metric,
+                "Min": format_summary_value(min_value),
+                "Median": format_summary_value(median_value),
+                "Max": format_summary_value(max_value),
+                "Min file": series.idxmin(),
+                "Max file": series.idxmax(),
+            }
+        )
+
+    if not summary_rows:
+        return None
+
+    return pd.DataFrame(summary_rows).set_index("Metric")
+
+
+def maybe_hide_custom_vocab_row(df, include_custom_vocab_row):
+    if include_custom_vocab_row:
+        return df
+    return df[~df.index.to_series().str.startswith("(Custom vocab)")]
+
+
+# =========================================================
+# UI HELPERS (INLINE)
+# =========================================================
+def sanitize_dataframe_name(name):
+    sanitized = name.replace(",", "").strip()
+    return sanitized or "Unnamed text"
+
+
+def clear_existing_file_results(state):
+    removed = False
+    for fname in list(state.word_results_dict.keys()):
+        if fname.startswith("(Custom vocab)"):
+            continue
+        state.word_results_dict.pop(fname, None)
+        state.char_results_dict.pop(fname, None)
+        removed = True
+    return removed
+
+
+def init_session_state(state):
+    defaults = {
+        "word_results_dict": {},
+        "char_results_dict": {},
+        "custom_vocab_set": None,
+        "uploader_key": 0,
+        "custom_vocab_filename": None,
+        "vocab_uploader_key": 0,
+        "show_vocab_warning": None,
+        "upload_status_toast": None,
+    }
+    for key, value in defaults.items():
+        if key not in state:
+            state[key] = value.copy() if isinstance(value, dict) else value
+
+
+def show_custom_vocab_section(
+    state,
+    clear_vocab_cache,
+    get_tokenizer,
+    analyse_text,
+    resolve_vocab,
+    resolve_hsk_level,
+    resolve_topn_rank,
+):
+    results_exist = bool(state.word_results_dict)
+
+    st.subheader("OPTIONAL: Custom vocabulary list")
+    custom_vocab_file = st.file_uploader(
+        "Upload known vocab list (.txt, one word per line)",
+        type=["txt"],
+        key=f"vocab_{state.vocab_uploader_key}",
+        disabled=results_exist,
+    )
+    st.caption(
+        "Lines containing non-Hanzi characters (including Pleco category headers such as //) are ignored."
+    )
+
+    if custom_vocab_file:
+        has_file_results = any(
+            not key.startswith("(Custom vocab)") for key in state.word_results_dict
+        )
+        if has_file_results:
+            state.show_vocab_warning = "Clear all analyses before loading or replacing a custom vocab list."
+            state.vocab_uploader_key += 1
+            st.rerun()
+
+        vocab_text = custom_vocab_file.read().decode("utf-8-sig", errors="ignore")
+        cleaned = []
+        removed_lines = []
+        for raw_line in vocab_text.splitlines():
+            stripped = raw_line.strip()
+            if not stripped:
+                continue
+            if HANZI_ONLY_RE.match(stripped):
+                cleaned.append(stripped)
+            else:
+                removed_lines.append(stripped)
+        cleaned_unique = sorted(set(cleaned))
+        vocab_set = set(cleaned_unique)
+
+        toast_level = "success"
+        toast_message = f"Custom vocab file {custom_vocab_file.name} uploaded."
+        if removed_lines:
+            state.show_vocab_warning = f"{len(removed_lines)} lines removed: {', '.join(removed_lines)}"
+
+        clear_vocab_cache(state.custom_vocab_set)
+        state.custom_vocab_set = vocab_set
+        state.custom_vocab_filename = custom_vocab_file.name
+        state.upload_status_toast = (toast_level, toast_message)
+
+        tokenizer = get_tokenizer(state.custom_vocab_set)
+
+        if not state.word_results_dict:
+            word_stats, char_stats = analyse_text(
+                "\n".join(cleaned_unique),
+                tokenizer,
+                vocab_set,
+                resolve_vocab,
+                resolve_hsk_level,
+                resolve_topn_rank,
+            )
+            row_name = sanitize_dataframe_name(f"(Custom vocab) {custom_vocab_file.name}")
+            state.word_results_dict[row_name] = word_stats
+            state.char_results_dict[row_name] = char_stats
+
+        state.vocab_uploader_key += 1
+        st.rerun()
+
+    custom_vocab_set = state.custom_vocab_set
+    has_file_results = any(
+        not key.startswith("(Custom vocab)") for key in state.word_results_dict
+    )
+    if custom_vocab_set:
+        st.caption(
+            f"{len(custom_vocab_set):,} vocab items loaded • use Clear All to remove or replace this list"
+        )
+    elif has_file_results:
+        st.caption(
+            "No custom vocab list currently loaded • no custom vocab can be uploaded after files are analysed; use Clear All to upload custom vocab"
+        )
+    else:
+        st.caption("No custom vocab list currently loaded")
+
+    return custom_vocab_set
+
+
+def show_input_section(
+    state,
+    get_available_name,
+    get_tokenizer,
+    analyse_text,
+    resolve_vocab,
+    resolve_hsk_level,
+    resolve_topn_rank,
+    extract_text_from_epub,
+    extract_text_from_pdf,
+):
+    st.divider()
+    st.header("File for analysis")
+    input_method = st.radio(
+        "Input method",
+        ["Upload file", "Paste text"],
+        horizontal=True,
+    )
+
+    if input_method == "Paste text":
+        pasted_text_name = st.text_input(
+            "Text name",
+            placeholder='e.g. "Chinese article", "Chapter 1"',
+            key="pasted_text_name",
+        )
+        pasted_text = st.text_area(
+            "Paste Chinese text",
+            max_chars=15000,
+            height=180,
+            key="pasted_chinese_text",
+        )
+
+        if st.button("Upload text"):
+            stripped_name = pasted_text_name.strip()
+            effective_name = sanitize_dataframe_name(stripped_name or "Pasted text")
+
+            if not pasted_text.strip():
+                st.warning("Please paste Chinese text before uploading.")
+            elif len(pasted_text) > 15000:
+                st.error(
+                    "This text exceeds the 15,000 character limit. Please save it as a .txt file and upload it instead."
+                )
+            else:
+                progress_bar = st.progress(0, text="Preparing text upload...")
+                tokenizer = get_tokenizer(state.custom_vocab_set)
+                progress_bar.progress(40, text="Analysing text...")
+                word_stats, char_stats = analyse_text(
+                    pasted_text,
+                    tokenizer,
+                    state.custom_vocab_set,
+                    resolve_vocab,
+                    resolve_hsk_level,
+                    resolve_topn_rank,
+                )
+                replaced_previous = clear_existing_file_results(state)
+                existing_names = set(state.word_results_dict.keys())
+                final_name = get_available_name(effective_name, existing_names)
+
+                progress_bar.progress(85, text=f"Saving analysis: {final_name}")
+                state.word_results_dict[final_name] = word_stats
+                state.char_results_dict[final_name] = char_stats
+                progress_bar.progress(100, text="Upload complete!")
+
+                suffix = " Previous analysis cleared." if replaced_previous else ""
+
+                if not stripped_name:
+                    state.upload_status_toast = (
+                        "warning",
+                        f"No name provided. Using default name '{final_name}'.{suffix}",
+                    )
+                elif final_name != effective_name:
+                    state.upload_status_toast = (
+                        "warning",
+                        f"Name already existed. Using '{final_name}' instead.{suffix}",
+                    )
+                else:
+                    state.upload_status_toast = (
+                        "success",
+                        f"Uploaded as '{final_name}'.{suffix}",
+                    )
+
+                st.rerun()
+
+    if input_method == "Upload file":
+        uploaded_file = st.file_uploader(
+            "Upload a single text file (.txt, .epub, .pdf, .csv)",
+            type=["txt", "epub", "pdf", "csv"],
+            accept_multiple_files=False,
+            key=f"files_{state.uploader_key}",
+        )
+
+        if uploaded_file:
+            tokenizer = get_tokenizer(state.custom_vocab_set)
+            progress_bar = st.progress(0, text=f"Reading file: {uploaded_file.name}")
+
+            if uploaded_file.name.endswith((".txt", ".csv")):
+                text = uploaded_file.read().decode("utf-8", errors="ignore")
+            elif uploaded_file.name.endswith(".epub"):
+                text = extract_text_from_epub(uploaded_file)
+            elif uploaded_file.name.endswith(".pdf"):
+                text = extract_text_from_pdf(uploaded_file)
+            else:
+                st.error("Unsupported file type.")
+                return
+
+            progress_bar.progress(0.4, text=f"Analysing file: {uploaded_file.name}")
+            word_stats, char_stats = analyse_text(
+                text,
+                tokenizer,
+                state.custom_vocab_set,
+                resolve_vocab,
+                resolve_hsk_level,
+                resolve_topn_rank,
+            )
+
+            replaced_previous = clear_existing_file_results(state)
+            existing_names = set(state.word_results_dict.keys())
+            cleaned_name = sanitize_dataframe_name(uploaded_file.name)
+            result_name = get_available_name(cleaned_name, existing_names)
+
+            progress_bar.progress(0.85, text=f"Saving analysis: {result_name}")
+            state.word_results_dict[result_name] = word_stats
+            state.char_results_dict[result_name] = char_stats
+            gc.collect()
+
+            progress_bar.progress(1.0, text="Upload complete!")
+
+            toast_message = f"Uploaded file: {uploaded_file.name}"
+            if replaced_previous:
+                toast_message += " (previous analysis cleared)"
+
+            state.upload_status_toast = (
+                "success",
+                toast_message,
+            )
+
+            state.uploader_key += 1
+            st.rerun()
+
+
+def show_export_and_clear(state, clear_vocab_cache):
+    word_df = None
+    char_df = None
+    st.divider()
+    clear_clicked = False
+
+    if state.word_results_dict:
+        def format_list_for_csv(entries):
+            if not isinstance(entries, list):
+                return entries
+            if entries and all(
+                isinstance(item, (tuple, list)) and len(item) == 2 for item in entries
+            ):
+                return "; ".join(f"{item[0]}:{item[1]}" for item in entries)
+            return "; ".join(str(item) for item in entries)
+
+        def to_download_df(data_dict):
+            df = pd.DataFrame.from_dict(data_dict, orient="index")
+            df.index.name = "Text source file"
+            return df
+
+        def columns_for_group(df, group_name):
+            group_matchers = {
+                "Core metrics": lambda col: not any(
+                    [
+                        col.startswith("Top "),
+                        col.startswith("HSK "),
+                        "(with frequencies)" in col,
+                        "extract" in col.lower(),
+                    ]
+                ),
+                "Top N coverage": lambda col: col.startswith("Top "),
+                "HSK coverage": lambda col: col.startswith("HSK "),
+                "Frequency lists": lambda col: "(with frequencies)" in col,
+                "1000-token text extract": lambda col: "extract" in col.lower(),
+            }
+            matcher = group_matchers[group_name]
+            return [col for col in df.columns if matcher(col)]
+
+        def build_combined_export_df(word_df, char_df, selected_options):
+            ordered_option_groups = [
+                ("Core metrics (words/tokens)", word_df, "Core metrics"),
+                ("Core metrics (chars)", char_df, "Core metrics"),
+                ("Top N coverage (words/tokens)", word_df, "Top N coverage"),
+                ("Top N coverage (chars)", char_df, "Top N coverage"),
+                ("HSK coverage (words/tokens)", word_df, "HSK coverage"),
+                ("HSK coverage (chars)", char_df, "HSK coverage"),
+                ("Frequency lists (words/tokens)", word_df, "Frequency lists"),
+                ("Frequency lists (chars)", char_df, "Frequency lists"),
+                ("1000-token text extract", word_df, "1000-token text extract"),
+            ]
+
+            selected_frames = []
+            for option_label, source_df, group_name in ordered_option_groups:
+                if not selected_options.get(option_label, False):
+                    continue
+                group_columns = columns_for_group(source_df, group_name)
+                if group_columns:
+                    selected_frames.append(source_df[group_columns])
+
+            if selected_frames:
+                export_df = pd.concat(selected_frames, axis=1)
+            else:
+                export_df = pd.DataFrame(index=word_df.index)
+
+            for col in export_df.columns:
+                if export_df[col].apply(lambda v: isinstance(v, list)).any():
+                    export_df[col] = export_df[col].apply(format_list_for_csv)
+
+            export_df.index.name = "Text source file"
+            return export_df
+
+        word_df_for_export = to_download_df(state.word_results_dict)
+        char_df_for_export = to_download_df(state.char_results_dict)
+
+        col1, col2 = st.columns(2, vertical_alignment="bottom")
+        with col1:
+            clear_clicked = st.button("Clear All", width="stretch", type="secondary")
+        with col2:
+            with st.popover("Configure CSV Export", width="stretch"):
+                export_options = [
+                    "Core metrics (words/tokens)",
+                    "Core metrics (chars)",
+                    "Top N coverage (words/tokens)",
+                    "Top N coverage (chars)",
+                    "HSK coverage (words/tokens)",
+                    "HSK coverage (chars)",
+                    "Frequency lists (words/tokens)",
+                    "Frequency lists (chars)",
+                    "1000-token text extract",
+                ]
+                default_option_state = {
+                    "Frequency lists (words/tokens)": False,
+                    "Frequency lists (chars)": False,
+                    "1000-token text extract": False,
+                }
+
+                st.caption("Choose which sections to include in your CSV export.")
+                selected_options = {
+                    option: st.checkbox(
+                        option,
+                        value=default_option_state.get(option, True),
+                        key=f"csv_export_option_{option}",
+                    )
+                    for option in export_options
+                }
+
+                combined_export_df = build_combined_export_df(
+                    word_df_for_export,
+                    char_df_for_export,
+                    selected_options,
+                )
+
+                csv_bytes = combined_export_df.to_csv(index=True).encode("utf-8-sig")
+
+                st.download_button(
+                    "Download CSV",
+                    data=csv_bytes,
+                    file_name="chinese-text-lexical-analysis.csv",
+                    mime="text/csv",
+                    width="stretch",
+                    type="secondary",
+                    key="combined_csv_download",
+                )
+
+    if clear_clicked:
+        state.word_results_dict = {}
+        state.char_results_dict = {}
+        clear_vocab_cache(state.custom_vocab_set)
+        state.custom_vocab_set = None
+        state.custom_vocab_filename = None
+        state.pop("pasted_chinese_text", None)
+        state.pop("pasted_text_name", None)
+        state.pop("demo_text", None)
+        state.uploader_key += 1
+        state.vocab_uploader_key += 1
+        state.upload_status_toast = (
+            "success",
+            "All files and custom vocab have been cleared.",
+        )
+        st.rerun()
+
+    if state.word_results_dict:
+        word_df = pd.DataFrame.from_dict(state.word_results_dict, orient="index")
+        char_df = pd.DataFrame.from_dict(state.char_results_dict, orient="index")
+        word_df.index.name = "Text source file"
+        char_df.index.name = "Text source file"
+
+    return word_df, char_df
 
 
 # =========================================================
@@ -657,24 +1761,6 @@ def render_stat_guide(word_metrics, char_metrics, has_custom_vocab=False):
     render_zipf_section(word_metrics, char_metrics)
     render_coverage_highlights(word_metrics, char_metrics, has_custom_vocab)
 
-@st.cache_data
-def build_char_level_maps(hsk_map, word_rank):
-    char_hsk_level = {}
-    for hsk_word, lvl in hsk_map.items():
-        for ch in hsk_word:
-            char_hsk_level[ch] = min(lvl, char_hsk_level.get(ch, 99))
-
-    char_topn_rank = {}
-    for top_word, rank in word_rank.items():
-        for ch in top_word:
-            char_topn_rank[ch] = min(rank, char_topn_rank.get(ch, 10**9))
-
-    return char_hsk_level, char_topn_rank
-
-
-CHAR_HSK_LEVEL, CHAR_TOPN_RANK = build_char_level_maps(HSK_MAP, WORD_RANK)
-
-
 # =========================================================
 # STREAMLIT UI
 # =========================================================
@@ -856,14 +1942,14 @@ The example below demonstrates how segmentation works.
             pd.Series(demo_tokens)
             .value_counts()
             .rename_axis("Word")
-            .reset_index(name="Frequency")
+            .reset_index(name="Occurences")
         )
 
         char_df = (
             pd.Series(demo_chars)
             .value_counts()
             .rename_axis("Character")
-            .reset_index(name="Frequency")
+            .reset_index(name="Occurences")
         )
 
         table_col1, table_col2, table_col3 = st.columns(3)
@@ -962,16 +2048,16 @@ if word_df is not None and char_df is not None and not word_df.empty:
             for tab, (label, data) in zip(st.tabs([x[0] for x in word_sections]), word_sections):
                 with tab:
                     if data:
-                        df_word = pd.DataFrame(data, columns=["Word", "Frequency"])
+                        df_word = pd.DataFrame(data, columns=["Word", "Occurences"])
 
                         df_word["Occurs every __ words"] = (
-                            total_tokens / df_word["Frequency"]
+                            total_tokens / df_word["Occurences"]
                         ).round(0).astype(int).map(lambda x: f"1 in {x:,}")
 
                         df_word.index = range(1, len(df_word) + 1)
                         df_word.index.name = "#"
                     else:
-                        df_word = pd.DataFrame(columns=["Word", "Frequency", "Occurs every __ words"])
+                        df_word = pd.DataFrame(columns=["Word", "Occurences", "Occurs every __ words"])
 
                     if label == "Not in Custom Vocab":
                         st.markdown(f"Words not in custom vocab: **{len(df_word):,}**")
@@ -1011,17 +2097,17 @@ if word_df is not None and char_df is not None and not word_df.empty:
             for tab, (label, data) in zip(st.tabs([x[0] for x in char_sections]), char_sections):
                 with tab:
                     if data:
-                        df_char = pd.DataFrame(data, columns=["Character", "Frequency"])
+                        df_char = pd.DataFrame(data, columns=["Character", "Occurences"])
 
                         df_char["Occurs every __ chars"] = (
-                            total_chars / df_char["Frequency"]
+                            total_chars / df_char["Occurences"]
                         ).round(0).astype(int).map(lambda x: f"1 in {x:,}")
 
                         df_char.index = range(1, len(df_char) + 1)
                         df_char.index.name = "#"
 
                     else:
-                        df_char = pd.DataFrame(columns=["Character", "Frequency", "Occurs every __ chars"])
+                        df_char = pd.DataFrame(columns=["Character", "Occurences", "Occurs every __ chars"])
 
                     if label == "Not in Custom Vocab":
                         st.markdown(f"Characters not in custom vocab: **{len(df_char):,}**")
