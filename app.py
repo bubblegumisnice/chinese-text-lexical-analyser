@@ -137,6 +137,8 @@ This tool analyses Simplified Chinese text at two levels:
 - **Word tokens** (segmented using jieba)
 - **Individual characters** (Hanzi)
 
+This distinction is important because Chinese texts can introduce new *words* built from familiar characters — or introduce entirely new characters.
+
 It calculates:
 
 - Text length and vocabulary size  
