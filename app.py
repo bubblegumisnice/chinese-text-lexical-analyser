@@ -269,6 +269,65 @@ def drop_list_columns(df):
     filtered_df = df.loc[:, list(non_list_columns(df))]
     return filtered_df.drop(columns=["Middle 1000-token extract"], errors="ignore")
 
+
+def stringify_iterable_cells(df):
+    def convert(value):
+        if isinstance(value, (list, tuple)):
+            return str(value)
+        return value
+
+    return df.applymap(convert)
+
+
+def filter_raw_metrics(df):
+    def should_include(column_name):
+        if not isinstance(column_name, str):
+            return True
+        stripped = column_name.strip()
+        if stripped.endswith("(with frequencies)"):
+            return False
+        if "Middle 1000-token extract" in stripped:
+            return False
+        return True
+
+    columns = [col for col in df.columns if should_include(col)]
+    return df.loc[:, columns]
+
+
+FREQUENCY_TABLE_LIMIT = 100
+
+
+def _sanitize_key_component(value):
+    safe = "".join(ch if ch.isalnum() else "_" for ch in str(value))
+    safe = safe.strip("_")
+    return safe or "item"
+
+
+def display_frequency_dataframe(df, label, file_name, prefix):
+    row_count = len(df)
+    if row_count == 0:
+        st.dataframe(df, width="stretch")
+        return
+
+    widget_key = None
+    show_all = False
+    if row_count > FREQUENCY_TABLE_LIMIT:
+        widget_key = (
+            f"{prefix}_{_sanitize_key_component(file_name)}_"
+            f"{_sanitize_key_component(label)}_show_all"
+        )
+        show_all = st.session_state.get(widget_key, False)
+
+    display_df = df if (row_count <= FREQUENCY_TABLE_LIMIT or show_all) else df.head(FREQUENCY_TABLE_LIMIT)
+    st.dataframe(display_df, width="stretch")
+
+    if widget_key:
+        st.checkbox(
+            f"Show all {row_count:,}",
+            value=show_all,
+            key=widget_key,
+        )
+
 @st.cache_data
 def build_char_level_maps(hsk_map, word_rank):
     char_hsk_level = {}
@@ -302,12 +361,7 @@ from plotting import (
 from rendering import (
     render_highlighted_text,
     render_legend,
-    render_sentence_segmented_tokens,
     render_sentence_segmented_tokens_html,
-    style_numeric_gradient,
-    format_summary_value,
-    build_summary_statistics_table,
-    maybe_hide_custom_vocab_row,
 )
 from ui_handlers import (
     init_session_state,
@@ -553,64 +607,22 @@ word_df, char_df = show_export_and_clear(st.session_state, clear_vocab_cache)
 
 custom_vocab_set = st.session_state.custom_vocab_set
 
-if word_df is not None and char_df is not None:
-    non_custom_files = [
+if word_df is not None and char_df is not None and not word_df.empty:
+    analysis_files = [
         file_name
         for file_name in word_df.index
         if not str(file_name).startswith("(Custom vocab)")
     ]
-    default_tab = "Comparison" if len(non_custom_files) >= 2 else "Explore Selected File"
 
-    top_tabs = st.tabs(["Comparison", "Explore Selected File"], default=default_tab)
+    if not analysis_files:
+        st.info("Upload a file or paste text to view statistics.")
+    else:
+        active_file = analysis_files[0]
+        word_row = word_df.loc[active_file]
+        char_row = char_df.loc[active_file]
 
-    with top_tabs[0]:
-
-        st.caption("Compare all loaded files, either by words/tokens or by characters. Click on a column header to sort.")
-        
-        comparison_tabs = st.tabs(["Word Metrics", "Character Metrics"])
-
-        with comparison_tabs[0]:
-            st.subheader("Word/Token Data")
-            if custom_vocab_set:
-                include_custom_vocab_word = st.checkbox("Include custom vocab row", value=False, key="include_custom_vocab_word")
-            else:
-                include_custom_vocab_word = False
-            word_table = drop_list_columns(word_df)
-            word_table = maybe_hide_custom_vocab_row(word_table, include_custom_vocab_word)
-            st.dataframe(style_numeric_gradient(word_table), width="stretch")
-
-            summary_table = build_summary_statistics_table(word_table)
-            if summary_table is not None:
-                st.subheader("Word Summary Statistics")
-                #st.table(summary_table)
-                st.dataframe(summary_table, width="stretch")
-
-        with comparison_tabs[1]:
-            st.subheader("Character Data")
-            if custom_vocab_set:
-                include_custom_vocab_char = st.checkbox("Include custom vocab row", value=False, key="include_custom_vocab_char")
-            else:
-                include_custom_vocab_char = False
-            char_table = drop_list_columns(char_df)
-            char_table = maybe_hide_custom_vocab_row(char_table, include_custom_vocab_char)
-            st.dataframe(style_numeric_gradient(char_table), width="stretch")
-
-            summary_table = build_summary_statistics_table(char_table)
-            if summary_table is not None:
-                st.subheader("Character Summary Statistics")
-                #st.table(summary_table)
-                st.dataframe(summary_table, width="stretch")
-
-    with top_tabs[1]:
-        selectable_files = list(word_df.index)
-
-        selected_file = st.selectbox(
-            "Select file to explore",
-            selectable_files,
-            key="explore_selected_file",
-        )
-
-        explore_tabs = st.tabs([
+        main_tabs = st.tabs([
+            "Raw stats",
             "Sample Text",
             "Word Frequencies",
             "Character Frequencies",
@@ -618,9 +630,21 @@ if word_df is not None and char_df is not None:
             "Character Plots",
         ])
 
-        with explore_tabs[3]:
-            row = word_df.loc[selected_file]
-            #render_chart(plot_word_counts(row))
+        with main_tabs[0]:
+            filtered_word_metrics = filter_raw_metrics(word_df.loc[[active_file]])
+            raw_word_df = stringify_iterable_cells(filtered_word_metrics).transpose()
+            raw_word_df.index.name = "Metric"
+            st.markdown("#### Word metrics")
+            st.dataframe(raw_word_df, width="stretch")
+
+            filtered_char_metrics = filter_raw_metrics(char_df.loc[[active_file]])
+            raw_char_df = stringify_iterable_cells(filtered_char_metrics).transpose()
+            raw_char_df.index.name = "Metric"
+            st.markdown("#### Character metrics")
+            st.dataframe(raw_char_df, width="stretch")
+
+        with main_tabs[4]:
+            row = word_row
             if custom_vocab_set:
                 col1, col2 = st.columns(2)
                 with col1:
@@ -638,9 +662,8 @@ if word_df is not None and char_df is not None:
             with col2:
                 render_chart(plot_topn_token_coverage(row))
 
-        with explore_tabs[4]:
-            crow = char_df.loc[selected_file]
-            #render_chart(plot_char_counts(crow))
+        with main_tabs[5]:
+            crow = char_row
             if custom_vocab_set:
                 col1, col2 = st.columns(2)
                 with col1:
@@ -712,8 +735,8 @@ if word_df is not None and char_df is not None:
                     )
                 )
 
-        with explore_tabs[1]:
-            wrow = word_df.loc[selected_file]
+        with main_tabs[2]:
+            wrow = word_row
 
             col1, col2 = st.columns(2)
             with col1:
@@ -736,7 +759,6 @@ if word_df is not None and char_df is not None:
                     if data:
                         df_word = pd.DataFrame(data, columns=["Word", "Frequency"])
 
-                        # Add "1 in N" column
                         df_word["Occurs every __ words"] = (
                             total_tokens / df_word["Frequency"]
                         ).round(0).astype(int).map(lambda x: f"1 in {x:,}")
@@ -746,7 +768,6 @@ if word_df is not None and char_df is not None:
                     else:
                         df_word = pd.DataFrame(columns=["Word", "Frequency", "Occurs every __ words"])
 
-                    # ---- Category counts (only for filtered categories) ----
                     if label == "Not in Custom Vocab":
                         st.markdown(f"Words not in custom vocab: **{len(df_word):,}**")
 
@@ -756,12 +777,10 @@ if word_df is not None and char_df is not None:
                     elif label == "Not in Top 10k Most Common Words":
                         st.markdown(f"Words not in top 10k most common words: **{len(df_word):,}**")
 
-                    st.dataframe(df_word, width="stretch")
+                    display_frequency_dataframe(df_word, label, active_file, "word_freq")
 
-
-
-        with explore_tabs[2]:
-            crow = char_df.loc[selected_file]
+        with main_tabs[3]:
+            crow = char_row
 
             st.caption(
                 "Character frequencies may be higher than the frequency of the same single-character word. This is because characters are counted wherever they appear in the text, including inside multi-character words."
@@ -789,7 +808,6 @@ if word_df is not None and char_df is not None:
                     if data:
                         df_char = pd.DataFrame(data, columns=["Character", "Frequency"])
 
-                        # Add "1 in N" column
                         df_char["Occurs every __ chars"] = (
                             total_chars / df_char["Frequency"]
                         ).round(0).astype(int).map(lambda x: f"1 in {x:,}")
@@ -800,7 +818,6 @@ if word_df is not None and char_df is not None:
                     else:
                         df_char = pd.DataFrame(columns=["Character", "Frequency", "Occurs every __ chars"])
 
-                    # ---- Category counts (only for filtered categories) ----
                     if label == "Not in Custom Vocab":
                         st.markdown(f"Characters not in custom vocab: **{len(df_char):,}**")
 
@@ -810,10 +827,10 @@ if word_df is not None and char_df is not None:
                     elif label == "Not in Top 10k Most Common Words":
                         st.markdown(f"Characters not in top 10k most common words: **{len(df_char):,}**")
 
-                    st.dataframe(df_char, width="stretch")
+                    display_frequency_dataframe(df_char, label, active_file, "char_freq")
 
-        with explore_tabs[0]:
-            wrow = word_df.loc[selected_file]
+        with main_tabs[1]:
+            wrow = word_row
 
             st.caption("Extract of the original text from the midpoint containing 1,000 Hanzi word tokens.")
 

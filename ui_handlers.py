@@ -13,6 +13,17 @@ def sanitize_dataframe_name(name):
     return sanitized or "Unnamed text"
 
 
+def clear_existing_file_results(state):
+    removed = False
+    for fname in list(state.word_results_dict.keys()):
+        if fname.startswith("(Custom vocab)"):
+            continue
+        state.word_results_dict.pop(fname, None)
+        state.char_results_dict.pop(fname, None)
+        removed = True
+    return removed
+
+
 def init_session_state(state):
     defaults = {
         "word_results_dict": {},
@@ -134,7 +145,7 @@ def show_input_section(
     st.header("Files for analysis")
     input_method = st.radio(
         "Input method",
-        ["Upload file(s)", "Upload folder", "Paste text"],
+        ["Upload file", "Paste text"],
         horizontal=True,
     )
 
@@ -162,12 +173,9 @@ def show_input_section(
                     "This text exceeds the 15,000 character limit. Please save it as a .txt file and upload it instead."
                 )
             else:
-                existing_names = set(state.word_results_dict.keys())
-                final_name = get_available_name(effective_name, existing_names)
-
                 progress_bar = st.progress(0, text="Preparing text upload...")
                 tokenizer = get_tokenizer(state.custom_vocab_set)
-                progress_bar.progress(40, text=f"Analysing text: {final_name}")
+                progress_bar.progress(40, text="Analysing text...")
                 word_stats, char_stats = analyse_text(
                     pasted_text,
                     tokenizer,
@@ -176,107 +184,90 @@ def show_input_section(
                     resolve_hsk_level,
                     resolve_topn_rank,
                 )
+                replaced_previous = clear_existing_file_results(state)
+                existing_names = set(state.word_results_dict.keys())
+                final_name = get_available_name(effective_name, existing_names)
+
                 progress_bar.progress(85, text=f"Saving analysis: {final_name}")
                 state.word_results_dict[final_name] = word_stats
                 state.char_results_dict[final_name] = char_stats
                 progress_bar.progress(100, text="Upload complete!")
 
+                suffix = " Previous analysis cleared." if replaced_previous else ""
+
                 if not stripped_name:
                     state.upload_status_toast = (
                         "warning",
-                        f"No name provided. Using default name '{final_name}'.",
+                        f"No name provided. Using default name '{final_name}'.{suffix}",
                     )
                 elif final_name != effective_name:
                     state.upload_status_toast = (
                         "warning",
-                        f"Name already existed. Using '{final_name}' instead.",
+                        f"Name already existed. Using '{final_name}' instead.{suffix}",
                     )
                 else:
                     state.upload_status_toast = (
                         "success",
-                        f"Uploaded as '{final_name}'.",
+                        f"Uploaded as '{final_name}'.{suffix}",
                     )
 
                 st.rerun()
 
-    if input_method in ["Upload file(s)", "Upload folder"]:
-        accepts = True if input_method == "Upload file(s)" else "directory"
-        upload_label = (
-            "Upload one or more text files"
-            if input_method == "Upload file(s)"
-            else "Upload a folder of text files"
-        )
-        uploaded_files = st.file_uploader(
-            upload_label,
+    if input_method == "Upload file":
+        uploaded_file = st.file_uploader(
+            "Upload a single text file (.txt, .epub, .pdf, .csv)",
             type=["txt", "epub", "pdf", "csv"],
-            accept_multiple_files=accepts,
+            accept_multiple_files=False,
             key=f"files_{state.uploader_key}",
         )
 
-        if uploaded_files:
+        if uploaded_file:
             tokenizer = get_tokenizer(state.custom_vocab_set)
-            new_files = uploaded_files
+            progress_bar = st.progress(0, text=f"Reading file: {uploaded_file.name}")
 
-            if not new_files:
-                st.info("All selected files are already loaded.")
+            if uploaded_file.name.endswith((".txt", ".csv")):
+                text = uploaded_file.read().decode("utf-8", errors="ignore")
+            elif uploaded_file.name.endswith(".epub"):
+                text = extract_text_from_epub(uploaded_file)
+            elif uploaded_file.name.endswith(".pdf"):
+                text = extract_text_from_pdf(uploaded_file)
             else:
-                total_files = len(new_files)
-                uploaded_names = [file.name for file in new_files]
-                progress_bar = st.progress(0, text="Starting analysis...")
+                st.error("Unsupported file type.")
+                return
 
-                for i, file in enumerate(new_files):
-                    progress_bar.progress(i / total_files, text=f"Reading file: {file.name}")
+            progress_bar.progress(0.4, text=f"Analysing file: {uploaded_file.name}")
+            word_stats, char_stats = analyse_text(
+                text,
+                tokenizer,
+                state.custom_vocab_set,
+                resolve_vocab,
+                resolve_hsk_level,
+                resolve_topn_rank,
+            )
 
-                    if file.name.endswith((".txt", ".csv")):
-                        text = file.read().decode("utf-8", errors="ignore")
-                    elif file.name.endswith(".epub"):
-                        text = extract_text_from_epub(file)
-                    elif file.name.endswith(".pdf"):
-                        text = extract_text_from_pdf(file)
-                    else:
-                        continue
+            replaced_previous = clear_existing_file_results(state)
+            existing_names = set(state.word_results_dict.keys())
+            cleaned_name = sanitize_dataframe_name(uploaded_file.name)
+            result_name = get_available_name(cleaned_name, existing_names)
 
-                    progress_bar.progress(
-                        (i + 0.5) / total_files, text=f"Analysing file: {file.name}"
-                    )
+            progress_bar.progress(0.85, text=f"Saving analysis: {result_name}")
+            state.word_results_dict[result_name] = word_stats
+            state.char_results_dict[result_name] = char_stats
+            gc.collect()
 
-                    word_stats, char_stats = analyse_text(
-                        text,
-                        tokenizer,
-                        state.custom_vocab_set,
-                        resolve_vocab,
-                        resolve_hsk_level,
-                        resolve_topn_rank,
-                    )
+            progress_bar.progress(1.0, text="Upload complete!")
 
-                    existing_names = set(state.word_results_dict.keys())
-                    cleaned_name = sanitize_dataframe_name(file.name)
-                    result_name = get_available_name(cleaned_name, existing_names)
+            toast_message = f"Uploaded file: {uploaded_file.name}"
+            if replaced_previous:
+                toast_message += " (previous analysis cleared)"
 
-                    state.word_results_dict[result_name] = word_stats
-                    state.char_results_dict[result_name] = char_stats
-                    text = None
-                    gc.collect()
+            state.upload_status_toast = (
+                "success",
+                toast_message,
+            )
 
-                    progress_bar.progress(
-                        (i + 1) / total_files, text=f"Analysis complete: {file.name}"
-                    )
-
-                progress_bar.progress(1.0, text="All analyses complete!")
-
-                if total_files == 1:
-                    state.upload_status_toast = (
-                        "success",
-                        f"Uploaded file: {uploaded_names[0]}",
-                    )
-                else:
-                    state.upload_status_toast = (
-                        "success",
-                        f"Uploaded {total_files} files: {', '.join(uploaded_names)}",
-                    )
-
-                state.uploader_key += 1
-                st.rerun()
+            state.uploader_key += 1
+            st.rerun()
 
 
 def manage_loaded_files(state):

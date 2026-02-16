@@ -355,7 +355,7 @@ def analyse_text(
         label_t = "HSK 1 to 7–9 token coverage (%)" if lvl == 7 else f"HSK 1 to {lvl} token coverage (%)"
         word_result[label_t] = round(token_maxhsk[lvl], 1)
 
-    top_values_limit = 100
+    top_values_limit = None  # capture full frequency lists without truncation
 
     word_result["Unique words (with frequencies)"] = tuple(most_common_all[:top_values_limit])
     if custom_vocab_set:
