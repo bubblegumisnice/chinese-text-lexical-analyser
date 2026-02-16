@@ -270,23 +270,6 @@ def show_input_section(
             st.rerun()
 
 
-def manage_loaded_files(state):
-    if state.word_results_dict:
-        with st.expander("Manage loaded files"):
-            for fname in list(state.word_results_dict.keys()):
-                col1, col2 = st.columns([6, 1])
-                with col1:
-                    st.write(f"📄 {fname}")
-                with col2:
-                    if fname.startswith("(Custom vocab)"):
-                        st.caption("Use Clear All to remove")
-                    elif st.button("Remove", key=f"remove_{fname}"):
-                        state.word_results_dict.pop(fname, None)
-                        state.char_results_dict.pop(fname, None)
-                        state.uploader_key += 1
-                        st.rerun()
-
-
 def show_export_and_clear(state, clear_vocab_cache):
     word_df = None
     char_df = None

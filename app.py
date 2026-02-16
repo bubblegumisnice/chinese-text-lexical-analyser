@@ -5,12 +5,16 @@ Chinese text lexical analyser app
 
 import csv
 import sys
+import math
+import numbers
+import re
 import streamlit as st
 import pandas as pd
 import urllib.parse
 
 # Ignore harmless Jieba syntax warnings
 import warnings
+
 warnings.filterwarnings(
     "ignore",
     message="invalid escape sequence",
@@ -26,12 +30,24 @@ from config import (
     STEP_SIZE,
     MAX_WINDOWS,
     DEFAULT_DEMO_TEXT,
-    TOPN_COLORS,
-    HSK_COLORS,
     MODE_EXPLANATIONS,
     HANZI_RE,
     HANZI_ONLY_RE,
     SENTENCE_SPLIT_RE,
+)
+
+from tokenizers import get_tokenizer
+from analysis import analyse_text, extract_text_from_epub, extract_text_from_pdf
+from rendering import (
+    render_highlighted_text,
+    render_legend,
+    render_sentence_segmented_tokens_html,
+)
+from ui_handlers import (
+    init_session_state,
+    show_custom_vocab_section,
+    show_input_section,
+    show_export_and_clear,
 )
 
 # Global caches
@@ -142,13 +158,13 @@ Based on the official HSK 3.0 word list.
 st.sidebar.markdown("""
 ---
 
-Designed for comparing:
+                word_sections.append(("Not in Custom Vocab", wrow.get("Words not in vocab (with frequencies)", [])))
 - Graded readers  
 - Web novels  
-- Native texts  
+                char_sections.append(("Not in Custom Vocab", crow.get("Characters not in vocab (with frequencies)", [])))
 - Learning materials  
 
-Useful for estimating lexical difficulty and vocabulary coverage.
+                options = [x for x in options if "vocab" not in x[0].lower()]
 """)
 
 
@@ -269,16 +285,6 @@ def drop_list_columns(df):
     filtered_df = df.loc[:, list(non_list_columns(df))]
     return filtered_df.drop(columns=["Middle 1000-token extract"], errors="ignore")
 
-
-def stringify_iterable_cells(df):
-    def convert(value):
-        if isinstance(value, (list, tuple)):
-            return str(value)
-        return value
-
-    return df.applymap(convert)
-
-
 def filter_raw_metrics(df):
     def should_include(column_name):
         if not isinstance(column_name, str):
@@ -321,12 +327,330 @@ def display_frequency_dataframe(df, label, file_name, prefix):
     display_df = df if (row_count <= FREQUENCY_TABLE_LIMIT or show_all) else df.head(FREQUENCY_TABLE_LIMIT)
     st.dataframe(display_df, width="stretch")
 
-    if widget_key:
-        st.checkbox(
+    if widget_key and row_count > FREQUENCY_TABLE_LIMIT:
+        selected = st.checkbox(
             f"Show all {row_count:,}",
-            value=show_all,
             key=widget_key,
         )
+        caption_text = "Showing all rows" if selected else f"Showing first {FREQUENCY_TABLE_LIMIT:,} entries"
+        st.caption(caption_text)
+
+
+def format_metric_value(value):
+    if value is None:
+        return "—"
+    if isinstance(value, str):
+        return value
+    try:
+        if pd.isna(value):
+            return "—"
+    except TypeError:
+        pass
+    if isinstance(value, numbers.Integral):
+        return f"{int(value):,}"
+    if isinstance(value, numbers.Real):
+        abs_val = abs(value)
+        if abs_val >= 100:
+            formatted = f"{value:,.0f}"
+        elif abs_val >= 10:
+            formatted = f"{value:,.1f}"
+        else:
+            formatted = f"{value:,.2f}"
+        formatted = formatted.rstrip("0").rstrip(".") if "." in formatted else formatted
+        return formatted
+    return str(value)
+
+
+def format_percentage(value):
+    if value is None:
+        return "—"
+    try:
+        if pd.isna(value):
+            return "—"
+    except TypeError:
+        pass
+    if isinstance(value, numbers.Real):
+        formatted = f"{value:.1f}".rstrip("0").rstrip(".")
+        return f"{formatted}%"
+    return f"{value}%"
+
+
+def zipf_to_words_per_occurrence(zipf_value):
+    if zipf_value is None or not isinstance(zipf_value, numbers.Real):
+        return None
+    try:
+        if math.isnan(zipf_value):
+            return None
+    except TypeError:
+        return None
+    return 10 ** (9 - zipf_value)
+
+
+def format_occurrence_rate(words_per_occurrence):
+    if words_per_occurrence is None or words_per_occurrence <= 0:
+        return "rate unavailable"
+    if words_per_occurrence >= 1:
+        if words_per_occurrence >= 1000:
+            return f"~1 per {words_per_occurrence:,.0f} words"
+        if words_per_occurrence >= 100:
+            return f"~1 per {words_per_occurrence:,.0f} words"
+        if words_per_occurrence >= 10:
+            return f"~1 per {words_per_occurrence:,.1f} words"
+        return f"~1 per {words_per_occurrence:,.2f} words"
+    occurrences_per_word = 1 / words_per_occurrence
+    return f"~{occurrences_per_word:,.1f} times per word"
+
+
+def render_compact_table(df):
+    if df is None or df.empty:
+        st.info("No data available.")
+        return
+    st.dataframe(df, use_container_width=True)
+
+
+def render_explanation_dropdown(explanation_items):
+    items = [item for item in explanation_items if item]
+    if not items:
+        return
+    with st.expander(":small[Explanation]", expanded=False):
+        for item in items:
+            st.caption(item)
+
+
+def render_metric_group(title, rows, word_metrics, char_metrics, explanation=None):
+    st.markdown(f"#### {title}")
+    table_rows = []
+    for row in rows:
+        if not row.get("word_key") and not row.get("char_key"):
+            continue
+        word_value = word_metrics.get(row.get("word_key")) if row.get("word_key") else None
+        char_value = char_metrics.get(row.get("char_key")) if row.get("char_key") else None
+        if word_value is None and char_value is None:
+            continue
+        word_formatter = format_percentage if row.get("word_percentage") else format_metric_value
+        char_formatter = format_percentage if row.get("char_percentage") else format_metric_value
+        table_rows.append(
+            {
+                "Metric": row["label"],
+                "Words": word_formatter(word_value) if row.get("word_key") else "—",
+                "Characters": char_formatter(char_value) if row.get("char_key") else "—",
+            }
+        )
+    if table_rows:
+        display_df = pd.DataFrame(table_rows).set_index("Metric")
+        display_df.index.name = None
+        render_compact_table(display_df)
+    explanation_lines = []
+    if explanation:
+        explanation_lines.append(explanation)
+    for row in rows:
+        if row.get("explanation"):
+            explanation_lines.append(f"**{row['label']}** — {row['explanation']}")
+    render_explanation_dropdown(explanation_lines)
+
+
+def format_zipf_entry(value):
+    if value is None:
+        return "—"
+    try:
+        if pd.isna(value):
+            return "—"
+    except TypeError:
+        pass
+    occurrence_rate = format_occurrence_rate(zipf_to_words_per_occurrence(value))
+    return f"{format_metric_value(value)} ({occurrence_rate})"
+
+
+def render_zipf_section(word_metrics, char_metrics):
+    st.markdown("#### Zipf frequency profile")
+
+    table_df = pd.DataFrame(
+        {
+            "Words": {
+                "Token median Zipf": format_zipf_entry(word_metrics.get("Median zipf (all tokens)")),
+                "Unique median Zipf": format_zipf_entry(word_metrics.get("Median zipf (unique words)")),
+            },
+            "Characters": {
+                "Token median Zipf": format_zipf_entry(char_metrics.get("Median zipf (all characters)")),
+                "Unique median Zipf": format_zipf_entry(char_metrics.get("Median zipf (unique characters)")),
+            },
+        }
+    )
+    render_compact_table(table_df)
+
+    render_explanation_dropdown([
+        "Zipf is the base-10 log of occurrences per billion words in the WordFreq corpus. "
+        "Zipf 8 ≈ once every 10 words, Zipf 7 ≈ once every 100 words, and Zipf 3 ≈ once per million words. "
+        "For context, 的 scores 7.79 (~1 per 16 words), while rarer literary words such as 玄冥 hover near Zipf 3 (~1 per million words). "
+        "Unique-column Zipf values summarise how rare the vocabulary set is overall, whereas token-column Zipf values show what readers repeatedly encounter. "
+        "A big gap between the two means rare words appear but only sporadically; similar values mean those rare terms keep showing up."
+    ])
+
+
+def build_topn_coverage_df(word_metrics, char_metrics):
+    rows = []
+    for n in range(1, 11):
+        label = f"Top {n}k"
+        rows.append(
+            {
+                "Band": label,
+                "Total tokens": word_metrics.get(f"Top {n}k token coverage (%)"),
+                "Total characters": char_metrics.get(f"Top {n}k character coverage (%)"),
+                "Unique words": word_metrics.get(f"Top {n}k unique word coverage (%)"),
+                "Unique characters": char_metrics.get(f"Top {n}k unique character coverage (%)"),
+            }
+        )
+    return pd.DataFrame(rows).set_index("Band")
+
+
+def build_hsk_coverage_df(word_metrics, char_metrics):
+    rows = []
+    level_labels = [
+        ("HSK 1", "HSK 1 to 1"),
+        ("HSK 1 to 2", "HSK 1 to 2"),
+        ("HSK 1 to 3", "HSK 1 to 3"),
+        ("HSK 1 to 4", "HSK 1 to 4"),
+        ("HSK 1 to 5", "HSK 1 to 5"),
+        ("HSK 1 to 6", "HSK 1 to 6"),
+        ("HSK 1 to 7–9", "HSK 1 to 7–9"),
+    ]
+    for label, metric_prefix in level_labels:
+        rows.append(
+            {
+                "Band": label,
+                "Total tokens": word_metrics.get(f"{metric_prefix} token coverage (%)"),
+                "Total characters": char_metrics.get(f"{metric_prefix} character coverage (%)"),
+                "Unique words": word_metrics.get(f"{metric_prefix} unique word coverage (%)"),
+                "Unique characters": char_metrics.get(f"{metric_prefix} unique character coverage (%)"),
+            }
+        )
+    return pd.DataFrame(rows).set_index("Band")
+
+
+def build_custom_vocab_coverage_df(word_metrics, char_metrics):
+    return pd.DataFrame(
+        {
+            "Words": {
+                "Total": word_metrics.get("Custom vocab token coverage (%)"),
+                "Unique": word_metrics.get("Custom vocab unique word coverage (%)"),
+            },
+            "Characters": {
+                "Total": char_metrics.get("Custom vocab character coverage (%)"),
+                "Unique": char_metrics.get("Custom vocab unique character coverage (%)"),
+            },
+        }
+    )
+
+
+def style_coverage(df):
+    return (
+        df.style
+        .format(format_percentage)
+        .background_gradient(cmap="RdYlBu_r", axis=None, vmin=0, vmax=100)
+    )
+
+
+def render_coverage_highlights(word_metrics, char_metrics, has_custom_vocab=False):
+    st.markdown("#### Coverage highlights")
+
+    if has_custom_vocab:
+        custom_df = build_custom_vocab_coverage_df(word_metrics, char_metrics)
+        st.markdown("**Custom vocab coverage**")
+        st.dataframe(style_coverage(custom_df), use_container_width=True)
+        render_explanation_dropdown([
+                "**Total** compares running tokens/characters against your vocab list to show immediate reading coverage. "
+                "**Unique** checks distinct types, highlighting whether gaps come from brand-new words or glyphs. "
+                "Comparing columns reveals if unknown words are built from already-known characters or if entirely new Hanzi appear."
+        ])
+
+    hsk_df = build_hsk_coverage_df(word_metrics, char_metrics)
+    st.markdown("**HSK 1–7–9 coverage**")
+    st.dataframe(style_coverage(hsk_df), use_container_width=True)
+    render_explanation_dropdown([
+        "Rows accumulate upward through the official HSK 3.0 bands, letting you see how quickly the syllabus covers your text. "
+        "Token coverage answers 'How much of the running text sits within this syllabus tier?', whereas Unique coverage asks 'How much of the vocabulary inventory is already taught by this level?'. "
+        "Cool blues mean low coverage, warm reds mean high coverage, so you can gauge at a glance which tiers dominate."
+    ])
+
+    topn_df = build_topn_coverage_df(word_metrics, char_metrics)
+    st.markdown("**Top 10k WordFreq coverage**")
+    st.dataframe(style_coverage(topn_df), use_container_width=True)
+    render_explanation_dropdown([
+        "Each row aggregates everything up to that frequency band, so the Top 3k row reflects coverage from the Top 1k, 2k, and 3k buckets combined. "
+        "Token columns show how often readers will *see* those bands, while Unique columns show what proportion of the vocabulary inventory comes from them. "
+        "The color bar runs from blue (low coverage) to red (high coverage), making it easy to spot whether the text stays in high-frequency territory."
+    ])
+
+
+def render_stat_guide(word_metrics, char_metrics, has_custom_vocab=False):
+    render_metric_group(
+        "Volume overview",
+        [
+            {
+                "label": "Total length",
+                "word_key": "Total tokens",
+                "char_key": "Total characters",
+                "explanation": (
+                    "Word column counts segmented tokens; character column counts every Hanzi. "
+                    "If tokens vastly outnumber characters, the text reuses a small set of characters to form many multi-character words. "
+                    "If the numbers are close, the text leans on single-character words and feels more repetitive."
+                ),
+            },
+            {
+                "label": "Unique vocabulary",
+                "word_key": "Unique words",
+                "char_key": "Unique characters",
+                "explanation": (
+                    "Shows how many different word types and characters appear. "
+                    "High word totals with modest character counts mean familiar components are recombined into new compounds; "
+                    "high character totals signal broader glyph coverage that pushes recognition skills."
+                ),
+            },
+            {
+                "label": "Unique rate (% of total)",
+                "word_key": "Unique words (% of tokens)",
+                "char_key": "Unique characters (% of characters)",
+                "word_percentage": True,
+                "char_percentage": True,
+                "explanation": (
+                    "Type–token ratios reveal how quickly new vocabulary appears. "
+                    "A high word percentage but low character percentage means new words are built from known characters, "
+                    "whereas high percentages in both columns indicate constant introduction of unfamiliar glyphs."
+                ),
+            },
+        ],
+        word_metrics,
+        char_metrics,
+    )
+
+    render_metric_group(
+        "Sentence rhythm & local variety",
+        [
+            {
+                "label": "Average sentence length",
+                "word_key": "Average tokens per sentence",
+                "char_key": "Average characters per sentence",
+                "explanation": (
+                    "Long sentences in tokens point to dense clause structures. "
+                    "Comparing the character column tells you whether the length comes from many short words or a few long compounds."
+                ),
+            },
+            {
+                "label": "Median unique per 1000-window",
+                "word_key": "Median unique words per 1000-token window",
+                "char_key": "Median unique characters per 1000-character window",
+                "explanation": (
+                    "Measures lexical diversity inside sliding 1000-unit windows. "
+                    "High word medians mean the text keeps refreshing vocabulary; high character medians mean it keeps introducing new glyphs."
+                ),
+            },
+        ],
+        word_metrics,
+        char_metrics,
+    )
+
+    render_zipf_section(word_metrics, char_metrics)
+    render_coverage_highlights(word_metrics, char_metrics, has_custom_vocab)
 
 @st.cache_data
 def build_char_level_maps(hsk_map, word_rank):
@@ -344,32 +668,6 @@ def build_char_level_maps(hsk_map, word_rank):
 
 
 CHAR_HSK_LEVEL, CHAR_TOPN_RANK = build_char_level_maps(HSK_MAP, WORD_RANK)
-
-from tokenizers import get_tokenizer
-from analysis import analyse_text, extract_text_from_epub, extract_text_from_pdf
-from plotting import (
-    render_chart,
-    plot_vocab_overlap,
-    plot_vocab_token_overlap,
-    plot_word_counts,
-    plot_char_counts,
-    plot_hsk_coverage,
-    plot_topn_coverage,
-    plot_hsk_token_coverage,
-    plot_topn_token_coverage,
-)
-from rendering import (
-    render_highlighted_text,
-    render_legend,
-    render_sentence_segmented_tokens_html,
-)
-from ui_handlers import (
-    init_session_state,
-    show_custom_vocab_section,
-    show_input_section,
-    manage_loaded_files,
-    show_export_and_clear,
-)
 
 
 # =========================================================
@@ -601,11 +899,10 @@ show_input_section(
     extract_text_from_pdf,
 )
 
-manage_loaded_files(st.session_state)
-
 word_df, char_df = show_export_and_clear(st.session_state, clear_vocab_cache)
 
 custom_vocab_set = st.session_state.custom_vocab_set
+has_custom_vocab = bool(custom_vocab_set)
 
 if word_df is not None and char_df is not None and not word_df.empty:
     analysis_files = [
@@ -621,121 +918,24 @@ if word_df is not None and char_df is not None and not word_df.empty:
         word_row = word_df.loc[active_file]
         char_row = char_df.loc[active_file]
 
-        main_tabs = st.tabs([
-            "Raw stats",
+        filtered_word_metrics_df = filter_raw_metrics(word_df.loc[[active_file]])
+        filtered_char_metrics_df = filter_raw_metrics(char_df.loc[[active_file]])
+        word_metrics_series = filtered_word_metrics_df.loc[active_file]
+        char_metrics_series = filtered_char_metrics_df.loc[active_file]
+
+        st.subheader(f"Analysis for {active_file}")
+
+        stats_tab, words_tab, chars_tab, sample_tab = st.tabs([
+            "Statistics",
+            "All Words",
+            "All Characters",
             "Sample Text",
-            "Word Frequencies",
-            "Character Frequencies",
-            "Word Plots",
-            "Character Plots",
         ])
 
-        with main_tabs[0]:
-            filtered_word_metrics = filter_raw_metrics(word_df.loc[[active_file]])
-            raw_word_df = stringify_iterable_cells(filtered_word_metrics).transpose()
-            raw_word_df.index.name = "Metric"
-            st.markdown("#### Word metrics")
-            st.dataframe(raw_word_df, width="stretch")
+        with stats_tab:
+            render_stat_guide(word_metrics_series, char_metrics_series, has_custom_vocab)
 
-            filtered_char_metrics = filter_raw_metrics(char_df.loc[[active_file]])
-            raw_char_df = stringify_iterable_cells(filtered_char_metrics).transpose()
-            raw_char_df.index.name = "Metric"
-            st.markdown("#### Character metrics")
-            st.dataframe(raw_char_df, width="stretch")
-
-        with main_tabs[4]:
-            row = word_row
-            if custom_vocab_set:
-                col1, col2 = st.columns(2)
-                with col1:
-                    render_chart(plot_vocab_overlap(row))
-                with col2:
-                    render_chart(plot_vocab_token_overlap(row))
-            col1, col2 = st.columns(2)
-            with col1:
-                render_chart(plot_hsk_coverage(row))
-            with col2:
-                render_chart(plot_hsk_token_coverage(row))
-            col1, col2 = st.columns(2)
-            with col1:
-                render_chart(plot_topn_coverage(row))
-            with col2:
-                render_chart(plot_topn_token_coverage(row))
-
-        with main_tabs[5]:
-            crow = char_row
-            if custom_vocab_set:
-                col1, col2 = st.columns(2)
-                with col1:
-                    render_chart(
-                        plot_vocab_overlap(
-                            crow,
-                            unique_count_key="Unique characters",
-                            unique_coverage_key="Custom vocab unique character coverage (%)",
-                            item_label="chars",
-                            title="Custom vocab unique-character coverage",
-                            total_label="Unique characters",
-                            overlap_label="In vocab list (unique)",
-                        )
-                    )
-                with col2:
-                    render_chart(
-                        plot_vocab_token_overlap(
-                            crow,
-                            total_count_key="Total characters",
-                            token_coverage_key="Custom vocab character coverage (%)",
-                            item_label="chars",
-                            title="Custom vocab character coverage",
-                            total_label="Total characters",
-                            overlap_label="In vocab list (characters)",
-                        )
-                    )
-            col1, col2 = st.columns(2)
-            with col1:
-                render_chart(
-                    plot_hsk_coverage(
-                        crow,
-                        unique_coverage_key_template="HSK 1 to {lvl} unique character coverage (%)",
-                        unique_count_key="Unique characters",
-                        item_label="chars",
-                        title="Cumulative unique character HSK coverage",
-                    )
-                )
-            with col2:
-                render_chart(
-                    plot_hsk_token_coverage(
-                        crow,
-                        token_coverage_key_template="HSK 1 to {lvl} character coverage (%)",
-                        total_count_key="Total characters",
-                        item_label="chars",
-                        title="Cumulative character HSK coverage",
-                    )
-                )
-            col1, col2 = st.columns(2)
-            with col1:
-                render_chart(
-                    plot_topn_coverage(
-                        crow,
-                        unique_coverage_key_template="Top {n}k unique character coverage (%)",
-                        unique_count_key="Unique characters",
-                        item_label="chars",
-                        title="Cumulative unique character Top-N frequency coverage",
-                        xaxis_title="Top-N most frequent words (WordFreq)",
-                    )
-                )
-            with col2:
-                render_chart(
-                    plot_topn_token_coverage(
-                        crow,
-                        token_coverage_key_template="Top {n}k character coverage (%)",
-                        total_count_key="Total characters",
-                        item_label="chars",
-                        title="Cumulative character Top-N frequency coverage",
-                        xaxis_title="Top-N most frequent words (WordFreq)",
-                    )
-                )
-
-        with main_tabs[2]:
+        with words_tab:
             wrow = word_row
 
             col1, col2 = st.columns(2)
@@ -747,7 +947,7 @@ if word_df is not None and char_df is not None and not word_df.empty:
             total_tokens = int(wrow["Total tokens"])
             
             word_sections = [("All Words", wrow.get("Unique words (with frequencies)", []))]
-            if custom_vocab_set:
+            if has_custom_vocab:
                 word_sections.append(("Not in Custom Vocab", wrow.get("Words not in vocab (with frequencies)", [])))
             word_sections.extend([
                 ("Not in HSK Wordlist", wrow.get("Words not in HSK (with frequencies)", [])),
@@ -779,7 +979,7 @@ if word_df is not None and char_df is not None and not word_df.empty:
 
                     display_frequency_dataframe(df_word, label, active_file, "word_freq")
 
-        with main_tabs[3]:
+        with chars_tab:
             crow = char_row
 
             st.caption(
@@ -796,7 +996,7 @@ if word_df is not None and char_df is not None and not word_df.empty:
             total_chars = int(crow["Total characters"])
             
             char_sections = [("All Characters", crow.get("Unique characters (with frequencies)", []))]
-            if custom_vocab_set:
+            if has_custom_vocab:
                 char_sections.append(("Not in Custom Vocab", crow.get("Characters not in vocab (with frequencies)", [])))
             char_sections.extend([
                 ("Not in HSK Wordlist", crow.get("Characters not in HSK (with frequencies)", [])),
@@ -829,7 +1029,7 @@ if word_df is not None and char_df is not None and not word_df.empty:
 
                     display_frequency_dataframe(df_char, label, active_file, "char_freq")
 
-        with main_tabs[1]:
+        with sample_tab:
             wrow = word_row
 
             st.caption("Extract of the original text from the midpoint containing 1,000 Hanzi word tokens.")
@@ -850,7 +1050,7 @@ if word_df is not None and char_df is not None and not word_df.empty:
                 ("Character: HSK", "char_hsk"),
                 ("Character: Top-N", "char_topn"),
             ]
-            if not custom_vocab_set:
+            if not has_custom_vocab:
                 options = [x for x in options if "vocab" not in x[0].lower()]
 
             labels = [x[0] for x in options]
