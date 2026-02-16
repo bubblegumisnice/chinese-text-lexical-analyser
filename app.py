@@ -467,16 +467,21 @@ def render_zipf_section(word_metrics, char_metrics):
     table_df = pd.DataFrame(
         {
             "Words": {
-                "Token median Zipf": format_zipf_entry(word_metrics.get("Median zipf (all tokens)")),
-                "Unique median Zipf": format_zipf_entry(word_metrics.get("Median zipf (unique words)")),
+                "Token median Zipf": word_metrics.get("Median zipf (all tokens)"),
+                "Unique median Zipf": word_metrics.get("Median zipf (unique words)"),
             },
             "Characters": {
-                "Token median Zipf": format_zipf_entry(char_metrics.get("Median zipf (all characters)")),
-                "Unique median Zipf": format_zipf_entry(char_metrics.get("Median zipf (unique characters)")),
+                "Token median Zipf": char_metrics.get("Median zipf (all characters)"),
+                "Unique median Zipf": char_metrics.get("Median zipf (unique characters)"),
             },
         }
     )
-    render_compact_table(table_df)
+    zipf_styler = (
+        table_df.style
+        .format(format_zipf_entry)
+        .background_gradient(cmap="RdYlBu_r", axis=None, vmin=3, vmax=8)
+    )
+    st.dataframe(zipf_styler, use_container_width=True)
 
     render_explanation_dropdown([
         "Zipf is the base-10 log of occurrences per billion words in the WordFreq corpus. "
