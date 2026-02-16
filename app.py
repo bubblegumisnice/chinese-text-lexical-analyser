@@ -133,41 +133,204 @@ st.caption("Frequency coverage • HSK coverage • Lexical diversity • Senten
 st.sidebar.title("About this tool")
 
 st.sidebar.markdown("""
-## What it does
+This tool analyses Simplified Chinese text at two levels:
 
-This tool takes one or more **.txt files** and analyses the Chinese text inside them.
+- **Word tokens** (segmented using jieba)
+- **Individual characters** (Hanzi)
 
-- Only Chinese characters (Hanzi) are analysed.
-- English words, numbers, and punctuation are ignored.
-- This makes it suitable for **graded readers** that include inline English translations.
+It calculates:
 
-Each file is analysed independently, and results are displayed in a comparative table and interactive charts.
+- Text length and vocabulary size  
+- Sentence statistics  
+- Lexical diversity (sliding-window measures)  
+- Word frequency coverage (Top 1k–10k)  
+- HSK 3.0 coverage (Levels 1 to 7–9)  
+- Optional coverage against your own custom vocabulary list  
+
+It is designed for analysing graded readers, web novels, textbooks, news articles, native fiction, and study materials.
 """)
 
 st.sidebar.markdown("""
-## Data sources
+## Supported inputs
 
-### HSK vocabulary
+### File upload
+- **.txt / .csv** — fastest option  
+- **.epub** — text is extracted before analysis  
+- **.pdf** — slowest option  
 
-Uses the **latest official HSK 3.0 word list (December 2025 version)**, found [here](https://www.marteagency.com/pdf/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B2%E8%AF%8D%E6%B1%87.pdf).
+⚠ **Scanned-image PDFs will not work.**  
+If text cannot be selected in the PDF, no text will be extracted.
+
+### Paste text
+- Maximum 15,000 characters  
+- For longer texts, upload a `.txt` file instead  
+""")
+
+st.sidebar.markdown("""
+## What gets analysed
+
+Only Chinese characters (Hanzi) are included in calculations.
+
+The following are ignored:
+
+- English words  
+- Numbers  
+- Pinyin  
+- Punctuation  
+- Latin annotations  
+
+This makes the tool suitable for bilingual texts or materials that include inline glosses.
+""")
+
+st.sidebar.markdown("""
+## How segmentation works
+
+Word tokens are generated using **jieba**, a dictionary-based segmenter.
+
+- Known words from the HSK list and WordFreq list are added to the tokenizer.
+- If you upload a custom vocabulary list, those words are also added.
+- Higher-probability segmentation paths are preferred.
+
+A token is a segmented word.  
+Example: 中国 counts as **1 token**, but **2 characters**.
+""")
+
+st.sidebar.markdown("""
+## Custom vocabulary list (optional)
+
+Upload a **.txt** file with:
+
+- One Chinese word per line  
+- Hanzi only (no pinyin or punctuation)
+
+Lines containing non-Hanzi characters (e.g. Pleco headers like //) are ignored automatically.
+
+Custom vocab coverage is calculated in two ways:
+
+- **Token coverage** → how much of the running text uses known words  
+- **Unique coverage** → how much of the vocabulary inventory is known  
+
+You must upload custom vocab **before analysing files**.
+""")
+
+st.sidebar.markdown("""
+# Metrics explained
+
+## Length & vocabulary
+
+**Total tokens**  
+Number of segmented Chinese words.
+
+**Unique words**  
+Number of distinct word types.
+
+**Total characters**  
+Total Hanzi count.
+
+**Unique characters**  
+Number of distinct Hanzi.
+""")
+
+st.sidebar.markdown("""
+## Sentence statistics
+
+**Average tokens per sentence**  
+Sentence length in words/tokens.
+
+**Average characters per sentence**  
+Sentence length in Hanzi.
+                    
+Longer sentences generally indicate higher grammar complexity.
+""")
+
+st.sidebar.markdown("""
+## Sliding-window lexical diversity
+
+**Median unique words per 1000-token window**  
+Measures how quickly vocabulary refreshes across the text.
+
+**Median unique characters per 1000-character window**  
+Measures character diversity.
+
+These metrics are stable and less sensitive to total text length than simple type–token ratios.
+
+Higher values generally indicate:
+- More lexical variation  
+- Broader vocabulary usage  
+- Greater stylistic complexity  
+
+Whereas low values indicate high repetition, common in graded readers.
+""")
+
+st.sidebar.markdown("""
+## Zipf frequency profile
+
+Zipf is the base-10 logarithm of occurrences per billion words in the WordFreq corpus.
+
+Approximate intuition:
+
+- Zipf 8 → ~1 in 10 words  
+- Zipf 7 → ~1 in 100 words  
+- Zipf 6 → ~1 in 1,000 words  
+- Zipf 5 → ~1 in 10,000 words  
+- Zipf 4 → ~1 in 100,000 words  
+- Zipf 3 → ~1 in 1,000,000 words  
+
+Two medians are reported for both words and characters:
+
+- **Median token Zipf** → what readers repeatedly encounter  
+- **Median unique Zipf** → how rare the vocabulary set is overall  
+
+If the token median is much higher than the unique median, rare words appear but only occasionally.  
+If they are similar, rare words appear frequently.
+""")
+
+st.sidebar.markdown("""
+## Top-N frequency coverage (WordFreq)
 
 Coverage is calculated cumulatively:
-- HSK 1
-- HSK 1–2
-- HSK 1–3
-- ...
-- HSK 1–7–9
 
-This shows what proportion of the unique vocabulary in a text is covered up to each level.
+- Top 1k  
+- Top 2k  
+- …  
+- Top 10k  
+
+Two views are shown:
+
+- **Token coverage** → percentage of running text inside that band  
+- **Unique coverage** → percentage of vocabulary types inside that band  
+
+This shows whether the text stays mostly in high-frequency territory or uses rarer vocabulary.
 """)
 
 st.sidebar.markdown("""
+## HSK 3.0 coverage
+
+Based on the official HSK 3.0 word list (December 2025).
+
+Coverage is cumulative:
+
+- HSK 1  
+- HSK 1–2  
+- HSK 1–3  
+- …  
+- HSK 1–7–9  
+
+Both token and unique coverage are shown.
+
+This allows you to estimate syllabus alignment or reading difficulty.
+""")
+
+st.sidebar.markdown("""
+# Data sources
+
+### HSK vocabulary
+Official [HSK 3.0 vocabulary list](https://www.marteagency.com/pdf/%E6%96%B0%E7%89%88HSK%E8%80%83%E8%AF%95%E5%A4%A7%E7%BA%B2%E8%AF%8D%E6%B1%87.pdf) (December 2025 edition).
+
 ### Word frequency data
+Uses the open-source [WordFreq](https://github.com/rspeer/wordfreq) database. This is a snapshot of language usage up to approximately 2021 (largely untainted by AI-generated content).
 
-Uses the open-source [**WordFreq**](https://github.com/rspeer/wordfreq) database.
-This is a snapshot of language usage up to approximately 2021 (largely untainted by AI-generated content).
-
-It combines:
+Sources include:
 
 - Wikipedia (encyclopedic text)
 - Subtitles (OPUS OpenSubtitles 2018 + SUBTLEX)
@@ -175,62 +338,38 @@ It combines:
 - Books (Google Books Ngrams 2012)
 - Web text (OSCAR)
 - Twitter (short-form social media)
-- Miscellaneous word frequencies: a free wordlist that comes with the Jieba word segmenter.
+- Miscellaneous word frequencies: a free wordlist that comes with the Jieba word segmenter. 
 """)
 
 st.sidebar.markdown("""
-## Metrics explained
+# Exporting results
 
-### Total tokens
-Total number of segmented Chinese word tokens in the text.
+Use **Configure CSV Export** above the results table to:
 
-### Unique words
-Number of distinct Chinese words.
+- Choose which metric groups to include  
+- Include or exclude frequency lists  
+- Include or exclude the 1000-token extract  
 
-### Total characters
-Total number of Hanzi characters.
-
-### Unique characters
-Number of distinct Hanzi characters.
-
-### Average tokens per sentence
-Mean number of Chinese word tokens per sentence.
-
-### Phrasing variety (per 1000 tokens)
-Median number of unique words in sliding 1000-token windows.  
-This gives a stable measure of lexical diversity that is less sensitive to text length.
-
-### Top-N frequency coverage
-Cumulative percentage of unique words that fall within the top:
-- 1k most frequent words
-- 2k
-- ...
-- 10k
-
-Based on WordFreq rankings.
-
-### HSK cumulative coverage
-Cumulative percentage of unique words covered by:
-- HSK 1
-- HSK 1 to 2
-- ...
-- HSK 1 to 7–9
-
-Based on the official HSK 3.0 word list.
+The exported CSV contains word metrics, character metrics, coverage statistics, and optional frequency lists.
 """)
 
 st.sidebar.markdown("""
----
+# Limitations
 
-                word_sections.append(("Not in Custom Vocab", wrow.get("Words not in vocab (with frequencies)", [])))
-- Graded readers  
-- Web novels  
-                char_sections.append(("Not in Custom Vocab", crow.get("Characters not in vocab (with frequencies)", [])))
-- Learning materials  
+This tool does not directly measure:
 
-                options = [x for x in options if "vocab" not in x[0].lower()]
+- Grammar structures  
+- Discourse markers  
+- Syntactic trees  
+- Pragmatic difficulty  
+
+Difficulty interpretation should combine:
+
+- Sentence length  
+- Sliding-window diversity  
+- Zipf medians  
+- Coverage metrics  
 """)
-
 
 # =========================================================
 # LOAD WORD FREQUENCY LIST (RANK-AWARE)
