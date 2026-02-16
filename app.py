@@ -1757,7 +1757,7 @@ def render_compact_table(df):
     if df is None or df.empty:
         st.info("No data available.")
         return
-    st.dataframe(df, use_container_width=True)
+    st.dataframe(df, width='stretch')
 
 
 def render_explanation_dropdown(explanation_items):
@@ -1833,7 +1833,7 @@ def render_zipf_section(word_metrics, char_metrics):
         .format(format_zipf_entry)
         .background_gradient(cmap="RdYlBu_r", axis=None, vmin=3, vmax=8)
     )
-    st.dataframe(zipf_styler, use_container_width=True)
+    st.dataframe(zipf_styler, width='stretch')
 
     render_explanation_dropdown([
         "Zipf is the base-10 log of occurrences per billion words in the WordFreq corpus. "
@@ -1913,7 +1913,7 @@ def render_coverage_highlights(word_metrics, char_metrics, has_custom_vocab=Fals
     if has_custom_vocab:
         custom_df = build_custom_vocab_coverage_df(word_metrics, char_metrics)
         st.markdown("**Custom vocab coverage**")
-        st.dataframe(style_coverage(custom_df), use_container_width=True)
+        st.dataframe(style_coverage(custom_df), width='stretch')
         render_explanation_dropdown([
                 "**Total** compares running tokens/characters against your vocab list to show immediate reading coverage. "
                 "**Unique** checks distinct types, highlighting whether gaps come from brand-new words or glyphs. "
@@ -1922,7 +1922,7 @@ def render_coverage_highlights(word_metrics, char_metrics, has_custom_vocab=Fals
 
     hsk_df = build_hsk_coverage_df(word_metrics, char_metrics)
     st.markdown("**HSK 1–7–9 coverage**")
-    st.dataframe(style_coverage(hsk_df), use_container_width=True)
+    st.dataframe(style_coverage(hsk_df), width='stretch')
     render_explanation_dropdown([
         "Rows accumulate upward through the official HSK 3.0 bands, letting you see how quickly the syllabus covers your text. "
         "Token coverage answers 'How much of the running text sits within this syllabus tier?', whereas Unique coverage asks 'How much of the vocabulary inventory is already taught by this level?'. "
@@ -1931,7 +1931,7 @@ def render_coverage_highlights(word_metrics, char_metrics, has_custom_vocab=Fals
 
     topn_df = build_topn_coverage_df(word_metrics, char_metrics)
     st.markdown("**Top 10k WordFreq coverage**")
-    st.dataframe(style_coverage(topn_df), use_container_width=True)
+    st.dataframe(style_coverage(topn_df), width='stretch')
     render_explanation_dropdown([
         "Each row aggregates everything up to that frequency band, so the Top 3k row reflects coverage from the Top 1k, 2k, and 3k buckets combined. "
         "Token columns show how often readers will *see* those bands, while Unique columns show what proportion of the vocabulary inventory comes from them. "
