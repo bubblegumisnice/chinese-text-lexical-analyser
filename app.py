@@ -268,6 +268,7 @@ Higher values generally indicate:
 Whereas low values indicate high repetition, common in graded readers.
 """)
 
+
 st.sidebar.markdown("""
 ## Zipf frequency profile
 
@@ -325,6 +326,13 @@ Coverage is cumulative:
 Both token and unique coverage are shown.
 
 This allows you to estimate syllabus alignment or reading difficulty.
+""")
+
+st.sidebar.markdown("""
+## Vocabulary introduction curve
+
+- Plots cumulative % of text processed vs cumulative % of unique vocabulary introduced.  
+- The area under the curve (AUC) quantifies front-loading: AUC → 1 means new words arrive early; AUC → 0 means they appear late.
 """)
 
 st.sidebar.markdown("""
