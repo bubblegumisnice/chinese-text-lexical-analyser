@@ -2419,7 +2419,7 @@ if word_df is not None and char_df is not None and not word_df.empty:
             if not isinstance(extract_text, str):
                 extract_text = "" if pd.isna(extract_text) else str(extract_text)
 
-            if text_display_mode == "Display only Hanzi":
+            if text_display_mode == "Display Hanzi only":
                 extract_text = "".join(HANZI_RE.findall(extract_text))
 
             extract_tokens = []
