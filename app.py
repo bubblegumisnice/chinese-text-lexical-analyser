@@ -17,6 +17,7 @@ import jieba
 import numpy as np
 import pandas as pd
 import pdfplumber
+import plotly.graph_objects as go
 import streamlit as st
 import urllib.parse
 from bs4 import BeautifulSoup
@@ -525,6 +526,17 @@ def analyse_text(
     topn_cache = {}
     zipf_cache = {}
 
+    def _safe_trapz(y_vals, x_vals):
+        """Fallback trapezoidal integration compatible with old NumPy builds."""
+        trapz_fn = getattr(np, "trapz", None)
+        if trapz_fn is None:
+            trapz_fn = getattr(np, "trapezoid", None)
+        if trapz_fn is not None:
+            return float(trapz_fn(y_vals, x_vals))
+        diffs = np.diff(x_vals)
+        avg_heights = (y_vals[1:] + y_vals[:-1]) * 0.5
+        return float(np.sum(diffs * avg_heights))
+
     def vocab_known(w):
         if w in vocab_cache:
             return vocab_cache[w]
@@ -617,6 +629,31 @@ def analyse_text(
     total_words = len(words)
     unique_word_set = set(words)
     unique_words = len(unique_word_set)
+
+    vocab_curve = (
+        np.array([0.0], dtype=np.float64),
+        np.array([0.0], dtype=np.float64),
+    )
+    vocab_auc = 0.0
+
+    if total_words > 0 and unique_words > 0:
+        cumulative_unique = np.empty(total_words, dtype=np.int64)
+        seen_words = set()
+        unique_so_far = 0
+
+        for idx, word in enumerate(words):  # single pass O(n) introduction tracking
+            if word not in seen_words:
+                seen_words.add(word)
+                unique_so_far += 1
+            cumulative_unique[idx] = unique_so_far
+
+        x_curve = np.linspace(1, total_words, total_words, dtype=np.float64) / total_words
+        y_curve = cumulative_unique.astype(np.float64) / unique_words
+        x_curve = np.concatenate((np.array([0.0], dtype=np.float64), x_curve))
+        y_curve = np.concatenate((np.array([0.0], dtype=np.float64), y_curve))
+        vocab_curve = (x_curve, y_curve)
+
+        vocab_auc = _safe_trapz(y_curve, x_curve)
 
     word_counts = Counter(words)
     char_counts = Counter(hanzi_chars)
@@ -809,6 +846,7 @@ def analyse_text(
         "Median zipf (all tokens)": median_zipf_word_tokens,
         "Average tokens per sentence": round(avg_words_sentence, 1),
         "Median unique words per 1000-token window": phrasing_variety,
+        "Vocabulary AUC": round(vocab_auc, 4),
     }
 
     if custom_vocab_set:
@@ -835,6 +873,7 @@ def analyse_text(
     word_result[WORD_LIST_NOT_IN_HSK] = tuple(not_in_hsk_words[:top_values_limit])
     word_result[WORD_LIST_NOT_IN_TOP] = tuple(not_in_topn_words[:top_values_limit])
     word_result["Middle 1000-token extract"] = middle_1000_extract
+    word_result["_vocab_curve"] = vocab_curve
 
     char_result = {
         "Total characters": total_chars,
@@ -1407,7 +1446,12 @@ def show_export_and_clear(state, clear_vocab_cache):
         def to_download_df(data_dict):
             df = pd.DataFrame.from_dict(data_dict, orient="index")
             df.index.name = "Text source file"
-            return df
+            keep_cols = [
+                col
+                for col in df.columns
+                if not (isinstance(col, str) and col.startswith("_"))
+            ]
+            return df.loc[:, keep_cols]
 
         def columns_for_group(df, group_name):
             group_matchers = {
@@ -1537,6 +1581,13 @@ def show_export_and_clear(state, clear_vocab_cache):
     if state.word_results_dict:
         word_df = pd.DataFrame.from_dict(state.word_results_dict, orient="index")
         char_df = pd.DataFrame.from_dict(state.char_results_dict, orient="index")
+
+        underscore_cols = [
+            col for col in word_df.columns if isinstance(col, str) and col.startswith("_")
+        ]
+        if underscore_cols:
+            word_df = word_df.drop(columns=underscore_cols)
+
         word_df.index.name = "Text source file"
         char_df.index.name = "Text source file"
 
@@ -1945,6 +1996,84 @@ def render_coverage_highlights(word_metrics, char_metrics, has_custom_vocab=Fals
     ])
 
 
+def render_vocab_introduction_curve(word_stats):
+    st.markdown("#### Vocabulary Introduction Curve")
+
+    if not word_stats:
+        st.info("Upload a text to view the vocabulary introduction curve.")
+        return
+
+    def _format_metric(value, decimals):
+        if value is None or (isinstance(value, numbers.Real) and math.isnan(value)):
+            return "—"
+        if isinstance(value, numbers.Real):
+            return f"{value:.{decimals}f}"
+        return str(value)
+
+    auc_value = word_stats.get("Vocabulary AUC")
+    st.metric("Vocabulary AUC", _format_metric(auc_value, 3))
+
+    curve = word_stats.get("_vocab_curve")
+    if not curve or len(curve) != 2:
+        st.info("Curve becomes available once at least one Chinese token is analysed.")
+        return
+
+    x_curve = np.asarray(curve[0], dtype=np.float64)
+    y_curve = np.asarray(curve[1], dtype=np.float64)
+
+    if x_curve.size <= 1 or y_curve.size <= 1:
+        st.info("Curve becomes available once at least one Chinese token is analysed.")
+        return
+
+    max_points = 500
+    if x_curve.size > max_points:
+        indices = np.linspace(0, x_curve.size - 1, max_points, dtype=np.int64)
+        x_plot = x_curve[indices]
+        y_plot = y_curve[indices]
+    else:
+        x_plot = x_curve
+        y_plot = y_curve
+
+    diag = np.linspace(0, 1, 200, dtype=np.float64)
+    fig = go.Figure()
+    fig.add_trace(
+        go.Scatter(
+            x=x_plot * 100,
+            y=y_plot * 100,
+            mode="lines",
+            name="Text",
+            line=dict(color='black', width=3),
+            hovertemplate="% of text: %{x:.1f}%<br>% of vocab: %{y:.1f}%<extra></extra>",
+        )
+    )
+    fig.add_trace(
+        go.Scatter(
+            x=diag * 100,
+            y=diag * 100,
+            mode="lines",
+            name="Even pace",
+            line=dict(color="#888888", dash="dash"),
+            hoverinfo="skip",
+        )
+    )
+    fig.update_layout(
+        xaxis_title="% of text",
+        yaxis_title="% of unique vocab introduced",
+        xaxis=dict(range=[0, 100]),
+        yaxis=dict(range=[0, 100]),
+        hovermode="x unified",
+        template="plotly",
+        height=320,
+        legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="right", x=1),
+        margin=dict(t=30, b=10, l=10, r=10),
+    )
+
+    st.plotly_chart(fig, use_container_width=True)
+    st.caption(
+        "Tracks how quickly new unique tokens appear: curves that rocket upward near the y-axis and stay high are extremely front-loaded (AUC → 1), lines close to the diagonal indicate steady pacing (AUC ≈ 0.5), and curves that crawl along the x-axis before rising show back-loaded introductions (AUC → 0)."
+    )
+
+
 def render_stat_guide(word_metrics, char_metrics, has_custom_vocab=False):
     render_metric_group(
         "Volume overview",
@@ -2286,6 +2415,7 @@ if word_df is not None and char_df is not None and not word_df.empty:
                 "and frequency profile rather than any single metric."
             )
             render_stat_guide(word_metrics_series, char_metrics_series, has_custom_vocab)
+            render_vocab_introduction_curve(st.session_state.word_results_dict.get(active_file))
 
         with words_tab:
             wrow = word_row
