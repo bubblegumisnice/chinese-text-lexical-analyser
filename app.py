@@ -87,6 +87,17 @@ MODE_EXPLANATIONS = {
 HANZI_RE = re.compile(r"[\u4e00-\u9fff]")
 HANZI_ONLY_RE = re.compile(r"^[\u4e00-\u9fff]+$")
 SENTENCE_SPLIT_RE = re.compile(r"[。！？]+")
+DIALOGUE_QUOTE_PAIRS = {
+    "“": "”",
+    "‘": "’",
+    "「": "」",
+    "『": "』",
+    "《": "》",
+    "〈": "〉",
+    '"': '"',
+    "'": "'",
+}
+DIALOGUE_OPENERS = set(DIALOGUE_QUOTE_PAIRS)
 
 # Global caches
 VOCAB_RESOLVE_CACHE = {}
@@ -612,6 +623,31 @@ def analyse_text(
             coverage[cutoff] = (cumulative / total * 100) if total else 0
         return coverage
 
+    def calculate_dialogue_character_share(source_text):
+        dialogue_characters = 0
+        total_characters = len(source_text)
+        quote_stack = []
+
+        for ch in source_text:
+            if ch in DIALOGUE_OPENERS:
+                if ch in {"\"", "'"} and quote_stack and quote_stack[-1] == ch:
+                    quote_stack.pop()
+                    continue
+                quote_stack.append(DIALOGUE_QUOTE_PAIRS[ch])
+                continue
+
+            if quote_stack and ch == quote_stack[-1]:
+                quote_stack.pop()
+                continue
+
+            if quote_stack:
+                dialogue_characters += 1
+
+        dialogue_percentage = (dialogue_characters / total_characters * 100) if total_characters else 0.0
+        return dialogue_characters, round(dialogue_percentage, 1)
+
+    dialogue_characters, dialogue_percentage = calculate_dialogue_character_share(text)
+
     hanzi_chars = HANZI_RE.findall(text)
     total_chars = len(hanzi_chars)
     unique_char_set = set(hanzi_chars)
@@ -850,6 +886,8 @@ def analyse_text(
         "Total tokens": total_words,
         "Unique words": unique_words,
         "Unique words (% of tokens)": round((unique_words / total_words * 100), 1) if total_words else 0.0,
+        "Dialogue characters": dialogue_characters,
+        "Dialogue share (%)": dialogue_percentage,
         "Median zipf (unique words)": median_zipf_unique_words,
         "Median zipf (all tokens)": median_zipf_word_tokens,
         "Average tokens per sentence": round(avg_words_sentence, 1),
@@ -887,6 +925,8 @@ def analyse_text(
         "Total characters": total_chars,
         "Unique characters": unique_chars,
         "Unique characters (% of characters)": round((unique_chars / total_chars * 100), 1) if total_chars else 0.0,
+        "Dialogue characters": dialogue_characters,
+        "Dialogue share (%)": dialogue_percentage,
         "Median zipf (unique characters)": median_zipf_unique_chars,
         "Median zipf (all characters)": median_zipf_char_tokens,
         "Average characters per sentence": round(avg_chars_sentence, 1),
@@ -1878,6 +1918,30 @@ def format_zipf_entry(value):
     return f"{format_metric_value(value)} ({occurrence_rate})"
 
 
+def render_dialogue_section(word_metrics, char_metrics):
+    st.markdown("#### Dialogue")
+
+    dialogue_count = word_metrics.get("Dialogue characters")
+    dialogue_share = word_metrics.get("Dialogue share (%)")
+
+    dialogue_df = pd.DataFrame(
+        {
+            "Metric": ["Characters inside quotation marks", "Share of full text"],
+            "Value": [
+                format_metric_value(dialogue_count),
+                format_percentage(dialogue_share),
+            ],
+        }
+    ).set_index("Metric")
+    dialogue_df.index.name = None
+    st.dataframe(dialogue_df, width="stretch")
+
+    render_explanation_dropdown([
+        "Dialogue share counts characters that fall between matched quotation marks such as “...” , 「...」, or \"...\". "
+        "The quote marks themselves are excluded, so the percentage estimates how much of the text is direct speech."
+    ])
+
+
 def render_zipf_section(word_metrics, char_metrics):
     st.markdown("#### Zipf frequency profile")
 
@@ -2116,6 +2180,16 @@ def render_stat_guide(word_metrics, char_metrics, has_custom_vocab=False):
                     "Type–token ratios reveal how quickly new vocabulary appears. "
                     "A high word percentage but low character percentage means new words are built from known characters, "
                     "whereas high percentages in both columns indicate constant introduction of unfamiliar glyphs."
+                ),
+            },
+            {
+                "label": "Dialogue share",
+                "word_key": "Dialogue share (%)",
+                "char_key": "Dialogue share (%)",
+                "word_percentage": True,
+                "char_percentage": True,
+                "explanation": (
+                    "Percentage of all characters that fall inside matched quotation marks, used here as a rough estimate of direct speech."
                 ),
             },
         ],
@@ -2416,13 +2490,14 @@ if word_df is not None and char_df is not None and not word_df.empty:
 
         with stats_tab:
             st.caption(
-                "This section summarises volume, sentence structure, lexical diversity, frequency profile, and syllabus alignment."
+                "This section summarises volume, sentence structure, dialogue share, lexical diversity, frequency profile, and syllabus alignment."
             )
             st.caption(
                 "Reading difficulty often comes from the interaction of sentence length, lexical diversity, "
                 "and frequency profile rather than any single metric."
             )
             render_stat_guide(word_metrics_series, char_metrics_series, has_custom_vocab)
+            render_dialogue_section(word_metrics_series, char_metrics_series)
             render_vocab_introduction_curve(st.session_state.word_results_dict.get(active_file))
 
         with words_tab:
