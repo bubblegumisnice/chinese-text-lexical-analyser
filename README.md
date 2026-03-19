@@ -28,6 +28,7 @@ And calculates:
 - Text length
 - Vocabulary size
 - Sentence statistics
+- Dialogue share (percentage of characters inside quotation marks)
 - Sliding-window lexical diversity
 - Word frequency coverage (Top 1k–10k bands)
 - HSK 3.0 coverage (Levels 1 to 7–9)
@@ -55,6 +56,7 @@ This app reports statistics separately for:
 | Word frequency (Zipf) | Character frequency (Zipf) |
 | HSK word levels | Character-level HSK mapping |
 | Token coverage | Character coverage |
+| Dialogue share (direct speech estimate) | Dialogue share (same text-level metric) |
 
 This allows you to distinguish:
 
